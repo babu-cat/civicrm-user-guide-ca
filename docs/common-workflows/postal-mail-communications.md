@@ -1,41 +1,25 @@
-Postal mail communications
-==========================
+Comunicacions per correu postal
+===============================
 
-This chapter discusses the different ways that CiviCRM helps with postal
-mail and postal mail campaigns. It will help if you already have a
-strong understanding of CiviCRM's search features as well as custom
-fields, activities, profiles, and how to perform mail merges using word
-processing software.
+Aquest capítol tracta les diferents maneres en que CiviCRM ajuda amb el correu postal i les campanyes de correu postal. Us serà d'ajuda si teniu coneixements sòlids en funcions de cerca en el CiviCRM, com també de camps personalitzats, activitats, perfils i com realitzar combinacions de correspondència utilitzant eines de processament de text.
 
-Planning Your Mailing
----------------------
+Planificació de l'enviament de correu
+-------------------------------------
 
-Before beginning any communication activity, take the time to identify
-your goals and plan the steps. For our purposes, there are a few key
-questions to ask before sending out postal mailings.
+Abans de començar qualsevol activitat de comunicació, preneu-vos el temps per identificar els objectius i planificar els passos a seguir. Pel als nostres propòsits, hi ha algunes qüestions claus a fer-se abans d'enviar els correus postals.
 
--   What types of mailing do you send out to your constituents?
--   Are mailings always sent to everyone in the database or are they
-    frequently targeted to a select group of contacts?
--   How do you want to greet recipients (e.g. "Dear Jane" or "Dear Jane
+-   Quin tipus d'enviament de correu enviareu als vostres constituents?
+-   Els enviaments de correu s'enviaran sempre a tothom que es trobi a la base de dades o es dirigiran freqüentment a un seleccionat grup de contactes?
+-   Com us voleu adreçar als destinataris (p.ex "Estimada Jane" o "Estimada Jane
     Doe")?
 
-There are three ways that you can use CiviCRM in postal mailings:
+Hi ha tres maneres en que podeu utilitzar el CiviCRM per als enviaments postals:
 
-1.  Generate labels: print out standard address labels when you don't
-    need to personalise the content, for instance to send a printed
-    brochure.
-2.  Export contacts and do a mail merge to an external tool (such as
-    OpenOffice or Microsoft Word). Refer to the chapter on Exporting
-    earlier in this section for detailed exporting instructions. 
-3.  Use CiviCRM's Print PDF Letters function to do the merge directly in
-    CiviCRM (see below for details).
+1.  Generació d'etiquetes: imprimiu etiquets d'adreces estàndards quan no hagueu de personalitzar el contingut, per exemple per enviar una fulletó imprès.
+2.  Exportació de contactes i combinació de correspondència mitjançant una eina externa (com ara LibreOffice o Microsoft Word). Consulteu el capítol sobre Exportació anterior a aquesta secció per instruccions detallades d'exportació.
+3.  Utilització de la funció Impressió de cartes PDF de CiviCRM per fer la combinació directament en el CiviCRM (vegeu més a vall per saber més).
 
-Many nonprofit organisations in the USA need to sort recipients of a
-mailing based on zip code for bulk mailing purposes. If this is true for
-your organisation, it is recommended that you create your mailing labels
-using a word processor where you can control the sort order, rather than
-in CiviCRM. You can reuse the same spreadsheet for your mail merge.
+Moltes organitzacions no lucratives dels Estats Units necessiten organitzar els destinataris d'un enviament de correus en funció del codi postal per propòsits d'enviaments massius. Si això també succeeix a la vostra organització, és recomanable que creeu les etiquetes per l'enviament utilitzant un processador de textos on pugueu controlar l'ordre de classificació, en comptes que ho faci el CiviCRM. Podeu utilitzar el mateix full de càlcul per a la combinació de correspondència.
 
 Greetings and salutations
 -------------------------
