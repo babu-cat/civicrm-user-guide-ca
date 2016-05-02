@@ -41,51 +41,27 @@ Per crear la carta:
 3.  Seleccioneu els contactes que voleu que rebin la carta.
 4.  Des de les accions del menú desplegable, escolliu "Imprimeix una carta PDF per als contactes".
 5.  Reviseu les seleccions al Format de pàgina i realitzeu els ajustos necessaris. Aquí és on definireu la mida de la pàgina, els marges i l'orientació de la pàgina.
-6.  Inseriu el text i realitzeu Enter your text and make formatting adjustments in the WYSIWYG
-    editor. You can also insert image files such as your organisation's
-    logo, or a signature. Click in the body of the letter where you want
-    the image to appear and click the Image icon. 
-7.  You can personalise the letter by using tokens; for example, Postal
-    Greeting is a commonly used token in this situation. Click in the
-    body of the letter where you want to enter the token. Then click on
-    "Insert Tokens" located above the letter at the top right and select
-    the desired token.
+6.  Inseriu el text i realitzeu ajustos de format en l'editor WYSIWYG. Podeu també inserir fitxers d'imatge com ara el logotip de la vostra organització o una signatura. Cliqueu en el cos de la carta allà on vulgueu que aparegui la imatge i cliqueu a la icona de la imatge. 
+7.  Podeu personalitzar la carta utilitzant tokens; per exemple, Salutacions postals és un token que s'utilitza comunment per a aquestes situacions. Cliqueu en el cos de la carta on vulgueu que s'insereixi el token. Després cliqueu a "Insereix tokens" ubiat sobre de la carta a dalt a la dreta i seleccione el token que necessiteu.
 
     ![PostalGreetingToken](../img/CiviCRM_update-CiviCore-PostalGreetingToken-en.png "PostalGreetingToken")
 
-8.  Before you move to the next screen, decide whether the format of
-    this letter could be used again. If so, check the Save As New
-    Template box and enter a name in the Template Title field.
-9.  When your letter is finished, scroll to the bottom and click Make
-    PDF Letters.
-10. A pop-up window will offer the option of opening or saving the PDF
-    (this is the same notification your browser will give you for any
-    download). Open the file, review your letters, and then print them,
-    or save the PDF and review it at your leisure.
+8.  Abans de continuar a la següent pantalla, decidiu si el format de la carta s'ha d'utilitzar en alguna altra ocasió. En cas afirmatiu, marqueu casella Desa com a una nova plantilla i introduïu un nom en el camp Títol de la plantilla.
+9.  Quan la vostra carta estigui finalitzada, desplaceu-vos fins al peu de la pàgina i cliqueu a Crea les cartes PDF.
+10. Una finestra emergent us oferirà l'opció d'obrir o desar el PDF (aquesta és la mateixa notificació que el vostre navegador us ofereix per a qualsevol descarga). Obriu el fiter, reviseu les cartes i finalment imprimiu-les o bé deseu el PDF i reviseu-lo quan us vagi bé.
 
-You can use this feature for any kind of document, not only letters. For
-example, you could use it to print attendance certificates for a
-workshop.
+Podeu utilitzar aquesta característica per qualsevol tipus de document, no només cartes. Per exemple, podeu utilitzar-lo per a imprimir certificats d'assistència d'un taller.
 
-Generate mailing labels
------------------------
+Genereu etiquetes de correu
+---------------------------
 
-Generating mailing labels is a very easy and useful function.
+Generar etiquetes de correu és una funcionalitat molt senzilla i útil.
 
-1.  Perform the search to select the contacts you want to target.
-2.  Choose **Mailing Labels** from the **Actions** dropdown menu and
-    click Go.
-3.  Select the mailing label style
-4.  Determine if you want to exclude people with "do not mail" checked
-    in their privacy options (checked by default and recommended), and
-    whether you want to merge any records with the same mailing address
-    into one label.
+1.  Feu la cerca per seleccionar els contactes als quals us vulgueu dirigir.
+2.  Escolliu **Etiquetes de correu** des del menú desplegable **Accions**.
+3.  Seleccioneu l'estil etiqueta de correu.
+4.  Determineu si voleu excloure a gent que tingui marcada l'opció "No enviar correus postals" en les seves opcions de privacitat (marcat per defecte i recomanat), i si voleu combinar qualsevol registre amb la mateixa adreça de correu postal en una única etiqueta.
 
-This last option is very useful when sending a mailing to a households
-or organisations where you don't want them to receive duplicate
-mailings. When the records are merged, each name at that address is
-listed on a separate line on the label.
+Aquesta darrera opció és molt útil quan esteu fent un enviant de correus a llars o organitzacions on no voleu que rebin correus duplicats. Quan els registres es combinen, cada nom amb la mateixa adreça es llista en una línia separada en l'etiqueta.
 
-Your system administrator can configure the fields included in mailing
-labels. Read the information on configuring address settings in the
-Contacts chapter to learn more about the options.
+L'administrador del sistema pot configurar els camps que s'inclouen en les etiquetes de correu. Llegiu la informació de configuració de les opcions d'adreces en el capítol de Contactes per saber més pel que fa a aquestes opcions.
