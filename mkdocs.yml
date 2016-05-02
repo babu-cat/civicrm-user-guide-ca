@@ -2,41 +2,41 @@ site_name: "Guia de l'usuari CiviCRM"
 site_url: http://rtfd.civicrm.org
 repo_url: https://github.com/babu-cat/civicrm-user-guide-ca
 site_description: 'Una guia per als usuaris i administradors del CiviCRM.'
-site_author: 'The CiviCRM community'
+site_author: 'La comunitat de CiviCRM'
 
 
 theme: readthedocs
 
 pages:
-- Home: 'index.md'
-- Introduction:
-    - 'What is CiviCRM?': 'introduction/what-is-civicrm.md'
+- Inici (untranslated): 'index.md'
+- Introducció (untranslated):
+    - 'Què és CiviCRM?': 'introduction/what-is-civicrm.md'
     - 'Real World Examples': 'introduction/real-world-examples.md'
     - 'Components': 'introduction/components.md'
     - 'Extensions': 'introduction/extensions.md'
     - 'Who is CiviCRM?': 'introduction/who-is-civicrm.md'
-- Getting prepared:
+- Abans de començar (untranslated):
     - 'Is CiviCRM for You?': 'getting-prepared/is-civicrm-for-you.md'
     - 'Identifying Your Needs': 'getting-prepared/identifying-your-needs.md'
     - 'Test it out': 'getting-prepared/test-it-out.md'
     - 'Hosting': 'getting-prepared/hosting.md'
     - 'Transitioning to CiviCRM': 'getting-prepared/transitioning-to-civicrm.md'
-- Initial set up:
+- Configuració incial (untranslated):
     - 'Installation and basic set-up': 'initial-set-up/installation-and-basic-set-up.md'
     - 'Scheduled jobs': 'initial-set-up/scheduled-jobs.md'
     - 'Customizing the user interface': 'initial-set-up/customizing-the-user-interface.md'
     - 'Permissions and access control': 'initial-set-up/permissions-and-access-control.md'
     - 'Security': 'initial-set-up/security.md'
     - 'CiviCRM System Status': 'initial-set-up/civicrm-system-status.md'
-- Advanced configuration:
+- Configuració avançada (untranslated):
     - 'Email system configuration': 'advanced-configuration/email-system-configuration.md'
     - 'Logging': 'advanced-configuration/change-logging.md'
-- The user interface:
+- La interfície d'usuari (untranslated):
     - 'Menu, dashboard and dashlets': 'the-user-interface/menu-dashboard-and-dashlets.md'
     - 'Keyboard shortcuts': 'the-user-interface/keyboard-shortcuts.md'
     - 'Searching': 'the-user-interface/searching.md'
     - 'Undelete': 'the-user-interface/undelete.md'
-- Organising your data:
+- Organitzant les vostres dades (untranslated):
     - 'Overview': 'organising-your-data/overview.md'
     - 'Mapping your data': 'organising-your-data/mapping-your-data.md'
     - 'Contacts': 'organising-your-data/contacts.md'
@@ -46,14 +46,14 @@ pages:
     - 'Relationships': 'organising-your-data/relationships.md'
     - 'Creating Custom Fields': 'organising-your-data/creating-custom-fields.md'
     - 'Profiles': 'organising-your-data/profiles.md'
-- Common workflows (partial translated): 
-    - 'Importing Data into CiviCRM (untranslated)': 'common-workflows/importing-data-into-civicrm.md'
-    - 'Exporting Your Contacts (untranslated)': 'common-workflows/exporting-your-contacts.md'
-    - 'Deduping and Merging (untranslated)': 'common-workflows/deduping-and-merging.md'
-    - 'Tokens and mail merge (untranslated)': 'common-workflows/tokens-and-mail-merge.md'
-    - 'Comunicacions per correu postal (partial translated)': 'common-workflows/postal-mail-communications.md'
-    - 'Automating tasks (untranslated)': 'common-workflows/automating-tasks.md'
-- Contributions:
+- Fluxos de treball comuns (partial translated): 
+    - 'Importació de dades en el CiviCRM (untranslated)': 'common-workflows/importing-data-into-civicrm.md'
+    - 'Exportació dels vostres contactes (untranslated)': 'common-workflows/exporting-your-contacts.md'
+    - 'Cerca i combinació de duplicats (untranslated)': 'common-workflows/deduping-and-merging.md'
+    - 'Tokens i combinació de correspondència (untranslated)': 'common-workflows/tokens-and-mail-merge.md'
+    - 'Comunicacions per correu postal': 'common-workflows/postal-mail-communications.md'
+    - 'Automatitzant tasques (untranslated)': 'common-workflows/automating-tasks.md'
+- Contribucions (untranslated):
     - 'What is CiviContribute?': 'contributions/what-is-civicontribute.md'
     - 'Key concepts and configurations': 'contributions/key-concepts-and-configurations.md'
     - 'Online contributions': 'contributions/online-contributions.md'
@@ -69,13 +69,13 @@ pages:
     - 'Invoicing': 'contributions/invoicing.md'
     - 'Sales tax and VAT': 'contributions/sales-tax-and-vat.md'
     - 'Premiums': 'contributions/premiums.md'
-- Pledges:
+- Compromisos (untranslated):
     - 'What is CiviPledge?': 'pledges/what-is-civipledge.md'
     - 'What you need to know': 'pledges/what-you-need-to-know.md'
     - 'Set-up': 'pledges/set-up.md'
     - 'Everyday tasks': 'pledges/everyday-tasks.md'
     - 'Pledges Reports and Analysis': 'pledges/pledges-reports-and-analysis.md'
-- Events:
+- Esdeveniments (untranslated):
     - 'What is CiviEvent?': 'events/what-is-civievent.md'
     - 'Event planning and management': 'events/event-planning-and-management.md'
     - 'Creating an event': 'events/creating-an-event.md'
@@ -88,7 +88,7 @@ pages:
     - 'Reports': 'events/reports.md'
     - 'Custom data for events': 'events/custom-data-for-events.md'
     - 'Repeating Events': 'events/repeating-events.md'
-- Membership:
+- Membres (untranslated):
     - 'What is CiviMember': 'membership/what-is-civimember.md'
     - 'Defining memberships': 'membership/defining-memberships.md'
     - 'Online membership sign up': 'membership/online-membership-sign-up.md'
@@ -99,7 +99,7 @@ pages:
     - 'Renewals': 'membership/renewals.md'
     - 'Cancelling and expiring memberships': 'membership/cancelling-and-expiring-memberships.md'
     - 'Making member only websites': 'membership/making-member-only-websites.md'
-- Email:
+- Correu electrònic (untranslated):
     - 'What is CiviMail?': 'email/what-is-civimail.md'
     - 'What You Need To Know': 'email/what-you-need-to-know.md'
     - 'Set-up': 'email/set-up.md'
@@ -108,64 +108,64 @@ pages:
     - 'Reports and analysis': 'email/reports-and-analysis.md'
     - 'Scheduled reminders': 'email/scheduled-reminders.md'
     - 'CiviMail A/B Testing': 'email/civimail-ab-testing.md'
-- SMS (text messaging):
+- SMS (missatges de text) (untranslated):
     - 'What is SMS?': 'sms-text-messaging/what-is-sms.md'
     - 'Set-up': 'sms-text-messaging/set-up.md'
     - 'Everyday tasks': 'sms-text-messaging/everyday-tasks.md'
     - 'Reports and Analysis (SMS)': 'sms-text-messaging/reports-and-analysis-sms.md'
-- Reporting:
+- Informes (untranslated):
     - 'What is CiviReport?': 'reporting/what-is-civireport.md'
     - 'What You Need To Know': 'reporting/what-you-need-to-know.md'
     - 'Set-up': 'reporting/set-up.md'
     - 'Everyday Tasks': 'reporting/everyday-tasks.md'
-- Case management:
+- Gestió de casos (untranslated):
     - 'What is CiviCase?': 'case-management/what-is-civicase.md'
     - 'What You Need To Know': 'case-management/what-you-need-to-know.md'
     - 'Set-up': 'case-management/set-up.md'
     - 'Everyday Tasks': 'case-management/everyday-tasks.md'
     - 'Reports and analysis': 'case-management/reports-and-analysis.md'
-- Campaign:
+- Campanyes (untranslated):
     - 'What is CiviCampaign?': 'campaign/what-is-civicampaign.md'
     - 'What You Need To Know': 'campaign/what-you-need-to-know.md'
     - 'Set-up': 'campaign/set-up.md'
     - 'Everyday tasks': 'campaign/everyday-tasks.md'
     - 'Reports and analysis': 'campaign/reports-and-analysis.md'
-- Survey:
+- Enquestes (untranslated):
     - 'What is CiviSurvey?': 'survey/what-is-civisurvey.md'
     - 'What You Need To Know': 'survey/what-you-need-to-know.md'
     - 'Set-up': 'survey/set-up.md'
     - 'Everyday Tasks': 'survey/everyday-tasks.md'
     - 'Reports and analysis': 'survey/reports-and-analysis.md'
     - 'What is GOTV (Voter Tracking)?': 'survey/what-is-gotv-voter-tracking.md'
-- Petition:
+- Peticions (untranslated):
     - 'What is CiviPetition?': 'petition/what-is-civipetition.md'
     - 'What You Need To Know': 'petition/what-you-need-to-know.md'
     - 'Set-up': 'petition/set-up.md'
     - 'Everyday Tasks': 'petition/everyday-tasks.md'
     - 'Reports and analysis': 'petition/reports-and-analysis.md'
-- Civic Engagement:
+- Civic Engagement (untranslated):
     - 'What is CiviEngage?': 'civic-engagement/what-is-civiengage.md'
     - 'What You Need To Know': 'civic-engagement/what-you-need-to-know.md'
     - 'Set-up': 'civic-engagement/set-up.md'
     - 'Everyday Tasks': 'civic-engagement/everyday-tasks.md'
     - 'Reports and analysis': 'civic-engagement/reports-and-analysis.md'
-- Grants:
+- Grants (untranslated):
     - 'What is CiviGrant?': 'grants/what-is-civigrant.md'
     - 'What You Need To Know': 'grants/what-you-need-to-know.md'
     - 'Set-up': 'grants/set-up.md'
     - 'Everyday tasks': 'grants/every-day-tasks.md'
     - 'Reports and analyis': 'grants/reports-and-analysis.md'
-- Website integration:
+- Integració amb els llocs web (untranslated):
     - 'Choosing your CMS': 'website-integration/choosing-your-cms.md'
     - 'Integrating with Drupal': 'website-integration/integrating-with-drupal.md'
     - 'Integrating with WordPress': 'website-integration/integrating-with-wordpress.md'
     - 'Integrating with Joomla': 'website-integration/integrating-with-joomla.md'
-- The CiviCRM Community:
+- La comunitat de CiviCRM (untranslated):
     - 'The CiviCRM Community': 'the-civicrm-community/the-civicrm-community.md'
     - 'Bug Reporting': 'the-civicrm-community/bug-reporting.md'
     - 'Localising CiviCRM': 'the-civicrm-community/localising-civicrm.md'
     - 'Contributing to this manual': 'the-civicrm-community/contributing-to-this-manual.md'
-- Appendices:
+- Annexos (untranslated):
     - 'History of this book': 'appendices/history-of-this-book.md'
     - 'Free Software?': 'appendices/free-software.md'
     - 'Glossary': 'appendices/glossary.md'
