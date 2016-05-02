@@ -21,16 +21,10 @@ Hi ha tres maneres en que podeu utilitzar el CiviCRM per als enviaments postals:
 
 Moltes organitzacions no lucratives dels Estats Units necessiten organitzar els destinataris d'un enviament de correus en funció del codi postal per propòsits d'enviaments massius. Si això també succeeix a la vostra organització, és recomanable que creeu les etiquetes per l'enviament utilitzant un processador de textos on pugueu controlar l'ordre de classificació, en comptes que ho faci el CiviCRM. Podeu utilitzar el mateix full de càlcul per a la combinació de correspondència.
 
-Greetings and salutations
--------------------------
+Salutacions
+-----------
 
-You can set a specific postal greeting format for each contact. There
-are several options from the friendly "Dear John", to more formal "Dear
-Mr. John Doe". You can also enter a *customized greeting* ("Your royal
-highness"). Postal greetings can be edited in the Communications
-Preferences section of the contact edit form. If you need to set or
-reset postal greetings en mass, refer to the chapter on *Scheduled Jobs*
-in this section, and to the documentation on the wiki at:
+Podeu configurar un format de salutació postal específica per a cada contacte. Hi ha diverses opcions des de les més informals com "Estimat John", fins a les més formals com "Benvolgut Sr. John Doe". També podeu introduir una *salutació personalitzada* ("Molt honorable"). Les salutacions postals es poden editar en la secció de Preferències de comunicación del formulari d'edició del contacte. Si necessiteu definir o reiniciar les salutacions postals, consulteu el capítol *Tasques Programades* en aquesta secció i la documentació a la wiki a:
 
 [http://wiki.civicrm.org/confluence/display/CRMDOC/Update+Greetings+and+Address+Data+for+Contacts](http://wiki.civicrm.org/confluence/display/CRMDOC/Update+Greetings+and+Address+Data+for+Contacts)
 
