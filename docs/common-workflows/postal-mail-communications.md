@@ -24,33 +24,24 @@ Moltes organitzacions no lucratives dels Estats Units necessiten organitzar els 
 Salutacions
 -----------
 
-Podeu configurar un format de salutació postal específica per a cada contacte. Hi ha diverses opcions des de les més informals com "Estimat John", fins a les més formals com "Benvolgut Sr. John Doe". També podeu introduir una *salutació personalitzada* ("Molt honorable"). Les salutacions postals es poden editar en la secció de Preferències de comunicación del formulari d'edició del contacte. Si necessiteu definir o reiniciar les salutacions postals, consulteu el capítol *Tasques Programades* en aquesta secció i la documentació a la wiki a:
+Podeu configurar un format de salutació postal específica per a cada contacte. Hi ha diverses opcions des de les més informals com "Estimat John", fins a les més formals com "Benvolgut Sr. John Doe". També podeu introduir una *salutació personalitzada* ("Molt honorable"). Les salutacions postals es poden editar en la secció de Preferències de comunicación del formulari d'edició del contacte. Si necessiteu definir o reiniciar les salutacions postals massivament, consulteu el capítol *Tasques Programades* en aquesta secció i la documentació a la wiki a:
 
 [http://wiki.civicrm.org/confluence/display/CRMDOC/Update+Greetings+and+Address+Data+for+Contacts](http://wiki.civicrm.org/confluence/display/CRMDOC/Update+Greetings+and+Address+Data+for+Contacts)
 
 
-Print PDF letters
------------------
+Impressió de cartes PDF
+-----------------------
 
-The workflow is to first select the contacts you want to target, then
-choose to print letter as a batch action. The letters will then be
-outputted as a PDF, allowing you to easily print them.
+El flux de treball consisteix en primer lloc en seleccionar els contactes als quals us voleu dirigir, per després imprimir una carta com una acció en lot. Les cartes seran emeses en format PDF, permetent-vos imprimir-les fàcilment.
 
-To create the letter:
+Per crear la carta:
 
-1.  Go to **Search > Find Contacts or Find Contacts > Advanced
-    Search**; if you want to print letters for members of a Group, go
-    to **Contacts > Manage Groups** and click "Contacts" next to the
-    Group you want.
-2.  Enter your search criteria and click Search (not applicable if using
-    a Group).
-3.  Select the contacts who will receive the letter.
-4.  From the Actions dropdown menu, choose "Print PDF Letter for
-    Contacts" and click Go.
-5.  Review the selections under Page Format and make any desired
-    adjustments. This is where you set your paper size, margins, and
-    page orientation. 
-6.  Enter your text and make formatting adjustments in the WYSIWYG
+1.  Aneu a **Cerca > Cerca contactes o Cerca > Cerca avançada**; si el que voleu és imprimir cartes per a membres o per algun grup, aneu a **Contactes > Gestiona grups** i cliqueu a "Contactes" al costat del grup en qüestió.
+2.  Inseriu el criteri de cerca i cliqueu Cerca (no és aplicable si utilitzeu un grup).
+3.  Seleccioneu els contactes que voleu que rebin la carta.
+4.  Des de les accions del menú desplegable, escolliu "Imprimeix una carta PDF per als contactes".
+5.  Reviseu les seleccions al Format de pàgina i realitzeu els ajustos necessaris. Aquí és on definireu la mida de la pàgina, els marges i l'orientació de la pàgina.
+6.  Inseriu el text i realitzeu Enter your text and make formatting adjustments in the WYSIWYG
     editor. You can also insert image files such as your organisation's
     logo, or a signature. Click in the body of the letter where you want
     the image to appear and click the Image icon. 
