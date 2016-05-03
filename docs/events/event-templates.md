@@ -1,34 +1,22 @@
-Event templates
-===============
+Plantilles d'esdeveniments
+==========================
 
-If you need to set up a number of events with similar configurations,
-you can streamline the process using event templates.
+Si necessiteu configurar un nombre d'esdeveniments amb configuracions similars, podeu millorar el procés utilitzant les plantilles d'esdeveniments.
 
-The steps for creating event templates are similar to those described
-earlier for creating an event. The main differences are:
+Els passos per crear una plantilla d'esdeveniments són similars als descrits en la creació d'un esdeveniment. Les principals diferències són:
 
--   Assign a descriptive template title that clearly identifies the type
-    of event this template is used for (e.g., Monthly community meetup
-    with online registration).
--   There are no starting and ending dates in the template form. That
-    information will always be specific to an actual event instance.
+-   Assignar un títol descriptiu de plantilla que ajudi a identificar el tipus d'esdeveniment que utilitza aquesta plantilla (p.ex., Trobada comunitaria mensual amb registre en línia).
+-   No hi ha dates d'inici i finalització en el formulari de la plantilla. Aquesta informació s'especificarà sempre en una instància d'esdeveniment real.
 
-Click **Events > Event Templates**.
+Cliqueu **Esdeveniments > Plantilles d'esdeveniments**.
 
--   To create a template, start by navigating to **Events > Event
-    Templates** and clicking **Add Event Template**. Enter template
-    title and event type. 
--   Select campaign if all events created from this template should be
-    associated with a campaign.
--   Continue the normal event set-up process using the settings that
-    will be constant for all events to be created using this template.
--   Common characteristics might include location, event fees, online
-    registration settings, tell-a-friend settings, etc.
+-   Per a crear una plantilla, comenceu navegant a **Esdeveniments > Plantilles d'esdeveniments** i cliqueu **Afegeix plantilles d'esdedeveniments**. Introduïu el títol de la plantilla i el tipus d'esdeveniment. 
+-   Seleccioneu la campanya en cas que tots els esdeveniments creats des d'aquesta plantilla hagin d'associar-se a una campanya.
+-   Continueu el procés normal de configuració utilitzant les configuracions que seran constants per a tots els esdevenimnets creats a partir d'aquesta plantilla.
+-   Les característiques més comunes poden incloure la localizació, tarifes d'esdeveniment, configuracions de registra en línia, configuracions d'expliqueu-ho a un amic, etc.
 
 ![image](../img/event_template_setup.png)
 
-Once you've created an event template, you can select that template (as
-shown in the following screenshot) when you start to create a new event.
-Your event will be pre-filled with the saved configuration properties.
+Un cop hagueu creat una plantilla d'esdeveniment, podeu seleccionar aquesta plantilla (com es mostra en la següent captura de pantalla) quan comenceu a crear un nou esdeveniment. El vostre esdeveniment serà emplenat amb les propietats de configuració desades.
 
 ![image](../img/event_template_new.png)
