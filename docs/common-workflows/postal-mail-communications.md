@@ -39,7 +39,7 @@ Per crear la carta:
 1.  Aneu a **Cerca > Cerca contactes o Cerca > Cerca avançada**; si el que voleu és imprimir cartes per a membres o per algun grup, aneu a **Contactes > Gestiona grups** i cliqueu a "Contactes" al costat del grup en qüestió.
 2.  Inseriu el criteri de cerca i cliqueu Cerca (no és aplicable si utilitzeu un grup).
 3.  Seleccioneu els contactes que voleu que rebin la carta.
-4.  Des de les accions del menú desplegable, escolliu "Imprimeix una carta PDF per als contactes".
+4.  Des de les accions del menú desplegable, escolliu "Imprimeix/combina un document." (En versions anteriors del CiviCRM, aquesta acció s'anomenava "Imprimeix una carta PDF per als contactes.")
 5.  Reviseu les seleccions al Format de pàgina i realitzeu els ajustos necessaris. Aquí és on definireu la mida de la pàgina, els marges i l'orientació de la pàgina.
 6.  Inseriu el text i realitzeu ajustos de format en l'editor WYSIWYG. Podeu també inserir fitxers d'imatge com ara el logotip de la vostra organització o una signatura. Cliqueu en el cos de la carta allà on vulgueu que aparegui la imatge i cliqueu a la icona de la imatge. 
 7.  Podeu personalitzar la carta utilitzant tokens; per exemple, Salutacions postals és un token que s'utilitza comunment per a aquestes situacions. Cliqueu en el cos de la carta on vulgueu que s'insereixi el token. Després cliqueu a "Insereix tokens" ubiat sobre de la carta a dalt a la dreta i seleccione el token que necessiteu.

@@ -328,4 +328,4 @@ contact:
     be assigned to it.
 
 Remember, CSV files must be less than 2MB in size. If the file size
-exceeds this, create multiple CSV files and distribute the data between  them.
+exceeds this, create multiple CSV files and distribute the data between them.

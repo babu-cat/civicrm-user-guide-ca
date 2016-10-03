@@ -72,8 +72,6 @@ selection, credit card details, additional profile(s) in that order.
 Collecting participant information with profiles
 -------------------------------------------------
 
-### 
-
 The best way to collect information during online registration is to
 include one or more profiles in your event configuration.You can include
 one profile immediately after the introductory message and one or more
@@ -103,7 +101,9 @@ include in the profile if you have not already done so. Custom fields
 can be created for all events or all participants, or only specific
 Event Types or Participant Roles (see the chapter *Custom data on
 events* in this section for more details on where you should store what
-custom data).![image](../img/Drag_and_drop* _profile_for_event.PNG)
+custom data).
+
+![image](../img/Drag_and_drop_profile_for_event.PNG)
 
 Registration confirmation
 --------------------------
@@ -186,11 +186,11 @@ their friends, and possibly forward the information. With CiviEvent, you
 can check who has registered and approve only the people invited.
 
 If you'd like to enable the 'Participant approval' feature, you must
-first enable the related participant statuses Awaiting approval and
-pending from approval. This is similar to what you do for waiting lists
+first enable the related participant statuses **Awaiting approval**,
+**Pending from approval** and **Rejected**. This is similar to what you do for waiting lists
 and you can do it in **Administer > CiviEvent > Participant
-statuses**. You can then check the **Require participant
-approval** checkbox on the **Online registration **tab, and set the
+Statuses**. You can then check the **Require participant
+approval?** checkbox on the **Online Registration** tab, and set the
 message you want displayed in the approval message. You can also limit
 the amount of time participants have to complete their registration
 after approval by entering the time in hours in the Pending participant
@@ -334,5 +334,3 @@ event registration process. This can be done as follows:
 Once you are satisfied with the event information and registration form,
 it's time to display it on your website. Below are details of how to do
 this.
-
-

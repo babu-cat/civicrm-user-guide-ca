@@ -69,6 +69,7 @@ pages:
     - 'Invoicing': 'contributions/invoicing.md'
     - 'Sales tax and VAT': 'contributions/sales-tax-and-vat.md'
     - 'Premiums': 'contributions/premiums.md'
+    - 'Widgets': 'contributions/widgets.md'
 - Compromisos (untranslated):
     - 'What is CiviPledge?': 'pledges/what-is-civipledge.md'
     - 'What you need to know': 'pledges/what-you-need-to-know.md'
@@ -105,6 +106,8 @@ pages:
     - 'Set-up': 'email/set-up.md'
     - 'Maintaining Healthy Email Lists': 'email/maintaining-healthy-email-lists.md'
     - 'Everyday tasks': 'email/everyday-tasks.md'
+    - 'Mass mailings using CiviMail': 'email/mass-mailings-using-civimail.md'
+    - 'Using tokens in emails': 'email/using-tokens-in-emails.md'
     - 'Reports and analysis': 'email/reports-and-analysis.md'
     - 'Scheduled reminders': 'email/scheduled-reminders.md'
     - 'CiviMail A/B Testing': 'email/civimail-ab-testing.md'
