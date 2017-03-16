@@ -1,4 +1,4 @@
-site_name: "Guia de l'usuari CiviCRM"
+site_name: "CiviCRM - Guia de l'usuari"
 site_url: https://docs.civicrm.org/user/ca/latest/
 repo_url: https://github.com/babu-cat/civicrm-user-guide-ca
 site_description: 'Una guia per als usuaris del CiviCRM.'
@@ -55,7 +55,7 @@ pages:
     - 'Relationships': 'organising-your-data/relationships.md'
     - 'Creating Custom Fields': 'organising-your-data/creating-custom-fields.md'
     - 'Profiles': 'organising-your-data/profiles.md'
-- Fluxos de treball comuns (partial translated): 
+- Fluxos de treball comuns (partial translated):
     - 'Importació de dades en el CiviCRM (untranslated)': 'common-workflows/importing-data-into-civicrm.md'
     - 'Exportació dels vostres contactes (untranslated)': 'common-workflows/exporting-your-contacts.md'
     - 'Cerca i combinació de duplicats (untranslated)': 'common-workflows/deduping-and-merging.md'

@@ -1,24 +1,24 @@
 
-CiviCRM User Guide
-==================
+CiviCRM - Guia de l'usuari
+==========================
 
-This book is a guide for users of CiviCRM and covers
-everything they need to know
-to work with CiviCRM on a day to day basis. Our aim is to cover all
-functionality that is available via CiviCRM's user interface.
+Aquest llibre és una guia pels usuaris de CiviCRM i cobreix
+tot el que necessiten saber
+per treballar amb CiviCRM en el dia a dia. L'objectiu d'aquest és tractar tota
+la funcionalitat que està disponible a través de la interfície d'usuari de CiviCRM.
 
-Although we do not cover system administrator or developer topics,
-CiviCRM developers and system administrators will also find this book
-useful as a guide to everything you can do with an 'out of the box'
+Encara que no es tractin temes d'administració de sistemes o desenvolupament,
+els desenvolupadors de CiviCRM i els administradors de sistemes també trobaran aquest llibre
+útil com una guia per tot el que es pot arribar a fer amb totes les funcionalitats que proveeix
 CiviCRM.
 
-Some aspects of CiviCRM (such as installation, or custom development)
-are technical and outside the scope of this book. Although they are not
-covered here, we do point to other relevant sources of technical
-document which should be useful for people (like your service provider,
-or technical staff) who understand them.
+Alguns aspectes de CiviCRM (com la instal·lació o el desenvolupament a mida)
+són tècnics i queden fora de l'abast d'aquest llibre. Encara que no es
+tractin aquí, farem referència a altres fonts rellevants de documentació tècnica
+que puguin ser útils per la gent (com el vostre proveïdor de serveis
+o tècnic) que l'entengui.
 
-This book is freely available to read online. It is collaboratively written by the CiviCRM community (see the
-*History of this book* chapter for more details). You can help write this
-book and help with other documentation efforts. See
-https://civicrm.org/participate/documentation for more information. 
+Aquest llibre està disponible gratuïtament per la lectura en línia. Està escrit col·laborativament per la comunitat de CiviCRM (vegeu el capítol
+*Història d'aquest llibre* per més detalls). Podeu ajudar a escriure aquest
+llibre i ajudar amb altres tasques de documentació. Vegeu
+https://civicrm.org/participate/documentation per a més informació. 
