@@ -17,7 +17,7 @@ markdown_extensions:
   - pymdownx.mark
 
 pages:
-- Inici (untranslated): 'index.md'
+- Inici: 'index.md'
 - Introducció (untranslated):
     - 'Què és CiviCRM?': 'introduction/what-is-civicrm.md'
     - 'Real World Examples': 'introduction/real-world-examples.md'
