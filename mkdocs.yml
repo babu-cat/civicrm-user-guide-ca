@@ -1,11 +1,20 @@
 site_name: "Guia de l'usuari CiviCRM"
-site_url: http://rtfd.civicrm.org
+site_url: https://docs.civicrm.org/user/ca/latest/
 repo_url: https://github.com/babu-cat/civicrm-user-guide-ca
-site_description: 'Una guia per als usuaris i administradors del CiviCRM.'
+site_description: 'Una guia per als usuaris del CiviCRM.'
 site_author: 'La comunitat de CiviCRM'
-
-
-theme: readthedocs
+theme: material
+markdown_extensions:
+  - attr_list
+  - admonition
+  - def_list
+  - codehilite(guess_lang=false)
+  - toc(permalink=true)
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tilde
+  - pymdownx.betterem
+  - pymdownx.mark
 
 pages:
 - Inici (untranslated): 'index.md'
