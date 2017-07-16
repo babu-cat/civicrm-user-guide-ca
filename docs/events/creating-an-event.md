@@ -1,247 +1,235 @@
-Creating an event
-=================
+# Creació d'esdeveniments
 
-This chapter covers the how create a new event, describing each of the
-set up options available in the event creation screen. If you going to
-allow online registration for the event, you will also want to read the
-*online event registration* chapter. If not, you'll want to read the
-*manual event registration* chapter.
+Aquest capítol tracta sobre com crear un esdeveniment nou, descrivint cada una de les
+opcions de configuració disponibles en la pantalla de creació de l'esdeveniment. Si voleu
+permetre les inscripcions en línia a l'esdeveniment, voldreu llegir també el
+capítol *Inscripcions en línia d'esdeveniments*. Si no, voldreu llegir el
+capítol *Inscripcions manuals d'esdeveniments*.
 
-To get started, create a new event by choosing **Events > New Event**
-from the menu. (If you can't see the events menu, make sure that you
-have enabled the Events component. You can do this in **Administer >
-Configure > Global Settings > Enable Components**.)
+Per començar, creeu un esdeveniment nou escollint **Esdeveniments > Esdeveniment nou**
+en el menú. (Si no podeu veure el menú d'esdeveniment, assegureu-vos que
+heu habilitat el component d'esdeveniment. Ho podeu fer a **Administra >
+Configura > Configuracions globals > Habilita els components**.)
 
-Event Information and Settings
-------------------------------
+## Informació i configuracions de l'esdeveniment
 
-The first page you see when creating an event requests basic information
-about the event. You can click on any of the blue question marks to
-show help for each of the fields. When you see a pencil, clicking on it
-will take you to a screen where you can edit the options available.
-Note, depending on your permissions, you may not be able to edit these
-options and therefore will not see the pencil.
+La primera pàgina que veieu quan creeu un esdeveniment us demana informació bàsica
+sobre l'esdeveniment. Podeu clicar en qualsevol dels signes d'interrogació blaus per
+mostrar l'ajuda per a cada un dels camps. Quan veieu un llapis, si hi cliqueu
+us portarà a una pantalla on podreu editar les opcions disponibles.
+Noteu, que depenent dels permisos que tingueu, es possible que no pugueu editar aquestes
+opcions i per tant no veureu el llapis.
 
 ![image](../img/4.5_new_event.PNG)
 
-**From template** allows you to create an event from a template (see
-*Event templates* chapter in this section) rather than creating one from
-scratch.
+**Plantilla base** us permet crear un esdeveniment des d'una plantilla (vegeu
+el capítol *Plantilles d'esdeveniments* en aquesta secció) en comptes de crear-ne un des de
+zero.
 
-**Event type** allows you to categorise the event.
+**Tipus d'esdeveniment** us permet categoritzar l'esdeveniment.
 
-If you have **CiviCampaign** enabled, you can select a campaign for this
-to be a part of (see the *Campaign* section for more details).
+Si teniu habilitat **CiviCampaign**, podreu seleccionar una campanya per aquest
+perquè passi a ser part d'ella (vegeu la secció *Campanyes* per més detalls).
 
-**Roles** distinguish different types of event participants, such as
-attendees, speakers and staff. What role should participants be assigned
-when they register online for this event? The value placed in this field
-will be assigned by default when users register online or when you
-import registrations unless you include the field Participant Role with
-other values in your CSV import file. The most common value is Attendee.
+**Rols** distingeix diferents tipus de participants d'esdeveniments, com ara
+assistents, conferenciants i treballadors. Quin rol s'hauria d'assignar als participants
+quan s'inscriuen en línia per aquest esdeveniment? El valor col·locat en aquest camp
+s'assignarà per defecte quan els usuaris es registrin en línia o quan
+importeu inscripcions sense incloure el camp rol del participant amb
+altres valors en el fitxer d'importació CSV. El valor més comú és assistent.
 
-Do you want users to see a list of participants, and how much
-information about the participants do you want to reveal? **Participant
-Listings** demonstrate support for an event and can help to generate
-interest within your constituent community. Note that the options you
-define in this section only *enable* participant listings — to display
-one, you will need to create a menu item or link to the listing
-somewhere on your website. Once you've created the event, the
-participant listing link is displayed on the event configuration page.
-Refer to the chapter *Event management* for information on participant
-listings and other ways to promote your events.
+Voleu que els usuaris vegin un llistat dels participants i quanta
+informació sobre els participants voleu revelar? Els **Llistats de
+participants** demostren el suport per un esdeveniment i poden ajudar a generar
+interès dins la vostra comunitat de constituents. Noteu que les opcions que
+definiu en aquesta secció només *habiliten* els llistats de participants — per mostrar-ne
+un, haureu de crear un element de menú o enllaçar aquest llistat
+en algun lloc del web. Un cop hagueu creat l'esdeveniment,
+l'enllaç al llistat de participants es mostra a la pàgina de configuració de l'esdeveniment.
+Consulteu el capítol *Gestió d'esdeveniments* per informació de llistats de
+participants i altres maneres de promocionar els esdeveniments.
 
-What is your event called? The **Event Title** will appear on event
-information pages, registration pages, event listings, and in the Manage
-Events administrative page. Be sure to choose a meaningful, well-crafted
-title to represent your event.
+Com es diu l'esdeveniment? El **Títol de l'esdeveniment** apareixerà a les pàgines
+d'informació de l'esdeveniment, pàgines d'inscripció, llistats d'esdeveniments i en la pàgina
+d'administració de gestió d'esdeveniments. Assegureu-vos d'escollir un títol significatiu,
+ben elaborat que representi l'esdeveniment.
 
-The next two fields (**Event Summary** and **Complete Description**) let
-you describe your event. Both the summary and complete description will
-be included on event information pages. Use the rich-text editor
-provided for the description field to include photo, images, and
-formatted text.
+Els següents dos camps (**Resum d'esdeveniment** i **Descripció completa**) us deixen
+descriure l'esdeveniment. Ambdues, tant el resum com la descripció completa
+s'inclouran en les pàgines d'informació de l'esdeveniment. Utilitzeu l'editor de text enriquit
+proporcionat pel camp de descripció per incloure fotos, imatges i
+text formatat.
 
-Enter the **Start date/time** and **End date/time** for your event.
-These will be included on the event information page and event listings.
+Introduïu la **Data/hora d'inici** i la **Data/hora de finalització** per l'esdeveniment.
+Aquestes s'inclouran en la pàgina d'informació de l'esdeveniment i en els llistats de l'esdeveniment.
 
-You can set a **Maximum number of participants** for each event and
-define a message to be displayed when that number is reached.
+Podeu configurar un **Nombre màxim de participants** per cada esdeveniment i
+definir un missatge a ser mostrat quan aquest número sigui assolit.
 
-If you want to display a map showing the event location you can do so
-using either Google Maps or Open Street Maps (you will need to configure
-your mapping solution through **Administer > System Settings > Mapping
-and Geocoding**).
+Si voleu mostra un mapa ensenyant la ubicació de l'esdeveniment podeu fer-ho
+utilitzant qualsevol dels dos Google Maps o Open Street Maps (necessitareu configurar
+el servei de mapes a través de **Administra > Opcions del sistema > Mapes
+i geolocalització**).
 
-Select the **Public Event** box to include the event in promotional
-listings such as RSS feeds, iCal files or feeds, and event listing
-pages.
+Seleccioneu la casella d'**Esdeveniment públic** per incloure l'esdeveniment en llistats promocionals
+com canals RSS, fitxers o canals iCal, o pàgines de llistats
+d'esdeveniments.
 
-Select **Allow sharing through social media** to include social media
-links for sharing this event on the Event Info page, Thank-you page,
-Tell-a-Friend page (if enabled), and in event confirmation emails.
+Seleccioneu **Permet compartir a través dels mitjans socials** per incloure els enllaços a
+mitjans socials per compartir aquest esdeveniment en la pàgina d'informació de l'esdeveniment, en la pàgina d'agraïemnt,
+en la pàgina explica-ho a un amic (si està habilitada) i en els correus electròncis de confirmació de l'esdeveniment.
 
-Lastly, you have the option of making this event active or inactive. If
-you anticipate that it will take some time to complete the configuration
-of your event, consider making it inactive until it is complete to
-ensure it is not inadvertently listed on the event listing feeds. You
-can easily activate the event when you are ready to begin publicizing
-it.
+Per acabar, teniu l'opció de fer aquest esdeveniment actiu o inactiu. Si
+preveieu que us portarà un temps completar la configuració
+de l'esdeveniment, considereu fer-lo inactiu fins que estigui completat per
+assegurar-vos que no es llista de manera imprevista en el canal de llistats d'esdeveniments.
+Podeu activar fàcilment l'esdeveniment quan estigueu apunt per començar a publicitar-lo.
 
-After reviewing the details on this page, click **Continue >>** to
-create your event and advance to the next step. You can interrupt
-configuration on any subsequent page by clicking **Save and Done** and
-return later to review and modify any of the settings.
+Després de revisar els detalls d'aquesta pàgina, cliqueu, **Continua >>** per
+crear l'esdeveniment i avançar al següent pas. Podeu interrompre
+la configuració en qualsevol pàgina posterior clicant **Desa i acaba** i
+tornar més tard per revisar i modificar qualsevol de les configuracions.
 
-To return to a saved event, navigate to **Events > Manage Events** and
-click **Configure** to continue working on the event.
+Per tornar a un esdeveniment desat, navegueu a **Esdeveniments > Gestió d'esdeveniments** i
+cliqueu **Configura** per continuar treballant en l'esdeveniment.
 
-Event Location
---------------
+## Localització de l'esdeveniment
 
-The next step is to complete the location and contact details for the
-event.
+El següent pas és completar la localització i els detalls de contacte per l'esdeveniment.
 
-Once you have entered an event location, you can reuse it for subsequent
-events by clicking **Use existing location** and selecting it from the
-dropdown list. Note that if you choose an existing location and edit it,
-it will update that location for all events that use it.
+Un cop hagueu introduït una localització per l'esdeveniment podeu reutilitzar-la per a esdeveniments
+posteriors clicant **Utilitza una ubicació existent** i seleccionant-la de la
+llista desplegable. Noteu que si seleccioneu una ubicació existent i l'editeu,
+s'actualitzarà aquesta ubicació per a tots els esdeveniment que l'utilitzin.
 
 ![image](../img/event%20location%20with%20warning.PNG)
 
-You can also list phone numbers and email addresses on the event
-information page if you want to give registrants a way to contact event
-organizers directly. If the event is being held off-site from your
-organization's primary location, you may also want to provide contact
-information for the meeting location.
+Podeu llistar també números de telèfon i adreces de correu electrònic en la pàgina
+d'informació de l'esdeveniment si voleu donar als inscrits una manera per contactar directament amb
+els organitzadors. Si l'esdeveniment es realitza fora de l'ubicació principal
+de l'organització, podríeu voler proporcionar la informació del contacte
+de la localització de la trobada.
 
-Fees
-----
+## Tarifes
 
-If the event is free, set the **Paid Event** radio button to **No**,
-then click **Save** and skip to Online Registration.
+Si l'esdeveniment és gratuït, marqueu el botó d'opció **Esdeveniment amb pagament** com a **No**,
+després cliqueu a **Desa** i salteu a inscripció en línia.
 
-If this is a paid event, click **Yes**. The screen will show the options
-available (see the following set of screenshots).
+Si es tracta d'un esdeveniment amb pagament, cliqueu **Si**. La pantalla us mostrarà les opcions
+disponibles (vegeu el següent conjunt de captures de pantalla).
 
-What **Contribution Type** (financial type) will be assigned to paid
-registrations for this event? Although the most common value for this
-field is simply Event Fee, CiviCRM provides the flexibility to define
-multiple Financial Types and assign them to different events as needed.
-See *Set-Up* in the *Contributions* section for details.
+Quin **Tipus de contribució** (tipus financer) s'assignarà a les inscripcions amb pagament
+per aquest esdeveniment? Encara que el valor més comú per aquest
+camp és senzillament tarifa d'esdeveniments, CiviCRM proporciona la flexibilitat per definir
+múltiples tipus de finançament i assignar-los a diferents esdeveniments segons convingui.
+Vegeu *Configuració* en la secció de **Contribucions** pels detalls.
 
-If you plan to accept credit card payments through the online
-registration form, you need to configure a **payment processor** prior
-to creating your event. Find more information about this, see *Payment
-Processors* in the *Contributions* section.
+Si teniu previst acceptar pagaments amb targeta de crèdit a través del formulari
+d'inscripció en línia necessiteu configurar un **processador de pagament** abans
+de crear l'esdeveniment. Per trobar més informació sobre aquest tema vegeu *Processadors
+de pagament* en la secció de *Contribucions*.
 
-Do you want to allow registrants to pay later by mailing in a check,
-paying on-site with cash or credit card, or arranging some other payment
-method? If so, you can enable the **Pay Later option** and define a
-label and payment instructions. If you keep this unchecked, registrants
-will be required to pay by credit card.
+Voleu permetre als inscrits pagar més tard enviant un xec postal,
+pagar al moment en efectiu o amb targeta de crèdit o habilitar qualsevol altre mètode de
+pagament? Si és així, podeu activar l'**opció de pagament en diferit** i definir una
+etiqueta i unes instruccions de pagament. Si el manteniu desmarcat, es requerirà
+fer el pagament als inscrit mitjançant targeta de crèdit.
 
 ![EventFeesPayLater](../img/CiviCRM_update-CiviEvent-EventFeesPayLater-en.png "EventFeesPayLater")
 
-**Regular Fees** provide a set of price levels from which the registrant
-must select a single level (e.g. an individual registration for $50 or
-a family registration for $100). Each fee amount has a label assigned
-and you can set a default fee. This approach works well for many events
-and is easy to set up. Here's a simple example:
+Les **tarifes regulars** proporcionen un conjunt de nivells de preus dels quals l'inscrit
+ha de seleccionar un únic nivell (p. ex. una inscripció individual per 50€ o
+una inscripció familiar per 100€). Cada import de tarifa té una etiqueta assignada
+i podeu configurar una tarifa per defecte. Aquesta aproximació funciona bé per la majoria d'esdeveniment
+i és senzill de configurar. Aquí un exemple simple:
 
 ![EventRegFees](../img/CiviCRM_update-CiviEvent-EventRegFees-en.png "EventRegFees")
 
-If your event requires a more complex pricing structure, with more
-options or additional add-ons, you may wish to use **price sets** or
-**discounts**. For more information about this, see the *Complex event
-fees* chapter in this section.
+Si l'esdeveniment requereix una estructura de preus més complexa, amb més
+opcions o extensions addicionals, potser voleu utilitzar **conjunts de preus** o
+**descomptes**. Per més informació sobre aquest tema, vegeu el capítol *Tarifes
+d'esdeveniment complexes* en aquesta secció.
 
-Online registration
---------------------
+## Inscripcions en línia
 
-Allowing people to register online (self-service) through your web site
-offers many benefits. Online registration is convenient for your
-constituents and can save staff time and resources. If you do not need
-to offer online registration, do not check **Allow Online
-Registration** and move onto the next step. If you do want to allow
-online registration, please see the *Online event registration* chapter
-in this section.
+Permetre a la gent inscriure's en línia (pel seu compte) a través del lloc web
+ofereix molts beneficis. La inscripció en línia és convenient pels vostres
+contactes i poden estalviar al vostre equip temps i recursos. Si no necessiteu
+oferir la inscripció en línia, no marqueu **Permetre la inscripció
+en línia** i passeu al següent pas. Si voleu permetre
+la inscripció en línia, vegeu el capítol *Inscripció d'esdeveniments en línia*
+en aquesta secció.
 
-Scheduled reminders
--------------------
+## Recordatoris programats
 
-Scheduled reminders can be used to automatically send event registrants
-emails at certain times before or after events, for example
+Els recordatoris programats es poden utilitzar per enviar automàticament correus electrònics als inscrits
+als esdeveniments en certs moments abans o després dels esdeveniments, per exemple
 
--   a week before: remind them that they should check out the conference
-    schedule
--   a day after: ask them to fill in the feedback form
--   Two days before payment is due for a Pending from Pay Later
-    registration: warn them that their registration will be cancelled if
-    they don't provide payment details in the next 48 hours.
+-   una setmana abans: recordar que haurien de consultar l'hora de la conferència
+-   un dia després: demanar que emplenin un formulari d'avaluació
+-   dos dies abans que un pagament venci per a les inscripcions pendents d'un pagament
+    diferit: advertir que la seva inscripció es cancel·larà si no proporcionen
+    els detalls de pagament en les properes 48 hores.
 
-To set up a scheduled reminder for a specific event, click on the
-scheduled reminders tab, which will show you already existing scheduled
-reminders for this event (if any) and click on **Add Reminder**.
+Per configurar un recordatori programat per un esdeveniment específic, cliqueu en la
+pestanya de recordatoris programats que us mostrarà els recordatoris programats existents
+per aquest esdeveniment (si n'hi ha cap) i cliqueu a **Afegeix recordatori**.
 
-![image](../img/scheduled-reminder-events.png)Fill in the details on
-this form to send, for example, an email to all registered speakers 3
-days before the event start date.  Note that you can limit recipients by
-status (registered, attended, etc.) and also by role (speaker, attendee,
-volunteer, etc.).  You can either use a template or compose your own
-message in the HTML format box.
+![image](../img/scheduled-reminder-events.png)Empleneu en els detalls d'aquest
+formulari per enviar, per exemple, un correu electrònic a tots els conferenciants inscrits 3
+dies abans de la data d'inici de l'esdeveniment. Noteu que podeu limitar els destinataris per
+l'estat (inscrit, assistit, etc.) i també per rol (conferenciant, assistent,
+voluntari, etc.). Podeu també utilitzar una plantilla o compondre el vostre propi
+missatge en la caixa de format HTML.
 
 ![image](../img/scheduled-reminder-events-compose.png)
 
-As well as setting up reminders on an event by event basis, you can also
-set them up for specific event types. and add them to specific event
-templates.  The idea is basically the same as above, but you can access
-this functionality from **Administer > Communications > Scheduled
-reminders**.
+A més de configurar recordatoris en un esdeveniment, també podeu
+configurar-los per un tipus específic d'esdeveniments i afegir-los a plantilles d'esdeveniments
+específiques. La idea és bàsicament la mateixa que la de dalt però podeu accedir
+a aquesta funcionalitat des de **Administra > Comunicacions > Recordatoris
+programats**.
 
-Tell-A-Friend
--------------
+## Explica-ho a un amic
 
-CiviEvent makes it easy to leverage the social networking power of your committed
-constituents by empowering them to quickly and easily share details
-about your organization and event with their friends and colleagues. The
-final step in the event creation is a page where you can enable
-"Tell-A-Friend" capabilities. You can define the text and links to be
-included on that page and in the email sent from the tool (see the
-following screenshot).
+CiviEvent fa que sigui més fàcil aprofitar el poder de les xarxes socials dels vostres contactes
+compromesos permetent-los compartir d'una manera ràpida i fàcil detalls
+sobre la vostra organització i de l'esdeveniment amb els vostres amics i col·legues. El
+pas final en la creació de l'esdeveniment és una pàgina on podeu habilitar les
+capacitats d'"Explica-ho a un amic". Podeu definir el text i els enllaços que han de ser
+inclosos en aquesta pàgina i en el correu electrònic enviat des de l'eina (vegeu la
+següent captura de pantalla).
 
 ![EventTellFriend](../img/CiviCRM_update-CiviEvent-EventTellFriend-en.png "EventTellFriend")
 
-A "Tell a friend" activity record will be added to a participant's
-Activities tab each time she sends mail to her friends. This allows you
-to track your most active supporters and engage them further. The people
-who are emailed using this feature are also automatically added to
-CiviCRM as contacts.
+Un registre d'activitat "Explica-ho a un amic" s'afegirà a la pestanya d'activitat
+del participant cada vegada que enviï un correu electrònic als seus amics. Això us permet
+fer un seguiment els vostres seguidors més actius i comprometer-los més. La gent
+que rep els correus electrònic utilitzant aquesta funcionalitat també seran automàticament afegits a
+CiviCRM com a contactes.
 
-Registration confirmation and receipting
-----------------------------------------
+## Confirmacions i rebuts d'inscripcions
 
-You can send automated confirmation and receipt emails to participants
-who register for an event, whether they register online are registered
-by your staff or volunteers. The content and layout of these emails are
-controlled by message templates*.*Both HTML and Text formats are
-provided. You can modify or add text to these emails, or add branding
-such as a logo to the HTML versions. To set up a from email address from
-which to send the confirmation and receipts, see Set-Up in the Email
-section.
+Podeu enviar confirmacions i rebuts automàtics per correu electrònic als participants
+que s'inscriuen en un esdeveniment, si s'inscriuen en línia o si han estat inscrits
+pel vostre equip o voluntaris. El contingut i la disposició d'aquests correus elctrònics
+es controlen per plantilles de missatges. Es proporcionen tant formats HTML com de text.
+Podeu modificar o afegir text en aquests correus electrònics, o afegir-hi la imatge corporativa
+com un logotip a les versions HTML. Per configurar l'adreça de correu electrònic del remitent des d'on
+les confirmacions i les receptes, vegeu Configuració en la secció de Correu electrònic.
 
-Navigate to **Administer > Communications > Message Templates** (shown
-in the following screenshot) and click the **System Workflow Message**
-tab to see the list of messages you can modify. Click **Edit** next to
-"Events - Registration Confirmation and Receipt" rows to edit the
-content and layout.
+Navegueu a **Administra > Comunicacions > Plantilles de missatges** (mostrat
+en la captura de pantalla de continuació) i cliqueu la pestanya **Missatges de flux de treball del sistema**
+per veure la llista de missatges que podeu modificar. Cliqueu **Edita** al costat de
+la fila "Esdeveniments - Inscripció confirmació i rebut" per editar
+el contingut i la disposició.
 
 ![WorkflowMsgTpls](../img/CiviCRM_update-CiviEvent-WorkflowMsgTpls-en.png "WorkflowMsgTpls")
 
 
-The templates for these messages include both the text shown and
-necessary program logic. Use caution when editing so as not to modify
-the program logic. Be sure to test the workflow and review the emails
-sent after making any changes. If you find that your changes have caused
-problems, errors or missing information, you can always revert to the
-system default for that workflow.  
+Les plantilles per aquests missatges inclouen tant el text a mostrar com
+també la lògica de programació necessària. Aneu amb compte quan editeu de no modificar
+la lògica del programa. Assegureu-vos de provar el flux i revisar els correus electrònics
+enviats després d'efectuar qualsevol canvi. Si trobeu que els vostres canvis han causat
+problemes, errors o la pèrdua d'informació, sempre podeu revertir el flux a la
+configuració per defecte del sistema.  

@@ -1,5 +1,5 @@
-Manual event registration
-=========================
+Inscripcions manuals d'esdeveniments (untranslated)
+====================================
 
 This chapter covers how office staff can register people for events
 through the admin interface. It will show how to register an individual

@@ -1,5 +1,5 @@
-Complex event fees
-==================
+Tarifes d'esdeveniment complexes (untranslated)
+================================
 
 The regular fees layout form outlined in *Creating an event* chapter of
 this section is a very simple structure that allows the registrant to
