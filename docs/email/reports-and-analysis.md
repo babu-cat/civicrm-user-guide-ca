@@ -1,11 +1,9 @@
-Reports and analysis
-====================
+# Reports and analysis
 
 CiviMail has a number of tools for reporting and analysis; indeed
 reporting is one of the key reasons to use CiviMail.
 
-Individual mail reports
-------------------------
+## Individual mail reports
 
 You can view a report for each individual mailing from the **Mailings >
 Scheduled and Sent Mailings**. These reports are based on live
@@ -30,7 +28,7 @@ opened the email *if you have chosen to track opens*.
 
 **Note:** In the world of email, there is no 100% reliable way of
 knowing when someone has opened an email. CiviCRM uses a trick that is
-common amongst mass mailers—it embeds a small image with a unique name
+common amongst mass mailers &mdash; it embeds a small image with a unique name
 in each email. When a client views the email and downloads the image,
 CiviCRM knows that they have read the email. Because this technique is
 common, to protect people's privacy, most email clients ask users to
@@ -51,7 +49,7 @@ see what works best for your constituents.
 clicked links in your email *if you have enabled click tracking*.
 
 **Forwards** show the number of times people have forwarded the email
-using the forward link (which is a token that you can include in your
+using the forward link (which is a [token](/common-workflows/tokens-and-mail-merge.md) that you can include in your
 mailing).
 
 **Replies** shows the number of times that people have replied to the
@@ -63,8 +61,7 @@ successfully delivered to *if you have enabled bounce processing*.
 **Unsubscribe requests** shows the amount of people that have clicked on
 any unsubscribe links that you include in your email. 
 
-Managing bounces and contacts with invalid emails
--------------------------------------------------
+## Managing bounces and contacts with invalid emails
 
 If your server is set up to process bounces, contacts will be marked as
 **On Hold** when their email bounces. Further messages to those
@@ -82,20 +79,18 @@ Select Recipients screen of the re-used mailing setup.
 In the Mailings area of **Search>Advanced search** you can search by
 bounce type.
 
-![image](../img/advanced_search_mailing_bounce_type.png) 
+![List of bounce types: AOL, Away, DNS, Host...](../img/advanced_search_mailing_bounce_type.png) 
 
-Click-through summary
----------------------
+## Click-through summary
 
 In this section, click-through statistics are shown for each link.
 There are two statistics, **Clicks** (i.e., the number of times that a
 link has been clicked) and **Unique clicks** (i.e., the number of people
 that have clicked on links).
 
-![image](../img/Screen%20shot%202011-08-27%20at%2016.28.28.png)
+![screenshot](../img/click_through_summary.png)
 
-Mailing reports with CiviReport
--------------------------------
+## Mailing reports with CiviReport
 
 CiviReport has four reports, Mail Bounce Report, Mail Summary Report,
 Mail Clickthrough Report and Mail Opened Report, which offer similar

@@ -1,5 +1,4 @@
-What You Need To Know
-=====================
+# What You Need To Know
 
 This chapter outlines some key concepts and questions that are useful
 for planning the use of CiviCRM's email capabilities. This chapter
@@ -7,8 +6,7 @@ should be read before you start sending emails to contacts. Detailed
 information on how to carry out the activities mentioned can be found in
 the **Everyday Tasks** section. 
 
-Key Concepts
--------------
+## Key Concepts
 
 As you might expect for a web-based CRM, email plays a central role in
 CiviCRM. Broadly speaking, there are three situations in which email is
@@ -113,28 +111,7 @@ so the unsubscription request can be recorded in CiviCRM.
 
 ### Personalisation with tokens 
 
-Emails sent with both Send Email and CiviMail can include personalised
-text, such as a person's name. This is done with tokens, which are
-placeholders that CiviCRM recognizes and replaces with an appropriate
-value when sending each message. You can include tokens for standard
-fields and also custom data fields that you have created. Note that
-there are some tokens available in CiviMail that are not available in
-the Send Email activity.
-
-A particularly useful token is the checksum. The checksum allows you to
-give people links to contribution forms, profiles, petitions, and event
-registration forms that are prefilled with information that is already
-in their contact record. 
-
-This saves your constituents the hassle of filling out forms and
-increases the chances they will take action (e.g., donate, sign up for
-an event, sign the petition). It can also be a simple way to keep your
-data current by asking people to review and update their contact
-information.
-
-Detailed instructions for using tokens, including custom tokens and
-using checksums, are available in the **Everyday Tasks** section,
-under the heading "Using tokens in emails." 
+Emails sent with both Send Email and CiviMail can include personalised text, such as a person's name. This is done with [tokens](/common-workflows/tokens-and-mail-merge.md), which are placeholders that CiviCRM recognizes and replaces with an appropriate value when sending each message. Note that there are some tokens available in CiviMail that are not available in the Send Email activity. 
 
 ### From Email Addresses 
 
@@ -183,8 +160,7 @@ matches the email address. If that email address does not exist in your
 database a new contact record will be created. See the **Email System
 Configuration** chapter of the **Intial Setup** section for details.
 
-Key Questions
--------------
+## Key Questions
 
 When planning your use of CiviCRM's email capabilities, it may be
 helpful to answer these questions to guide your setup and use:

@@ -1,5 +1,4 @@
-Keeping track of events and participants
-========================================
+# Keeping track of events and participants
 
 After creating your event and providing the registration form to web
 site visitors, you can manage your event participants through the
@@ -8,8 +7,7 @@ of event you are organising. This chapter outlines how to view your
 events and participants and describes how CiviCRM supports a variety of
 the associated administrative tasks.
 
-Dashboard
------------
+## Dashboard
 
 The CiviEvent Dashboard (**Events > Dashboard**) brings all your events
 and participant information together in one place (see screenshot).
@@ -18,9 +16,9 @@ scheduled and recent Events. Click the **Event name** to view the event
 as it will be displayed to site visitors. Click the **Participants
 count** to see a list of participants.
 
-![EventSummary](../img/CiviCRM-EverydayTasks-EventSummary-en.png "EventSummary")
+![Event Summary](../img/CiviCRM-EverydayTasks-EventSummary-en.png "EventSummary")
 
-To run your own customized searches, click** Find more event
+To run your own customized searches, click ** Find more event
 participants** at the end of the page. Here you can search by
 Participant Name, Event, Date Range and Status.
 
@@ -31,8 +29,7 @@ From the Dashboard you can also:
 -   use the icons for RSS feeds and calendars to use the data in
     external applications.
 
-Finding and viewing events
-----------------------------
+## Finding and viewing events
 
 Another way to access your events is to navigate to **Events > Manage
 Events**. This screen gives you a list of all CiviEvents that have been
@@ -50,8 +47,7 @@ side of the page you have four links for each event:
     event pages including the event information page and the live online
     registration page.
 
-Finding and administering participants
-----------------------------------------
+## Finding and administering participants
 
 This section describes some common tasks and searches associated with
 event participants. Note that these tasks all refer to existing event
@@ -92,7 +88,7 @@ them. Available **Actions** include:
     as parking options or changes to the programme.    
 
 -  **Export participants:** This allows you to export a predefined set
-    of fields (export mapping) or create yourexport mapping that can be
+    of fields (export mapping) or create your export mapping that can be
     saved for reuse. The software exports to CSV format, which can be
     easily opened in standard spreadsheet software or directly used for
     mail merges.
@@ -158,7 +154,7 @@ participant's event registration as follows:
     is via **Events > Find Participants**)
 2.  Select **View** or **Edit** (towards the right of the event record)
 
-    **![image](../img/z_sprint14_PartiallyPaidRegistration.png)**
+    **![View participant form.](../img/z_sprint14_PartiallyPaidRegistration.png)**
 
 3.  Click on **Change Selections.**
 
@@ -169,7 +165,7 @@ participant's event registration as follows:
 
 
 
-**![image](../img/z_sprint14_ChangeRegistrationSelections.png)**
+**![Change registration selections form.](../img/z_sprint14_ChangeRegistrationSelections.png)**
 
 Additional payments (credit card or offline methods) or a refund
 (offline methods only) will need to be entered via the **record payment** link associated with the event registration record as
@@ -177,15 +173,14 @@ described in the section on partial payments.
 
 
 
-Event badges
--------------
+## Event badges
 
 You can create custom name badges for your event.
 
-Navigate to **Administer>CiviEvent>Event Badge Layout>New Badge
+Navigate to **Administer > CiviEvent > Event Badge Layout > New Badge
 Layout** and you will see the following set-up screen.
 
-![image](../img/Event%20Badges%20UIv2.png)
+![screenshot](../img/event_badgets_ui_v2.png)
 
 Points to consider are:
 
@@ -231,7 +226,7 @@ badges for the event as follows:
 
 To print name badges, do the following:
 
--   Go to **Events>Find Participants**.
+-   Go to **Events > Find Participants**.
 -   Select the relevant participants.
 -   Choose **Print Event Name Badges** from the drop-down list of
     actions and Click Go.

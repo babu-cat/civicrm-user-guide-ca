@@ -1,5 +1,4 @@
-Installation and basic set-up
-=============================
+# Installation and basic set-up
 
 Before reading further, please be aware that much of the information
 contained here is intended for technicians and may be difficult to
@@ -8,8 +7,7 @@ applications. If you don't understand this topic, you may wish to either
 seek help, or point your organisation's technical staff to this
 material.
 
-Prerequisites
--------------
+## Prerequisites
 
 Before exploring the installation of CiviCRM, ensure you have read the
 chapter 'hosting' to confirm whether or not your host can support it.
@@ -27,13 +25,12 @@ respectively).
 Before you can begin installation, you need to decide which CMS (Content
 Management System; used for building and managing websites) you wish to
 integrate with, choosing between the open-source options: Drupal,
-Wordpress or Joomla!.
+WordPress or Joomla!.
 
 You can find full instructions on installing CiviCRM here:[
 http://wiki.civicrm.org/confluence/display/CRMDOC/Installation+and+Upgrades](http://wiki.civicrm.org/confluence/display/CRMDOC/Installation+and+Upgrades%20)[](http://wiki.civicrm.org/confluence/display/CRMDOC/Installation+and+Upgrades%20)
 
-Internet vs. local installs
------------------------------
+## Internet vs. local installs
 
 Most organisations access CiviCRM over the internet. However, some
 organizations who only want internal staff to have access to CiviCRM and
@@ -42,17 +39,18 @@ and have it only accessible internally. The downside to an install that
 is not publicly available is that your contacts cannot 'self serve' to
 update their data.
 
-Upgrades
---------
+## Upgrades
 
-New versions of CiviCRM are released approximately twice a year (once in
-the Spring and once in the Autumn). You will need to apply upgrades to
-your CiviCRM site periodically if you want to take advantage of new
-features and improvements, and also to keep your site secure. Some
+New versions of CiviCRM are released every month. Although 
+[extensions](/introduction/extensions.md) are the way that you will typically 
+add major new features to CiviCRM, you will need to apply upgrades to your 
+CiviCRM core software periodically to keep your site secure, and also if you
+want to take advantage of smaller new features and improvements. Some
 upgrades contain security fixes and it is crucial that these are applied
 in a timely manner. It's important that you plan for the resources
-(people and time) required to apply upgrades to your site. You need to
-plan on testing upgrades on a copy of your live site to make sure the
+(people and time) required to apply upgrades to your site. Read release notes
+thoroughly to understand how an upgrade may change your site. Plan on 
+testing upgrades on a copy of your live site to make sure the
 process runs smoothly. It's also critical to make backups of your site
 and database prior to running an upgrade on your live site even if you
 had tested the process on a test site.
@@ -61,8 +59,7 @@ Since upgrades are an important and technical process, many
 organisations employ the services of a CiviCRM expert service provider
 to carry them out.
 
-Configuration
--------------
+## Configuration
 
 Once CiviCRM has been installed, you should review the initial
 configuration tasks which allow you to customize CiviCRM for your
@@ -80,7 +77,7 @@ red. After you have visited a page, the links will display in green
 (although you may still need to revisit the page to complete or update
 the settings).
 
-![image](../img/Configuration_Checklist_4_4.png)
+![Cheklist with several setions. The first section, site configuration, contains the items: localization, organization address and contact info, and enable components.](../img/Configuration_Checklist_4_4.png)
 
 ### Localization
 
@@ -111,7 +108,13 @@ For more info, have a look here:
 
 Under Localization you will also find the **Advanced Date Input Settings**.
 By default, CiviCRM provides ranges for input on specific date fields. For instance,
- the default range for Activity Dates are 20 years prior to the current year all the way through to 10 years beyond the current year. If you would like to track activities that have occurred, say, 25 years ago then you would need to update this range to enable your end users to log these activities. To update these settings to the appropriate range go to **Administer > Localization > Date Formats > Advanced Date Input Settings**. If you were to leave these settings as the default you will see an error such as this:
+the default range for Activity Dates are 20 years prior to the current year
+all the way through to 10 years beyond the current year. If you would like to track
+activities that have occurred, say, 25 years ago then you would need to update this
+range to enable your end users to log these activities. To update these settings to
+the appropriate range go to **Administer > Localization > Date Formats > Advanced Date Input Settings**.
+If you were to leave these settings as the default you will see an error such as this:
+Please enter a date between 01/01/1994 and 21/31/2024. 
 
 ![Advanced Date Input Settings](../img/configure-localization-advanced-date-input-settings.png)
 
@@ -120,7 +123,7 @@ By default, CiviCRM provides ranges for input on specific date fields. For insta
 Use this screen to enter identifying information for the organization or
 entity which "owns" this CiviCRM installation. The organization name and
 address are used to identify your organization in CiviMail mailings when
-you include the domain.name and domain.address tokens.
+you include the `{domain.name}` and `{domain.address}` [tokens](/common-workflows/tokens-and-mail-merge.md).
 
 You should also enter a valid email address belonging to your
 organization, which will be used as the From field in system-generated
@@ -192,33 +195,41 @@ search using the Find Contacts menu option).
 After reviewing the default fields and layouts, review the Address
 Settings screen and make changes as needed.
 
+!!! tip
+    CiviCRM uses [tokens](/common-workflows/tokens-and-mail-merge.md) (e.g. `{contact.street_address}`) to reference specific fields in the database.
+
 -   **Mailing Labels** - Controls formatting of mailing labels here. The
     default format is:
-
-    *{contact.addressee}
+    
+    ```
+    {contact.addressee}
     {contact.street_address}
     {contact.supplemental_address_1}
     {contact.supplemental_address_2}
     {contact.city}{, }{contact.state_province}{ }{contact.postal_code}
-    {contact.country}*  
-
-  You must include the *{contact.addressee}* token here in order to
+    {contact.country}  
+    ```
+    
+    You must include the `{contact.addressee}` token here in order to
     include the name of the addressee in your labels. Users will be able
     to select from a variety of label types corresponding to the label
     manufacturer code when they generate the labels from a list of
     contacts. It's a good idea to test your format with the type of
     label and printer you plan on using to verify spacing.
+    
 -   **Address Display** - Controls the layout of contact and event
     location addresses displayed on CiviCRM screens. The default format
     is:
-
-    *{contact.address_name}
+    
+    ```
+    {contact.address_name}
     {contact.street_address}
     {contact.supplemental_address_1}
     {contact.supplemental_address_2}
     {contact.city}{, }{contact.state_province}{ }{contact.postal_code}
-    {contact.country}*
-
+    {contact.country}
+    ```
+    
     This format also applies to event locations, despite the use of the
     *contact* record type in the layout. The *{contact.address_name}*
     token is particularly useful for events where you need to include a
@@ -238,7 +249,7 @@ Settings screen and make changes as needed.
         the Street Address Parsing function. When address parsing is turned on you can edit and or view
         the parsed address by clicking on Edit Address Elements when you are editing a address.
 
-    ![Configuration Address Parsing](../img/basic-set-up-address-parsing.png)  
+    ![The link "Edit address elements" is next to the street address field.](../img/basic-set-up-address-parsing.png)  
 
    You can learn more about USPS' Postal Addressing Standards at          [http://pe.usps.com/text/pub28/welcome.htm](http://pe.usps.com/text/pub28/welcome.htm).
 -   **Address Standardization** - CiviCRM includes an optional feature
@@ -378,7 +389,7 @@ following behaviors:
     also reported anonymously to the CiviCRM team to assist in
     prioritizing ongoing development efforts. The following information
     is gathered: CiviCRM version, versions of PHP, MySQL and framework
-    (Drupal/Joomla!/Wordpress), and default language. Record counts (but
+    (Drupal/Joomla!/WordPress), and default language. Record counts (but
     no actual data) are also reported. You can set this field to No if
     you are not comfortable with having this information reported for
     your site.
@@ -437,7 +448,7 @@ screenshot). An email will be sent to the email address associated with
 your user login account. The From email address will be the default From
 address you've configured in the previous section.
 
-![Picture_11](../img/CiviCRM-Configuring-Picture_11-en.png "Save and Send Test Email")
+![Three buttons: save, cancel, save and send test email.](../img/CiviCRM-Configuring-Picture_11-en.png "Save and Send Test Email")
 
 If CiviCRM is unable to send the test email, you will see a message on
 your screen with the specific error and some suggestions for
@@ -465,7 +476,7 @@ automated emails. If you've already entered an email address in the
 Domain Information screen, that address will be listed here (as
 illustrated on the leftmost field of the following screenshot).
 
-![image](../img/From%20email.PNG)
+![screenshot](../img/from_email.png)
 
 When users send an email using CiviCRM, their primary email address is
 used as the From address by default. However, they can also select one

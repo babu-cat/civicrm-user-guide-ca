@@ -1,5 +1,4 @@
-Set-up
-======
+# Set-up
 
 This chapter describes how to set up information such as From email
 addresses, Mailing List Groups and email templates. It assumes that the
@@ -7,8 +6,7 @@ basic functionality necessary for your server to send and process emails
 in the first place has already been configured. See *Email System
 Configuration* in *Advanced configuration* for details.
 
-Configuring your organisation's contact information
----------------------------------------------------
+## Configuring your organisation's contact information
 
 In order to send mass emails you must fill in some basic information:
 your organisation's name, a short description, your email address, and
@@ -21,8 +19,7 @@ mail sent with CiviMail.
 To configure this information, go to: **Administer > Communications >
 Organization Address and Contact Info**.
 
-Mailing groups
---------------
+## Mailing groups
 
 CiviMail uses Groups to organise recipients of mass mailings. To create
 a group, go to **Contacts > New Group**. When you create and configure
@@ -62,8 +59,7 @@ You cannot create smart groups based on Membership, Contributions or
 Pledge searches, or based on results of an Advanced Search if the
 "Display results as" option is set to anything but Contacts.
 
-Allow people to sign up for your mailing lists online
--------------------------------------------------------
+## Allow people to sign up for your mailing lists online
 
 CiviCRM makes it possible for people to sign themselves up for your
 mailing lists online.
@@ -89,7 +85,7 @@ list groups.
 
 Alternatively, you can collect more information when people sign up to
 your mailing lists with the use of a profile that is then displayed on a
-public page. Guidelines on what is you need to think about when using
+public page. Guidelines on what you need to think about when using
 profiles for mailing list sign-ups are below; for more complete
 information about profiles, how they work, and how to set them up, see
 the **Profiles** chapter in the **Data in CiviCRM** section.
@@ -122,7 +118,7 @@ There are two ways to display the profile publicly:
     contents of the box into a page on your website. Website visitors
     will be able to sign up to your mailing lists on this page.
 
-Alternatively, for Wordpress you can display the form publicly by using a shortcode. On any Wordpress Page, click the **CiviCRM** button above the editor. For **Page Type** select **Profile**. On the next drop-down that appears, select the name of the profile that you have created. Select **Edit** on the radio button option just below the drop-downs, so that you give users access to edit data in your database (i.e. to add their email address and name to your database). Click **Insert Form** and the shortcode will be added to the editor.
+Alternatively, for WordPress you can display the form publicly by using a shortcode. On any WordPress Page, click the **CiviCRM** button above the editor. For **Page Type** select **Profile**. On the next drop-down that appears, select the name of the profile that you have created. Select **Edit** on the radio button option just below the drop-downs, so that you give users access to edit data in your database (i.e. to add their email address and name to your database). Click **Insert Form** and the shortcode will be added to the editor.
 
 ### Using a Webform (Drupal)
 
@@ -153,8 +149,8 @@ Option B: Go to the profile settings. In the Advanced Settings section, select y
 
 For this to work, first make sure that you have put a tick on the desired **Enable Double Opt-in** options in **Administer > Administration Console > CiviMail Component Settings**.
 
-After people subscribe to mailing list groups—via the subscribe link or
-a profile—CiviCRM will automatically send them an email asking them to
+After people subscribe to mailing list groups &mdash; via the subscribe link or
+a profile &mdash; CiviCRM will automatically send them an email asking them to
 confirm their subscription. Until they click the confirmation link in
 the email, their contact information will appear in CiviCRM with their
 group subscription set to Pending. When they confirm, CiviCRM will
@@ -163,8 +159,7 @@ will be sent a welcome message. (Note: When users subscribe to multiple
 groups at once, a confirmation email is sent for each group
 separately.)
 
-Scheduled jobs and cron jobs
-----------------------------
+## Scheduled jobs and cron jobs
 
 After people have signed up on your mailing list(s), you will want to be able to send them mass mailings. You will also want to automatically handle any bounced email messages. These topics are dealt with in detail in the **Everyday tasks** and **Maintaining Healthy Email Lists** parts of this book, respectively. Here in this section we are going to look at some backend and server options that enable the sending of mass mailings and the bounce handling to happen.
 
@@ -172,8 +167,7 @@ Go to **Administer > System Settings > Scheduled Jobs** and you will see all sch
 
 Now, CiviCRM's scheduled jobs cannot self-trigger themselves. Something on your server has to trigger them. The most common option for this is to set up a cron job on your server. This cron job can trigger one or more (or all) of the scheduled jobs. For more detailed explanations and examples of how to do this, see the [Managing Scheduled Jobs](http://wiki.civicrm.org/confluence/display/CRMDOC/Managing+Scheduled+Jobs) wiki page.
 
-Automated Messages and mailing list management
-------------------------------------------------
+## Automated Messages and mailing list management
 
 CiviCRM sends emails automatically when your participants take certain
 actions:
@@ -195,118 +189,7 @@ For more information on email list management see the chapter entitled
 **Maintaining Healthy Email Lists** which explores how CiviCRM handles
 unsubscribes, bounces and email holds.
 
-Creating and maintaining message templates
-------------------------------------------
-
-Message templates help to streamline your communications by allowing you
-to reuse entire emails or parts of emails in both mass mailings and when
-using the Send Email activity.
-
-The easiest way to create a new message template is to check the Save as
-New Template box on the message creation screen. This is available both
-when using the Send Email activity and when sending a mass mailing.
-
-You can also create message templates from scratch or edit existing
-templates by going to **Mailings > Message Templates** OR **Administer > Communications > Message Templates**.
-
-1.  Click on **Add Message Template**.
-2.  Enter a Message Title and a Message Subject. You can choose to use
-    tokens to personalize your subject line.
-3.  Scroll down to the HTML Format section and create your template.
-    There are online resources, not specific to CiviCRM, that offer
-    instructions on creating an HTML email templates. One suggestion is
-    to find and copy an email template from a website that offers
-    samples.
-4.  In the WYSIWYG editor toolbar, there is an icon called "Source" (the
-    appearance and labelling of this icon changes depending on whether
-    you are using Drupal, Joomla, or WordPress). When you click on it,
-    the template changes the view to show the HTML code that is being
-    used. If you want to paste in HTML from a template you found
-    externally, or if you want to write HTML directly into your template
-    or modify the HTML that you've created with the WYSIWYG editor, you
-    need to switch to this view.
-
-Message templates are available even when CiviMail is disabled.
-
-### Tips for creating templates
-
-HTML code allowed in emails is more restricted than HTML used for web
-pages. For instance, it needs to use tables for layout, inline CSS, and
-must not include background images. Here are some tips for creating a
-template that will look good in all mail clients:
-
--   **Table border**: The HTML <table> element includes an optional
-    border attribute. Since the default value is 0, it doesn't appear
-    unless you choose to use it. Adding it (or editing it if it is
-    available) and setting it to 1 (e.g. `<table border="1">`) allows
-    you to see the edges of your table and helps identify potential
-    places to fix problems. Please note that HTML email templates
-    usually have multiple tables and nested tables (tables inside
-    tables). Make changes one at a time and switch to the HTML view to
-    see the results. A table usually has more than one parameter, so
-    make sure to place spaces between parameters.
--   **Table cellpadding and cellspacing**: these table parameters are
-    very useful when trying to improve the readability of your email.
-    Play with these settings in different tables and see what works for
-    you.
--   **Width**: Do not send an email that is wider than 600 pixels, to
-    ensure maximum compatibility across email clients. Make sure your
-    outermost table does not exceed 600 pixels. Do the same for any
-    other tables inside your main table. Also make sure that the total
-    width of each image does not exceed 600 pixels. Images have a width
-    parameter, but they can also have a horizontal padding parameter
-    that, if set, can increase the width of the image.
--   **Images**: these need to be online and accessible in order for you
-    to use them. First edit your image so that its width and height is
-    appropriate for your email template. Next, save it so that its file
-    size is as small as possible. If you do not have image editing
-    software, or do not know how to use it, there are free online
-    resources that can help you resize your image.
--   **HTML editor**: CiviCRM comes with two WYSIWYG editors (CKEditor
-    and TinyMCE) and Textarea, a plain text editor. If you have another
-    editor configured as part of your Drupal, Joomla, or WordPress
-    installation, you can choose to use that instead. go to:
-    **Administer** > **Customize Data and Screens** > **Display
-    Preferences** > and select a different WYSIWYG Editor.
-
-To see examples of message templates, see
-[http://wiki.civicrm.org/confluence/display/CRMDOC/Sample+CiviMail+Messages](http://wiki.civicrm.org/confluence/display/CRMDOC/Sample+CiviMail+Messages)
-[](http://wiki.civicrm.org/confluence/display/CRMDOC41/Sample+CiviMail+Messages).
-
-### Plain text and HTML formats
-
-All messages can be sent either in plain text or in HTML. Today the vast
-majority of people use email clients that can read messages received in
-HTML. However, the best practice is to offer the option to send a plain
-text email version to ensure all recipients can view the message. Plain
-text email readers may display HTML email as blank. HTML email may also
-present accessibility issues to people using screen readers.
-
-However, there is a risk that if users modify an email based on a
-template that contains both plain text and HTML, they will forget to
-modify the plain text version of this message. This will mean that
-people using plain text-only email clients will receive an incorrect or
-incomplete message.
-
-One solution to this problem is to either use plain text emails only or
-to set templates without the plain text option and ask users to create a
-plain text version before sending their mailings.
-
-To create a plain text version of a message from HTML:
-
-1.  Copy and paste the text from HTML Format field into the Plain Text
-    Format field. When you do this, make sure you are not in the Source
-    view; you don't want all the code, just the text. When you copy from
-    the WYSIWYG view, the plain text field will automatically strip out
-    the formatting and any other elements that do not work in plain
-    text.
-2.  Copy the URLs of all links to the appropriate places in the Plain
-    Text Format field.
-3.  If the HTML version contained tables, modify the layout of your text
-    manually to ensure the text version is readable.
-
-Creating headers and footers
-----------------------------
+## Creating headers and footers
 
 Headers and footers can be used only in mass mailings using CiviMail.
 They are not available unless CiviMail is enabled.
@@ -316,8 +199,7 @@ elements that you want to be displayed before the main content body,
 such as the logo of your organization and the title of the newsletter.
 
 The footer is always the last thing in the email. The footer is an ideal
-place for the compulsory unsubscribe tokens (see **What You Need to
-Know** for more information).
+place for the compulsory [unsubscribe tokens](/common-workflows/tokens-and-mail-merge.md#opt-out).
 
 You can manage the content of headers and footers in **Mailings >
 Headers, Footers, and Automated Messages**. You can create different
@@ -339,8 +221,7 @@ creation pages do not offer a WYGIWYG editor. You will need to write
 header and footer HTML directly or use another HTML editor to produce
 the HTML code.
 
-Testing templates
------------------
+## Testing templates
 
 Once your templates are ready, we strongly recommend that you test them
 in various email clients, such as Mozilla Thunderbird, MS Outlook, Mac
@@ -355,8 +236,7 @@ layout as possible in the templates so that each new mailing will not
 require too much reviewing, since the template will have already been
 tested.
 
-Auto-filing email conversations in CiviCRM
-------------------------------------------
+## Auto-filing email conversations in CiviCRM
 
 It is possible to have emails sent to and from your regular email client
 automatically filed in CiviCRM. This is done by including a designated

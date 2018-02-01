@@ -1,5 +1,4 @@
-What is CiviEvent?
-==================
+# What is CiviEvent?
 
 CiviEvent provides a set of tools for running events. These tools make
 you more effective as an event organiser and reduce the amount of
@@ -17,8 +16,7 @@ processes. Some key features include:
 -   participant check in on-site at the event from any computer with an
     internet connection 
 
-Scenario: Youth leadership workshop
------------------------------------
+## Scenario: Youth leadership workshop
 
 A community arts group, Arts in Action, conducts leadership workshops
 for people under age 25 throughout the year. Their goals include
@@ -65,8 +63,7 @@ of attendees, total event fees paid, and total amount still due. The
 event and mail templates can be updated if necessary and saved for the
 next event.
 
-Some key concepts 
--------------------
+## Some key concepts 
 
 The chapters in this section take you through everything you need to
 know in order to get the most from CiviEvent. Below are a few concepts
@@ -92,7 +89,7 @@ display additional data about an event by its event type. See the
 chapter *Custom data on events* in this section for more information
 about this. They are also useful for categorizing and segmenting events
 and attendees, for example, you could easily find all contacts that have
-come to one of your trainings or attended on of your fundraising events.
+come to one of your trainings or attended one of your fundraising events.
 
 
 ### Participant roles
@@ -114,12 +111,11 @@ cancelled) are used to track what stage the contact is at in their
 'event journey'. Participant statuses are fully customizable to match
 the way your organization does event registration. This allows you to
 segment participants into meaningful categories based on their behavior
-with respect to the event,for the purpose of things like generating
+with respect to the event, for the purpose of things like generating
 sign-in sheets, tracking how many people are likely to come to an event,
 and tailoring email communications to registrants.
 
-Other parts of CiviCRM that work with CiviEvent 
--------------------------------------------------
+## Other parts of CiviCRM that work with CiviEvent 
 
 CiviEvent is designed to work together with other parts of CiviCRM.  For
 example, you can promote the event to a targeted list and communicate

@@ -127,7 +127,7 @@ Details about using Profiles to manage email lists are found in the
 Because Profiles can be used for so many different purposes, there are a
 lot of choices to make and settings to configure when setting them up.
 There are settings for the Profile as a whole and settings for each
-field you add—and the choice of what those fields are. Choices you make
+field you add &mdash; and the choice of what those fields are. Choices you make
 about one aspect will affect choices you can make about others. For
 example, some types of Profiles limit the kinds of fields you can
 include, and some combinations of fields are not allowed in any type of
@@ -149,7 +149,7 @@ Here are some guidelines on which fields can be added to a Profile:
     specific type. The Organization field menu, for example, contains
     only those fields that do not also apply to other Contact types.
 -   Except in Search Results Profiles, you can combine Contact fields
-    with fields from one—and only one—of the other record types:
+    with fields from one and only one of the other record types:
     Activity, Participants, Contributions, and Membership.
 -   If you try to combine fields with an unsupported combination of
     record types, you'll get an error when you try to save the field.
@@ -283,7 +283,7 @@ user account as part of becoming a member or registering for an event.
 
 #### **WordPress user account registration option**
 
-Like Drupal, Wordpress allows CiviCRM Profiles to create accounts as
+Like Drupal, WordPress allows CiviCRM Profiles to create accounts as
 described above. Within WordPress **Settings > General** "Membership [
 ] Anyone can register" must be clicked.
 
@@ -449,7 +449,7 @@ On the popup form, select Profile as the desired frontend element.
 ![image](../img/2013-09-04_15-15-35.png)
 
 Use the second select widget to specify the profile you would like to
-use. Finally, select the purpose of the form — create, edit or view —
+use. Finally, select the purpose of the form &mdash; create, edit or view
 and click Insert Form.
 
 ![image](../img/2013-09-04_15-16-45.png)
@@ -565,7 +565,7 @@ You have several options to link to your directory:
     After creating a new menu item, select CiviCRM and choose the
     profile search option. In the parameters pane, choose the specific
     profile to use.
--   **Wordpress:** this feature is not yet implemented.
+-   **WordPress:** this feature is not yet implemented.
 -   You can also prepopulate any search criteria in the URL. These
     options are described here:
     [http://wiki.civicrm.org/confluence/display/CRMDOC/Linking+Profiles](http://wiki.civicrm.org/confluence/display/CRMDOC/Linking+Profiles)
@@ -671,8 +671,7 @@ participant records (for event registration forms) and contributions
 pages, event registration pages, and membership sign-up pages in the
 *Set-up* chapter of *Contributions*, *Events*, and *Memberships.*
 
-Other sources of information about Profiles
--------------------------------------------
+## Other sources of information about Profiles
 
 Read more about Profiles in the following chapters:
 
@@ -682,8 +681,7 @@ Read more about Profiles in the following chapters:
 -   In the *Set-up* chapter of *Events*
 -   In the *Set-up* chapter of *Memberships*
 
-Alternatives to Profiles
-------------------------
+## Alternatives to Profiles
 
 As you have seen, profiles can be put to a lot of different uses. It is
 worth bearing in mind that there are alternative approaches for many of

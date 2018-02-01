@@ -1,11 +1,9 @@
-Everyday Tasks
-==============
+# Everyday Tasks
 
 This chapter provides instructions on how to do some of the common tasks
 using CiviEngage.
 
-Conducting a door-knock canvass
--------------------------------
+## Conducting a door-knock canvass
 
 CiviEngage allows you to easily print walk lists for your volunteers or
 staff who are doing door-knocking activities and want to conduct a
@@ -38,8 +36,8 @@ be used in your Walklist survey.
     select **Survey Default Results Set Options**.
 7.  Click **Save**.
 
-![image](../img/create%20walklist%20survey.jpg)
-![image](../img/create%20walklist%20survey%20p2.jpg)
+![screenshot](../img/create_walklist_survey.jpg)
+![screenshot part 2](../img/create_walklist_survey_p2.jpg)
 
 ### **Reserve the target group you want to survey**
 
@@ -70,8 +68,8 @@ surveying during the door-knock canvass:
     sheet with the response codes and that the report is sorted by
     street name and odd and even street numbers.
 
-![image](../img/walklist%20cover%20sheet.jpg)
-![image](../img/walklist%20p2.jpg)
+![cover sheet with response codes](../img/walklist_cover_sheet.jpg)
+![walklist report](../img/walklist_report.jpg)
 
 
 ### **Conduct your door-knock canvass**
@@ -101,8 +99,7 @@ At the end of the canvass, a program lead may want to review the results
 of the survey. Refer to the chapter Reports and Analysis to learn how to
 view this report.
 
-Conducting a PhoneBank
-----------------------
+## Conducting a PhoneBank
 
 CiviEngage allows you to easily to enter responses from constituents
 during a PhoneBank directly into CiviCRM.
@@ -161,7 +158,7 @@ into CiviCRM.
     whose responses you want to record, and click **Go**.
 4.  Enter the responses and results, then click **Record Response.**
 
-![image](../img/phonebank%20record%20responses.jpg)
+![Editable table with "name" and questions as column headers. Each row allows you to record the responses of a specific contact.](../img/phonebank_record_responses.jpg)
 
 ### **Reviewing Results of the Survey**
 
@@ -169,8 +166,7 @@ At the end of the phone bank, a program lead may want to review the
 results of the survey. Refer to the chapter Reports and Analysis to
 learn how to view this report.
 
-Mobilising Individuals to a Direct Action Event
------------------------------------------------
+## Mobilising Individuals to a Direct Action Event
 
 The Participant Info custom data group that comes with CiviEngage
 contains fields that hold information about prospective event
@@ -212,8 +208,7 @@ be used to mobilise individuals:
 -   **Update Participant Info** - to record general information about
     participants, such as if they need childcare or rides to the event.
 
-Using the Engagement Index
---------------------------
+## Using the Engagement Index
 
 You can record the level of interest or engagement in a specific
 activity by of an individual contact. This allows you to then review an
@@ -231,10 +226,9 @@ actions: **Phone Call, Meeting** or **Interview**.
     **Engagement Index**. To find out how to create options for the
     Engagement Index, see the section called Campaign.
 
-![image](../img/engagement%20index.jpg)
+![Screenshot of an activity of type meeting. The engagement list is a dropdown list with numbers.](../img/engagement_index.jpg)
 
-Manage Voter Information
-------------------------
+## Manage Voter Information
 
 CiviEngage enables you to manage voter history and other voter
 information collected during a voter engagement, voter education or

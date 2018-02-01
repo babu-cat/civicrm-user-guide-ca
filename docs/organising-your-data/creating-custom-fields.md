@@ -1,5 +1,4 @@
-Creating Custom Fields
-======================
+# Creating Custom Fields
 
 This chapter explains how you can collect information beyond that which
 CiviCRM allows by default through adding custom fields to hold the data
@@ -26,8 +25,7 @@ date. A custom field set is a group of fields containing related data -
 that is, a set of fields related to a certain activity type, to
 participation in events, or to contributions.
 
-Custom field sets
------------------
+## Custom field sets
 
 Custom fields are always part of custom field sets, and each set has a
 scope as wide or as narrow as you choose. For instance, you might
@@ -220,8 +218,7 @@ form field, and if you enter text in Post-form Help it appears below the
 form field. Use help at this level to provide instructions related to
 the entire set of custom fields.
 
-Custom fields
--------------
+## Custom fields
 
 Once you have created a custom field set, you can create custom data
 fields within the set. Click "View and Edit Custom Fields" followed by
@@ -454,8 +451,26 @@ move custom fields between sets used for all contacts or for contact
 sub-types but otherwise you can only move fields between data sets of
 the same type.
 
-Choosing between fields, groups and tags
-----------------------------------------
+### Multiple choice options headings
+
+You can also create headings in your multiple choice option lists. For example you may wish to make a list as follows:
+
+![Screenshot of select element open with "Cats" and "Dogs" displaying headings and other options displaying beneath them](/img/option_list_headings_2.png)
+
+To put headings in your options, follow these steps:
+
+1. When configuring the field, choose "Select" or "Multi-Select" as the input type.
+
+    ![Screenshot of configuring input field type for a custom field, with the "Select" type chosen](/img/input-type-field-select.png)
+    
+1. When configuring the options for the field, add your headings as follows:
+
+    * Set the "Label" for your heading to be the text displayed to the user
+    * Set the "Value" for your heading to be some piece of text prefixed by "crm_optgroup_".
+
+    ![Screenshot of configuring select options by prefixing the "value" field in the heading options with "crm_optgroup_"](/img/option_list_headings_1.png)
+
+## Choosing between fields, groups and tags
 
 Data fields, groups and tags are three major ways to associate
 information with contacts. Although it can be tempting to create a
@@ -502,8 +517,7 @@ Some tips that may help you choose are:
     only households), whereas tags will be assigned to all types once
     the tags are defined.
 
-Custom field set storage limitations
-------------------------------------
+## Custom field set storage limitations
 
 A large number of custom field sets or custom field sets with a larger
 number of fields may cause problems when searching, exporting data or

@@ -1,13 +1,11 @@
-Inscripcions manuals d'esdeveniments (untranslated)
-====================================
+#Inscripcions manuals d'esdeveniments (untranslated)
 
 This chapter covers how office staff can register people for events
 through the admin interface. It will show how to register an individual
 participant manually, how to register multiple participants and how to
 import registrations from an external source.
 
-**Registering a Participant Manually**
---------------------------------------
+## **Registering a Participant Manually**
 
 
 Although CiviCRM helps alleviate data entry for event registration by
@@ -28,7 +26,7 @@ The Events tab on a contact record, shown in the following screenshot,
 displays a summary list of the contact's past event attendance and
 provides a link for registering the contact for a new event.
 
-![image](../img/EventsTab.PNG)
+![screenshot](../img/EventsTab.PNG)
 
 There are two options for registering the contact:
 
@@ -44,9 +42,9 @@ There are two options for registering the contact:
 The interface for both options is very similar, with the exception of
 those fields that record payment details.
 
-![image](../img/EventRegistration1.PNG)
+![Event registration for a contact, with the event name, the participant role (attendee in this example), registration date, status, fee, and the payment information.](../img/EventRegistration1.PNG)
 
-![image](../img/EventRegistration2.PNG)
+![The registration confirmation receipt form, allows you to send an email to the participant. You can select a "From" email address and enter a message.](../img/EventRegistration2.PNG)
 
 As you work through this form, certain sections of the page change to
 reflect choices you have made. For example, when you choose the event
@@ -73,7 +71,7 @@ The distinction is best understood by considering the common scenario of
 an organization waiving fees for a V.I.P., a speaker, or someone who
 participating in the event in a limited way. In such cases, you want to
 register the individuals but may not want to create an associated
-financial transaction.CiviCRM respects this distinction by recording
+financial transaction. CiviCRM respects this distinction by recording
 the event registration record under the Events tab, recording the
 financial record under the Contributions tab, and then creating a link
 between the two records.
@@ -88,7 +86,7 @@ not select the Record Payment check box, only a registration record will
 be created.
 
 
-![image](../img/EventContributionTab.png)
+![screenshot](../img/EventContributionTab.png)
 
 ### **Registering a participant paying only a deposit (partial payment)**
 
@@ -101,7 +99,7 @@ paid at this time in the Total Amount field in the Payment Information
 region. This sets both the **Event status** and the status for the
 linked contribution to **Partially paid.**
 
-![image](../img/z-sprint14-initial-partial-payment.png)
+![screenshot](../img/z-sprint14-initial-partial-payment.png)
 
 The expectation is that additional payment(s) will be made until the
 full event fee has been paid, so a **Partially paid** registration is
@@ -118,7 +116,7 @@ To make an additional payment on this registration:
 5.  For a payment using a credit card select **submit credit card
     payment,** otherwise complete the payment details as required.
 
-![image](../img/z_sprint14_RecordEventPayment.png)
+![screenshot](../img/z_sprint14_recordeventpayment.png)
 
 You can make more than one additional payment. When the event fee has
 been paid in full the Event status will automatically change to
@@ -136,7 +134,7 @@ displayed amount will always be the full event fee. You can see how much
 is owing by choosing to **view** the event registration. Selecting **›› view payments** (under the **Total Paid** amount) will display a
 summary of each payment.
 
-![image](../img/z-sprint15ipartial-payment%20view.png)
+![List of two $100 event fees paid by check.](../img/z_print15_partial_payment_view.png)
 
 ## Mass Registrations
 
@@ -159,7 +157,7 @@ change the person's status from "pending" to "registered".
     check mark next to each contact you are interested in. A sample
     search results page appears in the following screen-shot.  
 
-![MassRegistration](../img/CiviCRM-CiviEvent-MassRegistration-en.png "MassRegistration")
+![Search result page.](../img/CiviCRM-CiviEvent-MassRegistration-en.png "MassRegistration")
 
 
 3.  From the actions list just above the search results, choose **Add
@@ -248,4 +246,4 @@ Contact)**, you do not need all of them.
     **Save** this field mapping box.
 6.  **Preview** and **Save**.
 
-![image](../img/CiviCRM-Event-Import-Participants_1.jpg)
+![screenshpt](../img/CiviCRM-Event-Import-Participants_1.jpg)

@@ -20,7 +20,7 @@ us portarà a una pantalla on podreu editar les opcions disponibles.
 Noteu, que depenent dels permisos que tingueu, es possible que no pugueu editar aquestes
 opcions i per tant no veureu el llapis.
 
-![image](../img/4.5_new_event.PNG)
+![screenshot](../img/4.5_new_event.PNG)
 
 **Plantilla base** us permet crear un esdeveniment des d'una plantilla (vegeu
 el capítol *Plantilles d'esdeveniments* en aquesta secció) en comptes de crear-ne un des de
@@ -42,7 +42,7 @@ Voleu que els usuaris vegin un llistat dels participants i quanta
 informació sobre els participants voleu revelar? Els **Llistats de
 participants** demostren el suport per un esdeveniment i poden ajudar a generar
 interès dins la vostra comunitat de constituents. Noteu que les opcions que
-definiu en aquesta secció només *habiliten* els llistats de participants — per mostrar-ne
+definiu en aquesta secció només *habiliten* els llistats de participants &mdash; per mostrar-ne
 un, haureu de crear un element de menú o enllaçar aquest llistat
 en algun lloc del web. Un cop hagueu creat l'esdeveniment,
 l'enllaç al llistat de participants es mostra a la pàgina de configuració de l'esdeveniment.
@@ -83,7 +83,8 @@ Per acabar, teniu l'opció de fer aquest esdeveniment actiu o inactiu. Si
 preveieu que us portarà un temps completar la configuració
 de l'esdeveniment, considereu fer-lo inactiu fins que estigui completat per
 assegurar-vos que no es llista de manera imprevista en el canal de llistats d'esdeveniments.
-Podeu activar fàcilment l'esdeveniment quan estigueu apunt per començar a publicitar-lo.
+Podeu activar fàcilment l'esdeveniment quan estigueu apunt per començar a
+publicitar-lo.
 
 Després de revisar els detalls d'aquesta pàgina, cliqueu, **Continua >>** per
 crear l'esdeveniment i avançar al següent pas. Podeu interrompre
@@ -95,14 +96,15 @@ cliqueu **Configura** per continuar treballant en l'esdeveniment.
 
 ## Localització de l'esdeveniment
 
-El següent pas és completar la localització i els detalls de contacte per l'esdeveniment.
+El següent pas és completar la localització i els detalls de contacte per
+l'esdeveniment.
 
 Un cop hagueu introduït una localització per l'esdeveniment podeu reutilitzar-la per a esdeveniments
 posteriors clicant **Utilitza una ubicació existent** i seleccionant-la de la
 llista desplegable. Noteu que si seleccioneu una ubicació existent i l'editeu,
 s'actualitzarà aquesta ubicació per a tots els esdeveniment que l'utilitzin.
 
-![image](../img/event%20location%20with%20warning.PNG)
+![Configura el formulari de l'esdeveniment. La segona pestanya és l'ubicació de l'esdeveniment.](../img/event_location_with_warning.png)
 
 Podeu llistar també números de telèfon i adreces de correu electrònic en la pàgina
 d'informació de l'esdeveniment si voleu donar als inscrits una manera per contactar directament amb
@@ -135,7 +137,7 @@ pagament? Si és així, podeu activar l'**opció de pagament en diferit** i defi
 etiqueta i unes instruccions de pagament. Si el manteniu desmarcat, es requerirà
 fer el pagament als inscrit mitjançant targeta de crèdit.
 
-![EventFeesPayLater](../img/CiviCRM_update-CiviEvent-EventFeesPayLater-en.png "EventFeesPayLater")
+![En la tercera pestanya del formulari de configuració de l'esdeveniment, podeu especificar si es tracta d'un esdeveniment de pagament.](../img/CiviCRM_update-CiviEvent-EventFeesPayLater-en.png "EventFeesPayLater")
 
 Les **tarifes regulars** proporcionen un conjunt de nivells de preus dels quals l'inscrit
 ha de seleccionar un únic nivell (p. ex. una inscripció individual per 50€ o
@@ -143,7 +145,7 @@ una inscripció familiar per 100€). Cada import de tarifa té una etiqueta ass
 i podeu configurar una tarifa per defecte. Aquesta aproximació funciona bé per la majoria d'esdeveniment
 i és senzill de configurar. Aquí un exemple simple:
 
-![EventRegFees](../img/CiviCRM_update-CiviEvent-EventRegFees-en.png "EventRegFees")
+![L'exemple mostra tres tarifes diferents: una per a membres, una per a estudiants que no siguin membres i una per altres que no siguin membres.](../img/CiviCRM_update-CiviEvent-EventRegFees-en.png "EventRegFees")
 
 Si l'esdeveniment requereix una estructura de preus més complexa, amb més
 opcions o extensions addicionals, potser voleu utilitzar **conjunts de preus** o
@@ -165,7 +167,8 @@ en aquesta secció.
 Els recordatoris programats es poden utilitzar per enviar automàticament correus electrònics als inscrits
 als esdeveniments en certs moments abans o després dels esdeveniments, per exemple
 
--   una setmana abans: recordar que haurien de consultar l'hora de la conferència
+-   una setmana abans: recordar que haurien de consultar l'hora de la
+    conferència
 -   un dia després: demanar que emplenin un formulari d'avaluació
 -   dos dies abans que un pagament venci per a les inscripcions pendents d'un pagament
     diferit: advertir que la seva inscripció es cancel·larà si no proporcionen
@@ -175,14 +178,16 @@ Per configurar un recordatori programat per un esdeveniment específic, cliqueu 
 pestanya de recordatoris programats que us mostrarà els recordatoris programats existents
 per aquest esdeveniment (si n'hi ha cap) i cliqueu a **Afegeix recordatori**.
 
-![image](../img/scheduled-reminder-events.png)Empleneu en els detalls d'aquest
+![La sisena pestanya és pels recordatoris programats.](../img/scheduled-reminder-events.png)
+
+Empleneu en els detalls d'aquest
 formulari per enviar, per exemple, un correu electrònic a tots els conferenciants inscrits 3
 dies abans de la data d'inici de l'esdeveniment. Noteu que podeu limitar els destinataris per
 l'estat (inscrit, assistit, etc.) i també per rol (conferenciant, assistent,
 voluntari, etc.). Podeu també utilitzar una plantilla o compondre el vostre propi
 missatge en la caixa de format HTML.
 
-![image](../img/scheduled-reminder-events-compose.png)
+![screenshot](../img/scheduled-reminder-events-compose.png)
 
 A més de configurar recordatoris en un esdeveniment, també podeu
 configurar-los per un tipus específic d'esdeveniments i afegir-los a plantilles d'esdeveniments
@@ -216,7 +221,8 @@ pel vostre equip o voluntaris. El contingut i la disposició d'aquests correus e
 es controlen per plantilles de missatges. Es proporcionen tant formats HTML com de text.
 Podeu modificar o afegir text en aquests correus electrònics, o afegir-hi la imatge corporativa
 com un logotip a les versions HTML. Per configurar l'adreça de correu electrònic del remitent des d'on
-les confirmacions i les receptes, vegeu Configuració en la secció de Correu electrònic.
+les confirmacions i les receptes, vegeu Configuració en la secció de Correu
+electrònic.
 
 Navegueu a **Administra > Comunicacions > Plantilles de missatges** (mostrat
 en la captura de pantalla de continuació) i cliqueu la pestanya **Missatges de flux de treball del sistema**
@@ -224,7 +230,7 @@ per veure la llista de missatges que podeu modificar. Cliqueu **Edita** al costa
 la fila "Esdeveniments - Inscripció confirmació i rebut" per editar
 el contingut i la disposició.
 
-![WorkflowMsgTpls](../img/CiviCRM_update-CiviEvent-WorkflowMsgTpls-en.png "WorkflowMsgTpls")
+![Llista de plantilles de missatges amb dues pestanyes. La segona pestanya és pel Missatges de flux de treball del sistema.](../img/CiviCRM_update-CiviEvent-WorkflowMsgTpls-en.png "WorkflowMsgTpls")
 
 
 Les plantilles per aquests missatges inclouen tant el text a mostrar com

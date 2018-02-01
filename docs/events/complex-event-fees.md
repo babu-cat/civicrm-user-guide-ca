@@ -1,5 +1,4 @@
-Tarifes d'esdeveniment complexes (untranslated)
-================================
+# Tarifes d'esdeveniment complexes (untranslated)
 
 The regular fees layout form outlined in *Creating an event* chapter of
 this section is a very simple structure that allows the registrant to
@@ -8,8 +7,7 @@ does not meet the complex demands of your event registration structure.
 This chapter describes how **price sets** and **discounts** can be used
 in CiviEvent to compose more complex pricing options.
 
-Price sets
------------
+## Price sets
 
 Price Sets allow you to break event fees into smaller pieces, and set a
 fee for each piece. Using a price set, you can offer optional programmes
@@ -20,7 +18,7 @@ Here's an example of how a price set looks to a person who is
 registering for a Conference that includes optional pre-conference
 training sessions, meals and lodging:
 
-![PriceSetRegistration](../img/CiviCRM_update-CiviEvent-PriceSetRegistration-en.png "PriceSetRegistration")
+![The page contains a listbox "Registration fees". This is a required field and contains "General admission $125". Then there are optional checkboxes for the pre-conference training and fields where you can enter a quantity for number of meals and number of nights.](../img/CiviCRM_update-CiviEvent-PriceSetRegistration-en.png "PriceSetRegistration")
 
 **Creating a New Price Set**
 
@@ -41,7 +39,7 @@ To create a new price set:
 
 Begin by entering a name for the event item in the Field Label**.**
 
-![image](../img/Event%20Price%20set%20v3.PNG)
+![Example shows a price field "pre-conference training" with two price field options: collaborations skills and advanced group facilitation.](../img/event_price_set_v3.png)
 
 The Input Field Type has a structure similar to custom data fields, with
 some unique qualities and usage relevant to fee structures.
@@ -94,7 +92,7 @@ Once you finish configuring your price set, you add it to your event on
 the Fees tab. Select the name of your price set in the Price Set
 field as shown in the following screenshot.
 
-![PriceSetEvent](../img/CiviCRM_update-CiviEvent-PriceSetEvent-en.png "PriceSetEvent")
+![screenshot](../img/CiviCRM_update-CiviEvent-PriceSetEvent-en.png "PriceSetEvent")
 
 As with custom data fields, it is to your advantage to give thought to
 the structure of your registration fees and build the price set before
@@ -116,8 +114,7 @@ To manage and administer existing CiviEvent price sets:
 -   navigating to **CiviEvent > Manage Price Sets** and
     choose **Administer**
 
-Discounts
------------
+## Discounts
 
 CiviEvent also lets you offer early bird discounts (discounts determined
 by sign-up date), if you use a simple fee structure. These will override
@@ -130,7 +127,7 @@ page, duplicating the original fee table shown in the screenshot below.
 You can now edit the labels and fees to correspond to the discounts
 offered for each of the original fee options.
 
-![CDiscount](../img/CiviCRM-CiviEvent-CDiscount-en.gif)
+![screenshot](../img/CiviCRM-CiviEvent-CDiscount-en.gif)
 
 You can create multiple date-based discount sets for an event. This may
 be useful if you have a series of early bird dates that progressively

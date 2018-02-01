@@ -1,17 +1,15 @@
-Customizing the user interface
-==============================
+# Customizing the user interface
 
 CiviCRM is highly flexible and customizable. This chapter gives
 information on the many ways you can change the interface to suit your
 needs and make it easier for your users.
 
-How to customize your data itself—what you collect and track—is covered
+How to customize your data itself &mdash; what you collect and track &mdash; is covered
 in *Organising Your Data* and in the *What you need to know*and *Set-up*
 chapters in the sections on the different CiviCRM components (e.g.,
 learn about customizing event types in the *Events* section).
 
-Changing dropdown options
--------------------------
+## Changing dropdown options
 
 The options included in the dropdown fields you see on contact
 entry/editing forms in CiviCRM can be modified (you can add, rename,
@@ -36,12 +34,11 @@ Postal Mail, SMS) in the contact edit/entry form can also be modified;
 go to **Administer > Communications > Preferred Communications
 Methods**.
 
-Modifying dropdown options that define data—such as Activity Type,
-Relationship, etc.—is outside the scope of this chapter; see *Organising
+Modifying dropdown options that define data &mdash; such as Activity Type,
+Relationship, etc. &mdash; is outside the scope of this chapter; see *Organising
 Your Data* and the sections on the different CiviCRM components.
 
-Changing display preferences
-----------------------------
+## Changing display preferences
 
 If there are types of activities you do not track or categories of data
 you do not collect, you can make it so these fields and tabs don't even
@@ -90,8 +87,17 @@ the browser.
 
 ![Display Preferences Disabling Popup Forms](../img/Contact%20Dashboard.png)
 
-Customizing search preferences
-------------------------------
+### Disabling Activity Assignee Notifications
+
+When an activity is created, CiviCRM sends notifications to all activity
+assignees by default. You can disable this feature by deselecting the
+checkbox **Notify Activity Assignees** in **Administer > Customize Data and
+Screens > Display Preferences**. You can also selectively disable email
+notifications for specific activity types by selecting them in the field below.
+
+![Display Preferences Disabling Activity Assignee Notifications](../img/activity_notif_setting.png)
+
+## Customizing search preferences
 
 You can change CiviCRM's default search behavior at **Administer >
 Customize Data and Screens > Search Preferences**. Available options
@@ -138,8 +144,7 @@ These check boxes modify the **Search > Find Contacts** and **Search >
 Advanced Search** screens. Uncheck the boxes to remove the corresponding
 types of fields from your search screens.
 
-Customizing date preferences
-----------------------------
+## Customizing date preferences
 
 The default display preference for dates is set at **Administer >
 Localization > Date Formats**.
@@ -155,8 +160,7 @@ year. If you would like to track activities that have occurred, say, 25
 years ago then you would need to update this range to enable your end
 users to log these activities.
 
-Customizing the navigation menu
--------------------------------
+## Customizing the navigation menu
 
 You can add, delete, rename, and move all items in the CiviCRM
 navigation bar to better meet the needs of your users. Some things you
@@ -189,8 +193,7 @@ names.
  5.  Check the **Separator** box if you want to add a line below your new
     item to separate it form the item below.
 
-Making custom data entry forms
-------------------------------
+## Making custom data entry forms
 
 If you have staff or volunteers who are often entering batches of
 similar contacts manually, you can create a tool called a Profile with
@@ -233,8 +236,7 @@ only the fields they need. This can speed up data entry considerably.
     the page containing your form. Copy the link and use it to create a
     navigation menu item (see the previous section for instructions).
 
-Customizing search views
-------------------------
+## Customizing search views
 
 To do this:
 
@@ -249,8 +251,7 @@ below).
 
 ![Customize Search Views](../img/configure-customize-search-views.png)
 
-Using Word Replacement to change terminology
-----------------------------------------------
+## Using Word Replacement to change terminology
 
 CiviCRM has a Word Replacement setting that lets you replace existing
 text found in the system with your desired text. For example, if your

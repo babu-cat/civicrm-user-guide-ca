@@ -1,5 +1,4 @@
-Undelete
-========
+# Undelete
 
 By default, deleted contacts are sent to the trash, and may be recovered
 at a later date by an administrator (or anyone holding the "access
@@ -16,5 +15,3 @@ contact, you can delete them permanently.
 
 Note that you can disable the trash function if you like in **Administer > System Settings > Misc (Undelete, PDFs, Limits, Logging, Captcha,
 etc.)**
-
-

@@ -20,7 +20,7 @@ search. After selecting the contacts you wish to send a receipt to, choose
 You will be given the option to email the receipts or make PDF receipts
 to post out to contributors.
 
-![image](../img/Print%20contribution%20receipt%20options.PNG)
+![Contributions search result with the action menu expanded.](../img/Print%20contribution%20receipt%20options.PNG)
 
 By default emailing or creating PDF receipts will update the receipt
 date for each contribution, but you can keep the existing receipt dates
@@ -51,8 +51,8 @@ contributions (rather than contacts). The steps involved are:
     ![ContributionThankyouLettersNogrouping](../img/civicontribute-thank-you-letters-no-grouping.PNG)
 4.  Choose to **Update thank-you dates for these contributions** or
     **Update receipt dates for these contributions** as required. The
-    current date will be entered into the appropriate field.**
-    **
+    current date will be entered into the appropriate field.
+    
 5.  There are three self-explanatory **Print and Email Options**:
     -   Generate PDFs for printing (only)
     -   Send emails where possible. Generate printable PDFs for contacts
@@ -72,8 +72,8 @@ contributions (rather than contacts). The steps involved are:
 8.  Make sure to check the **Page Format** settings.
 9.  You can use an existing template, create a new letter for one-off
     use, or create a new letter and save it as a new template.
-    [Tokens and mail merge](.../common-workflows/tokens-and-mail-merge) and
-    [Postal mail communications](.../common-workflows/postal-mail-communications)
+    [Tokens and mail merge](/common-workflows/tokens-and-mail-merge.md) and
+    [Postal mail communications](/common-workflows/postal-mail-communications.md)
     provide more information on creating letter templates.
 10. When you click on **Make Thank-you Letters** the letters will be
     generated and a "Print/Merge Document" activity will be created for each
@@ -99,11 +99,11 @@ $100.00, $150.00, $325.00 received on 1 January 2015, 5 March 2015,
 If you choose **Table Cell** as the **Separator** then each contribution
 instance will be placed in its own table column. For example:
 
-![image](../img/Thank-you%20letters%20as%20table%20template.PNG)
+![Thank you letter with tokens.](../img/thank_you_letters_as_table_template.png)
 
 will result in:
 
-![image](../img/Thank-you%20letters%20as%20table_1.PNG)
+![Thank you letter with expanded tokens.](../img/thank_you_letters_as_table_1.png)
 
 This format works well if only a few contributions have been received
 during the year, but the table will be wider than the page for monthly,
@@ -119,7 +119,7 @@ functionality for you emails
 ([http://wiki.civicrm.org/confluence/display/CRMDOC/Smarty+in+mail+templates](http://wiki.civicrm.org/confluence/display/CRMDOC/Smarty+in+mail+templates)).
 
 Once that has been done the total yearly contribution amount can be
-included in the letter using the token {$contribution_aggregate}.
+included in the letter using the token `{$contribution_aggregate}`.
 
 For example, if the HTML source for your letter is:
 
@@ -153,4 +153,4 @@ For example, if the HTML source for your letter is:
 ```
 then your letters will look like:
 
-![image](../img/Thank-you%20letters%20as%20with%20smarty%20enabled_2.PNG)
+![Thank you letter with expanded tokens.](../img/thank_you_letters_as_with_smarty_enabled_2.png)

@@ -1,11 +1,9 @@
-Everyday Tasks
-==============
+# Everyday Tasks
 
 This chapter describes a list of everyday tasks that you might perform
 using CiviCase, and how to go about them.
 
-Viewing the Case Dashboard
---------------------------
+## Viewing the Case Dashboard
 
 The Case Dashboard gives you an easy way to keep track of case-related
 tasks. It provides:
@@ -32,7 +30,7 @@ pop-up window by clicking directly on the title. If you're ready to work
 on that activity, click the edit pencil to the right of the activity
 title. 
 
-![image](../img/z-CiviCrm-4.5-case-activit-row.png)
+![](../img/z-CiviCrm-4.5-case-activit-row.png)
 
 
 Click on the triangular expand icon (►) to the left of the client name
@@ -44,8 +42,7 @@ status of the case, print a case report, or view case roles.
 To add a new case from the Case Dashboard, click the **Add Case** button
 at the top left of the content area.
 
-Finding cases
--------------
+## Finding cases
 
 If you know the Case ID, you can quickly find the case by using
 full-text search, either from **Search > Custom Search > Fulltext
@@ -77,8 +74,7 @@ that the returned results fulfill *at least one* of the selections in
 the criteria set (in this example, cases must match at least one of the
 case types). 
 
-Opening a new case
-------------------
+## Opening a new case
 
 You can open a new case with either an existing contact or a new contact
 not yet in your system.
@@ -107,7 +103,7 @@ steps:
     will see a list of potential matches (as illustrated by the
     following screenshot).
 
-    ![image](../img/z-CiviCrm-4.5-case-newclient.png) 
+    ![](../img/z-CiviCrm-4.5-case-newclient.png) 
 
 3.  If you don't find the contact, you can create it immediately by
     selecting the type of contact from the **create new contact** list.
@@ -124,7 +120,7 @@ steps:
     Gala** for Location. You can manage Encounter Mediums by selecting
     the edit icon.
 
-    ![image](../img/z-4.5-civicase-medium.png)
+    ![the edit icon shows a pencil](../img/z-4.5-civicase-medium.png)
 
     Use the **Details** text area to add information pertaining to the
     overall case, but not to a specific *activity* of the case. An
@@ -175,8 +171,7 @@ steps:
     **Cancel** discards the case data you have entered and sends you
     back to the CiviCRM dashboard.
 
-Manage Case Page
-----------------
+## Manage Case Page
 
 The manage case page gives users the ability to manage all aspects of a
 particular case on a single screen, including:
@@ -189,10 +184,9 @@ particular case on a single screen, including:
 -   Identify/manage client relationships
 -   Run case audits (reports)
 
-![image](../img/z-CiviCrm-4.5-mange-case-new.png)
+![Manage case page](../img/z-CiviCrm-4.5-mange-case-new.png)
 
-Assigning case roles
---------------------
+## Assigning case roles
 
 You can assign case roles to contacts who are working on the case or
 need to stay informed about case activities. Users who have access to
@@ -201,7 +195,7 @@ their My Cases view. The phone number and email address of each person
 with a case role will be displayed on the case, making it easy to
 communicate with them (see screenshot).
 
-![image](../img/z-CiviCrm-4.5-mange-roles.png)
+![List of case roles with the button 'add new role' on top.](../img/z-CiviCrm-4.5-mange-roles.png)
 
 Within a case, you can assign a case role to a contact:
 
@@ -235,8 +229,21 @@ the list of case activities in the proper sequence. This provides an
 audit trail of case-related communications, and ensures that the case
 story is complete. 
 
-Finding activities within a case
---------------------------------
+## Bulk add contacts to a case with a specific role
+
+On some occasions it might be useful to add several contacts to a case with
+a specific role. To do this, an action is available on contacts search results
+views. To add multiple contacts to a case in bulk:
+
+1. Perform a search on Contacts.
+2. Select the contacts that need to be added to a case from the search results.
+3. Choose the **Add to case as role** action.
+4. Use the shown form to choose the case to which contacts have to be assigned 
+and the role the contacts will have in the case.
+5. Click **Submit** to add the contacts to the case, or **Cancel** to go back 
+to search results.
+
+## Finding activities within a case
 
 You may need to find a specific activity within a case, for reference or
 modification. To view the activities in the case, scroll down to the
@@ -265,10 +272,9 @@ Once you have selected your search criteria, click the **Search** button
 to the right and the table will automatically filter out all of the
 activities not matching your criteria.
 
-![image](../img/z-CiviCrm-4.5-mange-activity.png) 
+![List of search reslults.](../img/z-CiviCrm-4.5-mange-activity.png) 
 
-Adding and managing activities
-------------------------------
+## Adding and managing activities
 
 Several tasks are commonly performed on activities. After performing the
 necessary work, click the **Save** button to save the activity and be
@@ -328,8 +334,7 @@ The set of activities will be added to case.
 The attachment will not be saved into CiviCRM until you have saved the
 activity.
 
-Editing an activity in a case
------------------------------
+## Editing an activity in a case
 
 To edit an activity in a case:
 
@@ -353,8 +358,7 @@ You can assign multiple contacts to an activity. If you accidentally
 select the wrong contact, click the X by the contact's name to remove
 him from the list. 
 
-Updating the status of case activities
---------------------------------------
+## Updating the status of case activities
 
 You can quickly update the status of an activity from the Activities
 table (without opening the activity edit form):
@@ -367,8 +371,7 @@ table (without opening the activity edit form):
 3.  This brings up a pop-up form where you can select a new status.
     Click Ok to save your update. 
 
-Changing the status of a case
------------------------------
+## Changing the status of a case
 
 The case status lets you quickly determine how a case is progressing.
 Sample status values include Ongoing, Resolved, Not Assigned, and
@@ -384,13 +387,18 @@ To change the status of a case:
 4.  This will open the **Change Case Status** form (an activity with an
     additional field called Case Status).
 5.  Set the case status to the new status.
-6.  Modify the other the fields as you would when editing an activity in
+6.  If the case has any linked cases, the list of linked cases will be shown on 
+    a table within the form. If you need to update the status of linked cases too, 
+    you can click the checkbox for **Update Linked Cases Status**.
+7.  Modify the other the fields as you would when editing an activity in
     a case. Make sure to set the **Status** field. It is required, but
     not set by default. 
-7.  Click **Save** to return to the case page, with a message stating
+8.  Click **Save** to return to the case page, with a message stating
     that the Change Case Status Activity has been created.
 
 An activity is recorded because when a case status changes, it changed
 because something happened. It is usually equally as important to record
 the *who* and the *why* as well as the *what*. This behaviour is
-consistent throughout CiviCase.
+consistent throughout CiviCase. This will also happen for linked cases, if the
+**Update Linked Cases Status** checkbox was checked and the linked case's status
+was different to the new status of the parent case.

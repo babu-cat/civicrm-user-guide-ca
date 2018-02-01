@@ -1,5 +1,4 @@
-Sales tax and VAT
-=================
+# Sales tax and VAT
 
 If your organization charges Sales Tax or VAT you should enable
 this feature.
@@ -20,10 +19,9 @@ tax/VAT
     -   Shows as inclusive price- $120 (includes $20 tax)
     -   Shows as exclusive price - $100 + $20 tax  
 
-![image](../img/enable_tax_fields.png)
+![CiviContribute Component settings with the tax term listbox at the bottom.](../img/enable_tax_fields.png)
 
-Adding a Financial Account for Sales Tax/VAT
----------------------------------------------
+## Adding a Financial Account for Sales Tax/VAT
 
 Once Sales Tax/VAT is enabled you need to create one or more Financial
 Accounts for Tax/VAT at **Administer > CiviContribute > Financial
@@ -36,26 +34,26 @@ set to **Liability**. Select **Enabled** and **Is Tax** and specify the
 should be set to **SALESTAX**. **Accounting Code** should be based on the
 organization's specific accounting codes.
 
-![image](../img/salestaxaccount4.jpg)
+![screenshot](../img/salestaxaccount4.jpg)
 
 After you create the Financial Account, you can assign it to the
 specific Financial Type by going to **Adminster > CiviContribute >
 Financial Types**.  Find the Financial Type this sales tax applies to,
 and click on **Accounts**. Click on **Assign Account**.
 
-![image](../img/assignaccount2.jpg)
+![List of financial accounts.](../img/assignaccount2.jpg)
 
 For the **Financial Account Relationship** choose **Sales Tax Account is**
-and in the ** Financial Account** field select your sales tax account.
+and in the **Financial Account** field select your sales tax account.
 Click **Save.**
 
-![image](../img/civicontribute-sales-tax-add-account.png)
+![screenshot](../img/civicontribute-sales-tax-add-account.png)
 
 Once the sales tax Financial Account has been added, you will see it
 listed with the other Financial Accounts for that specific Financial
 Type.
 
-![image](../img/salestaxadded2.jpg)
+![screenshot](../img/salestaxadded2.jpg)
 
 For more advanced configuration with accounting software packages like
 QuickBooks, you should involve your organization's bookkeeper or

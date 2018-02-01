@@ -1,5 +1,4 @@
-Permissions and access control
-==============================
+# Permissions and access control
 
 Permissions (and the related concept of access control lists, or ACLs)
 are collections of rules which define access to various areas of the
@@ -21,8 +20,7 @@ It is very easy to check a permissions box without fully understanding
 what it does. A site with badly configured permissions may inadvertently
 expose your contacts' data. 
 
-The difference between CMS permissions and CiviCRM ACLs
--------------------------------------------------------
+## The difference between CMS permissions and CiviCRM ACLs
 
 Permissions and ACLs are defined in two separate places: in the content
 management system (CMS) and in CiviCRM itself. Many organisations are
@@ -69,8 +67,7 @@ be used instead of those in Drupal, Joomla! or WordPress:
     rule controlling access to custom fields should be disabled, and a
     CiviCRM ACL used instead.
 
-CMS permissions
----------------
+## CMS permissions
 
 All CMS have the same set of CiviCRM permissions, but each are found in
 different places, and differ slightly in appearance.
@@ -88,7 +85,7 @@ You may create new roles and edit all existing ones. To edit roles,
 while in the **Permissions** tab click the button **Roles** toward the
 top right of the page.
 
-![image](../img/CiviCRM_Drupal_Roles.png) 
+![Drupal roles.](../img/CiviCRM_Drupal_Roles.png) 
 
 Roles can be assigned to users in the following ways:
 
@@ -129,11 +126,11 @@ between:
 -   **Denied**: users in this user group cannot perform the action
 
 Note that Joomla! has two additional permissions not used by Drupal or
-Wordpress: **Configure Joomla! ACL** (user can configure Joomla! ACLs and
+WordPress: **Configure Joomla! ACL** (user can configure Joomla! ACLs and
 is assigned all CiviCRM permissions) and **Show CiviCRM
 Component** (user can see CiviCRM in the Components list).
 
-![image](../img/joomla%20permissions_1.PNG)
+![screenshot](../img/joomla_permissions.png)
 
 Finally, to assign one of these user groups to a user, or change their
 existing user group, ensure you are logged in as an administrator then
@@ -149,12 +146,12 @@ do one of the following:
 
 
 
-### Access Control (Permissions) in Wordpress 
+### Access Control (Permissions) in WordPress 
 
 In CiviCRM go to **Administer** > **User and Permissions** >
-**Permissions (Access Control)**. Select the **Wordpress Access
+**Permissions (Access Control)**. Select the **WordPress Access
 Control**link. Here you can adjust the CiviCRM settings for each of the
-predefined User Roles from Wordpress.
+predefined User Roles from WordPress.
 
 ![image](../img/z_sprint14_wordpressacl_menu.png)
 
@@ -240,7 +237,7 @@ If you have a standalone profile in an online form used to search for
 and edit data in CiviCRM (e.g. not part of an event registration page),
 only authenticated users may edit. The permission "profile edit" can be
 given to the anonymous role, but visitors who are not logged in will
-still be unable to edit the data unless they have a checksum (a unique
+still be unable to edit the data unless they have a [checksum](/common-workflows/tokens-and-mail-merge.md#checksum) (a unique
 URL to one page where they may edit their own data; read "Everyday
 tasks" in the email section for more information). For checksum tokens
 to work, anonymous users must have the "profile edit" permission.
@@ -285,7 +282,7 @@ listings and forms" is not enabled for the "anonymous" and
 "authenticated" roles by default.
 
 Note that if this role were given to anonymous users, in order to edit
-data, the visitor must either be logged in or using a checksum token
+data, the visitor must either be logged in or using a [checksum token](/common-workflows/tokens-and-mail-merge.md#checksum)
 (see "Everyday tasks" in the section on email). 
 
 #### Accessing custom data
@@ -345,8 +342,7 @@ can be found
 at [http://wiki.civicrm.org/confluence/display/CRMDOC/Default+Permissions+and+Roles](http://wiki.civicrm.org/confluence/display/CRMDOC/Default+Permissions+and+Roles).
 
 
-Native CiviCRM ACLs
--------------------
+## Native CiviCRM ACLs
 
 As discussed earlier, CiviCRM ACLs are a more advanced and granular way
 of managing user access to records through contact groups, assigned to

@@ -1,5 +1,4 @@
-Reports and analysis
-====================
+# Reports and analysis
 
 There are a number of techniques for reporting on and analysing your
 casework. You can run an audit of the activities for each case from
@@ -14,8 +13,7 @@ but there are a couple of ways that you can create more detailed and
 customised views of the data for case workers and administrators using
 CiviCRM's search features and CiviReport.
 
-QA Audit / Redact
------------------
+## QA Audit / Redact
 
 This report is run from the contact's case management screen. It
 provides details for the activities in the case. You can chose to report
@@ -24,7 +22,7 @@ select **Redact (hide) Client and Service Provider Data** then contact
 numbers rather than names will be include in the report as shown
 here.
 
-![image](../img/QA%20Audit%20Screen.PNG) 
+![screenshot](../img/qu_audit_screen.png) 
 The onscreen report displays
 information for one activity at a time. Click on the description in the
 table on the left to display the information for that activity.
@@ -32,12 +30,16 @@ table on the left to display the information for that activity.
 If you print the report it will include the Case Summary and the Case
 Roles as well as the Case Activities. 
 
-CiviCase Reports
-----------------
+## CiviCase Reports
 
-There are four report templates specifically for cases as shown below:
+There are four report templates specifically for cases:
 
-![image](../img/4.5_Case_report_templates.PNG) 
+1.  Case Summary Report
+2.  Case Time Spent Report
+3.  Contact Demographics Report
+4.  Case Detail Report
+
+![screenshot](../img/4.5_Case_report_templates.PNG) 
 
 In addition as cases are made up of activities, the Activity report
 template is particularly useful for providing a dashlet for each user
@@ -58,32 +60,32 @@ Your installation may define additional reports for audit or quality
 assurance purposes. If so, you will see them listed in the "Run QA
 Audit/Redact" dropdown menu.
 
-Searching based on cases
-------------------------
+## Searching based on cases
 
 There is a Find Cases search which allows you to search on Case Type and
 Status as well as by client name or email. This is a useful quick search
 to identify a few cases that may need specific input if the case
 dashboard is quite large and cluttered in your instance.
 
-![image](../img/Case_Find_case_update.PNG) 
+![screenshot](../img/Case_Find_case_update.PNG) 
 
 The Advanced search provides these options combined with all the other
 normal search criteria so you can find case types filtered by location
-or custom fields applied to the contact
+or custom fields applied to the contact.
 
-![image](../img/Case_advanced_search_update.PNG) 
+![Search options within advanced search.](../img/Case_advanced_search_update.PNG) 
 
 Also useful can be the Activity Search which is located under **Search > Custom Searches > Activity Search**.  Unlike Advanced
 search, this is just based on activities and not contacts.
 
-Print/merge document
---------------------
-A user can create a letter or document using case tokens on the case management screen, or on multiple cases through a Find Cases search. On the case management screen, beside "Print Report," there's an option to "Export Document" as a PDF, DOCx, ODT, or HTML page. Alternately, you can select multiple cases through a search and "Print/merge Document," which will create a document for each case, compiled in a single PDF.  
+## Print/merge document
+
+A user can create a letter or document using case [tokens](/common-workflows/tokens-and-mail-merge.md) on the case management screen, or on multiple cases through a Find Cases search. On the case management screen, beside "Print Report," there's an option to "Export Document" as a PDF, DOCx, ODT, or HTML page. Alternately, you can select multiple cases through a search and "Print/merge Document," which will create a document for each case, compiled in a single PDF.  
+
+When working with DOCx turn off spelling and grammar check for best results. 
 
 
-Further analysis
-----------------
+## Further analysis
 
 If the combination of Case Dashboard, CiviReport and the contact and
 activity searches aren't giving you want you want, consider

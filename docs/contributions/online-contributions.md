@@ -1,5 +1,4 @@
-Creating Contribution Pages
------------------------------
+## Creating Contribution Pages
 This section describes setting up online contribution pages where
 visitors to your website can make contributions to your organisation.
 CiviContribute is very flexible and includes many optional fields and features
@@ -87,6 +86,7 @@ processors. You can do this by setting up multiple processors, and checking the
 -  Select a pre-defined **Price Set** (for more complex payment
     options), OR enter up to 10 fixed contribution amounts in the table at the bottom of the page.)
 -  You can check **Recurring contributions** if you payment processor and its integration with CiviCRM support recurring billing and you want to allow this feature. (There are restrictions on recurring payments when [membership fees](../membership/defining-memberships) are being paid.) If you check **Recurring contributions** further settings become visible.
+  - You can either set one frequency (e.g. a user can donate their chosen amount monthly) or allow for more user flexibility, where they can decide their own interval and/or number of installations (e.g. a user can donate their chosen amount once every three months for 12 installments).
 -  Check the **Pledges** box to give users the opportunity to [pledge
     future payments](../pledges/what-is-civipledge).
 -  Decide on the label for the Contribution amount area on your page.
@@ -126,7 +126,7 @@ regardless of whether you include any other fields in your profile(s).
     When you edit or create a new profile you will use the profile drag
     and drop interface pictured here.
 
-    ![image](../img/Contribution-page-edit-profile2.gif)
+    ![screenshot](../img/Contribution-page-edit-profile2.gif)
 
     WARNING: If you modify an existing profile whilst configuring your
     Contribution page, the changes you make will apply everywhere that
@@ -137,17 +137,16 @@ regardless of whether you include any other fields in your profile(s).
 
 Note: If you include a profile with a Home Address at the top of the
 page, CiviCRM automatically generates a checkbox on the front end form
-which allows the user to indicate that their Billing Address and Home 
+which allows the user to indicate that their Billing Address and Home
 Address are the same. (If the Home Address profile is included at the
 bottom of the page, this checkbox will not be generated).
-![image](../img/Profiles-HomeAddress.jpg)
+![Include profile top of page listbox, and include profile bottom of page listbox.](../img/Profiles-HomeAddress.jpg)
 
-It is highly recommended that Contribution Pages include a CPATCHA (reCAPTCHA in the case of CiviCRM).  You can add reCAPTCHA to a profile you include and it will be included on the Contribution Page. 
+It is highly recommended that Contribution Pages include a CAPTCHA (reCAPTCHA in the case of CiviCRM).  You can add reCAPTCHA to a profile you include and it will be included on the Contribution Page.
 
 For more information read [Profiles](../organising-your-data/profiles).
 
-Automatic Contribution Recording
---------------------------------
+## Automatic Contribution Recording
 
 Regardless of how donors get to your contribution page, CiviCRM
 automatically records their donations, freeing your staff from doing
@@ -248,19 +247,9 @@ CiviMail message you can include links to the contribution form and use
 CiviMail's tracking capability to see how many people click on that
 link.
 
-One time-tested way to increase contributions is to send each targeted
-constituent a personalized email with a link to the contribution form
+One time-tested way to increase contributions is to use
+[checksum tokens](/common-workflows/tokens-and-mail-merge.md#checksum)
+to send each constituent a personalized email with a link to the contribution form
 that has all of their contact information already filled in. This saves
 them the hassle of filling it out and raises the chances that they
-donate. Using CiviMail, you can use this feature by creating a special
-link in the body of your CiviMail message that includes a *checksum
-token*. A checksum is a unique and pseudo-random number assigned to each
-recipient of the mailing that points back to their contact information,
-securely stored in your database.
-
-When people click on the special link, CiviCRM looks them up in the
-database and pre-fills fields on the contribution form (core fields or
-fields exposed via a profile) with any information in their contact
-record. To read more on how to do this and what the link path must be,
-visit:
-[http://wiki.civicrm.org/confluence/display/CRMDOC/Tokens](http://wiki.civicrm.org/confluence/display/CRMDOC/Tokens)
+donate.

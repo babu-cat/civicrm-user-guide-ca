@@ -1,5 +1,4 @@
-Integrating events with your website
-====================================
+# Integrating events with your website
 
 Listing your events on your website, or on other organisations'
 websites, is a great way to promote your events and attract registrants.
@@ -16,8 +15,6 @@ page. You can then link to this page from anywhere in your website.
 Note that in Joomla! you can link to your event by following these
 steps:
 
-### 
-
 1.  Go into the Joomla! control panel
 2.  Choose **Menu Manager > *Your menu name***
 3.  Click **New**
@@ -30,15 +27,14 @@ steps:
 In WordPress you can also use the CiviCRM icon 'shortcode' to insert the
 event registration form into the Page or Post
 
-![image](../img/Wordpress-Shortcodes-small.png)
+![Icon with the CiviCRM logo above the toolbar.](../img/Wordpress-Shortcodes-small.png)
 
 In Drupal, the **views** module gives many options for displaying lists
 of content, including the ability to create an automatically updating
 lists of upcoming events. Have a look at *Integrating with Drupal* in
 the *Website integration* chapter for more details. 
 
-**RSS feed for all upcoming events**
-------------------------------------
+## **RSS feed for all upcoming events**
 
 This lets visitors subscribe to all your events in the RSS feed reader
 of their choice. Many website management systems also allow a website to

@@ -1,5 +1,4 @@
-Searching
-=========
+# Searching
 
 This chapter covers different ways to find information you've stored in
 CiviCRM. Two of the techniques in this chapter - finding contacts and
@@ -31,10 +30,9 @@ limitations. For example, you can't group results by particular
 criteria, summarize, or easily produce graphs of the results. For more
 advanced reporting, see the *CiviReport* section.
 
-Quick search
---------------
+## Quick search
 
-![Quicksearch](../img/quicksearch.png)
+![Quicksearch](../img/the-user-interface/searching/quicksearch.png)
 
 The easiest way to find a specific contact is to use the Quick search
 box that appears in the navigation menu at the top left of the screen. You may choose to search by one of several criteria. Once you click in the box you can start typing immediately to use the default Name/Email search or you can click again to expose several other criteria in a dropdown selection list. Contacts that match the phrase you enter will appear in a dropdown list below the box. For example, if you are searching with Name/Email and you have left
@@ -49,14 +47,21 @@ Search Preferences** entering "peter" will find:
 -   organisations with Peter in their name, e.g. Al**peter**
     Community Centre.
 
-You don't need to type the full name of the person - just the first few
-letters.
+You often don't need to type the full name of the person - just the first few
+letters.  However, if you don't see the contact you are looking for, either refine the search by typing more characters, or hit the 'Return' key to convert your search into an Advanced search.
+
+Quick search displays up to 10 results (by default). You can change the number of results returned from the *Search Preferences* screen described above by changing the *Autocomplete Results* setting.
+
+CiviCRM also allows for the collection of a nickname when entering new contacts.  For example, "Joe" can be a nickname for "Joseph" and "IBM" can be a nickname for "International Business Machines".  When you first install CiviCRM you will find "Joseph" when searching for "Joe" and you'll find "International Business Machines" when searching for "IBM".
+
+You can change this behavior from the *Search Preferences* screen described above by changing the *Include Nickname* setting to *yes*.
 
 Note: If you search by **phone** then you will need to enter the digits of the phone number without any formatting. The **phone** search is done against a field that consists only of digits with all non-numeric characters stripped out.
 
-Advanced search
----------------
-![Screen shot of advanced search](../img/user-interface-advanced-search-main-screen.png)
+Note: If you want to search by **first** and **last** name, use the format "Lastname, Firstname", not "Firstname Lastname".  For example, "Peterson, Mary" not "Mary Peterson".
+
+## Advanced search
+![Screen shot of advanced search](../img/the-user-interface/searching/user-interface-advanced-search-main-screen.png)
 
 Advanced search allows you to search across all the information you have
 about your contacts. For example, you could find "all contacts in
@@ -79,7 +84,7 @@ in.
 
 #### Display Settings For Results
 
-![Screen shot of Display Results As](../img/user-interface-display-results-as.png)
+![Screen shot of Display Results As](../img/the-user-interface/searching/user-interface-display-results-as.png)
 
 Advanced Search returns your results as Contact records by default.
 However, you may want to get another record type instead. For example,
@@ -91,7 +96,7 @@ contacts. Simply select the record type you want from the **Display Results As**
 
 #### Views for Display Contacts
 
-![Screen shot of Display Contacts](../img/user-interface-new-contact-view-profile.png)
+![Screen shot of Display Contacts](../img/the-user-interface/searching/user-interface-new-contact-view-profile.png)
 
 Advanced search allows you to change the columns displayed in your
 search results. The default columns are Name, Street Address, City,
@@ -106,11 +111,11 @@ detail in the Profiles chapter in the Configuration section.)
 For example you may want to include columns for Gender and Date of Birth, while eliminating Country.
 Create a profile that includes birth date, gender and address fields.
 
-![Screen shot of Search View setting in a profile](../img/user-interface-profile-search-view-setting.png)
+![Screen shot of Search View setting in a profile](../img/the-user-interface/searching/user-interface-profile-search-view-setting.png)
 
-![Screen shot of Visibility setting in a profile](../img/user-interface-profile-search-view-setting-2.png)
+![Screen shot of Visibility setting in a profile](../img/the-user-interface/searching/user-interface-profile-search-view-setting-2.png)
 
-![Screen shot of a profile](../img/user-interface-new-contact-view-profile.png)
+![Screen shot of a profile](../img/the-user-interface/searching/user-interface-new-contact-view-profile.png)
 
 Read more about creating profiles in the Profiles section of the chapter
 on *Organising Your Data*.
@@ -124,11 +129,11 @@ The Search Operator determines whether your criteria are combined with AND state
 
 The Search in Trash allows you to search contacts that have been deleted but not deleted permanently. When a contact is deleted, the contact and all related data are moved to trash. Only users with the relevant permission will be able to search in trash and will be able to restore the contact from trash.
 
-![Screen shot of Search in Trash](../img/user-interface-search-in-trash.png)
+![Screen shot of Search in Trash](../img/the-user-interface/searching/user-interface-search-in-trash.png)
 
 ### The Date Range Filter
 
-![Screen shot of Date Range Filter](../img/user-interface-date-filter.png)
+![Screen shot of Date Range Filter](../img/the-user-interface/searching/user-interface-date-filter.png)
 
 Most component searches include a date range filter. The images below
 show examples of both:
@@ -143,7 +148,7 @@ are configured to include contacts that share a certain set of
 characteristics or activities). For more information see the *Groups and
 tags* chapter.
 
-![Screen shot of Relative Date Range Filter](../img/user-interface-date-filter-relative.png)
+![Screen shot of Relative Date Range Filter](../img/the-user-interface/searching/user-interface-date-filter-relative.png)
 
 For example you may want to use a relative date range search to find:
 
@@ -156,7 +161,7 @@ For example you may want to use a relative date range search to find:
 
 Relative dates filters based on the time interval "week" assume that Sunday is the first day of the week.   This is not true in all countries, for example Europe and many countries in Asia/Pacific region consider Monday to be the first day of the week. To set which day is the first day of the week, you need to go to **Administer >> Localization >> Date Format**.
 
-![Screen shot of how to change the first day of the week](../img/user-interface-searching-week-begins.png)
+![Screen shot of how to change the first day of the week](../img/the-user-interface/searching/user-interface-searching-week-begins.png)
 
 
 #### **Combining search criteria**
@@ -178,10 +183,9 @@ With fields that allow you to select more than one value from a dropdown list,
 the values are always combined with "OR". For example, you could find contacts
 that live in Alaska or in Arizona.
 
-![Screen shot of combining search criteria](../img/user-interface-searching-states.png)
+![Screen shot of combining search criteria](../img/the-user-interface/searching/user-interface-searching-states.png)
 
-Search Builder
---------------
+## Search Builder
 
 Advanced search lets you choose from a wide range of criteria in a
 user-friendly panel, but this has limitations. Search builder allows you
@@ -216,7 +220,7 @@ include contacts where.** The following example will search for females
 born after Jan 1 2000 OR members of the Administrators or Advisory Board
 groups:
 
-![Search Builder](../img/Search%20Builder.png)
+![Search Builder](../img/the-user-interface/searching/Search%20Builder.png)
 
 Your search results will contain each contact's name, plus a column for
 each search criteria you've defined. If you export search results, the
@@ -230,8 +234,7 @@ exported by default in addition to those you select.
 You can also save your Search Builder search as a Smart Group. For more
 information on Smart Groups, see the *Groups and Tags* chapter.
 
-Full-text Search
-----------------
+## Full-text Search
 
 You can use this to search for text values all fields of the database.
 This is particularly useful, for example, if you can remember specific
@@ -241,8 +244,7 @@ specific words to the description but have now forgot the contact's
 name. You can use Full text search to find the contact and activity by
 words that you remember from the description.
 
-Component searches
-------------------
+## Component searches
 
 Most CiviCRM components offer a search on the data they maintain, such
 as **Find contributions**, **Find members**, etc. These forms work in a similar
@@ -259,8 +261,7 @@ Note that you can also use the Advanced search in conjunction with
 available in advanced search. For example, you could find all event
 attendances from contacts that are also members.
 
-Custom searches
----------------
+## Custom searches
 
 Custom searches are designed to answer specific questions that can't be
 easily answered using **Advanced Search** or **Search Builder.**
@@ -293,7 +294,7 @@ Contacts in a Group/Tag", that enables you to find contacts who are in
 one group but not in another, which you can find by going to **Search >
 Custom Searches** in the navigation menu.
 
-![Include/Exclude Search](../img/IncludeExclude.png)
+![Include/Exclude Search](../img/the-user-interface/searching/IncludeExclude.png)
 
 By combining Include and Exclude options, you can find contacts who are
 in one group but remove just the group members who fit another
@@ -402,8 +403,7 @@ for more information about how to do this. If you create a custom search
 that you think could be useful for others, consider contributing it back
 to the community.
 
-The 'search-action' workflow
-----------------------------
+## The 'search-action' workflow
 
 After you retrieve your search results, you can perform a number of
 actions. An Actions box appears above the results. You can select either
@@ -411,7 +411,7 @@ all records or specific records, then carry out an action with the
 selected records. Different actions are covered in more detail in the
 chapter on Everyday Tasks.
 
-![Screen shot of Action Dropdown](../img/user-interface-searching-actions-dropdown.png)
+![Screen shot of Action Dropdown](../img/the-user-interface/searching/user-interface-searching-actions-dropdown.png)
 
 Some of the most commonly used actions are Add Contacts to Group, Export
 Contacts, Map Contacts, and creating and printing Mailing Labels. (To
@@ -423,8 +423,7 @@ For example, to send email to a selected number of contacts, mark the
 contacts you are interested in and then select **Send Email to Contacts** in
 the dropdown list of actions.
 
-The contact summary pop-up
---------------------------
+## The contact summary pop-up
 
 You can see a pop-up box with detailed information for any contact
 listed in your search results by hovering over the contact icon in the
@@ -433,10 +432,9 @@ left column, as shown below. You can adjust the fields shown in this
 profile (**Administer** > **Customize Data and Screens** >
 **Profiles**).
 
-![Screen shot of Contact Summary pop-up](../img/user-interface-searching-summary-overlay.png)
+![Screen shot of Contact Summary pop-up](../img/the-user-interface/searching/user-interface-searching-summary-overlay.png)
 
-The wildcard (%)
-----------------
+## The wildcard (%)
 
 Understanding wildcards greatly expands your search options. A wildcard
 represents any character (letter, numeral or punctuation mark). In
@@ -453,8 +451,7 @@ used before, after, or even within words. For example, searching on
 'Mich%el' will exclude "Michał" and "Micheal" but still find "Michelle"
 and "Michael".  
 
-Case sensitivity
-------------------
+## Case sensitivity
 
 Note that when you search for character strings, the search is not
 case-sensitive. For example, if you search for 'brooklyn', the search

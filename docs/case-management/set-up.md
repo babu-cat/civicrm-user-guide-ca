@@ -1,12 +1,10 @@
-Set-up
-======
+# Set-up
 
 Now that you've gone through the planning process and determined the
 types of cases, activities and case roles that you need, you're ready to
 configure your CiviCase installation.
 
-Enable the CiviCase component
------------------------------
+## Enable the CiviCase component
 
 The CiviCase component is included in CiviCRM downloads, but it is NOT
 enabled by default. To enable the component:
@@ -18,8 +16,7 @@ enabled by default. To enable the component:
 
 You will now see **Cases** in the navigation menu.
 
-Define Case Types
------------------
+## Define Case Types
 
 You can create one or more new case types.
 
@@ -70,7 +67,7 @@ when a new case is opened.
     **Administer > Customize Data and Screens > Relationship Types**.
     There you will also be able to review and edit other details of the
     roles/relationships if you need to.
-![image](../img/CiviCase_Roles.png)
+![List of roles, and checkboxes to assign a role to the manager of the case, and/or to the creator.](../img/CiviCase_Roles.png)
 
 4. Include **Activities**
 When working on a case, the user has access to a drop-down menu in the
@@ -108,7 +105,7 @@ to the case.
     user **might** **choose** to add to the case. Activities that you
     include in a Timeline or Sequence do not need to be in this list.
 
-    ![image](../img/CiviCRM%204.5%20CiviCase%20Activities.png)
+    ![List of case activities with three tabs: activity types, standard timeline, sequence.](../img/CiviCRM%204.5%20CiviCase%20Activities.png)
 
     Select the activity types that you wish to be included in the case type
     from the "Add activity type" drop-down shown below the listing of
@@ -180,7 +177,7 @@ within the case type.
     from the (Add) menu. Currently you can only add one sequence to any
     given case type.
 
-![image](../img/CiviCRM%204.5%20CiviCase%20Standard%20Timeline.png)
+![Standard timeline tab with list of activities.](../img/CiviCRM%204.5%20CiviCase%20Standard%20Timeline.png)
 To add activities to a timeline, select the tab for the timeline you want
 to work with:
 
@@ -204,7 +201,7 @@ You can choose to use the "end date" of a case (i.e the final defined
 activity) as your reference and use negative offset values to schedule
 activities as the example below shows.
 
-![image](../img/timeline_advanced.PNG)
+![Example of a timeline for a single venue event: getting a quote should take place 21 days before the event date, the site visit 14 days beforehand, and the accreditation 7 days before the event date.](../img/timeline_advanced.PNG)
 
 You can rename additional timelines or a sequence using the fields
 available in the 'Advanced' section below the main Activities section of
@@ -222,8 +219,7 @@ component. These can be useful either as a point of reference to see
 what a complete case type looks like, or even as a start point for your
 own case types.
 
-Custom fields
--------------
+## Custom fields
 
 It is likely that you will want to collect structured data in the case.
 You can collect data in custom fields connected to a specific activity
@@ -263,8 +259,7 @@ type, consider breaking them up into sets of related fields. Group the
 fields into logically related sets that will make sense to the users,
 and avoid the form looking like an endless tunnel of fields.
 
-Filing Emails on Cases
-----------------------
+## Filing Emails on Cases
 
 Some organizations find it useful to record case-related emails in
 CiviCase. For example, the case coordinator for a work disability case
@@ -285,8 +280,13 @@ Additionally, when email activities are sent from the Manage Case
 screen, if the Email Processor has been set up then replies will
 automatically be filed directly onto the case.
 
-CiviCase permissions
---------------------
+You can also record an email or an activity on the case by adding a string 
+"case" to the subject field followed by a space and the #id of the 
+case(enclosed in square braces). For eg. A normal activity or an e-mail 
+whose subject value is **"[case #123] Any subject"** would be recorded under 
+case id = 123.
+
+## CiviCase permissions
 
 You will need to create a contact record for each staff member or
 service provider who will be using CiviCase to enter or view case
@@ -328,7 +328,7 @@ The following is a list of the CiviCase-related permissions:
     as view and add activities to any case (regardless of who initially
     created the case).
 
-    ![FindDeletedCases](../img/CiviCRM_update-CasePlanning-FindDeletedCases-en.png "FindDeletedCases")
+    ![screenshot](../img/CiviCRM_update-CasePlanning-FindDeletedCases-en.png "FindDeletedCases")
 
 -   Delete in CiviCase: allows a user to mark cases or case activities
     as deleted. Cases and activities are never physically deleted from
@@ -336,7 +336,7 @@ The following is a list of the CiviCase-related permissions:
 
     Users with this permission can also find and undelete these cases and activities by checking the Deleted Cases option in Find Cases and the Deleted Activities option in the Case Activities Search Filter.
 
-![FindDeletedActivities](../img/CiviCRM_update-CasePlanning-FindDeletedActivities-en.png "FindDeletedActivities")
+![screenshot](../img/CiviCRM_update-CasePlanning-FindDeletedActivities-en.png "FindDeletedActivities")
 
 -   Administer CiviCase: gives access to Administer > CiviCase options
     including:

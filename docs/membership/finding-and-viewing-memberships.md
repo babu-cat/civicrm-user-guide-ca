@@ -1,10 +1,8 @@
-Finding and viewing memberships
-===============================
+# Finding and viewing memberships
 
 This chapter describes how to view and search your membership records.
 
-Viewing Your Memberships
-------------------------
+## Viewing Your Memberships
 
 To see a summary of the status of your memberships over recent months,
 as well as details about these memberships, you can use the membership
@@ -68,13 +66,10 @@ selecting **Create.**
 
 ### ![image](../img/membership%20everyday%20for%20limited%20inheritedp2.png)
 
-Sending email to members
--------------------------
+## Sending email to members
 
 After searching your records, you may want to send an email to selected
-contacts and include data field tokens to personalize the email message.
-To learn more about emailing and tokens in CiviCRM, see the section
-called "Email".
+contacts and include data field [tokens](/common-workflows/tokens-and-mail-merge.md) to personalize the email message.
 
 To send email to members:
 
@@ -84,8 +79,7 @@ To send email to members:
     Email to Contacts**.
 
 
-Searching based on membership data
-----------------------------------
+## Searching based on membership data
 
 CiviCRM makes an important distinction between contacts and memberships,
 which is blurred when we talking about 'members'. Consider the

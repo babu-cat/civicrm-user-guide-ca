@@ -1,5 +1,4 @@
-Scheduled reminders
-===================
+# Scheduled reminders
 
 Scheduled reminders allow you to automatically send messages (through
 email or SMS) to contacts when certain criteria are met. For example:
@@ -25,8 +24,7 @@ configuration pages.
 
 ### Tokens available to scheduled reminders
 
-In addition to the standard tokens (see *Tokens and mail merge* in
-*Common workflows* for a full explanation of tokens) that are available
+In addition to the standard [tokens](/common-workflows/tokens-and-mail-merge.md) that are available
 in CiviMail, messages sent via scheduled reminders can also contain
 tokens representing information about events, activities, contributions
 and memberships that the scheduled reminder pertains to. This allows you to use
@@ -43,8 +41,7 @@ Note that you also have access to the checksum token which allows you to
 authenticate people to specific pages without them needing to log in,
 and show forms with details already filled in.
 
-Creating and managing scheduled reminders
------------------------------------------
+## Creating and managing scheduled reminders
 
 Scheduled reminders can be created from the administration page at
 **Administer > Communications > Schedule Reminders** or during the
@@ -55,7 +52,7 @@ Schedule Reminders.** The exact options that are visible depend on the
 **Entity** chosen but all scheduled reminders are fairly similar. The
 general process is:
 
-![image](../img/civimail-scheduled-reminders-setup.png)
+![screenshot](../img/civimail-scheduled-reminders-setup.png)
 
 1.  Give your reminder a name that will help you or others identify it.
 
@@ -91,11 +88,10 @@ Communications > Schedule Reminders**.
 
 IMPORTANT: Your system administrator will need to ensure that the Send
 Scheduled Reminders scheduled job is enabled and runs at least once a
-day. Refer to the [Scheduled Jobs](../initial-set-up/scheduled-jobs)
+day. Refer to the [Scheduled Jobs](https://docs.civicrm.org/sysadmin/en/latest/setup/jobs/)
 section for configuration details.  
 
-Using scheduled reminders for contacts
---------------------------------------
+## Using scheduled reminders for contacts
 
 These can be based on:
 
@@ -118,8 +114,7 @@ receive the reminder (eg. send birthday greetings to children but not to
 adults), you will need to limit the recipients. (See *Limiting or
 adding to your recipient list* in this chapter.)
 
-Using scheduled reminders for activities
-----------------------------------------
+## Using scheduled reminders for activities
 
 Scheduled reminders can be based on any combination of core and
 custom activity types.
@@ -148,8 +143,7 @@ Here are some ways you might want to use reminders for activities:
 -   Send thank-you notes to people who met with you.
 
 
-Using scheduled reminders for contributions
------------------------------------------
+## Using scheduled reminders for contributions
 
 You can set up emails to be sent out to your contributors based on the page
 they donated through or the contribution/financial type of their donation.
@@ -162,8 +156,7 @@ Options include:
    type(s) with any combination of contribution statuses.
 
 
-Using scheduled reminders for memberships
------------------------------------------
+## Using scheduled reminders for memberships
 
 You can set up messages to be sent out to members based on various
 characteristics of their membership, including the membership type and
@@ -214,8 +207,7 @@ pending because payment has not been received:
     important as if we don't set this, all members (even those that have
     already paid) will receive the message.
 
-Using scheduled reminders for events
-------------------------------------
+## Using scheduled reminders for events
 
 Event reminders can be set up via the Scheduled Reminders administration
 screen (as detailed above) or from the Schedule Reminders screen in the
@@ -256,8 +248,7 @@ examples:
 -   Email people who registered but didn't show up for your event to
     gather information about why.
 
-Limiting or adding to your recipient list.
---------------------------------------------
+## Limiting or adding to your recipient list.
 
 As already outlined, you select the recipients of your scheduled
 reminders based on entity specific characteristics such as event type
@@ -273,7 +264,7 @@ It is important to remember that groups or manual recipients selected
 will only receive the scheduled reminder if they meet the all other
 criteria for that reminder.
 
-![image](../img/scheduled_reminders_activities.PNG)
+![Form with the fields: from name, from email, and receipients.](../img/scheduled_reminders_activities.PNG)
 
 For Event, Contact and Membership scheduled reminders you can limit
 recipients to members of a group, to a particular participant role
@@ -284,7 +275,7 @@ recipient(s)** or **Participant Role** (Event reminders only) from the
 adjacent option list. You could use this feature to, say, only send
 birthday greetings to your members who are less than 12 years old.
 
-![image](../img/scheduled_reminders_other%20three.PNG)
+![screenshot](../img/scheduled_reminders_other_three.png)
 
 As with activity reminders, it is important to remember that groups,
 manual recipients or roles selected with the **Limit to** option will
@@ -302,8 +293,7 @@ an event, you can also send it to Bob Adams, your office manager, so
 that he will remember to check that the event room is set up in the
 appropriate configuration with any equipment required.
 
-Scheduled reminders and privacy options
----------------------------------------
+## Scheduled reminders and privacy options
 
 Scheduled reminders are still sent to contacts who have opted out of
 bulk emails and those who have selected the privacy option **Do not
@@ -322,4 +312,4 @@ scheduled reminder you should:
 2.  Create a smart group from the search results.
 3.  Select this smart group as the **Recipients** of the scheduled reminder.
 
-![image](../img/do-not-email-search-builder.jpg)
+![Search builder with the two criteria.](../img/do-not-email-search-builder.jpg)

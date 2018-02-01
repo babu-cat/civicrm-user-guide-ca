@@ -1,24 +1,40 @@
-Inscripcions en línia d'esdeveniments (untraslated)
-=====================================
+# Inscripcions en línia d'esdeveniments (untraslated)
 
 The ability for end-users to register themselves for events is
-beneficial for both your constituents - they can register and a time and
+beneficial for both your constituents - they can register at a time and
 in a place that is convenient for them - and for your organization -
 reducing administration. This chapter details the steps involved in
 offering online registration for events.
 
 The standard flow for registering for an event is as follows:
 
-![event_registrationflow_1](../img/CiviCRM-CiviEvent-event_registrationflow_1-en.gif "event_registrationflow_1")
+1.  Event information
+1.  Event registration
+1.  Confirmation
+1.  Thank you
 
-Setting up online registration
-------------------------------
+![schematical representation](../img/CiviCRM-CiviEvent-event_registrationflow_1-en.gif "event_registrationflow_1")
+
+The **event information** lists the event date, the location, the map link,
+contact information, and description. It also includes a link to the
+registration page.
+
+In the **event registration** step, the registrant completes the form, including
+event fees, profile fields, and credit card or pay later fields.
+
+The **confirmation** details the event fee options and data fields completed
+by the registrant. It proceeds to the credit card transaction.
+
+Then the **thank you** message informs the registrant that he will receive
+a receipt by email.
+
+## Setting up online registration
 
 To offer online registration, check **Allow Online Registration** in the
 Online Registration step of event creation and use the options on this
 form to configure this feature.
 
-![image](../img/event_online_rego_part_1.PNG)
+![The forth tab of the event form contains the online registration settings.](../img/event_online_rego_part_1.PNG)
 
 Define the text to be used as the **link** from the event information
 page to the registration form, and set the starting and ending dates for
@@ -63,14 +79,13 @@ scheduled reminders)
 The next step is to define the text and the fields for collecting
 information that will be displayed on your online registration page.
 
-![image](../img/event_online_rego_part_2.PNG)
+![screenshot](../img/event_online_rego_part_2.PNG)
 
 The introductory text comes at the top of the page and the footer text
 at the bottom. In between will come some, or all, of: profile, fee
 selection, credit card details, additional profile(s) in that order.
 
-Collecting participant information with profiles
--------------------------------------------------
+## Collecting participant information with profiles
 
 The best way to collect information during online registration is to
 include one or more profiles in your event configuration.You can include
@@ -103,14 +118,13 @@ Event Types or Participant Roles (see the chapter *Custom data on
 events* in this section for more details on where you should store what
 custom data).
 
-![image](../img/Drag_and_drop_profile_for_event.PNG)
+![New custom field set form on top of the edit profile form.](../img/Drag_and_drop_profile_for_event.PNG)
 
 It is highly recommended that if you are charging for your event that you include a CPATCHA (reCAPTCHA in the case of CiviCRM).  You can add reCAPTCHA to a profile you include and it will be included on the Online Registration page.  
 
 For more information read [Profiles](../organising-your-data/profiles).
 
-Registration confirmation
---------------------------
+## Registration confirmation
 
 Once you registration page is configured you need to enter the text to
 be displayed on the Confirmation page, Thank-you page, and emailed
@@ -127,14 +141,13 @@ more staff emails (separating multiple email addresses with commas) to
 the **CC Confirmation To** field if you want real-time updates on who is
 registering for your event.
 
-![OnlineRegEmail](../img/CiviCRM_update-CiviEvent-OnlineRegEmail-en.png "OnlineRegEmail")
+![screenshot](../img/CiviCRM_update-CiviEvent-OnlineRegEmail-en.png "OnlineRegEmail")
 
 Please note that the contents of the **Text** field will be included in
 both TEXT and HTML versions of receipt emails so we do not recommend
 including HTML tags / formatting here.
 
-Optional event registration features
-------------------------------------
+## Optional event registration features
 
 The following features may be useful to enhance your online event
 registration process.
@@ -174,7 +187,7 @@ statuses**. You can then check the **Offer Waitlist** checkbox on
 the **Info and settings** tab, and set the message you want displayed on
 the event information page when the event is full.
 
-![EventInfo2](../img/CiviCRM_update-CiviEvent-EventInfo2-en.png "EventInfo2")
+![screenshot](../img/CiviCRM_update-CiviEvent-EventInfo2-en.png "EventInfo2")
 
 Note that in order for the status processing to happen, you need to have
 the **Update Participant Statuses** scheduled job
@@ -211,7 +224,7 @@ Participants will be placed in 'Awaiting Approval' status. You can
 review and approve participants from 'Find Participants' - select the
 'Change Participant Status' task. Approved participants will move to
 'Pending from approval' status, and will be sent an email with a link to
-complete their registration (including paying event fees - if any)
+complete their registration (including paying event fees - if any).
 
 Note that in order for the status processing to happen, you need to have
 the **Update Participant Statuses** scheduled job running
@@ -231,8 +244,7 @@ For more information see **Contributions > Personal Campaign Pages** in
 this book. This is the last step in creating an event. Click **Save and
 Done.**
 
-Contact matching and duplicate management
-------------------------------------------
+## Contact matching and duplicate management 
 
 Whenever we allow people to interact with our database from 'the
 outside' we run the risk of creating duplicate contacts. There are
@@ -259,7 +271,7 @@ you get familiar with that chapter at some point. This section just
 covers contact matching and duplicate management in the context of
 CiviEvent.
 
-![image](../img/event-duplicate-matching.png)
+![Expanded list of matching rules.](../img/event-duplicate-matching.png)
 
 By default, CiviEvent uses the Unsupervised rule to do matching. When
 you configure an event for online registration, you can override the
@@ -277,8 +289,7 @@ if there's no way to match duplicate contacts using the rule, while the
 warning "Duplicate Contacts Possible" appears if enough fields are there
 but not all of them are required.
 
-Registration permissions
--------------------------
+## Registration permissions
 
 If you've enabled online registration for events on your site you need
 to review the Drupal user permissions to ensure that visitors are able
@@ -312,8 +323,7 @@ If you need to limit access control for specific events, you can use the
 Manage Access Control feature to assign access to specific groups of
 contacts.
 
-Testing the registration process
---------------------------------
+## Testing the registration process
 
 Before revealing your event to the public, you should always test the
 event registration process. This can be done as follows:

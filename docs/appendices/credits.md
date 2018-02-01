@@ -1,5 +1,4 @@
-Credits
-=======
+# Credits
 
 About this book 
  
@@ -1817,7 +1816,7 @@ HOOKS
 
 * * * * *
 
-Integrating with Wordpress 
+Integrating with WordPress 
  
  Modifications: 
  Stoob - Stuart G 2012 
