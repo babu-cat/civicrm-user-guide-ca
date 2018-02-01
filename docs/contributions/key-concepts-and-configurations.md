@@ -1,143 +1,143 @@
-# Key concepts and configurations
+# Conceptes clau i configuracions
 
-This section explains the key concepts underpinning CiviContribute and outlines
-the high-level configuration needed for its use.
+Aquesta secció explica els conceptes clau que fonamenten el CiviContribute i esboça
+la configuració a alt nivell necessària per al seu ús.
 
-Before you begin it is helpful to list out the types of contributions your
-organisation receives (or wants to receive), and identify which of those you
-want to track using CiviCRM.
+Abans de començar és útil llistar els tipus de contribucions que rep la vostra
+organització (o que li agradaria rebre) i identificar en quin d'aquests
+voleu fer un seguiment utilitzant el CiviCRM.
 
-## Financial types, financial accounts and accounting codes
+## Tipus financers, comptes financers i codis de comptabilitat
 
-Organisations that use CiviCRM have differing needs in terms of financial
-reporting.  Some just want to know the total donation or membership income
-recorded in CiviCRM whereas others want to be able to export a full set of
-double-entry financial transactions to import into their accounting software.
+Les organitzacions que utilitzen CiviCRM tenen diferents necessitats en termes d'informes
+financers. Algunes tan sols volen conèixer el total de donacions o de socis entrants
+registrats en el CiviCRM mentre d'altres volen ser capces d'exportar un conjunt complet de
+partides dobles de transaccions financeres per importar-les en els seus programes de comptabilitat.
 
-CiviCRM caters for both those groups by using **Financial types** to hide the
-complexity of double-entry bookkeeping from everyone who doesn't need to know
-about it, whilst still recording those transactions for organisations that do
-need them.
+CiviCRM possibilita a tots dos grups, mitjançant l'ús dels **Tipus financers**, ocultar la
+complexitat de la comptabilitat de partida doble a qualsevol que no necessiti saber-ne
+res, i a la vegada continuar registrant aquestes transaccions per a les organitzacions que
+les necessitin.
 
-Each **financial type** is linked to a number of **financial accounts** that
-can track income, assets, fees and premiums (if applicable) as
-required as shown for the four default financial types in the following image.
+Cada **tipus financer** es vincula a un número de **comptes financers** que
+poden fer el seguiment d'ingressos, actius, taxes i recompenses (si aplica) com sigui
+requerit tal com es mostra pels quatre tipus financers de la següent imatge.
 
 
 ![financial types and accounts](../img/civicontribute-financial-types-and-accounts.png)
 
 
-The **financial accounts** should be based on your organisation's
-Chart of Accounts. In CiviCRM each contribution must be assigned a financial type.
-When the contribution is saved the appropriate debits and credits are
-automatically recorded for the financial accounts linked to that financial type.
-(If you are using
-price sets, each option in the price set could be linked to a different
-financial type and CiviCRM will still record the appropriate debits and
-credits for all linked financial accounts.)  
+Els **comptes financers** haurien d'estar basats en la taula de comptes de la vostra
+organització. A CiviCRM cada contribució s'ha d'assignar a un tipus financer.
+Quan la contribució és desada, els crèdits i dèbits corresponents es
+registren automàticament pels comptes financers vinculats al tipus financer.
+(Si estu utilitzant
+conjunts de preus, cada opció en el conjunt de preus pot ser vinculada a un tipus financer
+diferent i el CiviCRM seguirà registrant els dèbits i crèdits 
+corresponents per tots els comptes financers vinculats.)  
 
-You should consult with your organization's bookkeeper or accountant before
-setting up new or modifying the existing the financial types and financial
-accounts.
+Haurieu de consultar el comptable o administrador de la vostra organització abans
+de configurar per primera vegada o modificar els tipus financers o comptes financers
+existents.
 
-### Financial Types
+### Tipus financers
 
-The standard financial types included with CiviCRM are event fee, member dues,
-donation and campaign contribution  as shown in the image above, but you can
-modify these existing accounts or set up new financial types to suit your needs.
+Els tipus financers estàndards inclosos en el CiviCRM són les quotes d'esdeveniments, les quotes de membres,
+les donacions i les contribucions de campanyes tal com es mostra a la imatge de sota, però podeu
+modificar els comptes existents o configurar nous tipus financers per adaptar-los a les vostres necessitats.
 
-Generally you will need one financial type for each type of income (revenue)
-you receive in CiviCRM and track in your accounts. So if you report on tax
-appeal donations, festive appeal donations and recurring donations separately
-then having only one "Donation" financial type in CiviCRM will not work, you
-will need one financial type called "Tax Appeal", another called "Festive
-Appeal" and yet another called "Recurring donations".
+En general necessitareu un tipus financer per a cada tipus d'ingrés
+que rebeu en el CiviCRM i del que en feu seguiment en els vostres comptes. Per tant, si doneu compte de donacions
+de campanyes de desgravació d'impostos, donacions de festes solidàries i donacions recurrents de manera separada,
+llavors, tenir únicament un tipus financer "Donatius" en el CiviCRM no serà suficient,
+necessitareu un tipus financer "Campanyes de desgravació", un altre "Festes
+solidàries" i encara un altre "Donatius recurrents".
 
-To create a new financial type navigate to **Administer > CiviContribute >
-Financial Types**,  and click on **Add Financial Type**
+Per crear un nou tipus financer navegueu a **Administra > CiviContribute >
+Tipus financers**,  i clicar a **Afegeix un tipus financer**
 
 ![Adding Financial Type](../img/civicontribute-financial-types-add-new.png)
 
-When you create a Financial Type of a specific name, CiviCRM automatically
-creates a similarly named revenue (income) account and assigns it and
-the default accounts for asset, expenses and cost of sales to the new financial
-type. If you need to edit the accounts allocated to a financial type,
-you can do so by clicking on **Accounts** to the right of the appropriate
-financial type on **Administer > CiviContribute > Financial Types**.
-The aim behind this two step process is to
-simplify the common use case where an organisation has only one each of
-Deposit Bank Account, Accounts Receivable and Accounts Payable, but provide
-flexibility for more sophisticated setups.
+Quan creeu un tipus financer amb un nom específic, el CiviCRM crearà automàticament
+un compte d'ingressos amb nom similar i l'assignarà junt amb
+els comptes per defecte d'actius, despeses i cost de vendes al nou tipus
+financer. Si necessiteu editar els comptes assignats a un tipus financer,
+ho podeu fer clicant a **Comptes** a la dreta del tipus financer
+corresponent a **Administra > CiviContribute > Tipus financers**.
+L'objectiu d'aquest procés de dos passos és
+el de simplificar el cas comú on una organització només té un únic
+compte de dipòsit bancari, un únic compte per cobrar i un únic compte per pagar, però proporciona
+la flexibilitat per configuracions més sofisticades.
 
 ![Editing accounts linked to financial type](../img/civicontribute-financial-types-linked-accounts.png)
 
-### Financial Accounts
+### Comptes financers
 
-As with financial types, the list of preconfigured financial accounts will
-suit the needs of many organisations but it can also be customized if your
-organisation requires changes or additions. (Remember, each new financial type
-will add a new revenue account with the same name.)
+De la mateixa manera que amb els tipus financers, la llista dels comptes financers preconfigurats
+s'ajustarà a les necessitats de gran part de les organitzacions però pot ser personalitzat si la vostra
+organització requerix canvis o afegits. (Recordeu, cada tipus financer nou
+afegirà un nou compte d'ingressos amb el mateix nom.)
 
-You edit financial accounts at **Administer > CiviContribute > Financial Accounts**.
+Podeu editar els comptes financers a **Administra > CiviContribute > Comptes financers**.
 
-The only required fields are Name and Financial Account Type. For revenue
-accounts these are set when you create the financial type.
+Els únics camps requerits són el Nom i Tipus de compte financer. Pels comptes
+d'ingressos aquests seran definits quan creeu el tipus financer.
 
 ![Editing Financial Account](../img/civicontribute-financial-account-edit.png)
 
-How many of the other fields you fill in will be determined by your workflow.
-If you plan to export financial transactions from CiviCRM to import into your
-accounting software package you will need the accounting code (without
-extra or missing spaces).  If you are using Quickbooks you will also need the
-account type code.
+Quants dels altres camps empleneu dependrà del vostre flux de treball.
+Si teniu previst exportar les transaccions financeres del CiviCRM per importar-les en el vostre
+programa de comptabilitat necessitareu el codi comptable (sense
+espais extra o sobrants).  Si utulitzeu Quickbooks necessitareu també el
+codi de tipus de compte.
 
-NOTE: Changing the financial account name will also change the financial type name.
+NOTA: Si es modifica el nom del compte financer es modificarà també el nom del tipus financer.
 
-## **Payment processors**
+## **Processadors de pagament**
 
-CiviCRM provides you with the ability to take payments online on your
-website. You can take payments for a variety of reasons including
-fundraising campaigns, membership dues and event attendance.
+El CiviCRM us proporciona la possibilitat de fer pagaments en línia en el vostre
+lloc web. Podeu fer pagaments per diferents raons incloent
+campanyes de captació de fons, quotes de membres i assistència a esdeveniments.
 
-To start taking payments online you need to [configure a payment processor](../contributions/payment-processors)
-which will connect your website to the credit card and banking
-infrastructure that actually processes the payment.
+Per començar a fer pagaments en línia necessiteu [configurar un processador de pagaments](../contributions/payment-processors)
+que connectarà el vostre lloc web amb la targeta de crèdit i amb la infraestructura bancària
+que en realitat processa el pagament.
 
-## **Payment Methods**
+## **Mètodes de pagament**
 
-Navigate to **Administer > CiviContribute > Payment Methods** to
-edit existing options that can be used for contributions or to add a new
-option through **Add Payment Methods**. The common options - credit
-card, cash, check, debit card, and EFT - are installed by default. You should
-get your accountant or bookkeeper to confirm that each payment method is linked
-to the correct Asset account.
-
-
-## **Accepted Credit Cards**
-
-Navigate to **Administer > CiviContribute > Accepted Credit Cards** to
-edit existing acceptable credit cards or define a new option through
-**Add Accepted Credit Card**.
-
-Note: If billing information is collected on the payment processor's website
-then you will need to configure accepted credit cards/payment methods on that
-site.
+Navegueu a **Administra > CiviContribute > Mètodes de pagament** per
+editar les opcions existents que poden ser utilitzades pels contribuents o per afegir una nova
+opció a partir de **Afegeig mètodes de pagament**. Les opcions més comunes - targeta de
+crèdit, efectiu, xec, targeta de dèbit, i transferència bancària - es troben instal·lades per defecte. Haureu de
+confirmar amb el vostre administrador o comptable per confirmar que cada mètode de pagament es troba vinculat
+a l'actiu comptable correcte.
 
 
-## Data needs and fields
+## **Targetes de crèdit acceptades**
 
-CiviContribute has a set of predefined fields to track contribution
-information. If you need to track more information about contributions,
-you can do this by defining new custom data fields. Custom data might be
-useful to further categorize your contributions or track additional
-information.
+Navegueu a **Administra > CiviContribute > Targetes de crèdit acceptades** per
+editar les targetes de crèdit existents acceptades o definiu una nova opció a través de
+**Afegeix targetes de crèdit acceptades**.
 
-Write down all the information you want to track about your
-contributions, including reports (described later in this chapter), then
-compare your data needs to CiviCRM's predefined fields. An easy way to
-do this is to look at the screen for adding a new contribution. A lot
-of useful functionality is built in to the core contribution fields so
-there's no point in duplicating them with custom fields, but your
-organisation may have specific needs that require custom fields.
+Nota: Si la informació de facturació es recull en el lloc web del processador de pagament
+llavors necessitareu configurar les targetes de crèdit i mètodes de pagament acceptats en aquest
+lloc.
 
-If you do need to create custom fields to meet your needs, read [Creating Custom Fields](../organising-your-data/creating-custom-fields).
+
+## Necessitat de dades i camps
+
+CiviContribute té un conjunt de camps predefinits per fer el seguiment de la informació
+de les contribucions. Si necessiteu fer el seguiment de més informació sobre contribucions,
+ho podeu fer definint nous camps personalitzats de dades. Les dades personalitzades poden ser
+útils per categoritzar amb més profunditat les vostres contribucions o fer el seguiment d'informació
+addicional.
+
+Escriviu tota la informació sobre la que voleu fer un seguiment de les vostres
+contribucions, incloent els informes (descrits més tard en aquest capítol), llavors
+compareu les vostres necessitats d'informació amb els camps de CiviCRM predefinits. Una manera senzilla de
+fer això és mirar la pantalla per afegir una nova contribució. Moltes
+funcionalitats útils estan construïdes en els camps de contribució del nucli amb la qual cosa
+no té sentit duplicar-les amb camps personalitzats, però la vostra
+organització pot tenir necessitats específiques que requereixin de camps personalitzats.
+
+Si necessiteu crear camps personalitzats per satisfer les vostres necessitats, llegiu [Creació de camps personalitzats](../organising-your-data/creating-custom-fields).
