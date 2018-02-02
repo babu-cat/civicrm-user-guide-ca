@@ -107,8 +107,8 @@ que en realitat processa el pagament.
 
 Navegueu a **Administra > CiviContribute > Mètodes de pagament** per
 editar les opcions existents que poden ser utilitzades pels contribuents o per afegir una nova
-opció a partir de **Afegeig mètodes de pagament**. Les opcions més comunes - targeta de
-crèdit, efectiu, xec, targeta de dèbit, i transferència bancària - es troben instal·lades per defecte. Haureu de
+opció a partir de **Afegeix mètodes de pagament**. Les opcions més comunes - targeta de
+crèdit, efectiu, xec, targeta de dèbit i transferència bancària - es troben instal·lades per defecte. Haureu de
 confirmar amb el vostre administrador o comptable per confirmar que cada mètode de pagament es troba vinculat
 a l'actiu comptable correcte.
 
