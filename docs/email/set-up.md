@@ -3,8 +3,9 @@
 This chapter describes how to set up information such as From email
 addresses, Mailing List Groups and email templates. It assumes that the
 basic functionality necessary for your server to send and process emails
-in the first place has already been configured. See *Email System
-Configuration* in *Advanced configuration* for details.
+in the first place has already been configured. See *CiviMail Setup* in 
+the [System Administrator Guide](https://docs.civicrm.org/sysadmin/en/latest)
+for details.
 
 ## Configuring your organisation's contact information
 
@@ -48,12 +49,13 @@ To create a **Smart Group**:
     description, and make the Smart Group a Mailing List.
 5.  Click **Save Smart Group**.
 
-**Note:** You can also create a Smart Group based on a Participant
-search. However, the Smart Group save page will not offer you the option
-to make this group a Mailing List. To make this Smart Group available to
-CiviMail, you must change its settings through **Contacts > Manage
-Groups**. This same thing happens if you use the Advanced Search and
-choose Event Participants under "Display results as."
+!!! info
+    You can also create a Smart Group based on a Participant
+    search. However, the Smart Group save page will not offer you the option
+    to make this group a Mailing List. To make this Smart Group available to
+    CiviMail, you must change its settings through **Contacts > Manage
+    Groups**. This same thing happens if you use the Advanced Search and
+    choose Event Participants under "Display results as."
 
 You cannot create smart groups based on Membership, Contributions or
 Pledge searches, or based on results of an Advanced Search if the
@@ -83,12 +85,8 @@ list groups.
 
 ### Using a profile
 
-Alternatively, you can collect more information when people sign up to
-your mailing lists with the use of a profile that is then displayed on a
-public page. Guidelines on what you need to think about when using
-profiles for mailing list sign-ups are below; for more complete
-information about profiles, how they work, and how to set them up, see
-the **Profiles** chapter in the **Data in CiviCRM** section.
+Alternatively, you can use [profiles](/organising-your-data/profiles.md) to collect more information from people who sign up to
+your mailing list.
 
 For example, you could create a new Profile called Newsletter Sign-up.
 Add to this profile the fields that you'd like website visitors who want
@@ -155,9 +153,11 @@ confirm their subscription. Until they click the confirmation link in
 the email, their contact information will appear in CiviCRM with their
 group subscription set to Pending. When they confirm, CiviCRM will
 automatically change their group subscription status to Added and they
-will be sent a welcome message. (Note: When users subscribe to multiple
-groups at once, a confirmation email is sent for each group
-separately.)
+will be sent a welcome message.
+
+!!! note
+    When users subscribe to multiple groups at once, a confirmation email is 
+    sent for each group separately.
 
 ## Scheduled jobs and cron jobs
 
@@ -185,8 +185,7 @@ In CiviCRM, these are called Automated Messages, and you can edit them
 and add new ones at **Mailings > Headers, Footers, and Automated
 Messages**.
 
-For more information on email list management see the chapter entitled
-**Maintaining Healthy Email Lists** which explores how CiviCRM handles
+For more information on email list management see [Maintaining healthy email lists](/email/maintaining-healthy-email-lists.md) which explores how CiviCRM handles
 unsubscribes, bounces and email holds.
 
 ## Creating headers and footers
@@ -254,3 +253,19 @@ accounts and set them up in CiviMail (see **Email System
 Configuration**, especially **Adding an incoming email account for
 handling bounces or auto filing to CiviMail**, in **Initial Set-Up** for
 more details).
+
+### Allowing users to edit inbound e-mails
+ 
+Activities created by CiviCRM as a result of email-to-activity processing 
+are not editable by users, as there is a restriction enforced on the Inbound 
+Email activity type. To allow users to be able to edit these activities, an
+administrator can enable the **CiviCRM: edit inbound email basic information** 
+or the **CiviCRM: edit inbound email basic information and content** permissions
+for the roles that require it.
+
+**CiviCRM: edit inbound email basic information** will allow users to edit every
+field of the activity, except the original message, stored int the activity's 
+details.
+
+**CiviCRM: edit inbound email basic information and content** will allow users
+to edit every field of the activity, including the original message's content.

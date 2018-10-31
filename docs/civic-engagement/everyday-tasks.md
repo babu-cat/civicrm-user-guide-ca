@@ -12,19 +12,19 @@ survey at the door.
 Door-knocking canvass activities may be one strategic activity that's
 part of a larger campaign, so you may want to set up a Campaign if you
 haven't done so already. To learn more about working with campaigns and
-surveys, refer to the sections Campaign and Survey respectively. You
+surveys, refer to the sections [Campaign](/campaign/what-is-civicampaign.md) and [Survey](/survey/what-is-civisurvey.md) respectively. You
 will also want to review the previous chapter called Set-Up in this
 section to learn more about setting the custom data sets and profiles to
 be used in your Walklist survey.
 
-### **Create the campaign and survey for the walk list**
+### Create the campaign and survey for the walk list
 
 1.  Create a new group of contacts that you will be targeting during
     your door-knock canvass. You may do this by searching for contacts
     who live in a particular geographic area or district. (To learn
-    about working with groups, see the chapter Tags and Groups.)
+    about working with groups, see the chapter [Tags and Groups](/organising-your-data/groups-and-tags.md).)
 2.  To create a new Campaign (if you haven't already) go to
-**Campaigns > New Campaign**. Refer to the section *Campaign* for detailed
+**Campaigns > New Campaign**. Refer to the section [Campaign](/campaign/everyday-tasks.md) for detailed
     instructions on how to create a campaign and add the group of
     contacts you created.
 3.  Go to **Campaigns > New Survey**; give the survey a title and
@@ -36,10 +36,10 @@ be used in your Walklist survey.
     select **Survey Default Results Set Options**.
 7.  Click **Save**.
 
-![screenshot](../img/create_walklist_survey.jpg)
-![screenshot part 2](../img/create_walklist_survey_p2.jpg)
+![screenshot](/img/create_walklist_survey.png)
+![screenshot part 2](/img/create_walklist_survey_p2.png)
 
-### **Reserve the target group you want to survey**
+### Reserve the target group you want to survey
 
 Next, you'll need to reserve the target group of contacts you will be
 surveying during the door-knock canvass:
@@ -52,7 +52,7 @@ surveying during the door-knock canvass:
 4.  Click **Go** to Reserve Respondents.
 5.  On the Reserve Respondents screen, click **Reserve**.
 
-### **Create your WalkList report**
+### Create your WalkList report
 
 1.  Go to **Reports > Create Templates from Reports > Survey Report
     (Detail)**.
@@ -68,16 +68,16 @@ surveying during the door-knock canvass:
     sheet with the response codes and that the report is sorted by
     street name and odd and even street numbers.
 
-![cover sheet with response codes](../img/walklist_cover_sheet.jpg)
-![walklist report](../img/walklist_report.jpg)
+![cover sheet with response codes](/img/walklist_cover_sheet.png)
+![walklist report](/img/walklist_report.png)
 
 
-### **Conduct your door-knock canvass**
+### Conduct your door-knock canvass
 
 Your organisers and volunteers are now ready to door-knock and collect
 responses on their WalkList report sheets.
 
-### **Recording responses from the canvass**
+### Recording responses from the canvass
 
 At the end of each day or evening of canvassing, each organiser or
 volunteer can record the responses directly into CiviCRM.
@@ -93,10 +93,10 @@ volunteer can record the responses directly into CiviCRM.
 5.  Enter the responses and results according to your WalkList sheet
     responses, then click **Record Response**.
 
-### **Reviewing Results of the Survey**
+### Reviewing Results of the Survey
 
 At the end of the canvass, a program lead may want to review the results
-of the survey. Refer to the chapter Reports and Analysis to learn how to
+of the survey. Refer to the [Reports and Analysis](/survey/reports-and-analysis.md) chapter to learn how to
 view this report.
 
 ## Conducting a PhoneBank
@@ -112,16 +112,16 @@ review the previous chapter called Set-Up in this section to learn more
 about setting the custom data sets and profiles to be used in your
 PhoneBank survey.
 
-### **Create the campaign and survey for the PhoneBank**
+### Create the campaign and survey for the PhoneBank
 
 Creating a survey for phonebanking is the same process as creating a
 survey for walklists.
 
 1.  Create a new group of contacts that you will be targeting during
-    your phone bank. To learn about working with groups, see the chapter
-    Tags and Groups.
+    your phone bank. To learn about working with groups, see the
+    [Groups and Tags](/organising-your-data/groups-and-tags.md) chapter.
 2.  Create a new Campaign (if you haven't already) by going
-    to **Campaigns > New Campaign**. Refer to the section Campaign to
+    to **Campaigns > New Campaign**. Refer to the [Campaign](/campaign/what-is-civicampaign.md) section to
     find out how to create a campaign and add the group of contacts you
     created.
 3.  Go to **Campaigns > Create New Survey** and create a new survey of
@@ -132,7 +132,7 @@ survey for walklists.
     set, **Survey Default Results Set Options**.
 6.  Click**Save**.
 
-### **Reserve the target group you want to survey**
+### Reserve the target group you want to survey
 
 Next, you'll need to reserve the target group of contacts you will be
 surveying during the phone bank:
@@ -145,7 +145,7 @@ surveying during the phone bank:
     you want to survey, then click **Go** to **Reserve Respondents**.
 5.  On the **Reserve Respondents** screen, click **Reserve**.
 
-### **Conduct your phone bank and record responses**
+### Conduct your phone bank and record responses
 
 During the phone bank, organisers and volunteers can search for the
 group of contacts they will be calling and enter the responses directly
@@ -158,12 +158,12 @@ into CiviCRM.
     whose responses you want to record, and click **Go**.
 4.  Enter the responses and results, then click **Record Response.**
 
-![Editable table with "name" and questions as column headers. Each row allows you to record the responses of a specific contact.](../img/phonebank_record_responses.jpg)
+![Editable table with "name" and questions as column headers. Each row allows you to record the responses of a specific contact.](/img/phonebank_record_responses.png)
 
-### **Reviewing Results of the Survey**
+### Reviewing Results of the Survey
 
 At the end of the phone bank, a program lead may want to review the
-results of the survey. Refer to the chapter Reports and Analysis to
+results of the survey. Refer to the [Reports and Analysis](/reporting/what-is-civireport.md) chapter to
 learn how to view this report.
 
 ## Mobilising Individuals to a Direct Action Event
@@ -190,9 +190,9 @@ be used to mobilise individuals:
     event.
 2.  From the search results or Group Contacts screen, you can add the
     list of contacts to the event by selecting **Add Contacts to Events**
-    from the actions list. To find out more about how to add contacts to
-    events, refer to the Everyday Tasks chapter in the Events section in
-    this book.
+    from the actions list.
+    See [Mass Registrations](/events/manual-event-registration.md#mass-registrations)
+    to learn more about registering multiple contacts for an event.
 3.  Once you have added the contacts to the event, you can enter
     participant information or responses from multiple interactions in
     the **Participant Info** area in a contact's participant record. You
@@ -202,11 +202,11 @@ be used to mobilise individuals:
     your list by viewing the participant list from the event listing,
     you could use **Batch Update Participants Via Profile** and select
     one of the following custom profiles provided by CiviEngage:
-
--   **Update Event Invite Responses** - to record responses from
-    multiple contacts with the participant.
--   **Update Participant Info** - to record general information about
-    participants, such as if they need childcare or rides to the event.
+    
+    -   **Update Event Invite Responses** - to record responses from
+        multiple contacts with the participant.
+    -   **Update Participant Info** - to record general information about
+        participants, such as if they need childcare or rides to the event.
 
 ## Using the Engagement Index
 
@@ -224,9 +224,9 @@ actions: **Phone Call, Meeting** or **Interview**.
     an activity such as **Meeting**.
 2.  Fill out the information about the activity, then enter the
     **Engagement Index**. To find out how to create options for the
-    Engagement Index, see the section called Campaign.
+    Engagement Index, see the [Campaign](/campaign/what-is-civicampaign.md) section of this book.
 
-![Screenshot of an activity of type meeting. The engagement list is a dropdown list with numbers.](../img/engagement_index.jpg)
+![Screenshot of an activity of type meeting. The engagement list is a dropdown list with numbers.](/img/engagement_index.png)
 
 ## Manage Voter Information
 

@@ -57,14 +57,14 @@ people who have unsubscribed are excluded from those future mailings.
 If you are sending mail to an existing Group, go to **Mailings > New
 Mailing**. You will see the following screen.
 
-![Bulk email based on existing groups](../img/email-compose-mailing.png)
+![Bulk email based on existing groups](/img/email-compose-mailing.png)
 
 If you are basing your mailing on search results, perform your search
 (for example, using **Search > Advanced Search**) and then choose
 **Email - Schedule/Send via CiviMail** from the **Actions** drop down.
 You will see the following screen.
 
-![Bulk email based on search results](../img/email-compose-search-based-mailing.png)
+![Bulk email based on search results](/img/email-compose-search-based-mailing.png)
 
 
 These are two screens are very similar, however, as described in
@@ -111,7 +111,7 @@ recipients (if mailing to search results). You can choose Groups to
 include (shown in green) and exclude (shown in red and struck through),
 by selecting them from the "Recipients" dropdown.
 Only groups of the type "Mailing List" will be available in the dropdown.
- ![Civimail Recipients include and exclude](../img/civimail-recipients-example.png)
+ ![Civimail Recipients include and exclude](/img/civimail-recipients-example.png)
  You can also refine your recipient list by including and excluding
 recipients of previous mailings. For instance, you may want to resend an
 email only to contacts that have been added to a Group since the last
@@ -127,7 +127,7 @@ did not receive the original mailing.
 field and to the left of the estimate of recipient numbers.  Click on it
 to access **Edit Options**.
 
-![Civimail Recipients Edit Options](../img/civimail-recipients-edit-options.png)
+![Civimail Recipients Edit Options](/img/civimail-recipients-edit-options.png)
 
   -   **Dedupe by email:** CiviCRM will always dedupe your mailing based on
  unique contact records. For example, if a contact is in three of the
@@ -172,8 +172,8 @@ is displayed whichever tab is selected. Within this panel are the options to:
       useful to ensure things like font consistency, basic layout and
       color.
 
-  -  Send a test email to a single email address (Note: If the email address
-    does not already exist in CiviCRM a new contact record will be created.)
+  -  Send a test email to a single email address. If the email address
+    does not already exist in CiviCRM a new contact record will be created.
   -  Send a test email to a an existing group in CiviCRM.
 
       The test mailing will fill in all the Tokens and include any attachments you are planning to send.
@@ -247,18 +247,19 @@ has unsubscribed from one of the mailing lists.
     means that all links will be overwritten with custom links
     containing your domain name.
 
-    **Note for HTML mail:** Some phishing filters may mark links that are
-    displayed differently in HTML code and in the text as unsafe. It is
-    therefore best not to use something like ```
-    <a href="http://google.com">http://Google.com</a>```
-     but rather use    ```
-     <a href="http://google.com">click here to go to Google</a>```
-     instead.
+    !!! note "Note for HTML mail"
+        Some phishing filters may mark links that are displayed
+        differently in HTML code and in the text as unsafe. It is therefore
+        best not to use something like  
+        `<a href="http://google.com">http://Google.com</a>`
+        but rather use  
+        ` <a href="http://google.com">click here to go to Google</a>` instead.
 
-    **Note for Plain Text email:** If you use short, user-friendly URLs
-    in your email, they will all be overwritten with long links
-    containing the name of your site and a long code looking like this
-    http://yoursite.com/sites/all/modules/civicrm/extern/url.php?u=529&qid=29011.
+    !!! note "Note for Plain Text Email"
+        If you use short, user-friendly URLs, they will all be overwritten
+        with long links containing the name of your site and a long code
+        looking like this
+        http://yoursite.com/sites/all/modules/civicrm/extern/url.php?u=529&qid=29011.
 
 -   **Track Opens:** This option allows you to track how many people
     opened the email you received. However, there are limitations to the
@@ -272,7 +273,7 @@ Once you have defined all aspects of your mailing click on **Next >**
 
 **Step 2: Review and Schedule**
 
-![CiviMail Review and Schedule screen](../img/civimail-review-and-scheduling.png)
+![CiviMail Review and Schedule screen](/img/civimail-review-and-scheduling.png)
 
 ### Review panel
 
@@ -310,7 +311,7 @@ information on all of the tracked actions, including the number of
 opens, link click-throughs or the percentage of bounces (see "Managing
 bounces" below).
 
-![](../img/CiviCRM_mailing_basicstatistics_1.png)
+![](/img/CiviCRM_mailing_basicstatistics_1.png)
 
 To expand on this information, click the name of one of the statistics
 to display a list of the contacts to whom it applies, and various other
@@ -328,7 +329,7 @@ to look for all contacts who opened the email, ready for you to add
 extra criteria. For more information on advanced searches, see
 "Searching".
 
-![](../img/CiviCRM_mailing_advancedsearch.png)
+![](/img/CiviCRM_mailing_advancedsearch.png)
 
 ## Managing mass mailings
 
@@ -340,8 +341,10 @@ Mass mailings can be found in one of three areas accessible via the
  **Save & Continue Later** or simply abandon a message after some
  steps, you can continue working on it by clicking on the
  **Continue** link next to the message listed here.
- (**Note:** Mailings started based on search results will not have the
- Continue link listed.)
+
+!!! note
+    Mailings started based on search results will not have the continue link
+    listed
 
  You can also **Delete** draft messages here.
 

@@ -15,7 +15,7 @@ the pledge. To do this:
 5.  You can also edit the scheduled payment to alter either when the
     payment is due or the amount of the payment.
 
-![image](../img/Pledge%20including%20editing.PNG)
+![image](/img/Pledge_including_editing.png)
 
 ###Batch entry of pledges
 
@@ -38,7 +38,7 @@ Create a new batch to hold the multiple payments you want to record:
 From the menu, click on **Contributions > Batch Data Entry** then
 select **New Data Entry Batch**.
 
-![image](../img/new%20pledge%20batch_1.PNG) 
+![image](/img/new_pledge_batch_1.png) 
 
 
 Enter the following information:
@@ -46,23 +46,25 @@ Enter the following information:
 -   **Batch Name**: CiviCRM will create a default batch name ("Batch N" + open date), which you can edit (required field)
 -   **Type**: Select **Pledge Payment**. This selects the appropriate
     reserved profile to view in the batch entry grid screen. 
--   **Status**: the default will be “Open” (note: once a batch has a
-    “closed status”, the batch will no longer be editable)
+-   **Status**: the default will be “Open”
 -   **Number of items**: total of payment items in the batch (required
     field)
 -   **Total amount**: total amount of all the payment items in the batch
     (required field) 
 
+!!! note
+    Once a batch has a “closed status”, the batch will no longer be editable
+
 You can edit or delete Batch information by going back to the **Bulk
 Data Entry** screen then clicking on **Edit** or **Delete** next to the
 batch you want.
 
-![image](../img/pledge%20batch%20edit.PNG) 
+![image](/img/pledge_batch_edit.png) 
 
 
 **2. Enter Pledge Payments (check, cash, EFT, etc.)**
 
-![image](../img/Pledge%20payments%20batch%20entry%20cropped.PNG)
+![image](/img/Pledge_payments_batch_entry_cropped.png)
 
 When you save information about the new batch, the batch data entry screen shown
 above will appear and you can begin entering payments on each line as
@@ -70,16 +72,17 @@ follows;
 
 -   **Contact.** You can:
 
-    - start entering the name of an existing contact and CiviCRM will
+    - Start entering the name of an existing contact and CiviCRM will
     return a list of potential contact names for you to select, OR 
-    -   create a new contact by clicking the drop-down box for “-create new
+    - Create a new contact by clicking the drop-down box for “-create new
     contact-“ and selecting the type of contact you want to create:**New
     Individual, New Organization**, or **New Household** and enter the
     information about the contact here. 
 
-    Note:  If contact information such as phone number or email address
-    are included in the grid profile, those values will be populated for
-    an existing contact and can be updated as needed. 
+    !!! note
+        If contact information such as phone number or email address
+        are included in the grid profile, those values will be populated for
+        an existing contact and can be updated as needed. 
 
 -   **Open Pledges:** Click on the down arrow to see all open pledges
     for the contact. You can assign the payment to any of the
@@ -134,7 +137,7 @@ the count or total don't match. In this case, you either:
 -   You can continue entering or editing the payments for the batch,
     then **Validate & Process the Batch** again. 
 
-![image](../img/CiviCRM-Contributions-everydaytasks-ignoremismatchbatch.jpg)
+![image](/img/CiviCRM-Contributions-everydaytasks-ignoremismatchbatch.png)
 
 
 
@@ -144,7 +147,7 @@ Sadly, some pledges will not come to fruition. To cancel a pledge, find
 it through a contact or the 'find pledges' search tool, use the 'more'
 link to the right side of the pledge and click 'Cancel'.
 
-![image](../img/pledge-cancel.png)
+![image](/img/pledge-cancel.png)
 
 
 

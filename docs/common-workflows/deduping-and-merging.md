@@ -59,7 +59,7 @@ Firstly view the dedupe rules. Go to **Contacts > Find and Merge
 Duplicate Contacts** in the navigation menu. This displays the following
 screen:
 
-![Duplicate Choose Find Rule](../img/duplicates-choose-find-rule.png)
+![Duplicate Choose Find Rule](/img/duplicates-choose-find-rule.png)
 
 Different rules are configured for each contact type (individuals,
 organizations, and households.) A default supervised rule and a default
@@ -123,7 +123,7 @@ being compared are flagged as suspected duplicates.
     least one of the contacts in any identified duplicate pair is in
     your selected group.  
 
-    ![duplicates-select-group](../img/duplicates-select-group.png)  
+    ![duplicates-select-group](/img/duplicates-select-group.png)  
 
     Contacts of the type to which the rule is
     assigned will be scanned and compared. If the match between two
@@ -132,7 +132,7 @@ being compared are flagged as suspected duplicates.
     You will be presented with a list of possible duplicates with a few
     show/hide tickboxes; Street Address, Post Code, Conflicts and Threshold.  
 
-  ![List of Possible Duplicates](../img/duplicates-list-of-possibles.png)  
+  ![List of Possible Duplicates](/img/duplicates-list-of-possibles.png)  
 
 4.  Clicking **Merge** for any pair of contacts brings up a table
     showing details for each contact. CiviCRM designates one record as
@@ -143,7 +143,7 @@ being compared are flagged as suspected duplicates.
 5.  If you want to move the information in the opposite direction, you
     can swap the duplicate and original contacts by choosing **Flip
     between original and duplicate contacts** at the top of the page.  
-![Duplicate Merge Screen](../img/duplicate-merge-screen.png)  
+![Duplicate Merge Screen](/img/duplicate-merge-screen.png)  
 
 6.  The rows on the merge screen are colour-coded.
     -  Green indicates the information is the same
@@ -169,7 +169,7 @@ being compared are flagged as suspected duplicates.
 Sometime it is appropriate to merge multiple pairs of duplicates at the same time.
 This can be done from the possible duplicates screen where you can display up to 100 rows.
 
-   ![List of Possible Duplicates Batch Merge](../img/duplicate-list-of-possibles-detail.png)
+   ![List of Possible Duplicates Batch Merge](/img/duplicate-list-of-possibles-detail.png)
 
 You can **Batch Merge All Duplicates** (This will merge **all** duplicates found,
 not just those displayed on your screen) or **Batch Merge Selected Duplicates**
@@ -199,23 +199,15 @@ page will not refresh automatically, just in case your database is very
 large, and searching for duplicates would cause a significant delay. You
 may then continue to assess and merge the remaining duplicates manually.
 
-![screenshot](../img/CiviCRM_dedupe_batchmerge.PNG)
+![screenshot](/img/CiviCRM_dedupe_batchmerge.png)
 
-**WARNING:** before you begin to consider using batch dedupe, please
-take note of the following:
+!!! warning
+    Before you begin to consider using batch dedupe, please take note of 
+    points below.
 
-1.  This feature is intended for use with large data sets that have
-    strictly managed field structures. If you have a small database with
-    only a few duplicates, we recommend you merge them manually using
-    your own judgement.
-2.  Once merged, the links between the duplicate contact and records
-    elsewhere in the system will be transferred to the original contact
-    (e.g. event participant records, groups, tags, contributions,
-    activities, cases and memberships). You will NOT be able to reverse
-    this change.
-3.  Duplicate records, once merged, will be deleted and are not
-    recoverable. We strongly recommend backing up your data before
-    running a batch merge.
+    *  This feature is intended for use with large data sets that have strictly managed field structures. If you have a small database with only a few duplicates, we recommend you merge them manually using your own judgement.
+    *  Once merged, the links between the duplicate contact and records elsewhere in the system will be transferred to the original contact (e.g. event participant records, groups, tags, contributions, activities, cases and memberships). You will NOT be able to reverse this change.
+    *  Duplicate records, once merged, will be deleted and are not recoverable. We strongly recommend backing up your data before running a batch merge.
 
 ## A multi-stage deduping process
 
@@ -246,5 +238,5 @@ disruption.
 
 1.  Select the duplicate contacts from your search results by clicking
     the check box at the left side of each record.
-2.  Select **Merge Contacts** from the ** Actions** menu.
+2.  Select **Merge Contacts** from the **Actions** menu.
 3.  Follow the normal steps for merging duplicate contacts.

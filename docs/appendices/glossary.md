@@ -39,7 +39,7 @@ An AGM is a meeting held every year by an organisation to inform its
 members of previous and future activities. Certain types of
 organisations are required by law to hold an AGM.
 
-## **AGPL (Affero General Public License)**
+## AGPL (Affero General Public License)
 
 A license for **open source software**. **CiviCRM** uses the [AGPL
 version 3.0 license](http://www.affero.org/oagpl.html), which gives you
@@ -144,7 +144,7 @@ CiviContribute is an online fundraising and donor management
 **component** which enables you to track and manage contributions to
 your organisation.
 
-## **CiviCRM**
+## CiviCRM
 
 What this whole manual is about! **CiviCRM** is web-based, **open source
 software** that allows you to record and manage information about your
@@ -155,7 +155,7 @@ employees, **clients**, vendors, etc.
 
 See **Scout**.
 
-## **CiviEngage**
+## CiviEngage
 
 CiviEngage is a Drupal module that enhances CiviCRM's core functions for
 non-profits focused on community organizing groups and civic engagement
@@ -622,8 +622,7 @@ point of contact for mailings etc.
 
 ## Profiles
 
-A central concept in **CiviCRM**. In essence a subset of fields. See the
-chapter on **Collecting and Sharing Data** for a full explanation.
+A set of fields used for collecting, modifying, and sharing data. See [Profles](/organising-your-data/profiles.md) for more information.
 
 ## Proprietary software
 

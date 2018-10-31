@@ -2,7 +2,7 @@
 
 This chapter contains step-by-step instructions for performing some important
 everyday tasks with email. Sending a mass mailing through CiviMail is covered
-in [Mass mailings using CiviMail](../email/mass-mailings-using-civimail)
+in [Mass mailings using CiviMail](/email/mass-mailings-using-civimail.md)
 
 ## Send an email to one person (with CC and BCC)
 
@@ -60,28 +60,29 @@ sender. The activity record will also list all the other message
 recipients. Unlike with mass mailing (see below) there is no one place
 where all emails sent via the Send Email function are listed.
 
-**Note:** If a message is sent to multiple recipients, each recipient
-will see only their own email address in the To field. Because the
-recipients don't see who else received the email, you might want to
-mention whom you are sending it to in the text of your mail (for
-instance: "TO: Members of the board, staff")
+!!! note
+    If a message is sent to multiple recipients, each recipient
+    will see only their own email address in the To field. Because the
+    recipients don't see who else received the email, you might want to
+    mention whom you are sending it to in the text of your mail (for
+    instance: "TO: Members of the board, staff")
 
 ## Inserting an image in an email
 
 Click the **image button** in the WYSIWYG editor.
 
-![](../img/Screen%20Shot%202015-04-25%20at%203.06.40%20PM.png)
+![](/img/Screen_Shot_2015-04-25_at_3.06.40_PM.png)
 
 The Image Properties window will appear. Click **Browse Server** to look
 for image files on your server.
 
-![](../img/civimail_window%20to%20browse%20server%202.jpg)
+![](/img/civimail_window_to_browse_server_2.png)
 In the left sidebar, you will see a directory of files. If the image you
 need is already uploaded to your server, navigate to it in the directory
 and select it. If not, Click **Upload** to choose a file from your
 computer.
 
-![](../img/civimail_file%20directory%203.jpg)
+![](/img/civimail_file_directory_3.png)
 
 Your computer's file-browsing window will open. Find the image file you
 want,
@@ -102,4 +103,4 @@ images to make email accessible to all user communities.
 
 Click **OK** to insert the image.
 
-![](../img/civimail_Insert%20image%206.jpg)
+![](/img/civimail_Insert_image_6.png)

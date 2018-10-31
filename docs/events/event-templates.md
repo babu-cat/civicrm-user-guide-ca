@@ -24,10 +24,10 @@ Cliqueu **Esdeveniments > Plantilles d'esdeveniments**.
 -   Les característiques més comunes poden incloure la localizació, tarifes d'esdeveniment, configuracions de registre
     en línia, configuracions d'expliqueu-ho a un amic, etc.
 
-![screenshot](../img/event_template_setup.png)
+![screenshot](/img/event_template_setup.png)
 
 Un cop hagueu creat una plantilla d'esdeveniment, podeu seleccionar aquesta plantilla (com es
 mostra en la següent captura de pantalla) quan comenceu a crear un nou esdeveniment.
 El vostre esdeveniment serà emplenat amb les propietats de configuració desades.
 
-![En el nou formulari d'esdeveniment, el primer seleccionable és "De plantilla".](../img/event_template_new.png)
+![En el nou formulari d'esdeveniment, el primer seleccionable és "De plantilla".](/img/event_template_new.png)

@@ -10,18 +10,17 @@ to date, and cumulatively since inception (i.e. all contribution records in
 Different layouts are available for viewing summaries. The following screenshot
 shows the most recent contribution to a campaign using the Table Layout tab:
 
-![ContactSummary1a](../img/CiviCRM-CiviContribute-EveryDayTasks-ContactSummary1a-en.png)
+![ContactSummary1a](/img/CiviCRM-CiviContribute-EveryDayTasks-ContactSummary1a-en.png)
 
 You can also view bar or pie charts to compare contribution totals across
 months of a given year and across years by clicking on the Chart Layout tab.
 
-![ContactSummary1b](../img/CiviCRM-CiviContribute-EveryDayTasks-ContactSummary1b-en.png "ContactSummary1b")
+![ContactSummary1b](/img/CiviCRM-CiviContribute-EveryDayTasks-ContactSummary1b-en.png "ContactSummary1b")
 
-Finally, you can add any number of contribution report instances to your
+Finally, you can add any number of contribution [Report Dashlets](/the-user-interface/menu-dashboard-and-dashlets.md#dashlets) to your
 personal CiviCRM Dashboard. These might include a bar chart summary of
 year-to-date contributions by Financial Type or month, a list of the top 10
-donors, etc. Refer to the _Reports_ section for details on adding reports
-("dashlets") to your personal dashboard
+donors, etc.
 
 # Finding contributions
 
@@ -39,7 +38,7 @@ The **Find contributions** search allows you to search based on contribution
 data and return contribution records. It is found at **Contributions > Find
 Contributions**.
 
-![Contribution Find Screenshot](../img/contributions-find-search.png)
+![Contribution Find Screenshot](/img/contributions-find-search.png)
 
 You can search based on a number of criteria, such as date range, contribution
 amount, contribution status etc. Contributions must match all specified criteria
@@ -53,14 +52,14 @@ in order to be returned, so the more criteria you enter, the narrower the search
  from a Find Contributions search displays the total amount, number of
  contributions, average contribution mean and mode for the search results.
 
- ![Screen shot batch update from search](../img/contributions-find-editcriteria.png)
+ ![Screen shot batch update from search](/img/contributions-find-editcriteria.png)
 
  You can select an action to perform from the **Actions** menu once you select
  all or a subset of the results. You can:
 
  - **Update multiple contributions**: This is useful if you want to update a
  large number of contributions' thank-you date at once, for example. You need to
- [create the profile](../organising-your-data/profiles) you want to use *before*
+ [create the profile](/organising-your-data/profiles.md) you want to use *before*
  you perform the search and batch update.
 
  - **Delete contributions**: This removes contributions entirely from the
@@ -68,7 +67,7 @@ in order to be returned, so the more criteria you enter, the narrower the search
  contributions and updating their status to canceled provides a better audit
  trail, but there may be situations where you do want to delete, such as a
  contribution entered on the wrong contact's record.
- - **Export contributions**: NOTE: This is an export of contributions.  If you
+ - **Export contributions**: This is an export of contributions.  If you
  choose to export multiple contributions from the same contact you will end up
  with one row for each contribution in your export file. If you want to do
  searches that return one result per contact, use the contact advanced search.

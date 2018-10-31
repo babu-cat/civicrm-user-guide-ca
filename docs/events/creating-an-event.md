@@ -3,8 +3,8 @@
 Aquest capítol tracta sobre com crear un esdeveniment nou, descrivint cada una de les
 opcions de configuració disponibles en la pantalla de creació de l'esdeveniment. Si voleu
 permetre les inscripcions en línia a l'esdeveniment, voldreu llegir també el
-capítol *Inscripcions en línia d'esdeveniments*. Si no, voldreu llegir el
-capítol *Inscripcions manuals d'esdeveniments*.
+capítol [Inscripcions en línia d'esdeveniments](/events/online-event-registration.md). Si no, voldreu llegir el
+capítol [Inscripcions manuals d'esdeveniments](/events/manual-event-registration.md).
 
 Per començar, creeu un esdeveniment nou escollint **Esdeveniments > Esdeveniment nou**
 en el menú. (Si no podeu veure el menú d'esdeveniment, assegureu-vos que
@@ -13,14 +13,14 @@ Configura > Configuracions globals > Habilita els components**.)
 
 ## Informació i configuracions de l'esdeveniment
 
-La primera pàgina que veieu quan creeu un esdeveniment us demana informació bàsica
+La primera pàgina que veieu quan creeu un esdeveniment us demana informació bàsica en línia
 sobre l'esdeveniment. Podeu clicar en qualsevol dels signes d'interrogació blaus per
 mostrar l'ajuda per a cada un dels camps. Quan veieu un llapis, si hi cliqueu
 us portarà a una pantalla on podreu editar les opcions disponibles.
 Noteu, que depenent dels permisos que tingueu, es possible que no pugueu editar aquestes
 opcions i per tant no veureu el llapis.
 
-![screenshot](../img/4.5_new_event.PNG)
+![screenshot](/img/4.5_new_event.png)
 
 **Plantilla base** us permet crear un esdeveniment des d'una plantilla (vegeu
 el capítol *Plantilles d'esdeveniments* en aquesta secció) en comptes de crear-ne un des de
@@ -29,7 +29,7 @@ zero.
 **Tipus d'esdeveniment** us permet categoritzar l'esdeveniment.
 
 Si teniu habilitat **CiviCampaign**, podreu seleccionar una campanya per aquest
-perquè passi a ser part d'ella (vegeu la secció *Campanyes* per més detalls).
+perquè passi a ser part d'ella (vegeu la secció [Campanyes](/campaign/everyday-tasks.md) per més detalls).
 
 **Rols** distingeix diferents tipus de participants d'esdeveniments, com ara
 assistents, conferenciants i treballadors. Quin rol s'hauria d'assignar als participants
@@ -46,8 +46,7 @@ definiu en aquesta secció només *habiliten* els llistats de participants &mdas
 un, haureu de crear un element de menú o enllaçar aquest llistat
 en algun lloc del web. Un cop hagueu creat l'esdeveniment,
 l'enllaç al llistat de participants es mostra a la pàgina de configuració de l'esdeveniment.
-Consulteu el capítol *Gestió d'esdeveniments* per informació de llistats de
-participants i altres maneres de promocionar els esdeveniments.
+Consulteu el capítol [Gestió d'esdeveniments](/events/event-planning-and-management.md) per informació de [llistats de participants](/events/keeping-track-of-events-and-participants.md#finding-and-administering-participants) i altres maneres de [promocionar els esdeveniments](/events/event-planning-and-management.md#promoting-your-events).
 
 Com es diu l'esdeveniment? El **Títol de l'esdeveniment** apareixerà a les pàgines
 d'informació de l'esdeveniment, pàgines d'inscripció, llistats d'esdeveniments i en la pàgina
@@ -104,7 +103,7 @@ posteriors clicant **Utilitza una ubicació existent** i seleccionant-la de la
 llista desplegable. Noteu que si seleccioneu una ubicació existent i l'editeu,
 s'actualitzarà aquesta ubicació per a tots els esdeveniment que l'utilitzin.
 
-![Configura el formulari de l'esdeveniment. La segona pestanya és l'ubicació de l'esdeveniment.](../img/event_location_with_warning.png)
+![Configura el formulari de l'esdeveniment. La segona pestanya és l'ubicació de l'esdeveniment.](/img/event_location_with_warning.png)
 
 Podeu llistar també números de telèfon i adreces de correu electrònic en la pàgina
 d'informació de l'esdeveniment si voleu donar als inscrits una manera per contactar directament amb
@@ -137,7 +136,7 @@ pagament? Si és així, podeu activar l'**opció de pagament en diferit** i defi
 etiqueta i unes instruccions de pagament. Si el manteniu desmarcat, es requerirà
 fer el pagament als inscrit mitjançant targeta de crèdit.
 
-![En la tercera pestanya del formulari de configuració de l'esdeveniment, podeu especificar si es tracta d'un esdeveniment de pagament.](../img/CiviCRM_update-CiviEvent-EventFeesPayLater-en.png "EventFeesPayLater")
+![En la tercera pestanya del formulari de configuració de l'esdeveniment, podeu especificar si es tracta d'un esdeveniment de pagament.](/img/CiviCRM_update-CiviEvent-EventFeesPayLater-en.png "EventFeesPayLater")
 
 Les **tarifes regulars** proporcionen un conjunt de nivells de preus dels quals l'inscrit
 ha de seleccionar un únic nivell (p. ex. una inscripció individual per 50€ o
@@ -145,7 +144,7 @@ una inscripció familiar per 100€). Cada import de tarifa té una etiqueta ass
 i podeu configurar una tarifa per defecte. Aquesta aproximació funciona bé per la majoria d'esdeveniment
 i és senzill de configurar. Aquí un exemple simple:
 
-![L'exemple mostra tres tarifes diferents: una per a membres, una per a estudiants que no siguin membres i una per altres que no siguin membres.](../img/CiviCRM_update-CiviEvent-EventRegFees-en.png "EventRegFees")
+![L'exemple mostra tres tarifes diferents: una per a membres, una per a estudiants que no siguin membres i una per altres que no siguin membres.](/img/CiviCRM_update-CiviEvent-EventRegFees-en.png "EventRegFees")
 
 Si l'esdeveniment requereix una estructura de preus més complexa, amb més
 opcions o extensions addicionals, potser voleu utilitzar **conjunts de preus** o
@@ -159,7 +158,7 @@ ofereix molts beneficis. La inscripció en línia és convenient pels vostres
 contactes i poden estalviar al vostre equip temps i recursos. Si no necessiteu
 oferir la inscripció en línia, no marqueu **Permetre la inscripció
 en línia** i passeu al següent pas. Si voleu permetre
-la inscripció en línia, vegeu el capítol *Inscripció d'esdeveniments en línia*
+la inscripció en línia, vegeu el capítol [Inscripció d'esdeveniments en línia](/events/online-event-registration.md)
 en aquesta secció.
 
 ## Recordatoris programats
@@ -178,7 +177,7 @@ Per configurar un recordatori programat per un esdeveniment específic, cliqueu 
 pestanya de recordatoris programats que us mostrarà els recordatoris programats existents
 per aquest esdeveniment (si n'hi ha cap) i cliqueu a **Afegeix recordatori**.
 
-![La sisena pestanya és pels recordatoris programats.](../img/scheduled-reminder-events.png)
+![La sisena pestanya és pels recordatoris programats.](/img/scheduled-reminder-events.png)
 
 Empleneu en els detalls d'aquest
 formulari per enviar, per exemple, un correu electrònic a tots els conferenciants inscrits 3
@@ -187,7 +186,7 @@ l'estat (inscrit, assistit, etc.) i també per rol (conferenciant, assistent,
 voluntari, etc.). Podeu també utilitzar una plantilla o compondre el vostre propi
 missatge en la caixa de format HTML.
 
-![screenshot](../img/scheduled-reminder-events-compose.png)
+![screenshot](/img/scheduled-reminder-events-compose.png)
 
 A més de configurar recordatoris en un esdeveniment, també podeu
 configurar-los per un tipus específic d'esdeveniments i afegir-los a plantilles d'esdeveniments
@@ -205,7 +204,7 @@ capacitats d'"Explica-ho a un amic". Podeu definir el text i els enllaços que h
 inclosos en aquesta pàgina i en el correu electrònic enviat des de l'eina (vegeu la
 següent captura de pantalla).
 
-![EventTellFriend](../img/CiviCRM_update-CiviEvent-EventTellFriend-en.png "EventTellFriend")
+![EventTellFriend](/img/CiviCRM_update-CiviEvent-EventTellFriend-en.png "EventTellFriend")
 
 Un registre d'activitat "Explica-ho a un amic" s'afegirà a la pestanya d'activitat
 del participant cada vegada que enviï un correu electrònic als seus amics. Això us permet
@@ -230,7 +229,7 @@ per veure la llista de missatges que podeu modificar. Cliqueu **Edita** al costa
 la fila "Esdeveniments - Inscripció confirmació i rebut" per editar
 el contingut i la disposició.
 
-![Llista de plantilles de missatges amb dues pestanyes. La segona pestanya és pel Missatges de flux de treball del sistema.](../img/CiviCRM_update-CiviEvent-WorkflowMsgTpls-en.png "WorkflowMsgTpls")
+![Llista de plantilles de missatges amb dues pestanyes. La segona pestanya és pel Missatges de flux de treball del sistema.](/img/CiviCRM_update-CiviEvent-WorkflowMsgTpls-en.png "WorkflowMsgTpls")
 
 
 Les plantilles per aquests missatges inclouen tant el text a mostrar com

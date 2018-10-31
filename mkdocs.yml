@@ -8,8 +8,10 @@ markdown_extensions:
   - attr_list
   - admonition
   - def_list
-  - codehilite(guess_lang=false)
-  - toc(permalink=true)
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.tilde
@@ -105,17 +107,17 @@ pages:
     - 'Renewals': 'membership/renewals.md'
     - 'Cancelling and expiring memberships': 'membership/cancelling-and-expiring-memberships.md'
     - 'Making member only websites': 'membership/making-member-only-websites.md'
-- Correu electrònic (untranslated):
-    - 'What is CiviMail?': 'email/what-is-civimail.md'
-    - 'What You Need To Know': 'email/what-you-need-to-know.md'
-    - 'Set-up': 'email/set-up.md'
-    - 'Maintaining Healthy Email Lists': 'email/maintaining-healthy-email-lists.md'
-    - 'Everyday tasks': 'email/everyday-tasks.md'
+- Correu electrònic (partially translated):
+    - 'What is CiviMail? (untranslated)': 'email/what-is-civimail.md'
+    - 'What You Need To Know (untranslated)': 'email/what-you-need-to-know.md'
+    - 'Set-up (untranslated)': 'email/set-up.md'
+    - 'Maintaining Healthy Email Lists (untranslated)': 'email/maintaining-healthy-email-lists.md'
+    - 'Everyday tasks (untranslated)': 'email/everyday-tasks.md'
     - 'Mass mailings using CiviMail': 'email/mass-mailings-using-civimail.md'
-    - 'Reports and analysis': 'email/reports-and-analysis.md'
-    - 'Scheduled reminders': 'email/scheduled-reminders.md'
-    - 'CiviMail A/B Testing': 'email/civimail-ab-testing.md'
-    - 'Message templates': 'email/message-templates.md'
+    - 'Reports and analysis (untranslated)': 'email/reports-and-analysis.md'
+    - 'Scheduled reminders (untranslated)': 'email/scheduled-reminders.md'
+    - 'CiviMail A/B Testing (untranslated)': 'email/civimail-ab-testing.md'
+    - 'Message templates (untranslated)': 'email/message-templates.md'
 - SMS (missatges de text) (untranslated):
     - 'What is SMS?': 'sms-text-messaging/what-is-sms.md'
     - 'Set-up': 'sms-text-messaging/set-up.md'
@@ -168,6 +170,7 @@ pages:
     - 'Bug Reporting': 'the-civicrm-community/bug-reporting.md'
     - 'Localising CiviCRM': 'the-civicrm-community/localising-civicrm.md'
     - 'Contribuir a aquesta guia': 'the-civicrm-community/contributing-to-this-manual.md'
+    - 'Asking for help in Chat': 'the-civicrm-community/asking-for-help-in-chat.md'
 - Annexos (untranslated):
     - 'Història d&apos;aquest llibre': 'appendices/history-of-this-book.md'
     - 'Programari lliure?': 'appendices/free-software.md'

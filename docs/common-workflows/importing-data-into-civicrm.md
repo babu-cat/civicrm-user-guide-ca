@@ -13,8 +13,9 @@ in the final section of this chapter.
 ## Considerations before importing
 
 For more details on how to think about your data before importing into
-CiviCRM, please read the section on "Organizing your data", especially
-"Mapping your data into CiviCRM".
+CiviCRM, please read the section on 
+["Organizing your data"](/organising-your-data/overview.md), especially
+["Mapping your data into CiviCRM"](/organising-your-data/mapping-your-data.md).
 
 ## Preparing to import data
 
@@ -125,8 +126,8 @@ with minimal problems:
     field to be "orange" for a contact that currently has Colors set to
     "blue", the result will be that Colors is set to orange, not orange
     and blue.
--   To import multiple values into a multiple choice field use the "|" (pipe) 
-    character as a separator.
+-   To import multiple values into a multiple choice field use the "," (comma) 
+    character as a separator - using either the Label OR the Value of the required option(s) i.e.: "1, 2, 3" or "fred, red, yellow".
 -   Make sure your data source uses an accepted date format and that you
     select the same date format on the Choose Data Source screen of the
     import wizard.
@@ -170,7 +171,7 @@ required for deduplication purposes.
 
 Example of spreadsheet .csv format
 
-![spreadsheet with first name, last name, grade, student number, etc.](../img/CiviCRM-student_sample-en.png)
+![spreadsheet with first name, last name, grade, student number, etc.](/img/CiviCRM-student_sample-en.png)
 
 When thinking about setting up your spreadsheet, think about the data
 that you are collecting and plan out your column headings. Keep in mind
@@ -196,12 +197,12 @@ source of the data. Data can come from either a CSV file, or an SQL
 query of a database on your server. A check-box lets you indicate
 whether the first row of your file contains column headers.
 
-![Import contacts form with with tab "1. Choose Data Source" highlighted.](../img/Screen%20Shot%202015-04-29%20at%203.54.21%20PM.png)
+![Import contacts form with with tab "1. Choose Data Source" highlighted.](/img/Screen_Shot_2015-04-29_at_3.54.21_PM.png)
 
-Note that imports use the default **unsupervised** rule to decide
-whether a contact record is a duplicate (refer to the *Deduping and
+Note that imports use the default **unsupervised** Dedupe Rule to decide
+whether a contact record is a duplicate, unless you select another Dedupe Rule during this step.  Refer to the *Deduping and
 Merging* chapter in this section for information on duplicate matching
-rules in CiviCRM). You can specify what action to take when an import
+rules in CiviCRM. You can specify what action to take when an import
 encounters a duplicate:
 
 -   **Skip**: skip the duplicate contact, i.e. leave the original record
@@ -215,7 +216,7 @@ encounters a duplicate:
 -   **No Duplicate Checking**: this inserts all valid records without
     comparing them to existing contact records for possible duplicates.
 
-![screenshot](../img/Import%20Options.png)
+![screenshot](/img/Import_Options.png)
 
 **Import mappings** tell CiviCRM how the fields of data in your import
 file correspond to the fields in CiviCRM. The first time you import from
@@ -233,7 +234,7 @@ fourth column is the Matching CiviCRM Field. If you loaded an import
 mapping in Step 1, your choices will be reflected here. You can change
 them if they are inappropriate for this import.
 
-![ImportMatchFields](../img/CiviCRM_update-CiviCore-ImportMatchFields-en.png "ImportMatchFields")
+![ImportMatchFields](/img/CiviCRM_update-CiviCore-ImportMatchFields-en.png "ImportMatchFields")
 
 The matching CiviCRM fields include standard CiviCRM data such as First
 Name and Last Name as well as any custom data fields that have been
@@ -255,7 +256,7 @@ right of the columns you've previously mapped in CiviCRM. This allows
 you to use the existing saved field mapping to map the initial import
 fields, and then continue mapping the new data fields.
 
-![Step2d](../img/CiviCRM-AddingImporting-Step2d-en.png "Step2d")
+![Step2d](/img/CiviCRM-AddingImporting-Step2d-en.png "Step2d")
 
 Note that if you add new data columns in your spreadsheet and do not
 position the columns AFTER the columns you previously mapped, you then
@@ -278,7 +279,7 @@ message with a count of the invalid rows (see the screenshot below).
 Click the Download Errors link and review the errors reported in the
 downloaded file, so you can fix them before doing the import.
 
-![ImportPreviewErrs](../img/CiviCRM_update-CiviCore-ImportPreviewErrs-en.png "ImportPreviewErrs")
+![ImportPreviewErrs](/img/CiviCRM_update-CiviCore-ImportPreviewErrs-en.png "ImportPreviewErrs")
 
 At the bottom of the form, you can choose to add the contacts to an
 existing group, import to a new group, create a new tag, or tag imported
@@ -286,7 +287,7 @@ records. Adding imported records to a separate group is strongly
 recommended in order to be able to quickly find the imports and, if
 necessary, delete and reimport them.
 
-![Step3b_1](../img/CiviCRM-AddingImporting-Step3b_1-en.png "Step3b_1")
+![Step3b_1](/img/CiviCRM-AddingImporting-Step3b_1-en.png "Step3b_1")
 
 ### Step 4: Summary
 
@@ -295,7 +296,7 @@ Contacts and Errors. If you have set the import to add all contacts to a
 Group or Tag, you can click through to see your imported contact
 records.
 
-![Step4a_2](../img/CiviCRM-AddingImporting-Step4a_2-en.png "Step4a_2")
+![Step4a_2](/img/CiviCRM-AddingImporting-Step4a_2-en.png "Step4a_2")
 
 At this point it makes sense to check to make sure that your import has
 worked as expected. Search for the contacts that you just imported and
@@ -328,9 +329,9 @@ In the example below we have one CSV file which contains father and
 mother information. We use this CSV file twice as part of the import.
 Have a look at the fields below to understand what is happening.
 
-![Parent1a](../img/CiviCRM-AddingImporting-Parent1a-en.png "Parent1a")
+![Parent1a](/img/CiviCRM-AddingImporting-Parent1a-en.png "Parent1a")
 
-![Parent1b](../img/CiviCRM-AddingImporting-Parent1b-en.png "Parent1b")
+![Parent1b](/img/CiviCRM-AddingImporting-Parent1b-en.png "Parent1b")
 
 We are linking the father to the original child using the external
 identifier and are then importing the related father name using the
@@ -438,6 +439,9 @@ doing this you will still need to include Membership ID to match to an
 existing membership, and the Membership Type and Membership Start Date
 fields in you CSV file, even if the values you import for those fields
 are no different from the values already in your database.
+
+!!! tip "See also"
+    [Importing memberships](/membership/manual-entry-of-memberships.md#importing-memberships) in the Memberships chapter. 
 
 ## Import Participants
 

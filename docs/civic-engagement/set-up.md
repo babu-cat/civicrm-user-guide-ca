@@ -66,7 +66,7 @@ CiviEngage features.
 To review the custom field sets, go to **Administer > Customize >
 Custom Data** in the navigation menu. 
 
-![screenshot](../img/civiengage_custom_data_sets_small.jpg)
+![screenshot](/img/civiengage_custom_data_sets_small.png)
 
 The following list describes each of the custom field sets provided by
 CiviEngage; the bulleted items are custom fields within those custom
@@ -74,8 +74,7 @@ field sets. You should add, edit, or disable (we highly suggest that you
 do not delete) the available options for each custom field to make them
 better fit your organisation's needs.
 
-To learn more about using custom fields sets, see the chapter Creating
-Custom Fields in the section Your Data and CiviCRM.
+See [Creating Custom Fields](/organising-your-data/creating-custom-fields.md) for more information about custom fields sets.
 
 ### Communications Details
 
@@ -288,7 +287,7 @@ and modifying to match the kinds of information you need to track for
 your work.
 
 To learn more about working with value options or multiple choice
-options, see the chapter called Creating Custom Fields.
+options, see the chapter called [Creating Custom Fields](/organising-your-data/creating-custom-fields.md).
 
 ### Value Options for Issue Interests
 
@@ -345,11 +344,9 @@ for recording responses.
 
 ## Custom profiles
 
-CiviEngage creates several custom profiles for easier batch updating of
+CiviEngage creates several [custom Profiles](/organising-your-data/profiles.md) for easier batch updating of
 individual or organisation information, such as voter demographics,
 issue interests, volunteer interests or event participant information.
-To learn more about profiles, please refer to the chapter called
-Profiles in the Core Functionality section.
 
 ## Setting up Surveys for Walklists and Phonebanking
 
@@ -416,16 +413,16 @@ section of this book).
  -  For WalkList surveys: -   Create your custom data set for use with Activities of type Walklist 
 
  -  For PhoneBank surveys: -   Create your custom data set for use with Activities of type PhoneBank 
-![screenshot](../img/create_custom_data_sets.jpg) 
+![screenshot](/img/create_custom_data_sets.png)
 
 2. Then for both Walklist or Phonebank surveys you can create the
 questions as the custom field labels and the responses you want to
 collect as the option values.
-![screenshot](../img/custom_data_for_walklists.jpg)
+![screenshot](/img/custom_data_for_walklists.png)
 
 3. Next, create the custom profile that will pull in the questions for
 your survey (to learn more about creating profiles, see the *Organising
 Your Data* section of this book). 
 
-![screenshot](../img/custom_profile_for_walklist.jpg) 
+![screenshot](/img/custom_profile_for_walklist.png)
 

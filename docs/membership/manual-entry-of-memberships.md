@@ -6,23 +6,23 @@ of office staff (which can be very powerful and save organisations a lot
 of administration time), there are many situations when memberships need
 to be processed manually. This chapter describes the various ways in
 which office staff (or any appropriately permissioned users) can
-manually create and process memberships, including: 
+manually create and process memberships, including:
 
 -   Creating new membership records one by one (including gift
-    memberships where the payment comes from a different contact) 
--   Batch data entry of members 
+    memberships where the payment comes from a different contact)
+-   Batch data entry of members
 -   Importing Memberships
 
 ## CiviMember Access Control
 
-As with other CiviCRM functions, Administer > User & Permissions >
-Permissions allows you to control access to various CiviMember features.
+As with other CiviCRM functions, **Administer > User & Permissions >
+Permissions** allows you to control access to various CiviMember features.
 
 
 -   For users who need to find and view memberships - assign the
     **access CiviMember** permission, the **view contributions**
     permission if payments are involved and make sure the user has view
-    contact permissions for the associated record. 
+    contact permissions for the associated record.
 -   For users who need to create and/or edit membership records - assign
     the **edit memberships** permission, the **edit contributions**
     permission if payments are involved and make sure the user has edit
@@ -30,14 +30,14 @@ Permissions allows you to control access to various CiviMember features.
 
 More details on permissions can be found at
 [http://wiki.civicrm.org/confluence/display/CRMDOC/Default+Permissions+and+Roles](http://wiki.civicrm.org/confluence/display/CRMDOC/Default+Permissions+and+Roles)
-. 
+.
 
 ## Creating a New Membership Record
 
 You can create a new membership record in a couple ways, by looking at
 an existing contact's record, or through the Memberships menu. Using
 the membership menu is useful because you can create a new contact at
-the same time as adding the new membership record. 
+the same time as adding the new membership record.
 
 An advantage of creating a new membership record directly from an
 existing contact's record is that if you have set up a payment processor
@@ -58,24 +58,21 @@ have the option to record other types of payments like checks and cash.
     select the **Submit Credit Card Membership** option and process the
     payment immediately.
 
-![image](../img/manual-add-membership.png) 
+![image](/img/manual-add-membership.png)
 
 Many of the fields on "New Membership" form will be auto-completed if
 left blank. Fields include:
 
--   **Membership Organization and Type:** select the name of the
+-   **Membership Organization and Type**: select the name of the
 organization that the contact has a membership with and the type of
-membership ***OR*** 
+membership ***OR***
 
--   **Choose Price Set**: select Choose Price Set rather than Membership
-Organization and Type if you have various fee structures for different
-classes of memberships. (see the chapter *membership price sets* for more
-details) 
+-   **Choose Price Set**: If you have various fee structures for different classes of memberships, you can use [Membership Price Sets](/membership/membership-price-sets.md) by selecting Choose Price Set (rather than Membership Organization and Type).
 
--   **Number of Terms:** enter the number of membership periods or terms
+-   **Number of Terms**: enter the number of membership periods or terms
 associated with this membership record. The membership end date will
 then be set to an end date for this number of terms (this option is
-hidden when using membership price sets) 
+hidden when using membership price sets)
 
 -   **Source**: if left blank the system will complete details regarding the
 record, including whether it was an offline or online transaction and
@@ -104,10 +101,10 @@ the Membership.
 
 -   **Status Override?**: check this box to manually define a status for the
 membership record. As indicated by the title, it overrides the status
-automatically provided. You should use caution with this field as
-setting it will stop the status from automatically updating based on the
-membership status rules you have set up (see the chapter *Defining
-memberships).*
+automatically provided.
+
+    !!! caution
+        This setting will stop the status from automatically updating based on the membership status rules you have set up when [defining your memberships](/membership/defining-memberships.md).
 
 -   **Record Membership Payment?**: by checking the box and completing the
 transaction fields displayed, you will record the money paid for the
@@ -119,7 +116,7 @@ the bottom.
     -   **Record Payment from a Different Contact?**: this is often used for
         Gift memberships.
     -   **Financial Type**: select the appropriate financial type for this
-        payment. 
+        payment.
     -   **Amount**: enter the amount of the membership payment.
     -   **Received Date and Time**: enter the date and time the payment was
         received.
@@ -140,20 +137,18 @@ the contact that their membership is confirmed
 
     -   **Receipt From:** select the email address the confirmation receipt
         is from. If the email address you want to use is not listed, you
-        can add it by going to**Mailings > From Emails**.
-    -   **Receipt Message:**you can enter text here to send a special
+        can add it by going to **Mailings > From Email Addresses**.
+    -   **Receipt Message:** you can enter text here to send a special
         message to the member. If you don't enter text, the default
         confirmation and receipt message will be used.
 
-### **Auto-renew Memberships via Back end**
+### Auto-renew Memberships via Back end
 
 To manually create a membership that will auto-renew go to the contact's
-summary screen, select the **Memberships**tab and click on **Submit
+summary screen, select the **Memberships** tab and click on **Submit
 Credit Card Membership**. If you select a Membership Type that is set up
 for recurring, a checkbox labelled **Membership renewed automatically**
 will be exposed.
-
-
 
 If you check Auto-renew, a recurring payment (subscription) request will
 be submitted to the selected payment processor. If the request is
@@ -164,15 +159,15 @@ cancel the auto-renewal.
 
 ### Via the **Memberships** menu
 
--   Navigate to **Memberships** **> New Membership**, then select the
-    contact or create a new contact. 
+-   Navigate to **Memberships > New Membership**, then select the
+    contact or create a new contact.
 
-![image](../img/memberships%20add%20membership%20new%20contact.JPG)
+![image](/img/memberships_add_membership_new_contact.png)
 
 -   Fill out the New Member form with the appropriate membership and
     payment information as in *Via an existing contact record* above.
 
-![image](../img/memberships%20add%20membership%20via%20menu.JPG) 
+![image](/img/memberships_add_membership_via_menu.png)
 
 ## Gift Memberships
 
@@ -183,9 +178,9 @@ existing or a new contact created during the process. The payment will
 be recorded on the gifter's record with a soft credit for the membership
 on the gift recipient's record. The receipt will be sent to the gifter.
 You will need to send a separate email or letter to tell the gift
-recipient about their membership. 
+recipient about their membership.
 
-![image](../img/gift%20membership.PNG)
+![image](/img/gift_membership.png)
 
 ## Entering batches of membership payments
 
@@ -194,13 +189,13 @@ CiviCRM offers a **Batch Data Entry** feature (found in the
 membership payments that have been received into the office on paper
 forms, or similar. It can be used for new and existing contacts and
 includes verification of the total amount and count of items against the
-payments you’ve recorded on your deposit slip(s). 
+payments you’ve recorded on your deposit slip(s).
 
 This feature has a batch entry grid input screen, which has a couple of
 tools that you can use to speed up processing when you have a lot of
 memberships to process at the same time. It includes a copy feature to
 set all fields to the same value, and allows you to create new contacts
-without leaving the batch entry screen. 
+without leaving the batch entry screen.
 
 The fields of information that you want to collect in the batch entry
 input grid for Batches are determined by several CiviCRM reserved
@@ -208,22 +203,19 @@ profiles. If you want to collect other kinds of information that are
 not currently included in these profiles, you will need to alter these
 profiles to reflect the fields you want to display.
 
-You can read more details about the *Batch Entry of Contributions or
-Membership Payments* feature in the *Set-Up* chapter of the
-*Contributions* section. 
- 
+You can read more details about the [Batch Entry of Contributions or
+Membership Payments](/contributions/manual-entry-of-contributions.md#batch-entry-of-contribution-membership-or-pledge-payments.
 
-## Importing Memberships 
+
+## Importing Memberships
 
 The **Importing Memberships** feature is very useful if you have a large
 set of membership records that comes from a source outside of CiviCRM.
 This feature can also be used to update large numbers of existing
 memberships with new information.
 
-You should read the *Importing Data* chapter in the *Common Workflows*
-section, before you begin importing memberships since this gives lots of
-relevant general information. Here are a few details specific to
-membership importing that you should be familiar with.
+!!! tip "See also"
+    The [Importing Data](/common-workflows/importing-data-into-civicrm.md) page explains the import process generally, and also has a section specifically on [importing memberships](/common-workflows/importing-data-into-civicrm.md#import-memberships).
 
 -   Contact records must exist before you import membership data. If
     you want to import membership data for contacts that do not yet
@@ -240,31 +232,30 @@ membership importing that you should be familiar with.
     membership types set up by your CiviCRM Administrator. The start
     date should use the date format specified for your CiviCRM
     installation. If your import file does not contain these fields then
-    you will not be able to import it. 
+    you will not be able to import it.
 -   You must import membership data for different contact types
     separately. Importing files with more than one contact type will not
     work. (You must import new memberships and renewals separately
-    also.) 
+    also.)
 
 Now you are ready to import your membership data:
 
-1. 
-Navigate to **Memberships > Import Memberships**.
-1. 
-On the Upload Data screen:
+1. Navigate to **Memberships > Import Memberships**.
 
-    -   Select your import data file. It must be a CSV file. 
-    -   Select the checkbox if your source data contains column headers. 
-    -   Specify the contact type you are importing. 
+1. On the Upload Data screen:
+
+    -   Select your import data file. It must be a CSV file.
+    -   Select the checkbox if your source data contains column headers.
+    -   Specify the contact type you are importing.
     -   Indicate what date format you are using.
     -   Click **Continue >>**.
-1. 
-On the Match Fields screen, map your membership data with the
+
+1. On the Match Fields screen, map your membership data with the
 appropriate CiviCRM fields under the Matching CiviCRM Field column.
 Note that you can **Save this field mapping** so you can re-use this
-mapping for future imports. 
-1. 
-On the Preview screen, you will see the preview of the results of your
+mapping for future imports.
+
+1. On the Preview screen, you will see the preview of the results of your
 import. There is a table that lists the Total Rows in the uploaded file,
 the number if rows with errors and the number of valid rows. If you
 continue with the import, the rows with errors will be skipped. You can
@@ -272,9 +263,8 @@ download a file with just these problem records and continue with the
 import. You can then edit the errors and do another import with them.
 Alternatively, you can fix the errors in your original CSV file and
 start the import again.
-1. 
-If there are no errors or you don't want to correct the found errors,
+
+1. If there are no errors or you don't want to correct the found errors,
 click **Import Now>>**. You will be shown the progress of the
 import until it is complete. When the import is complete, you will see a
-summary of the import activity and its results. 
-
+summary of the import activity and its results.

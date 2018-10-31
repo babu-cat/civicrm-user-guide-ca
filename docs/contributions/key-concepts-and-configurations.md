@@ -24,7 +24,7 @@ poden fer el seguiment d'ingressos, actius, taxes i recompenses (si aplica) com 
 requerit tal com es mostra pels quatre tipus financers de la següent imatge.
 
 
-![financial types and accounts](../img/civicontribute-financial-types-and-accounts.png)
+![financial types and accounts](/img/civicontribute-financial-types-and-accounts.png)
 
 
 Els **comptes financers** haurien d'estar basats en la taula de comptes de la vostra
@@ -33,7 +33,7 @@ Quan la contribució és desada, els crèdits i dèbits corresponents es
 registren automàticament pels comptes financers vinculats al tipus financer.
 (Si estu utilitzant
 conjunts de preus, cada opció en el conjunt de preus pot ser vinculada a un tipus financer
-diferent i el CiviCRM seguirà registrant els dèbits i crèdits 
+diferent i el CiviCRM seguirà registrant els dèbits i crèdits
 corresponents per tots els comptes financers vinculats.)  
 
 Haurieu de consultar el comptable o administrador de la vostra organització abans
@@ -56,7 +56,7 @@ solidàries" i encara un altre "Donatius recurrents".
 Per crear un nou tipus financer navegueu a **Administra > CiviContribute >
 Tipus financers**,  i clicar a **Afegeix un tipus financer**
 
-![Adding Financial Type](../img/civicontribute-financial-types-add-new.png)
+![Adding Financial Type](/img/civicontribute-financial-types-add-new.png)
 
 Quan creeu un tipus financer amb un nom específic, el CiviCRM crearà automàticament
 un compte d'ingressos amb nom similar i l'assignarà junt amb
@@ -69,7 +69,9 @@ el de simplificar el cas comú on una organització només té un únic
 compte de dipòsit bancari, un únic compte per cobrar i un únic compte per pagar, però proporciona
 la flexibilitat per configuracions més sofisticades.
 
-![Editing accounts linked to financial type](../img/civicontribute-financial-types-linked-accounts.png)
+Tingueu en compte que podeu utilitzar CiviCRM's el sistema de permissos basat en rols per controlar l'accés dels usuaris a la informació de les contribucions definint els [Permissos de tipus financer](/initial-set-up/permissions-and-access-control.md#financial-type-permissions).
+
+![Editing accounts linked to financial type](/img/civicontribute-financial-types-linked-accounts.png)
 
 ### Comptes financers
 
@@ -83,7 +85,7 @@ Podeu editar els comptes financers a **Administra > CiviContribute > Comptes fin
 Els únics camps requerits són el Nom i Tipus de compte financer. Pels comptes
 d'ingressos aquests seran definits quan creeu el tipus financer.
 
-![Editing Financial Account](../img/civicontribute-financial-account-edit.png)
+![Editing Financial Account](/img/civicontribute-financial-account-edit.png)
 
 Quants dels altres camps empleneu dependrà del vostre flux de treball.
 Si teniu previst exportar les transaccions financeres del CiviCRM per importar-les en el vostre
@@ -91,19 +93,20 @@ programa de comptabilitat necessitareu el codi comptable (sense
 espais extra o sobrants).  Si utulitzeu Quickbooks necessitareu també el
 codi de tipus de compte.
 
-NOTA: Si es modifica el nom del compte financer es modificarà també el nom del tipus financer.
+!!! note
+    Si es modifica el nom del compte financer es modificarà també el nom del tipus financer.
 
-## **Processadors de pagament**
+## Processadors de pagament
 
 El CiviCRM us proporciona la possibilitat de fer pagaments en línia en el vostre
 lloc web. Podeu fer pagaments per diferents raons incloent
 campanyes de captació de fons, quotes de membres i assistència a esdeveniments.
 
-Per començar a fer pagaments en línia necessiteu [configurar un processador de pagaments](../contributions/payment-processors)
+Per començar a fer pagaments en línia necessiteu [configurar un processador de pagaments](/contributions/payment-processors.md)
 que connectarà el vostre lloc web amb la targeta de crèdit i amb la infraestructura bancària
 que en realitat processa el pagament.
 
-## **Mètodes de pagament**
+## Mètodes de pagament
 
 Navegueu a **Administra > CiviContribute > Mètodes de pagament** per
 editar les opcions existents que poden ser utilitzades pels contribuents o per afegir una nova
@@ -113,16 +116,16 @@ confirmar amb el vostre administrador o comptable per confirmar que cada mètode
 a l'actiu comptable correcte.
 
 
-## **Targetes de crèdit acceptades**
+## Targetes de crèdit acceptades
 
 Navegueu a **Administra > CiviContribute > Targetes de crèdit acceptades** per
 editar les targetes de crèdit existents acceptades o definiu una nova opció a través de
 **Afegeix targetes de crèdit acceptades**.
 
-Nota: Si la informació de facturació es recull en el lloc web del processador de pagament
-llavors necessitareu configurar les targetes de crèdit i mètodes de pagament acceptats en aquest
-lloc.
-
+!!! note
+    Si la informació de facturació es recull en el lloc web del processador de pagament
+    llavors necessitareu configurar les targetes de crèdit i mètodes de pagament acceptats en aquest
+    lloc.
 
 ## Necessitat de dades i camps
 
@@ -140,4 +143,4 @@ funcionalitats útils estan construïdes en els camps de contribució del nucli 
 no té sentit duplicar-les amb camps personalitzats, però la vostra
 organització pot tenir necessitats específiques que requereixin de camps personalitzats.
 
-Si necessiteu crear camps personalitzats per satisfer les vostres necessitats, llegiu [Creació de camps personalitzats](../organising-your-data/creating-custom-fields).
+Si necessiteu crear camps personalitzats per satisfer les vostres necessitats, llegiu [Creació de camps personalitzats](/organising-your-data/creating-custom-fields.md).

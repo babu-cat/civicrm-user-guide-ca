@@ -52,7 +52,7 @@ Schedule Reminders.** The exact options that are visible depend on the
 **Entity** chosen but all scheduled reminders are fairly similar. The
 general process is:
 
-![screenshot](../img/civimail-scheduled-reminders-setup.png)
+![screenshot](/img/civimail-scheduled-reminders-setup.png)
 
 1.  Give your reminder a name that will help you or others identify it.
 
@@ -77,8 +77,11 @@ general process is:
     see *Limiting or adding to your recipient list* in this chapter.
 8.  Choose to send your reminder as an email, an SMS or either depending
     on the preferred method(s) of communications for the contact.
-    NOTE: The SMS option will only be available if you have
-    [set up an SMS Gateway](.../sms-text-messaging/set-up)
+    
+    !!! note
+        The SMS option will only be available if you have 
+        [set up an SMS Gateway](/sms-text-messaging/set-up.md)
+    
 9.  Compose your message. You can use Message Templates or write the
     message from scratch.
 10. Click **Save** when you are are done.
@@ -86,10 +89,11 @@ general process is:
 Reminders can be edited, disabled, or deleted from **Administer >
 Communications > Schedule Reminders**.
 
-IMPORTANT: Your system administrator will need to ensure that the Send
-Scheduled Reminders scheduled job is enabled and runs at least once a
-day. Refer to the [Scheduled Jobs](https://docs.civicrm.org/sysadmin/en/latest/setup/jobs/)
-section for configuration details.  
+!!! warning
+    Your system administrator will need to ensure that the Send
+    Scheduled Reminders scheduled job is enabled and runs at least once a
+    day. Refer to the [Scheduled Jobs](https://docs.civicrm.org/sysadmin/en/latest/setup/jobs/)
+    section for configuration details.  
 
 ## Using scheduled reminders for contacts
 
@@ -190,8 +194,9 @@ membership expires:
 What information you should include in a renewal email will be discussed
 in *Renewals* in the *CiviMember* section.
 
-Note: If a member renews, they will receive their next reminder 5 days before
-their new Membership End Date.
+!!! note
+    If a member renews, they will receive their next reminder 5 days before
+    their new Membership End Date.
 
 ### Chasing members who have not sent membership payments
 
@@ -264,7 +269,7 @@ It is important to remember that groups or manual recipients selected
 will only receive the scheduled reminder if they meet the all other
 criteria for that reminder.
 
-![Form with the fields: from name, from email, and receipients.](../img/scheduled_reminders_activities.PNG)
+![Form with the fields: from name, from email, and receipients.](/img/scheduled_reminders_activities.png)
 
 For Event, Contact and Membership scheduled reminders you can limit
 recipients to members of a group, to a particular participant role
@@ -275,7 +280,7 @@ recipient(s)** or **Participant Role** (Event reminders only) from the
 adjacent option list. You could use this feature to, say, only send
 birthday greetings to your members who are less than 12 years old.
 
-![screenshot](../img/scheduled_reminders_other_three.png)
+![screenshot](/img/scheduled_reminders_other_three.png)
 
 As with activity reminders, it is important to remember that groups,
 manual recipients or roles selected with the **Limit to** option will
@@ -312,4 +317,4 @@ scheduled reminder you should:
 2.  Create a smart group from the search results.
 3.  Select this smart group as the **Recipients** of the scheduled reminder.
 
-![Search builder with the two criteria.](../img/do-not-email-search-builder.jpg)
+![Search builder with the two criteria.](/img/do-not-email-search-builder.png)

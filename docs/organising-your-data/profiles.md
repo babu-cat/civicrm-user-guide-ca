@@ -18,7 +18,7 @@ By creating a Profile, you are able to pick and choose only those fields
 that are relevant for a specific purpose. The diagram below provides a
 visual explanation of how existing fields become part of a Profile.
 
-![Profiles](../img/CiviCRM-Icons-db1-en.png "Profiles")
+![Profiles](/img/CiviCRM-Icons-db1-en.png "Profiles")
 
 This section will outline how to use Profiles for both collecting and
 sharing data, and share several ways of using profiles that can save
@@ -51,7 +51,7 @@ Some examples:
 For example, this profile is being used to collect address information
 on a donation page.
 
-![image](../img/baykeeper-profile.png)
+![image](/img/baykeeper-profile.png)
 
 ### Displaying information on public pages
 
@@ -203,7 +203,7 @@ uses. You can skip over any settings that do not apply to the way you
 will use your Profile. To access advanced settings click on the gray
 advanced settings bar and a set of fields will appear
 
-#### **Limit listings to a specific group**
+#### Limit listings to a specific group
 
 This is important only for Profiles that will be used to display
 information on your website (e.g., if you will be allowing web visitors
@@ -223,7 +223,7 @@ to search your data, as in a membership directory).
     don't want anyone who comes to your website to know who is in your
     whole database.
 
-#### **Add new contacts to a group**
+#### Add new contacts to a group
 
 Any *new* contacts that fill out this Profile will be added to the
 Group. You can use this, for example, to add anyone who fills out your
@@ -232,11 +232,11 @@ Note that by default contacts will not receive any confirmation that they have b
 be asked to validate their email address.
 To have contacts who complete the profile form receive an email, go to **Administer >> CiviMail >> CiviMail Component Settings** and check the checkbox **"Enable Double Opt-in for Profiles which use the "Add to Group" setting"**. They must respond (opt-in) before they are added to the group.
 
-![Screen shot of dobule opt-in setting](../img/organizing-data-double-opt-in.png)
+![Screen shot of dobule opt-in setting](/img/organizing-data-double-opt-in.png)
 
 Also note that if you want to offer more than one group, you might be better off using the groups profile field.
 
-#### **Notify when profile form is submitted**
+#### Notify when profile form is submitted
 
 This setting, which is is also applicable only when using a Profile
 as a sign-up form, allows you to send an email automatically whenever
@@ -245,7 +245,7 @@ wants to get an email whenever anyone fills out the volunteer sign-up
 form. Simply enter the email address in the field; if you want to send
 email to multiple addresses, separate them with a comma.
 
-#### **Redirect URL**
+#### Redirect URL
 
 This applies only to Profiles that are being used as standalone
 forms; it will not apply when the Profile is embedded in an event
@@ -255,12 +255,12 @@ you may want to create a web page that thanks people for submitting
 their information. If this field is left blank, people will be directed
 to a page which displays the information they've just entered.
 
-#### **Cancel redirect URL**
+#### Cancel redirect URL
 
 Performs exactly the same way as Redirect URL, except that it
 applies when people cancel their form submission.
 
-#### **Include reCAPTCHA?**
+#### Include reCAPTCHA?
 
 This applies when profiles are being filled in by anonymous
 users. CAPTCHA is a type of spam-blocking software that requires the
@@ -273,7 +273,7 @@ information in CiviCRM to use this feature. Go to **Administer > System
 Settings > Undelete, Logging and ReCAPTCHA** to configure your account;
 instructions for signing up are included on that page.
 
-#### **Drupal user account registration option**
+#### Drupal user account registration option
 
 This setting applies to Profiles that are used in public pages and
 determines whether people can or must use your form to sign up for an
@@ -281,13 +281,13 @@ account with your website in addition to submitting the information on
 the form. This can be useful for ensuring people have to sign up for a
 user account as part of becoming a member or registering for an event.
 
-#### **WordPress user account registration option**
+#### WordPress user account registration option
 
 Like Drupal, WordPress allows CiviCRM Profiles to create accounts as
 described above. Within WordPress **Settings > General** "Membership [
 ] Anyone can register" must be clicked.
 
-#### **What to do upon duplicate match**
+#### What to do upon duplicate match
 
 This setting applies to Profiles that are used in public pages.
 It controls what happens when the contact data submitted from the
@@ -319,7 +319,7 @@ Here are the options and their effects how your form works:
     that will need to be deduped later (see the *Deduping and Merging*
     chapter in the *Working with Your Data* section).
 
-#### **Proximity search**
+#### Proximity search
 
 This applies if you are using the Profile for a searchable
 directory; it adds a proximity search block to the search criteria. This
@@ -330,19 +330,19 @@ directory, Optional if you want to offer proximity search to your users,
 and Required if you want to force the user to enter a start address and
 a search radius.
 
-#### **Enable mapping for this profile?**
+#### Enable mapping for this profile?
 
 This applies only if you are using the Profile for a searchable
 directory; it adds a map to the search results.
 
-#### **Include profile edit links in search results?**
+#### Include profile edit links in search results?
 
 This applies only if you are using the Profile for a searchable
 directory; it adds a link in the results listings to edit the Profile
 fields in the returned contact records. Only users with permission to
 edit the result contacts will see this link.
 
-#### **Include Drupal user account information links in search results?**
+#### Include Drupal user account information links in search results?
 
 This applies only if you are using the Profile for a searchable
 directory; it includes a link in the results to the resulting contacts'
@@ -442,17 +442,17 @@ In WordPress, there is an additional third way. When creating or editing
 a post, click on the CiviCRM button to insert a CiviCRM shortcode into
 the post.
 
-![image](../img/2013-09-04_15-29-47_1.png)
+![image](/img/2013-09-04_15-29-47_1.png)
 
 On the popup form, select Profile as the desired frontend element.
 
-![image](../img/2013-09-04_15-15-35.png)
+![image](/img/2013-09-04_15-15-35.png)
 
 Use the second select widget to specify the profile you would like to
 use. Finally, select the purpose of the form &mdash; create, edit or view
 and click Insert Form.
 
-![image](../img/2013-09-04_15-16-45.png)
+![image](/img/2013-09-04_15-16-45.png)
 
 ### Multi-value fields in profiles
 
@@ -465,7 +465,7 @@ that the multi-value custom data appears slightly differently in the
 profile to facilitate adding, editing and deleting multiple instances of
 these records.
 
-![image](../img/multi-value-profile.png)
+![image](/img/multi-value-profile.png)
 
 ### Making directories with Profiles
 
@@ -493,7 +493,7 @@ To put a directory onto your website:
      page). This link will only be included for contacts who have a
      user account on your website.
 
-    ![profile_adv_settings](../img/CiviCRM-CapturingExposing-buildprofile-profile_adv_settings-en.jpg "profile_adv_settings")
+    ![profile_adv_settings](/img/CiviCRM-CapturingExposing-buildprofile-profile_adv_settings-en.png "profile_adv_settings")
 
 Now it's time to include the fields that will make up the directory. For
 profiles used as directories you have total control over which fields:
@@ -505,7 +505,7 @@ profiles used as directories you have total control over which fields:
 The important options you must configure in the fields for directory
 purposes are shown below:
 
-![directory_fields](../img/CiviCRM-CapturingExposing-buildprofile-directory_fields-en.jpg "directory_fields")
+![directory_fields](/img/CiviCRM-CapturingExposing-buildprofile-directory_fields-en.png "directory_fields")
 
 -   Visibility for all fields in your directory must be set to **Public
     Pages** or **Public Pages and Listings**. The difference between these
@@ -534,23 +534,23 @@ purposes are shown below:
 The image below shows the search mode for our membership directory.
 
 ![Member Directory Search
-Form](../img/CiviCRM-CapturingExposing-buildprofile-MemberDirSearchForm-en.png "MemberDirSearchForm")
+Form](/img/CiviCRM-CapturingExposing-buildprofile-MemberDirSearchForm-en.png "MemberDirSearchForm")
 
 Once you hit search you get this result set. Profile fields that have
 Results Column checked are shown in the listing.
 
-![MemberDirResults](../img/CiviCRM-CapturingExposing-buildprofile-MemberDirResults-en.png "MemberDirResults")
+![MemberDirResults](/img/CiviCRM-CapturingExposing-buildprofile-MemberDirResults-en.png "MemberDirResults")
 
 Clicking the view link gives you more details about the constituent,
 showing all profile fields.
 
 ![Profile Member
-View](../img/CiviCRM-CapturingExposing-buildprofile-MemberView-en.png "MemberView")
+View](/img/CiviCRM-CapturingExposing-buildprofile-MemberView-en.png "MemberView")
 
 As we've seen, building a directory for your website can provide a
 valuable tool for your constituents.
 
-### **Linking to your directory**
+### Linking to your directory
 
 You have several options to link to your directory:
 
@@ -574,7 +574,7 @@ You have several options to link to your directory:
 
 You can **Update multiple memberships** from the results of a **Find memberships** search or from the advanced search results when **Display results as** is set to **Memberships**. You will need a profile that contains only membership fields.
 
-Similarly you need contact, contribution, activity or participant search results and profiles containing only contact, only contribution, only activity or only participant fields to update multiple contacts, multiple contributions, muliple activities or multiple participants respectively.
+Similarly you need contact, contribution, activity or participant search results and profiles containing only contact, only contribution, only activity or only participant fields to update multiple contacts, multiple contributions, multiple activities or multiple participants respectively.
 
 You can update up to 100 records at one time using the **Update multiple ...**
 functions.
@@ -584,17 +584,17 @@ ____
 
 You have a custom contact field called "Diving Skill Level" and you have just run a Intermediate Diving course.  You want to set the "Diving Skill level" to "Intermediate" for all people who attended the course.
 
-Go to the Advanced Search screen and set the appropriate filters in the Event accordion. Leave **Display Results As** set to **Contacts** as you want to update a contact custom field. CLick on **Search**.
+Go to the Advanced Search screen and set the appropriate filters in the Event accordion. Leave **Display Results As** set to **Contacts** as you want to update a contact custom field. Click on **Search**.
 
 You will go to the "Update multiple contacts" screen.
 
-  ![Update Multiple Records](../img/update-multiple-records.PNG)
+  ![Update Multiple Records](/img/update-multiple-records.png)
 
 From the drop-down list, choose the Profile you want to use and click **Continue**.
 
 The next screen will contain a grid. Each row shows the contact's name and the fields in your profile. You should update the field values for each contact as needed.
 
-![Update Multiple Records Profile View](../img/update-multiple-records-profile.PNG)
+![Update Multiple Records Profile View](/img/update-multiple-records-profile.png)
 
 
 To set a field to the same value for all rows, enter that value for the first contact and then click the Copy icon (the image of two documents that is next to each column title). The value will automatically be copied into all the records displayed.
@@ -622,7 +622,7 @@ To include a profile form during the user registration process:
 
 1.  Create a profile that is used for User Registration:
 
-    ![addprofile_usedfor_reg](../img/CiviCRM-CapturingExposing-buildprofile-addprofile_usedfor_reg-en.jpg "addprofile_usedfor_reg")
+    ![addprofile_usedfor_reg](/img/CiviCRM-CapturingExposing-buildprofile-addprofile_usedfor_reg-en.png "addprofile_usedfor_reg")
 2.  Add the fields you want people to fill out as they register, using
     the same process described above. Make sure the field visibility is
     set to Public User Pages.
@@ -642,8 +642,8 @@ To create a profile for this purpose:
 4.  Add the fields you want people to be able to edit from their Drupal
     My Account page.
 
-Note: the profile must include only fields related to the Individual
-contact type.
+!!! warning
+    The profile must include only fields related to the Individual contact type.
 
 **New account creation during profile sign-up**
 
@@ -653,7 +653,7 @@ registration option" under **Customize Data and Screens > Profiles**  click **Se
 profile fields.
 
 ![Profile user registration
-options](../img/CiviCRM-CapturingExposing-buildprofile-CMS_user_reg-en.png "CMS_user_reg")
+options](/img/CiviCRM-CapturingExposing-buildprofile-CMS_user_reg-en.png "CMS_user_reg")
 
 You must include a Primary Email Address field in the profile for this
 feature to function properly. This feature also works when the profile

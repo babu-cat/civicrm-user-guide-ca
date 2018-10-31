@@ -27,14 +27,14 @@ steps:
 In WordPress you can also use the CiviCRM icon 'shortcode' to insert the
 event registration form into the Page or Post
 
-![Icon with the CiviCRM logo above the toolbar.](../img/Wordpress-Shortcodes-small.png)
+![Icon with the CiviCRM logo above the toolbar.](/img/Wordpress-Shortcodes-small.png)
 
 In Drupal, the **views** module gives many options for displaying lists
 of content, including the ability to create an automatically updating
 lists of upcoming events. Have a look at *Integrating with Drupal* in
 the *Website integration* chapter for more details. 
 
-## **RSS feed for all upcoming events**
+## RSS feed for all upcoming events
 
 This lets visitors subscribe to all your events in the RSS feed reader
 of their choice. Many website management systems also allow a website to
