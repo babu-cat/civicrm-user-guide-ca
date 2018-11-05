@@ -1,372 +1,361 @@
-# Mass mailings using CiviMail
+# Enviaments massius utilitzant CiviMail
 
-Using the Mailings functionality offered by CiviMail provides many
-benefits over the Send Email activity, allowing you to track respondents
-to your mailing, process bounces, and allow people to unsubscribe from
-your mailings. These benefits will discussed later; first we will deal with
-creating and sending a mass mailing.
+L'ús de la funcionalitat d'enviaments massius que ofereix CiviMail proporciona molts
+avantatges respecte l'activitat Envia un correu electrònic, permetent-vos fer el seguiment de les respostes
+al vostre mailing, procesar els retornats i permetre a la gent donar-se de baixa dels
+vostres mailings. Es discutiran aquests beneficis més endavant; en primer lloc mirarem de
+crear i enviar un correu electrònic.
 
-## Choosing recipients: Groups versus search results
+## Selecció dels destinataris: Grups versus resultats de cerques
 
-There are two ways to select the recipients for your mass mailing: sending to
-existing Groups or sending to search results. Most steps to create a
-mailing are independent of how your recipients are chosen, however there is one
-important difference.
+Hi ha dues maneres de seleccionar els destinataris per als vostres enviamensts massius: fer l'enviament a
+grups existents o fer l'enviament a resultats de cerca. La majoria dels passos per crear un
+mailing són independents de com s'escullen els destinataris, no obstant hi ha una
+diferència important.
 
-For mailings to search results, you are
-required to choose a Group from the Unsubscription Group dropdown menu.
-Here's why: Every mass mailing needs a way to track unsubscribe
-requests. A simple "unsubscribe" process is required by law in many countries
-and may help prevent your mailings from being treated as spam.
-Mailings sent to Groups have this capacity built-in. The next
-time a mass email is sent to that Group, anyone who has unsubscribed
-will not be included. However, mailings sent to search results do not
-have this built-in way to track who has unsubscribed, so you need to
-provide one.
+Pels mailings a resultats de cerques,
+heu d'escollir un grup en el menú desplegable grup de cancel·lació de subscripció.
+Aquí el perquè: Cada enviament massiu necessita un mètode per fer el seguiment de les peticions de cancel·lació de
+subscripció. En molts països és necessari per llei tenir un procés de cancel·lació de subcripció senzill
+i pot ajudar a prevenir que els vostres mailings siguin tractats com a correu brossa.
+Els mailings enviats a grups tenen aquesta capacitat integrada. La propera vegada
+que s'enviï un correu massiu a aquest grup, qualsevol que hagi cancel·lat la subscripció
+no serà inclòs. Tanmateix, els mailings enviats a resultats de cerca no
+tenen aquest mètode integrat per fer el seguiment de qui ha cancel·lat la subscripció, de manera que necessiteu
+proporcionar-ne un.
 
-Here's how it works: If a contact who matches your search results is
-already unsubscribed from the Unsubscription Group that you designate,
-that contact will not be sent the mailing. If a contact unsubscribes via
-the unsubscription link in this mailing, they will be unsubscribed from
-this Group and therefore not receive any more emails sent to this group.
-This is true whether they were originally a member of the Group or not.
+Així és com funciona: si un contacte que coincideix amb els vostres resultats de cerca
+té la subscripció cancelada al grup de cancel·lació de subscripció que designeu,
+no s'enviarà el mailing a aquest contacte. Si un contacte cancela la subscripció via
+l'enllaç de cancel·lació de subscripció d'aquest mailing, se li cancel·larà la subscripció a
+aquest grup i per tant no rebrà cap més correu electrònic a aquest grup.
+Això és així tant si ja era un membre del grup com si no.
 
-The Unsubscription Group you designate collects unsubscribe information
-only; it does not supply any contacts to the mailing. In other words,
-contacts who are in the Unsubscription Group but do not match your
-search criteria will not be included in the mailing. (If you wish to
-include these contacts you should include the relevant Group.)
+El grup de cancel·lació de subscripcions que hagueu designat recull només la informació de cancel·lació de
+subscripcions; no afegeix cap contacte al mailing. En altres paraules,
+els contactes que es troben en el grup de cancel·lació de subscripcions però no coincideixen amb el vostre
+criteri de cerca no s'inclouran en el mailing. (Si voleu
+incloure aquests contactes heu d'incloure el grup en qüestió.)
 
-For example: Your organization is having a big event next week. Several
-emails have already gone out about it, but you have added many new
-people to your database in the last week and you want to send them an
-event announcement. You do a search for new contacts via **Search >
-Custom Search > Date Added to CiviCRM**. This is the search that is the
-basis of the mailing. Your organisation stores its event email list in a
-Group called Event Alerts, so for this mailing, you would probably want
-to choose that as your Unsubscription Group.
+Per exemple: La vostra organització té un gran esdeveniment la propera setmana. Ja s'han
+enviat diversos correus electrònics sobre aquest, però heu afegit força gent
+nova a la base de dades en la darrera setmana i els hi voleu enviar un
+anunci de l'esdeveniment. Feu una cerca pels nous contactes via **Cerca >
+Cerca personalitzada > Data d'addició a CiviCRM**. Aquest és la cerca que és
+la base del mailing. La vostra organització emmagatzema la llista de correus electrònics de l'esdeveniment en un
+grup anomenat Alertes d'esdeveniments, per la qual cosa per aquest mailing, probablement voldreu
+escollir-lo com el grup de cancel·lació de subscripcions.
 
-If you do not already have a Group that would be appropriate for the
-Unsubscribe Group for a mailing you're planning, you may want to create
-one and call it something like Miscellaneous Mail Unsubscribes. You
-could then add that Group to other future mailings to ensure that the
-people who have unsubscribed are excluded from those future mailings.
+Si encara no teniu un grup que sigui apropiat pel
+grup de cancel·lació de subscripcions per al mailing que esteu planificant, potser voldreu crear-ne
+un i anomenar-lo quelcom similar a miscel·lània de cancel·lació de subscripcions de correu electrònic. Després
+podreu afegir aquest grup a altres mailings futurs per assegurar-vos que la
+gent que ha cancel·lat la subscripció és exclosa d'aquests mailings futurs.
 
-## The Mailing set-up screens
+## Les pantalles de configuració del mailing
 
-If you are sending mail to an existing Group, go to **Mailings > New
-Mailing**. You will see the following screen.
+Si esteu enviant el correu electròǹic a un grup, aneu a **Mailings > Mailing
+nou**. Veureu la següent pantalla.
 
 ![Bulk email based on existing groups](/img/email-compose-mailing.png)
 
-If you are basing your mailing on search results, perform your search
-(for example, using **Search > Advanced Search**) and then choose
-**Email - Schedule/Send via CiviMail** from the **Actions** drop down.
-You will see the following screen.
+Si esteu basant el mailing en resultats de cerca, realitzeu la cerca
+(per exemple, utilitzant **Cerca > Cerca avançada**) i després escolliu
+**Correu electrònic - Programa/Envia via CiviMail** des de el desplegable d'**Accions**.
+Veureu la següent pantalla.
 
 ![Bulk email based on search results](/img/email-compose-search-based-mailing.png)
 
 
-These are two screens are very similar, however, as described in
-[Choosing recipients: Groups versus search results](#Choosing recipients: Groups versus search results),
-for the search-based mailing you must choose an Unsubscribe Group and
-the "Search Results" group is included in (and cannot be removed from) the Recipients list. (Also, the HTML
-pane is open by default. It was closed to fit the bottom buttons into these images.)
+Aquestes dues pantalles són forces similars, no obtstant això, com s'ha descrit a
+[Selecció dels destinataris: Grups versus resultats de cerques](#Selecció dels destinataris: Grups versus resultats de cerques),
+pels mailings basats en resultats de cerca heu d'escollir un grup de cancel·lació de subscripcions i
+el grup de "Resultats de cerca" serà  inclòs (i no podrà ser eliminat d'ell) al llistat de destinataris. (A més, el panell
+HTML s'obre per defecte. S'ha tancat per ajustar els butons inferiors en aquestes imatges.)
 
-Remember you can save your mailing at any stage by clicking on the
-**Save Draft** button.
+Recordeu que poeu desar el mailing en qualsevol estat clican al
+botó **Desa l'esborrany**.
 
-**Step 1: Define Mailing**
+**Pas 1: Definició del mailing**
 
-### Mailing tab
-Here you will find:
+### Pestanya del mailing
+Aquí trobareu:
 
-**Mailing Name**: Enter a name for this mailing. Select a name
-that will allow you and others in your organization to clearly identify
-the purpose of this mailing. It is recommended that you start each name
-with a date (e.g., "2015/04/25 - Monthly Newsletter"). This will make it
-easier to include or exclude recipients of this mailing in future
-mailings. This name is for internal use only and will not be shown to
-recipients. You will be asked to enter the Subject of the email later.
+**Nom del mailing**: Introduïu un nom per aquest correu electrònic. Seleccioneu un nom
+que us permeti a vostè i a d'altres de la vostra organització identificar clarament
+el propòsit d'aquest mailing. Es recomana que comenceu cada nom
+amb la data (p.ex., "2015/04/25 - Buttletí mensual"). Això us permetrà
+incloure o excloure més fàcilment els destinataris d'aquest correu electrònic en futurs
+mailings. Aquest nom és només per ús internt i no es mostrarà als
+destinataris. Més tard se us demanarà d'introduir l'assumpte del correu electrònic.
 
-**Campaign**: You can associate this email with a particular campaign.
+**Campanya**: Podeu associar aquest correu a una campanya en particular.
 
-**Template**: Here you can select an existing message template to
-populate the HTML Format and Plain-Text Format fields with the message
-content from the template. You can edit the content to suit this particular
-mailing but you cannot update the template, or create a new template via this
-form. (CiviCRM ships with three sample newsletter templates which users with
-  the Administer CiviCRM permssion can customise with your own organisation's
-  details at **Administer > CiviMail > Message Templates**.  That is also where
-  new message templates can be created.)
+**Plantilla**: Aquí podeu seleccionar una plantilla de missatge existent per
+omplir els camps de format HTML i format de text pla amb contingut
+del missatges de la plantilla. Podeu editar el contingut per adaptar aquest mailing
+en particular però no podeu actualitzar la plantilla o crear-ne una de nova mitjançant aquest
+formulari. (El CiviCRM ve amb tres plantilles de butlletins d'exemple les quals els usuaris amb
+  permissos d'administració de CiviCRM poden personalitzar junt amb els detalls de la vostra pròpia
+  organització a **Administra > CiviMail > Plantilles de missatges**. Aquest és també el lloc on
+  es poden crear les noves plantilles de missatges.)
 
-**From**: This will be populated with the default sender email address.
-You can select an alternative for this mailing from the dropdown list.
-Users with Administer CiviCRM permssion can add additional email addresses
-by going to **Administer > CiviMail > From Email addresses**.
+**Remitent**: Aquest s'omplirà amb el valor per defecte de l'adreça remitent de correu electrònic.
+Podeu escollir una alternativa er aquest mailing de la llista desplegable.
+Els usuaris amb permissos d'administració de CiviCRM poden afegir adreces de correu electrònic addicionals
+anant a **Administra > CiviMail > Adreces de correu electrònic de remitent**.
 
-**Recipients**: This is where you can choose who will receive the
-mailing (if mailing to Groups) or further refine or add to your mail
-recipients (if mailing to search results). You can choose Groups to
-include (shown in green) and exclude (shown in red and struck through),
-by selecting them from the "Recipients" dropdown.
-Only groups of the type "Mailing List" will be available in the dropdown.
- ![Civimail Recipients include and exclude](/img/civimail-recipients-example.png)
- You can also refine your recipient list by including and excluding
-recipients of previous mailings. For instance, you may want to resend an
-email only to contacts that have been added to a Group since the last
-time you sent them email, to avoid sending the same email twice to some
-people. Choose the original mailing in the "Exclude Past Recipients From".
-This will then send the message only to those members of the group who
-did not receive the original mailing.
+**Destinataris**: Aquí és on podeu escollir qui rebrà el
+mailing (si és un mailing de grups) o refinar o afegir els destinataris del
+correu electrònic (si és un mailing de resultats de cerca). Podeu escollir grups per
 
-  The estimated final number of recipients to displayed to the right of the
-"Recipients" field and highlighted in yellow.
+  El número final estimat de destinataris es mostra a la dreta del
+camp "Destinataris" ressaltat en groc.
 
-**The "wrench"**: The is located to the right of the Recipients
-field and to the left of the estimate of recipient numbers.  Click on it
-to access **Edit Options**.
+**La "clau"**: Està situada a la dreta del camp
+"Destinataris" i a l'esquerra del número estimat de destinataris. Cliqueu-hi
+per accedir a les **Opcions d'edició**.
 
 ![Civimail Recipients Edit Options](/img/civimail-recipients-edit-options.png)
 
-  -   **Dedupe by email:** CiviCRM will always dedupe your mailing based on
- unique contact records. For example, if a contact is in three of the
- groups you are including in your mailing, they will only be sent one copy
- of the email. However, if the same email address is used by multiple
- contacts, how many emails are sent is determined by this box. If it
- is unticked then multiple copies of the email will be sent - one for
- each contact using that address. If it is ticked then only one
- email is sent to each address. You set the default for this box at
- **Administer > CiviMail > CiviMail Component Settings** by ticking
- or unticking "CiviMail dedupes e-mail addresses by default" but you can
- override the default for any email if needed.
+  -   **Desduplica per correu electrònic:** El CiviCRM sempre desduplicarà el mailing basant-se en
+     registres de contactes únics. Per exemple, si un contacte es troba en tres dels
+      grups l'estareu incloent el el mailing i només se li enviarà una copia
+      del correu electrònic. Tanmateix, si s'utilitza la mateixa adreça de correu electrònic per múltiples
+      contactes, el nombre de correus electrònics que seran enviats ve determinat per aquesta casella. Si es
+      desmarca llavors s'enviaran múltiples copies d'aquest correu electrònic - un per
+      a cada contacte que estigui utilitzant aquesta adreça. Si està marcat només
+      s'enviarà un correu electrònic per a cada adreça. Podeu definir el valor per defecte d'aquesta casella a
+      **Administra > CiviMail > Configuració del component CiviMail** marcant
+      o desmarcant "CiviMail desdupllica adreces de correu electrònic per defecte" però podeu
+      sobreescriure aquest valor per defecte per qualsevol correu electrònic si ho necessiteu..
 
-  -   **Location Type:** By default emails created through CiviMail are sent to
- the address location(s) set as being for "Bulk Mailings" or, if no location type
- has that setting, to the address location set as "Is Primary". You can change
- the Location Type and the Selection
- Method on the Edit Options screen.
-You can filter on the Location Type and only send the mailing to email
-addresses with the specified location type or exclude the email
-addresses with the specified location type.
+  -   **Tipus d'ubicació:** Per defecte els correus electrònic creats mitjançant CiviMail s'envien a
+     les ubicacions d'adreces definides com "Enviaments massius" o, si no hi ha cap tipus d'ubicació
+      amb aquesta configuració, a l'ubicació d'adreça definida com a "Principal". Podeu modificar
+      el tipus d'ubicació i el mètode de
+      selecció en la pantalla d'edició d'opcions.
+     Podeu filtrar pel tipus d'ubicació i només enviar el mailing a les adreces
+     de correu electrònic amb el tipus d'ubicació especificat o excloure les adreces
+     de correu electrònic amb el tipus d'ubicació especificad.
 
-**Unsubscribe Group** (for search-based mailings only): This should be
-chosen carefully. It may help to read through the example of a search-based
-mailing in [Choosing recipients: Groups versus search results](#Choosing recipients: Groups versus search results).
+**Grup de cancel·lació de subscripcions** (només pels mailings basats en cerques): S'ha
+d'escollir amb cura. Pot ajudar llegir l'exemple del mailing basat en una
+cerca de [Selecció dels destinataris: Grups versus resultats de cerques](#Selecció dels destinataris: Grups versus resultats de cerques).
 
-**Subject**: is the subject in your sent emails. You can include
-[tokens](/common-workflows/tokens-and-mail-merge.md)
-in the subject. The **Subject** (not the Mailing Name) is used when creating an
-activity or mailing record for each contact.
+**Assumpte**: és l'assumpte dels correus electrònics enviats. Podeu incloure-hi
+[tokens](/common-workflows/tokens-and-mail-merge.md).
+L'**Assumpte** (no el nom del mailing) s'utiltza quan es crea una
+activitat o registre de mailing per a cada contacte.
 
-**HTML** (expanding section): This is where you can compose content
-for your mailing. Remember that CiviCRM lets you personalize each email using
-[tokens](/common-workflows/tokens-and-mail-merge.md). If you only
-want to send a plain text email ignore the HTML section. Click on
-**Plain Text** to open that accordion and enter your message in the box.
+**HTML** (secció expandible): Aquí és on podeu composar el contingut
+del mailing. Recordeu que el CiviCRM us permet personalitzar cada correu electrònic utilitzant
+[tokens](/common-workflows/tokens-and-mail-merge.md). Si només
+voleu enviar un correu electrònic de text pla ignoreu la secció HTML. Cliqueu sobre
+**Text pla** per obrir l'acordió i introduir el missatge en la capsa.
 
-**Preview**: This panel is a footer to the **Define Mailing** screen. It
-is displayed whichever tab is selected. Within this panel are the options to:
-  -  Preview the HTML or Plain Text version of the email. The HTML preview will show you all the formatting and converted tokens with your data. It will not include any attachments. There is no guarantee that all email clients will
-      display the email exactly as it is shown in this preview, but it is
-      useful to ensure things like font consistency, basic layout and
+**Previsualització**: Aquest panell és el peu de pàgina a la pantalla de definició del mailing. Es
+mostra a qualsevol pestanya que sigui seleccionada. Dins d'aquest panell hi ha les opcions per:
+  -  Previsaulitzar les versions d'HTML o de text pla del correu electrònic. La previsualització HTML us mostrarà tota la informació formatada i amb els tokens convertits. No inclourà cap dels adjunts. No hi ha cap garantia que tots els clients de correu electrònic
+      mostraran el correu electrònic exactament com es mostra en aquesta previsualització, però és
+      util per comprovar coses com la consistència de les fonts, el disseny bàsic i el
       color.
 
-  -  Send a test email to a single email address. If the email address
-    does not already exist in CiviCRM a new contact record will be created.
-  -  Send a test email to a an existing group in CiviCRM.
+  -  Enviar una prova de correu electrònic a una adreça de correu electrònic simple. Si l'adreça de correu electrònic encara no existeix al CiviCRM es crearà un nou registre de contacte.
 
-      The test mailing will fill in all the Tokens and include any attachments you are planning to send.
+  -  Enviar una prova de correu electrònic a un grup existent al CiviCRM.
 
-     It is a good idea to test your email by sending it to yourself and
-  viewing it in your email client to make sure it looks as you expect.
-  If you are sending a mail with a complex layout, send it to your
-  test group and verify it from various mail clients (see *Testing
-  templates* in the *Set-up* section for more tips on this). It is
-  preferable to have more than one person receive your test email and
-  give you feedback.
+      La prova del mailing s'omplirà amb tots els tokens i inclourà qualsevol dels adjunts que esteu planificant d'enviar.
 
-The **Mailing** tab may be the only tab you need to visit when you are creating
-your mailing. It contains all the compulsory fields that need to be defined for
-each new mailing. The remaining tabs are:
+     És una bona idea de provar el correu electrònic enviant-se'l a un mateix i
+  visualitzant-lo en el vostre client de correu electrònic per assegurar que es visualitza com espereu.
+  Si esteu enviant un correu electrònic amb un disseny cocomplex, envieu-lo al vostre
+  grup de prova i verifiqueu-ho des de varis clients de correu electrònic (vegeu *Proves en
+  plantilles* en la secció de configuració per a més consells sobre això). És
+  preferible tenir més d'una personar ebent el vostre correu electrònic de prova i
+  us aporti comentaris.
 
-### Attachments tab
-This is where you upload files to send as attachments with your email.
+La pestanya **Mailing** pot ser l'única pestanya que necessiteu visitar quan esteu creant
+el mailing. Conté tots els camps obligatoris que es necessiten definir per a
+cada mailing nou. Les pestanyes restants són:
 
-### Header and Footer tab
-Each new mailing you create will include the
-  default Header and default Footer as defined at
-  **Mailings > Headers, Footers, and Automated Messages**. If you don't want
-  to use these defaults, this tab is where you select the header and/or
-  footer you do want to use for this mailing. You define additional Headers
-and Footers via **Mailings > Headers, Footers, and Automated
-Messages** (See *Set-Up* for details).
+### Pestanya d'adjunts
+Aquí és on podreu pujar fitxers per enviar com adjunts amb el correu electrònic.
 
-### Publication tab
-This contains the **Mailing Visibility** field
-which has two options, "User and User Admin Only" and "Public Pages."
-Choosing **Public Pages** makes this
-content viewable as a web page by everyone who has the permission of
-"View public CiviMail content."
-**"User and User Admin Only"** means that only users that received the mailing
-or administrators can view the content of this email as a web page;
-the recipients will have to log in to be able to view the message.
+### Pestanya de capçalera i peu
+Cada mailining nou que creeu inclourà
+  l'encapçalament i el peu per defecte tal com estan definits a
+  **Mailings > Capçaleres, peus i missatges automatitzats**. Si no voleu
+  utilitzar aquestes opcions per defecte, en aquesta pestanya podreu seleccionar la capçalera i/o
+  el peu que vulgueu utilitzar per aquest mailing. Podeu definir capçaleres i peus
+addicionals a través de **Mailings > Capçaleres, peus i missatges
+automatitzats** (Vegeu *Configuració* per més detalls).
 
- To link to the web version of your email, you need to have inserted the
- **Mailing permalink** token in your email message. This token generates
-a URL on which the message can be viewed; in order to display it
-properly in HTML messages, you'll need to add the proper link tags using
-the Source icon in the editor.
+### Pestanya de publicació
+Aquesta conté el camp de **Visibilitat del mailing**
+que té dues opcions, "Només l'usuari i l'usuari administrador" i "Pàgines públiques."
+Si escolliu **Pàgines públiques** fareu que
+el contingut sigui visible com una pàgina web per qualsevol que tingui els permissos
+"Visualitza contingut públic de CiviMail."
+**"Només l'usuari i l'usuari administrador"** significa que només els usuaris que reben el mailing
+o els adminstradors poden visualitzar el contingut d'aquest correu electrònic com una pàgina web;
+els destinataris hauran d'iniciar sessió per tal de visualitzar el missatge.
 
-### Responses tab
--  **Track Replies** checkbox. Checking this option will send replies from the
-mailing's recipients to a CiviMail specific address instead of the sender's
-address so they can be stored within CiviCRM. Checking this box will open the
-two options described next.
-    -   **Forward Replies:** This option is only visible if "Track Replies"
-    is checked. You will need to check this option if you want the From
-    address to also receive the replies sent by recipients.
-    -   **Auto-respond to Replies:** This option allows you to send a
-    specific automatic reply to anybody who replies to your mailing. You
-    need to set up an autoresponder ahead of time in **Mailings >>
-    Headers, Footers, and Automated Messages**.
+ Per enllaçar a la versió web del correu electrònic, necessitareu tenir inserit
+ el token de l'**Enllaç permanent** en el missatge del correu electrònic. Aquest token genera
+una URL on es podrà visualitzar el missatge; per tal de mostrar-lo
+en els missatges HTML, necessitareu afegir les etiquetes d'enllaç adequades utilitzant
+l'icona d'editor de codi.
 
-- **Opt-Out Message:** This message will be sent to a recipient who has
-opted-out from all the mailing lists
-- **Resubscribe Message:** This message will be sent to a recipient who
-has resubscribed to one of the mailing lists
-- **Unsubscribe Message:** This message will be sent to a recipient who
-has unsubscribed from one of the mailing lists.
+### Pestanya de respostes
+-  Casella de **Seguiment de respostes**. Marcant aquesta opció s'enviaran respostes des dels
+  mailings dels destinataris a una adreça específica del CiviMail en comptes de les adreces dels
+  remitents de tal manera que podran emmagatzemar-se dins del CiviCRM. Marcant aquesta casella s'obriran les
+  dues opcions descrites a continuació.
+    -   **Reenviament de respostes:** Aquesta opció és només visible si el "Seguiment de respostes"
+        està marcat. Necessitareu marcar aquesta opció si voleu que les adreces del
+          remitent rebin també les respostes enviades als remitents.
+    -   **Resposta automàtica a les respostes:** Aquesta opció us permet enviar una
+        resposta automàtica especifica a qualsevol que respongui al vostre mailing. Necessiteu
+          configurar una resposta automàtica a **Mailings >>
+          Capçaleres, peus i missatges automatitzats**.
 
-    You can edit these three messages at **Mailings >> Headers, Footers, and Automated Messages**.
+- **Missatge de baixa:** Aquest missatge s'enviarà al destinatari que es
+  doni de baixa de totes les llistes de mailing
+- **Missatge de resubscripció:** Aquest missatge s'enviarà al destinatari que es
+  torni a subscriure a una de les llistes de mailing
+- **Missatge de cancel·lació de subscripció:** Aquest missatge s'enviarà al destinatari que
+  cancel·li la subscripció d'alguna de les llistes de mailing.
 
-### Tracking tab
--  **Track Click-Throughs**: This option will keep track of how many
-    users and which users clicked on all the links in your message. This
-    is accomplished by redirecting all links through your server. This
-    means that all links will be overwritten with custom links
-    containing your domain name.
+    Podeu editar aquests tres missatges a **Mailings >> Capçaleres, peus i missatges automatitzats**.
 
-    !!! note "Note for HTML mail"
-        Some phishing filters may mark links that are displayed
-        differently in HTML code and in the text as unsafe. It is therefore
-        best not to use something like  
+### Pestanya de seguiment
+-  **Seguiment de clics registrats**: Aquesta opció farà el seguiment de quants i
+    quins usuaris han clicat a tots els enllaços del missatge. Això
+    s'aconsegueix redireccionant tots els enllaços cap al vostre servidor. Això
+    significa que tots els enllaços seran sobreescrits amb enllaços personalitzats
+    que contindran el vostre nom de domini.
+
+    !!! note "Nota per correus electrònics HTML"
+        Alguns filtres de pesca de credencials poden marcar els enllaços que es mostrin
+        diferents en el codi HTML i en el text com a insegurs. Per aquest motiu és
+        millor no utilitzar quelcom similar a  
         `<a href="http://google.com">http://Google.com</a>`
-        but rather use  
-        ` <a href="http://google.com">click here to go to Google</a>` instead.
+        i utilitzar en el seu lloc 
+        ` <a href="http://google.com">cliqueu aquí per anar a Google</a>`.
 
-    !!! note "Note for Plain Text Email"
-        If you use short, user-friendly URLs, they will all be overwritten
-        with long links containing the name of your site and a long code
-        looking like this
+    !!! note "Nota per correus electrònics en text pla"
+        Si utilitzeu URL amigables curtes, seran totes sobreescrites
+        per enllaços llargs que contindran el nom del vostre lloc i un codi llarg
+        similar a
         http://yoursite.com/sites/all/modules/civicrm/extern/url.php?u=529&qid=29011.
 
--   **Track Opens:** This option allows you to track how many people
-    opened the email you received. However, there are limitations to the
-    effectiveness of this method. If the recipient does not show images
-    in their email client (often referred to as "blocking remote
-    content"), their email will not be marked as opened even if they do
-    open it. Blocking remote content is a very common practice.
+-   **Seguiment d'obertures:** Aquesta opció us permet fer el seguiment de quanta gent
+    ha obert el correu electrònic que heu enviat. Tanmateix, hi ha limitacions en
+    l'efectivitat d'aquest mètode. Si el destinatari no permet mostrar imatges
+    en el seu client de correu electrònic (sovint anomenat com "bloquejar el contingut
+    remot"), el seu correu electrònic no es marcarà com a obert encara que
+    l'hagi obert. Bloquejar el contingut remot és una pràctica molt comuna.
 
-Once you have defined all aspects of your mailing click on **Next >**
-(lower left) to advance to:
+Un cop hagueu definit tots els aspectes del vostre mailing cliqueu a **Continua >**
+(a baix a l'esquerra) per avançar al:
 
-**Step 2: Review and Schedule**
+**Pas 2: Revisa i programa**
 
 ![CiviMail Review and Schedule screen](/img/civimail-review-and-scheduling.png)
 
-### Review panel
+### Panell de revisió
 
-Thie is a summary of all the details of your email. The blue words are
-actually buttons. Clicking on **~XX recipients** will show
-the contact names and email addresses the email will be sent to. Clicking
-on **HTML** or **Plain Text** will show the email to be sent including
-any header and/or footer. Clicking on any of the envelopes will display the
-named message. Ticks and crosses with strike-throughs show what
-you have and have not chosen to do in terms of tracking and dealing with
-responses to the email.  In short, **Review** is a brilliant little panel
-that lets you confirm that you have made all the correct choices despite the
-multitude of interruptions you experienced whilst defining your mailing.
+Aquest és el resum de tots els detalls del vostre correu electrònic. Les paraules en blau són
+en realitat botons. Si cliqueu a **~XX destinataris** se us mostrarà
+els noms dels contactes i les seves adreces de correu electrònic a les que fareu l'enviament. Si feu clic
+a **HTML** o a **Text pla** se us mostrarà el correu electrònic que s'enviarà incloent
+qualsevol capçalera i/o peu. Si feu clic en qualsevol dels sobres se us mostrarà
+el missatge en qüestió. Les marques i les creus tatxades us mostren el que
+heu i no heu escollit de fer en termes de seguiment i tractament de
+respostes del correu electrònic. En altre paraules, **Revisió** és un petit panell brillant
+que us permet confirmar que heu efectuat totes les eleccions correctes tot i la
+multitud d'interrupcions que heu experimentat mentre definieu el mailing.
 
-### Schedule
+### Programa
 
- You can either choose to send the email immediately or schedule a date and
- time for it to be sent. Finally click on **Submit Mailing**. By default,
- CiviMail checks every 15 minutes for any emails that are ready to be sent,
- so the start of the mailing could be delayed by up to 15 minutes.
+ Podeu optar per enviar el correu electrònic immediatament o programar una data i
+ hora per ser enviat. Finalment cliqueu a **Envia el Mailing**. Per defecte,
+ el CiviMail comprova cada 15 minuts si hi ha cap correu electrònic a punt per enviar,
+ pel que l'inici de l'enviament pot endarrerir-se fins a 15 minuts.
 
- Mailings sent to large numbers of recipients are sent in batches of
-about 400 to reduce the likelihood of the emails being caught in spam filters.
-Therefore, the actual sending of your mass mailing can take several hours
-depending on your server configuration.
+ Els mailings que s'envien a un gran nombre de destinataris s'envien en lots
+del voltant de 400 per reduir la probabilitat de que els correus electrònics siguin capturats pels filtres de correu brossa.
+Per tant, l'enviament actual del vostre enviament massiu de correus electrònics pot trigar varies hores
+en funció de la configuració del vostre servidor.
 
 
-## Tracking sent mass mailings
+## Seguiment d'enviaments massius enviats
 
-To review key statistics about mailings sent in the past, go to
-**Mailings > Scheduled and Sent Mailings**. Once you have found your
-mailing in the list, or searched for it using the filters above,
-click **Report** in the "action" column. This will display basic
-information on all of the tracked actions, including the number of
-opens, link click-throughs or the percentage of bounces (see "Managing
-bounces" below).
+Per revisar les estadístiques clau sobre els mailings enviats en el passat, aneu a
+**Mailings > Mailings programats i enviats**. Un cop hagueu trobat el
+mailing en el llistat o l'hagueu cercat utilitzat els filtres de sobre,
+cliqueu **Informe** en la columna "acció". Això mostrarà la informació
+bàsica en totes es accions de seguiment, incloent el número
+d'obertures, els clics registrats d'enllaços o el percentatge de retornats (vegeu "Gestió de 
+retornats" de sota).
 
 ![](/img/CiviCRM_mailing_basicstatistics_1.png)
 
-To expand on this information, click the name of one of the statistics
-to display a list of the contacts to whom it applies, and various other
-details such as the time the email was opened (tracked opens). Where a
-mass mailing has been sent to a contact, you also view the "Bulk Email"
-record of the mailing in the Activities tab of their profile.
+Per ampliar aquesta informació, cliqueu el nom d'una de les estadístiques
+per mostrar un llistat dels contactes als quals s'aplica i altres diversos
+detalls com ara l'hora en que el correu electrònic va ser obert (seguiment d'obertures). Quan s'ha
+enviat l'enviament massiu del correu electrònic a un contacte, també podeu visualitzar el registre "Email massiu"
+del mailing en la pestanya d'activitats del seu perfil.
 
-Now you might want to filter this information further. For example, of
-all the recipients who opened the mass email, you might only be
-interested in those who are between the ages of 21 and 30, or registered
-for a given event. Click "Advanced Search" next to a statistic to start
-an advanced search with the email attributes pre-filled; e.g. if the
-link next to "Tracked Opens" is clicked, the search fields will be set
-to look for all contacts who opened the email, ready for you to add
-extra criteria. For more information on advanced searches, see
-"Searching".
+Ara és possible que vulgueu filtrar aquesta informació més a fons. Per exemple, de
+tots els destinataris que hagin obert l'enviament massiu del correu elecrònic, potser voldreu fixar-vos
+només en els que estiguin en edats compreses entre els 21 i 30 anys o els inscrits
+per un esdeveniment determinat. Cliqueu "Cerca avançada" al costat de l'estadística per començar
+una cerca avançada amb els atributs del correu electrònicl pre-emplenats; p.ex. si es clica
+l'enllaç a continuació dels "Seguiment d'obertures", els camps de cerca s'establiran
+per cercar tots els contactes que hagin obert el correu electrònic, a punt perquè afegiu
+criteris extres. Per més informació sobre cerques avançades, vegeu
+"Cerques".
 
 ![](/img/CiviCRM_mailing_advancedsearch.png)
 
-## Managing mass mailings
+## Gestió d'enviaments massius
 
-Mass mailings can be found in one of three areas accessible via the
-**Mailings** menu:
+Els enviaments massius es poden trobar en una de les tres àrees accessibles a través del
+menú de **Mailings**:
 
-**Draft and Unscheduled Mailings**: As soon as you name your message
- in Step 1 and click Next, it is placed in this area. If you click
- **Save & Continue Later** or simply abandon a message after some
- steps, you can continue working on it by clicking on the
- **Continue** link next to the message listed here.
+**Mailings esborranys i no programats**: Tan aviat com poseu nom al vostre missatge
+ en el pas 1 i cliqueu a continua, es situa en aquesta àrea. Si cliqueu
+ **Desa i continua més endavant** o simplement abandoneu un missatge després d'alguns
+ passos, podeu continuar treballant en ell clicant en
+ l'enllaç **Continua** al costat del missatge llistat que apareix aquí.
 
 !!! note
-    Mailings started based on search results will not have the continue link
-    listed
+    Els mailings basats en resultats de cerca no tindran llistat l'enllaç
+    continua
 
- You can also **Delete** draft messages here.
+ També podeu **Eliminar** missatges esborranys aquí.
 
-**Scheduled and Sent Mailings:** When you send or schedule a mailing,
- it will be placed in this area and remain there until it is archived
- or deleted.
+**Mailings programats i enviats:** Quan envieu o programeu un mailing,
+ s'ubicarà en aquesta àrea i romandrà aqueí fins que sigui arxivat
+ o eliminat.
 
- You can track the success of delivery by clicking on the **Report**
- link next to the message.
+ Podeu fer el seguiment de l'èxit de l'entrega fent clic a l'enllaç de l'**Informe**
+ al costat del missatge.
 
- You can also start another mailing based on a previous mailing by
- clicking on the **Re-Use** link. (Note, the Re-Use link is not
- available for mailings based on search results.)
+ Podeu començar també un altre mailing basat en un mailing anterior
+ fent clic a l'enllaç **Reutilitza**. (Noteu, que l'enllaç reutilitza no està
+ disponible per mailings basats en resultats de cerca.)
 
- The **Archive** and **Delete** links are available under the
- **more** link. For mailings that are scheduled but not yet sent, a
- **Cancel** link is available instead of **Archive**.
+ Es enllaços **Arxiva** i **Elimina** són accessibles des de
+ l'enllaç **més**. Per als mailings que han estat programats però encara no enviats,
+ hi ha un ellaç **Cancel·la** disponible en comptes del **Arxiva**.
 
-**Archived Mailings:** This area lists all messages that were
- archived from the Scheduled and Sent mailings area. Mailings listed
- here are not available to be included or excluded from the recipient
- list.
+**Mailings arxivats:** Aquesta àrea llista tots el missatges que han estat
+ arxivats des de l'àrea de mailings programats i enviats. Els mailings llistats
+ aquí no estan disponibles per ser inclosos o exclosos del llistat de
+ destinataris.
 
- It provides exactly the same functionality as Scheduled and Sent
- Mailings, including the possibility to view Reports and Re-Use.
+ Proporciona exactament la mateixa funcionalitat que Programa i envia
+ mailings, inclosa la possibilitat de veure informes i reutilitzar-los.
