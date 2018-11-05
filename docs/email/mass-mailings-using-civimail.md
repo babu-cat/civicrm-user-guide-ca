@@ -277,7 +277,7 @@ respostes del correu electrònic. En altre paraules, **Revisió** és un petit p
 que us permet confirmar que heu efectuat totes les eleccions correctes tot i la
 multitud d'interrupcions que heu experimentat mentre definieu el mailing.
 
-### Programa
+### Programació
 
  Podeu optar per enviar el correu electrònic immediatament o programar una data i
  hora per ser enviat. Finalment cliqueu a **Envia el Mailing**. Per defecte,
