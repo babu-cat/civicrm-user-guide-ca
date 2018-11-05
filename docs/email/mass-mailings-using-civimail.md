@@ -331,7 +331,7 @@ menú de **Mailings**:
  passos, podeu continuar treballant en ell clicant en
  l'enllaç **Continua** al costat del missatge llistat que apareix aquí.
 
-!!! note
+!!! nota
     Els mailings basats en resultats de cerca no tindran llistat l'enllaç
     continua
 
@@ -348,7 +348,7 @@ menú de **Mailings**:
  fent clic a l'enllaç **Reutilitza**. (Noteu, que l'enllaç reutilitza no està
  disponible per mailings basats en resultats de cerca.)
 
- Es enllaços **Arxiva** i **Elimina** són accessibles des de
+ Els enllaços **Arxiva** i **Elimina** són accessibles des de
  l'enllaç **més**. Per als mailings que han estat programats però encara no enviats,
  hi ha un ellaç **Cancel·la** disponible en comptes del **Arxiva**.
 
