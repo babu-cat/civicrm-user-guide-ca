@@ -297,14 +297,14 @@ Per revisar les estadístiques clau sobre els mailings enviats en el passat, ane
 mailing en el llistat o l'hagueu cercat utilitzat els filtres de sobre,
 cliqueu **Informe** en la columna "acció". Això mostrarà la informació
 bàsica en totes es accions de seguiment, incloent el número
-d'obertures, els clics registrats d'enllaços o el percentatge de retornats (vegeu "Gestió de 
-retornats" de sota).
+d'obertures, els clics registrats d'enllaços o el percentatge de retornats (vegeu la "Gestió de 
+retornats" a sota).
 
 ![](/img/CiviCRM_mailing_basicstatistics_1.png)
 
 Per ampliar aquesta informació, cliqueu el nom d'una de les estadístiques
-per mostrar un llistat dels contactes als quals s'aplica i altres diversos
-detalls com ara l'hora en que el correu electrònic va ser obert (seguiment d'obertures). Quan s'ha
+per mostrar un llistat dels contactes als quals s'aplica i altres detalls
+diversos com ara l'hora en que el correu electrònic va ser obert (seguiment d'obertures). Quan s'ha
 enviat l'enviament massiu del correu electrònic a un contacte, també podeu visualitzar el registre "Email massiu"
 del mailing en la pestanya d'activitats del seu perfil.
 
@@ -312,7 +312,7 @@ Ara és possible que vulgueu filtrar aquesta informació més a fons. Per exempl
 tots els destinataris que hagin obert l'enviament massiu del correu elecrònic, potser voldreu fixar-vos
 només en els que estiguin en edats compreses entre els 21 i 30 anys o els inscrits
 per un esdeveniment determinat. Cliqueu "Cerca avançada" al costat de l'estadística per començar
-una cerca avançada amb els atributs del correu electrònicl pre-emplenats; p.ex. si es clica
+una cerca avançada amb els atributs del correu electrònic pre-emplenats; p.ex. si es clica
 l'enllaç a continuació dels "Seguiment d'obertures", els camps de cerca s'establiran
 per cercar tots els contactes que hagin obert el correu electrònic, a punt perquè afegiu
 criteris extres. Per més informació sobre cerques avançades, vegeu
