@@ -236,7 +236,7 @@ l'icona d'editor de codi.
     significa que tots els enllaços seran sobreescrits amb enllaços personalitzats
     que contindran el vostre nom de domini.
 
-    !!! note "Nota per correus electrònics HTML"
+    !!! nota "Nota per correus electrònics HTML"
         Alguns filtres de pesca de credencials poden marcar els enllaços que es mostrin
         diferents en el codi HTML i en el text com a insegurs. Per aquest motiu és
         millor no utilitzar quelcom similar a  
@@ -244,7 +244,7 @@ l'icona d'editor de codi.
         i utilitzar en el seu lloc 
         ` <a href="http://google.com">cliqueu aquí per anar a Google</a>`.
 
-    !!! note "Nota per correus electrònics en text pla"
+    !!! nota "Nota per correus electrònics en text pla"
         Si utilitzeu URL amigables curtes, seran totes sobreescrites
         per enllaços llargs que contindran el nom del vostre lloc i un codi llarg
         similar a
