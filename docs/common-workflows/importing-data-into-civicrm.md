@@ -1,4 +1,4 @@
-# Importing Data into CiviCRM
+# Importació de dades en el CiviCRM
 
 Most organisations have data in sources outside CiviCRM, such as
 previously used database platforms, spreadsheets created on the fly for
@@ -13,7 +13,7 @@ in the final section of this chapter.
 ## Considerations before importing
 
 For more details on how to think about your data before importing into
-CiviCRM, please read the section on 
+CiviCRM, please read the section on
 ["Organizing your data"](/organising-your-data/overview.md), especially
 ["Mapping your data into CiviCRM"](/organising-your-data/mapping-your-data.md).
 
@@ -126,7 +126,7 @@ with minimal problems:
     field to be "orange" for a contact that currently has Colors set to
     "blue", the result will be that Colors is set to orange, not orange
     and blue.
--   To import multiple values into a multiple choice field use the "," (comma) 
+-   To import multiple values into a multiple choice field use the "," (comma)
     character as a separator - using either the Label OR the Value of the required option(s) i.e.: "1, 2, 3" or "fred, red, yellow".
 -   Make sure your data source uses an accepted date format and that you
     select the same date format on the Choose Data Source screen of the
@@ -186,44 +186,44 @@ you can link their related data during later imports. If you have
 unique ID, you would map the ID to CiviCRM's External Identifier on
 import.
 
-## Running an import
+## Execució d'una importació
 
-The import process has four steps.
+El procés d'importació consta de quatre passos.
 
-### Step 1: Setup
+### Pas 1: Configuració
 
-Setup lets you specify the basic details of your import, including the
-source of the data. Data can come from either a CSV file, or an SQL
-query of a database on your server. A check-box lets you indicate
-whether the first row of your file contains column headers.
+La configuració us deixa especificar els detalls bàsics de la vostra importació, inclús
+l'orígen de les dades. Les dades poden venir tant d'un fitxer CSV com d'una consulta
+SQL d'una base de dades del vostre servidor. Una casella us deixa indicar
+quan la primera fila del fitxer conté capçaleres de columna.
 
 ![Import contacts form with with tab "1. Choose Data Source" highlighted.](/img/Screen_Shot_2015-04-29_at_3.54.21_PM.png)
 
-Note that imports use the default **unsupervised** Dedupe Rule to decide
-whether a contact record is a duplicate, unless you select another Dedupe Rule during this step.  Refer to the *Deduping and
-Merging* chapter in this section for information on duplicate matching
-rules in CiviCRM. You can specify what action to take when an import
-encounters a duplicate:
+Tingueu en compte que les importacions utilitzen la regla de deduplicació per defecte **sense supervisió** per decidir
+quan un registre de contacte és duplicat o no, sempre i quan no seleccioneu cap altra regla de deduplicació durant aquest pas. Vegeu el capítol *Cerca i
+combinació de contactes duplicats* en aquesta secció per més informació sobre regles de deduplicació
+en el CiviCRM. Podeu especificar quina acció prendre quan una importació
+es troba amb un duplicat:
 
--   **Skip**: skip the duplicate contact, i.e. leave the original record
-    as it is.
--   **Update**: update the original record with the database fields from
-    the import data. Fields that are not included in the import data
-    will be left as they are.
--   **Fill**: fill in the additional contact data, if it contains fields
-    that are missing or blank in the original records, and leave fields
-    which currently have values as they are.
--   **No Duplicate Checking**: this inserts all valid records without
-    comparing them to existing contact records for possible duplicates.
+-   **Omet**: omet el contacte duplicat, p.ex. deixa el registre original
+    tal com està.
+-   **Actualitza**: actualitza el registre original amb els camps de la base de dades de
+    les dades d'importació. Els camps que no siguin inclosos en les dades d'importació
+    es deixaran tal com estan.
+-   **Omple**: omple les dades de contacte addicionals, si conté camps
+    que falten o estan en blanc en els registres originals, i deixa els camps
+    que tinguin valors tal com estan.
+-   **Sense comprovació de duplicació**: això insereix tots els registres vàlids sense
+    comparar-los amb els registres de contacte existents per possibles duplicats.
 
 ![screenshot](/img/Import_Options.png)
 
-**Import mappings** tell CiviCRM how the fields of data in your import
-file correspond to the fields in CiviCRM. The first time you import from
-a particular data source, it's a good idea to check the box to "Save
-this field mapping" at the bottom of the page before continuing. The
-saved mapping can then be easily reused the next time similar data is
-imported, by requesting that it be loaded at this step.
+**Importa les assignacions** indica al CiviCRM com els camps de dades en el fitxer
+d'importació es corresponen als camps del CiviCRM. La primera vegada que importeu des d'un
+orígen de dades particular, és una bona idea marcar la casella "Desa
+aquesta assignació de camps" al peu de la pàgina abans de continuar. L'assignació
+desada pot ser fàcilment reutilitzada la propera vegada en que dades similars
+s'importin, sol·licitant que es carregui en aquest pas.
 
 ### Step 2: Match the fields
 
@@ -385,33 +385,33 @@ Remember, CSV files must be less than 2MB in size. If the file size
 exceeds this, create multiple CSV files and distribute the data between
 them.
 
-## Import Contributions
+## Importació de contribucions
 
-You can insert new contributions or update existing ones.
+Podeu afegir noves contribucions o actualitzar-ne d'existents.
 
-If you **insert new contributions,** your CSV file must include at least
-the following fields:
+Si **afegiu una contribució nova,** el fitxer CSV ha d'incloure com a mínim
+els següents camps:
 
--   Contact Id or External Identifier or all the fields used in your
-    Unsupervised Duplicate Matching rule (to match to an existing
-    contact)
--   Financial Type
--   Total Amount
+-   L'identificador del contacte o l'identificador extern o tots els camps utilitzats per la
+    Regla de cerca de duplicats no supervisada (per identificar-lo amb un contacte
+    existent)
+-   Tipus financer
+-   Import total
 
-If you want to **update existing contributions,** your CSV file must
-include at least the following fields:
+Si voleu **actualitzar contribucions existents,** el fitxer CSV ha
+d'incloure almenys els següents camps:
 
--   Transaction ID or Invoice ID or Payment ID (to match to an existing
-    contribution)
--   Financial Type
--   Total Amount
+-   L'identificador de la transacció o l'identificador de la factura o l'identificador del pagament (per identificar-lo amb una contribució
+    existent)
+-   Tipus financer
+-   Import total
 
-You can use also use **update existing contributions** to import new or
-change existing data in other core or custom contribution fields. When
-doing this you will still need to include an ID to match to an existing
-contribution and the Financial Type and Total Amount fields in you CSV
-file, even if the values you import for those fields are no different
-from the values already in your database.
+També podeu utilitzar **l'actualització de contribucions existents** per importar informació
+nova o modificar-ne l'existent en altres camps del nucli o personalitzats. Quan
+feu això també necessitareu incloure en el fitxer CSV l'identificador per identificar una contribució
+existent i els camps tipus financer i import total
+, a no ser que els valors que importeu per aquests camps no siguin diferents
+dels que ja hi hagi actualment a la base de dades.
 
 ## Import Memberships
 
@@ -441,7 +441,7 @@ fields in you CSV file, even if the values you import for those fields
 are no different from the values already in your database.
 
 !!! tip "See also"
-    [Importing memberships](/membership/manual-entry-of-memberships.md#importing-memberships) in the Memberships chapter. 
+    [Importing memberships](/membership/manual-entry-of-memberships.md#importing-memberships) in the Memberships chapter.
 
 ## Import Participants
 

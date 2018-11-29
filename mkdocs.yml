@@ -54,7 +54,7 @@ pages:
     - 'Creació de camps personalitzats': 'organising-your-data/creating-custom-fields.md'
     - 'Profiles': 'organising-your-data/profiles.md'
 - Fluxos de treball comuns (partially translated):
-    - 'Importació de dades en el CiviCRM (untranslated)': 'common-workflows/importing-data-into-civicrm.md'
+    - 'Importació de dades en el CiviCRM (partially translated)': 'common-workflows/importing-data-into-civicrm.md'
     - 'Exportació dels vostres contactes (untranslated)': 'common-workflows/exporting-your-contacts.md'
     - 'Cerca i combinació de duplicats (untranslated)': 'common-workflows/deduping-and-merging.md'
     - 'Tokens i combinació de correspondència (untranslated)': 'common-workflows/tokens-and-mail-merge.md'
