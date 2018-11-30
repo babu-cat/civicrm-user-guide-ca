@@ -11,7 +11,7 @@ voleu fer un seguiment utilitzant el CiviCRM.
 
 Les organitzacions que utilitzen CiviCRM tenen diferents necessitats en termes d'informes
 financers. Algunes tan sols volen conèixer el total de donacions o de socis entrants
-registrats en el CiviCRM mentre d'altres volen ser capces d'exportar un conjunt complet de
+registrats en el CiviCRM mentre d'altres volen ser capaces d'exportar un conjunt complet de
 partides dobles de transaccions financeres per importar-les en els seus programes de comptabilitat.
 
 CiviCRM possibilita a tots dos grups, mitjançant l'ús dels **Tipus financers**, ocultar la
