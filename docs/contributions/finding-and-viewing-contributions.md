@@ -1,4 +1,4 @@
-# Visualitzant el tauler de CiviContribute
+# Visualització del tauler de CiviContribute
 
 La pàgina principal del CiviContribute o el tauler resumeix les contribucions fetes,
 incloent les llistes de contribucions rebudes en el mes actual fins a dia d'avui, de l'any
