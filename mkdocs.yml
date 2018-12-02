@@ -62,11 +62,11 @@ pages:
     - 'Automatitzant tasques (untranslated)': 'common-workflows/automating-tasks.md'
 - Contribucions (partially translated):
     - 'What is CiviContribute? (untranslated)': 'contributions/what-is-civicontribute.md'
-    - 'Conceptes claus i configuracions': 'contributions/key-concepts-and-configurations.md'
+    - 'Conceptes clau i configuracions': 'contributions/key-concepts-and-configurations.md'
     - 'Online contributions (untranslated)': 'contributions/online-contributions.md'
     - 'Offline fundraising (untranslated)': 'contributions/offline-fundraising.md'
     - 'Manual entry of contributions (untranslated)': 'contributions/manual-entry-of-contributions.md'
-    - 'Finding and viewing contributions (untranslated)': 'contributions/finding-and-viewing-contributions.md'
+    - 'Cerca i visualització de contribucions': 'contributions/finding-and-viewing-contributions.md'
     - 'Manual receipts and thank-you letters (untranslated)': 'contributions/manual-receipts-and-thank-yous.md'
     - 'Reports and analysis (untranslated)': 'contributions/reports-and-analysis.md'
     - 'Soft credits (untranslated)': 'contributions/soft-credits.md'

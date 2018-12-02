@@ -1,97 +1,96 @@
-# Viewing the CiviContribute dashboard
+# Visualitzant el tauler de CiviContribute
 
-The CiviContribute main page or dashboard summarises the contributions made,
-including lists of contributions received in the current month to date, year
-to date, and cumulatively since inception (i.e. all contribution records in
-  your CiviCRM installation). This allows you to easily browse contributions
-  that have been recorded automatically or added manually. The dashboard also
-  provides buttons to manage and add contribution pages.
+La pàgina principal del CiviContribute o el tauler resumeix les contribucions fetes,
+incloent les llistes de contribucions rebudes en el mes actual fins a dia d'avui, de l'any
+fins a dia d'avui i acumulatiu des del començament (p.ex. tots els registres de contribucions en
+  la vostra instal·lació CiviCRM). Això us permet explorar fàcilment les contribucions
+  que s'han anat registrant automàticament o s'han afegit manualment. El tauler també
+  proporciona botons per gestionar i afegir pàgines de contribucions.
 
-Different layouts are available for viewing summaries. The following screenshot
-shows the most recent contribution to a campaign using the Table Layout tab:
+Per visualitzar els resums hi ha disponibles diferents disposicions. La següent captura de pantalla
+mostra les contribucions més recents d'una campanya utilitzant la pestanya disposició en taula:
 
 ![ContactSummary1a](/img/CiviCRM-CiviContribute-EveryDayTasks-ContactSummary1a-en.png)
 
-You can also view bar or pie charts to compare contribution totals across
-months of a given year and across years by clicking on the Chart Layout tab.
+També podeu visualitzar gràfics de barres o circulars per comparar les contribucions totals al llarg
+dels mesos d'un any determinat i al llarg dels anys clicant en la pestanya de disposició en gràfic.
 
 ![ContactSummary1b](/img/CiviCRM-CiviContribute-EveryDayTasks-ContactSummary1b-en.png "ContactSummary1b")
 
-Finally, you can add any number of contribution [Report Dashlets](/the-user-interface/menu-dashboard-and-dashlets.md#dashlets) to your
-personal CiviCRM Dashboard. These might include a bar chart summary of
-year-to-date contributions by Financial Type or month, a list of the top 10
-donors, etc.
+Finalment, podeu afegir qualsevol número de [Contenidors d'informes](/the-user-interface/menu-dashboard-and-dashlets.md#dashlets) de contribucions al vostre
+tauler personal de CiviCRM. Això pot incloure un gràfic resum de barres de les
+contribucions de l'any fins avui per tipus financer o mes, un llistat dels 10 primers donants, etc.
 
-# Finding contributions
+# Cerca de contribucions
 
-CiviCRM makes an important distinction between contributions and the
-people that made the contributions. It is important to appreciate the
-difference between the two when you are searching contributions. For
-example, if you want to send a gift to all people that made a
-contribution in the last year, what would be more appropriate? Contacts
-or contributions? The answer depends on whether you want to send two
-gifts to people that made two contributions and there is of course no
-right or wrong answer - it just depends on your approach. It is
-important to think about this each time to do a search.
+El CiviCRM fa una important distinció entre les contribucions i la
+gent que fa les contribucions. És important apreciar la
+diferència entre les dues quan cerqueu contribucions. Per
+exemple, si voleu enviar un obsequi a tota la gent que a fet una
+contribució en el darrer any, que seria el més apropiat? Contactes
+o contribucions? La resposta depèn de si voleu enviar dos obsequis
+a la gent que ha fet dues contribucions i no hi ha per suposat cap
+resposta bona ni dolenta - tan sols depèn del vostre enfocament. És
+important pensar sobre això cada vegada que es faci una cerca.
 
-The **Find contributions** search allows you to search based on contribution
-data and return contribution records. It is found at **Contributions > Find
-Contributions**.
+La **Cerca contribucions** us permet cercar en base a les dades de les
+contribucions i retornar els registres de contribució. La podeu trobar a **Contribucions > Cerca
+contribucions**.
 
 ![Contribution Find Screenshot](/img/contributions-find-search.png)
 
-You can search based on a number of criteria, such as date range, contribution
-amount, contribution status etc. Contributions must match all specified criteria
-in order to be returned, so the more criteria you enter, the narrower the search
- will be. For example, searching for the Financial Type "donation" and the date
- range "January 1st to May 31st" will return contributions that meet both
- criteria. Relative date ranges such as "Last Month" or "Last Year" are often
- quite useful.
+Podeu cercar en funció d'una sèrie de criteris, com ara l'interval de dates, l'import
+de la contribució, l'estat de la contribució, etc. Les contribucions han de coincidir amb tots els criteris de cerca especificats
+per ser retornades, així que com més criteris introduïu, més reduïda serà
+ la cerca. Per exemple, cercant pel tipus financer "donatiu" i l'interval de
+ dates "1 de gener fins a 31 de maig" es retornaran les contribucions que coincideixin
+ amb ambdós criteris. Els intervals de dates relatives com ara "El mes passat" o "L'any passat" són sovint
+ força útils.
 
- As well as the subset of records resulting from the search, the results screen
- from a Find Contributions search displays the total amount, number of
- contributions, average contribution mean and mode for the search results.
+ A més del subconjunt de registres resultants d'una cerca, la pantalla de resultats
+ d'una cerca de contribucions mostra l'import total, el nombre de
+ contribucions, la contribució mitjana i la moda dels resultats de la cerca.
 
  ![Screen shot batch update from search](/img/contributions-find-editcriteria.png)
 
- You can select an action to perform from the **Actions** menu once you select
- all or a subset of the results. You can:
+ Podeu seleccionar una acció per realitzar del menú d'**Accions** un cop hagueu seleccionat
+ tots o un subconjunt dels resultats. Podeu:
 
- - **Update multiple contributions**: This is useful if you want to update a
- large number of contributions' thank-you date at once, for example. You need to
- [create the profile](/organising-your-data/profiles.md) you want to use *before*
- you perform the search and batch update.
+ - **Actualitza múltiples contribucions**: Això és útil si voleu actualitzar un
+ gran nombre de dates d'agraïment de contribucions d'un sol cop, per exemple. Necessiteu
+ [crear el perfil](/organising-your-data/profiles.md) que voleu utilitzar *abans*
+ de realitzar la cerca i l'actualització per lots.
 
- - **Delete contributions**: This removes contributions entirely from the
- system, as if they had never been entered in the first place. Editing
- contributions and updating their status to canceled provides a better audit
- trail, but there may be situations where you do want to delete, such as a
- contribution entered on the wrong contact's record.
- - **Export contributions**: This is an export of contributions.  If you
- choose to export multiple contributions from the same contact you will end up
- with one row for each contribution in your export file. If you want to do
- searches that return one result per contact, use the contact advanced search.
+ - **Elimina les contribucions**: Això elimina les contribucions per complet del
+ sistema, com si mai no haguessin estat introduïdes. Editar
+ les contribucions i actualitzar el seu estat a cancel·lat proporciona un seguiment d'auditoria
+ millor, però poden haver-hi situacions on vulgueu eliminar-les, com una
+ contribució introduïda en el registre de contacte equivocat.
+ - **Exporta les contribucions**: Això és una exportació de contribucions. Si voleu
+ escollir exportar múltiples contribucions d'un mateix contacte acabareu
+ amb una fila per a cada contribució en el fitxer d'exportació. Si voleu fer
+ cerques que retornin un resultat per contacte, utilitzeu la cerca avançada de contactes.
 
- - **Receipts - Print or Email Contribution:** This allows you to create a PDF
- file of all the receipts in the search, or email the receipts to the associated
- donors. See "Sending thank you letters" below for more information.
+ - **Rebuts - Imprimeix o envia un correu electrònic de la contribució:** Això us permet crear un fitxer
+ PDF de tots els rebuts de la cerca, o enviar els rebuts per correu electrònic als donants
+ associats. Vegeu "Enviament de cartes d'agraïment" a sota per a més informació.
 
- - **Email - send now**: Send an email to all or selected contacts found in the
- search.
+ - **Correu electrònic - envia ara**: Envia un correu electrònic a tots els contactes o als seleccionats trobats en la
+ cerca.
 
- - **Thank-you letters - print or email**: Create a custom PDF letter for each
- of the contributions selected, with the option to update the receipt or thank
- you date for each.
+ - **Cartes d'agraïment - imprimeix o envia un correu electrònic**: Crea una carta PDF personalitzada per a cada
+ una de les contribució seleccionades, amb l'opció d'actualitzar la data del rebut o agraïment
+ per a cada un.
 
- - **Update pending contribution status**: This allows you to record payments
- details and to update the contribution status for all or selected online
- "pay later" contributions. This action only works for contributions with the
- status of Pending (Pay Later) and the same contribution status will be applied
- to all the contributions selected for updating.
+ - **Actualitza l'estat de les contribucions pendents**: Això us permet registrar els detalls de
+ pagaments i actualitzar l'estat de la contribució per a totes les contribucions en línia o seleccionades
+ amb "pagament diferit". Aquesta opció només funciona en contribucions amb
+ l'estat de pendent (pagament diferit) i el mateix estat de la contribució serà aplicat
+ per totes les contribucions seleccionades per actualitzar.
 
-The **Advanced search** returns contacts by default, but you can choose
-**Contributions** for the **Display Results As** field to show contributions
-rather than contacts. The standard contribution search criteria are available
-when you expand the Contribution pane, however you can also filter your results
-with additional criteria ("Find all donations to the tax appeal made by members of my organisation" or "Show me all contacts who have contributed more than
-$100 last year AND who live in California").
+La **Cerca avançada** retorna contactes per defecte, però podeu escollir
+**Contribucions** al camp **Mostra els resultats com a** per mostrar contribucions
+en comptes de contactes. Els criteris de cerca estàndards estan disponibles
+quan expandiu el panell de contribució, però també podeu filtrar els resultats
+amb criteris addicionals ("Troba tots els donatius amb dret a desgravació fets per membres de l'organització" o "Mostra tots els contactes que han contribuït més de
+100€ l'últim any i que viuen a Barcelona").
