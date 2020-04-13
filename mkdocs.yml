@@ -3,7 +3,8 @@ site_url: https://docs.civicrm.org/user/ca/latest/
 repo_url: https://github.com/babu-cat/civicrm-user-guide-ca
 site_description: 'Una guia per als usuaris del CiviCRM.'
 site_author: 'La comunitat de CiviCRM'
-theme: material
+theme: 
+  name: material
 markdown_extensions:
   - attr_list
   - admonition
