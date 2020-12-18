@@ -1,14 +1,16 @@
 # Dates
 
-## Date Formatting
+## Date Setup
 
-Use **Administer > Localization > Date Formats** to configure formats for date display and date input fields.
+Use **Administer > Localization > Date Formats** to configure formats for date display, date input fields, and calendar options.
 Defaults are provided for standard United States formats. Settings use standard POSIX specifiers.
 
 Date Display - Type in the values you want for:
 **Complete Date and Time**, **Complete Date**, **Month and Year** and **Year Only**.
 
 Date Input Fields - Type in the values you want for: **Date Input Format**, **Time Input Format**.
+
+Calendar - Type in the day you want for the beginning of the week, and the month and and day you want for the start of the fiscal year.  
 
 ## Date Preferences
 
