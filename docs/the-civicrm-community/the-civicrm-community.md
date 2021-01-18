@@ -29,8 +29,6 @@ The [CiviCRM Stack Exchange](http://civicrm.stackexchange.com/) site is specific
 
 [Mattermost](https://chat.civicrm.org) offers live discussion in chat rooms and direct messages. It's a great place to go for any technical questions. Here, with a bit of luck, you'll often find an instant answer to your question or a pointer in the right direction.
 
-The [CiviCRM Forums](http://forum.civicrm.org) are a location for language and locality based CiviCRM discussion and support.
-
 You'll hopefully find that both Stack Exchange and Mattermost are great
 sources for help, support, and good ideas. That's all attributable to
 the good will and generous efforts of people like you! Everyone who
@@ -59,8 +57,8 @@ channels. Using your favorite engine to search for CiviCRM will turn up
 many articles and posts from other folks' websites and blogs. The
 CiviCRM team is good at keeping an eye out for these posts and often
 publicize them through Twitter. To keep abreast of the stream of
-comments, follow @civicrm and find CiviCRM tweets and tag your own
-tweets with the #civicrm hashtag.
+comments, follow [@civicrm](https://twitter.com/civicrm) and find CiviCRM tweets and tag your own
+tweets with the [#civicrm hashtag](https://twitter.com/hashtag/CiviCRM?src=hash).
 
 ## Finding the Community Offline
 
@@ -89,7 +87,7 @@ to the CiviCRM community.
 
 -   Contribute to CiviCRM documentation. This book was written by
     community members; you can contribute to it by
-    [following the instructions here](/the-civicrm-community/contributing-to-this-manual.md).
+    [following the instructions here](contributing-to-this-manual.md).
 -   Contribute content to CiviCRM's website. You can share use cases and case studies that describe how your organization uses CiviCRM and the solutions and processes you've developed around
     the software. See existing case studies  [here](https://civicrm.org/case-studies). You can also share your successes, experiences at Civi-related
     events, interesting customizations, etc. on the
@@ -118,5 +116,5 @@ to the CiviCRM community.
     [CiviCRM's website](https://civicrm.org/work-with-the-core-team)
     or write to [info@civicrm.org](mailto:info@civicrm.org) for more
     information on sponsoring development.
--   Report any bugs that you find in CiviCRM. See the [*Bug Reporting*](/the-civicrm-community/bug-reporting.md)
+-   Report any bugs that you find in CiviCRM. See the [*Bug Reporting*](bug-reporting.md)
     chapter of this book for more information.

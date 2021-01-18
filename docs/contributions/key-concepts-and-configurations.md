@@ -24,7 +24,7 @@ poden fer el seguiment d'ingressos, actius, taxes i recompenses (si aplica) com 
 requerit tal com es mostra pels quatre tipus financers de la següent imatge.
 
 
-![financial types and accounts](/img/civicontribute-financial-types-and-accounts.png)
+![financial types and accounts](../img/civicontribute-financial-types-and-accounts.png)
 
 
 Els **comptes financers** haurien d'estar basats en la taula de comptes de la vostra
@@ -56,7 +56,7 @@ solidàries" i encara un altre "Donatius recurrents".
 Per crear un nou tipus financer navegueu a **Administra > CiviContribute >
 Tipus financers**,  i clicar a **Afegeix un tipus financer**
 
-![Adding Financial Type](/img/civicontribute-financial-types-add-new.png)
+![Adding Financial Type](../img/civicontribute-financial-types-add-new.png)
 
 Quan creeu un tipus financer amb un nom específic, el CiviCRM crearà automàticament
 un compte d'ingressos amb nom similar i l'assignarà junt amb
@@ -69,9 +69,9 @@ el de simplificar el cas comú on una organització només té un únic
 compte de dipòsit bancari, un únic compte per cobrar i un únic compte per pagar, però proporciona
 la flexibilitat per configuracions més sofisticades.
 
-Tingueu en compte que podeu utilitzar CiviCRM's el sistema de permissos basat en rols per controlar l'accés dels usuaris a la informació de les contribucions definint els [Permissos de tipus financer](/initial-set-up/permissions-and-access-control.md#financial-type-permissions).
+Tingueu en compte que podeu utilitzar CiviCRM's el sistema de permissos basat en rols per controlar l'accés dels usuaris a la informació de les contribucions definint els [Permissos de tipus financer](../initial-set-up/permissions-and-access-control.md#financial-type-permissions).
 
-![Editing accounts linked to financial type](/img/civicontribute-financial-types-linked-accounts.png)
+![Editing accounts linked to financial type](../img/civicontribute-financial-types-linked-accounts.png)
 
 ### Comptes financers
 
@@ -85,7 +85,7 @@ Podeu editar els comptes financers a **Administra > CiviContribute > Comptes fin
 Els únics camps requerits són el Nom i Tipus de compte financer. Pels comptes
 d'ingressos aquests seran definits quan creeu el tipus financer.
 
-![Editing Financial Account](/img/civicontribute-financial-account-edit.png)
+![Editing Financial Account](../img/civicontribute-financial-account-edit.png)
 
 Quants dels altres camps empleneu dependrà del vostre flux de treball.
 Si teniu previst exportar les transaccions financeres del CiviCRM per importar-les en el vostre
@@ -102,7 +102,7 @@ El CiviCRM us proporciona la possibilitat de fer pagaments en línia en el vostr
 lloc web. Podeu fer pagaments per diferents raons incloent
 campanyes de captació de fons, quotes de membres i assistència a esdeveniments.
 
-Per començar a fer pagaments en línia necessiteu [configurar un processador de pagaments](/contributions/payment-processors.md)
+Per començar a fer pagaments en línia necessiteu [configurar un processador de pagaments](payment-processors.md)
 que connectarà el vostre lloc web amb la targeta de crèdit i amb la infraestructura bancària
 que en realitat processa el pagament.
 
@@ -127,6 +127,21 @@ editar les targetes de crèdit existents acceptades o definiu una nova opció a 
     llavors necessitareu configurar les targetes de crèdit i mètodes de pagament acceptats en aquest
     lloc.
 
+
+## Estat
+
+Totes les contribucions tenen un estat, els més comuns són:
+
+**Pendent (Pagament diferit)** indica que una contribució que ha estat introduïda però no pagada encara no s'ha rebut. Generalment per xecs en paper o electrònics.
+
+**Pendent (Incompleta)** ha estat introduïda al CiviCRM i enviada al processat en línia. No obstant, el pagament no s'ha completat en el processador, o la resposta del processador encara no s'ha rebut. Les contribucions que quedin perpetuament en aquest estat en el CiviCRM però quedin completades en el processador requereixen una investigació de les comunicacions entre els dos sistemes.
+
+**Fallida** ha estat introduïda en el CiviCRM i reenviada per processar. Malgrat això, el procés ha estat declinat, refusat o ha rebut un error i ha retornat aquest resultat al CiviCRM.
+
+**Completada** introduïda al CiviCRM, pagament processat i resposta rebuda satisfactòriament.
+
+Altres estats com En progrés, Vençuda, Parcialment pagada són utlitzats per funcionalitats opcionals per a pagaments parcial i pagaments recurrents automatitzats. Es possible modificar els noms dels estats de contribució a **Administra > Configuració del sistema > Grups d'opcions** però no es recomana afegir estats addicionals en la mesura que pot interferir amb la validació contable al CiviCRM.
+
 ## Necessitat de dades i camps
 
 CiviContribute té un conjunt de camps predefinits per fer el seguiment de la informació
@@ -143,4 +158,4 @@ funcionalitats útils estan construïdes en els camps de contribució del nucli 
 no té sentit duplicar-les amb camps personalitzats, però la vostra
 organització pot tenir necessitats específiques que requereixin de camps personalitzats.
 
-Si necessiteu crear camps personalitzats per satisfer les vostres necessitats, llegiu [Creació de camps personalitzats](/organising-your-data/creating-custom-fields.md).
+Si necessiteu crear camps personalitzats per satisfer les vostres necessitats, llegiu [Creació de camps personalitzats](../organising-your-data/creating-custom-fields.md).

@@ -31,8 +31,14 @@ To add a case type:
     will autofill the name field. (The default name is usually fine, but
     advanced user may unlock and change the name. Once the case type is
     created, the name should not be changed.)
+    
+3. Optionally choose to restrict **Activity Assignment**.
 
-3. Include **Case Roles**.
+    By default any contact can be selected as the assignee for case activities.
+    You can optionally restrict this by group or by contacts with a user
+    account on your website.
+    
+4. Include **Case Roles**.
 This section lists the types of people who are involved in the case in
 some way. Roles listed here will be automatically included in each case
 when a new case is opened.
@@ -67,9 +73,9 @@ when a new case is opened.
     **Administer > Customize Data and Screens > Relationship Types**.
     There you will also be able to review and edit other details of the
     roles/relationships if you need to.
-![List of roles, and checkboxes to assign a role to the manager of the case, and/or to the creator.](/img/CiviCase_Roles.png)
+![List of roles, and checkboxes to assign a role to the manager of the case, and/or to the creator.](../img/CiviCase_Roles.png)
 
-4. Include **Activities**
+5. Include **Activities**
 When working on a case, the user has access to a drop-down menu in the
 case summary enabling them to quickly record a new activity as part of
 the case. For example, if the case manager looks at a case and decides
@@ -105,7 +111,7 @@ to the case.
     user **might** **choose** to add to the case. Activities that you
     include in a Timeline or Sequence do not need to be in this list.
 
-    ![List of case activities with three tabs: activity types, standard timeline, sequence.](/img/CiviCRM_4.5_CiviCase_Activities.png)
+    ![List of case activities with three tabs: activity types, standard timeline, sequence.](../img/CiviCRM_4.5_CiviCase_Activities.png)
 
     Select the activity types that you wish to be included in the case type
     from the "Add activity type" drop-down shown below the listing of
@@ -135,7 +141,7 @@ to the case.
     CiviCase you can change the 'Component' setting from 'Cases only' to
     Contacts AND Cases'.
 
-5. Having defined all of the Case Roles and the Activity Types that
+6. Having defined all of the Case Roles and the Activity Types that
 will be available for user selection in your new Case Type, you next
 need to define the **Standard Timeline**, any
 additional **Timelines** and/or a **Sequence** that you want to use
@@ -177,7 +183,7 @@ within the case type.
     from the (Add) menu. Currently you can only add one sequence to any
     given case type.
 
-![Standard timeline tab with list of activities.](/img/CiviCRM_4.5_CiviCase_Standard_Timeline.png)
+![Standard timeline tab with list of activities.](../img/CiviCRM_4.5_CiviCase_Standard_Timeline.png)
 To add activities to a timeline, select the tab for the timeline you want
 to work with:
 
@@ -201,7 +207,7 @@ You can choose to use the "end date" of a case (i.e the final defined
 activity) as your reference and use negative offset values to schedule
 activities as the example below shows.
 
-![Example of a timeline for a single venue event: getting a quote should take place 21 days before the event date, the site visit 14 days beforehand, and the accreditation 7 days before the event date.](/img/timeline_advanced.png)
+![Example of a timeline for a single venue event: getting a quote should take place 21 days before the event date, the site visit 14 days beforehand, and the accreditation 7 days before the event date.](../img/timeline_advanced.png)
 
 You can rename additional timelines or a sequence using the fields
 available in the 'Advanced' section below the main Activities section of
@@ -328,7 +334,7 @@ The following is a list of the CiviCase-related permissions:
     as view and add activities to any case (regardless of who initially
     created the case).
 
-    ![screenshot](/img/CiviCRM_update-CasePlanning-FindDeletedCases-en.png "FindDeletedCases")
+    ![screenshot](../img/CiviCRM_update-CasePlanning-FindDeletedCases-en.png "FindDeletedCases")
 
 -   Delete in CiviCase: allows a user to mark cases or case activities
     as deleted. Cases and activities are never physically deleted from
@@ -336,7 +342,7 @@ The following is a list of the CiviCase-related permissions:
 
     Users with this permission can also find and undelete these cases and activities by checking the Deleted Cases option in Find Cases and the Deleted Activities option in the Case Activities Search Filter.
 
-![screenshot](/img/CiviCRM_update-CasePlanning-FindDeletedActivities-en.png "FindDeletedActivities")
+![screenshot](../img/CiviCRM_update-CasePlanning-FindDeletedActivities-en.png "FindDeletedActivities")
 
 -   Administer CiviCase: gives access to Administer > CiviCase options
     including:

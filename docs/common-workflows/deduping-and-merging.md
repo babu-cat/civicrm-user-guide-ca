@@ -59,7 +59,7 @@ Firstly view the dedupe rules. Go to **Contacts > Find and Merge
 Duplicate Contacts** in the navigation menu. This displays the following
 screen:
 
-![Duplicate Choose Find Rule](/img/duplicates-choose-find-rule.png)
+![Duplicate Choose Find Rule](../img/duplicates-choose-find-rule.png)
 
 Different rules are configured for each contact type (individuals,
 organizations, and households.) A default supervised rule and a default
@@ -113,6 +113,8 @@ being compared are flagged as suspected duplicates.
 
 ## Using rules and merging duplicate contacts manually
 
+!!! tip  an alternate UI is available in [the deduper extension](https://github.com/eileenmcnaughton/deduper/blob/master/Readme.md)
+
 1.  Go to **Contacts > Find and Merge Duplicate Contacts**.
 2.  Click the **Use Rule** link to scan for duplicate contacts using the
     selected rule.
@@ -123,7 +125,7 @@ being compared are flagged as suspected duplicates.
     least one of the contacts in any identified duplicate pair is in
     your selected group.  
 
-    ![duplicates-select-group](/img/duplicates-select-group.png)  
+    ![duplicates-select-group](../img/duplicates-select-group.png)  
 
     Contacts of the type to which the rule is
     assigned will be scanned and compared. If the match between two
@@ -132,7 +134,7 @@ being compared are flagged as suspected duplicates.
     You will be presented with a list of possible duplicates with a few
     show/hide tickboxes; Street Address, Post Code, Conflicts and Threshold.  
 
-  ![List of Possible Duplicates](/img/duplicates-list-of-possibles.png)  
+  ![List of Possible Duplicates](../img/duplicates-list-of-possibles.png)  
 
 4.  Clicking **Merge** for any pair of contacts brings up a table
     showing details for each contact. CiviCRM designates one record as
@@ -143,7 +145,7 @@ being compared are flagged as suspected duplicates.
 5.  If you want to move the information in the opposite direction, you
     can swap the duplicate and original contacts by choosing **Flip
     between original and duplicate contacts** at the top of the page.  
-![Duplicate Merge Screen](/img/duplicate-merge-screen.png)  
+![Duplicate Merge Screen](../img/duplicate-merge-screen.png)  
 
 6.  The rows on the merge screen are colour-coded.
     -  Green indicates the information is the same
@@ -169,7 +171,7 @@ being compared are flagged as suspected duplicates.
 Sometime it is appropriate to merge multiple pairs of duplicates at the same time.
 This can be done from the possible duplicates screen where you can display up to 100 rows.
 
-   ![List of Possible Duplicates Batch Merge](/img/duplicate-list-of-possibles-detail.png)
+   ![List of Possible Duplicates Batch Merge](../img/duplicate-list-of-possibles-detail.png)
 
 You can **Batch Merge All Duplicates** (This will merge **all** duplicates found,
 not just those displayed on your screen) or **Batch Merge Selected Duplicates**
@@ -199,7 +201,29 @@ page will not refresh automatically, just in case your database is very
 large, and searching for duplicates would cause a significant delay. You
 may then continue to assess and merge the remaining duplicates manually.
 
-![screenshot](/img/CiviCRM_dedupe_batchmerge.png)
+If you wish to increase the number of pairs that can be resolved in batch
+merge the [deduper](https://github.com/eileenmcnaughton/deduper/blob/master/Readme.md)
+extension provides a range of resolutions, allowing you to do things like
+specify that conflicts on certain fields should be non-blocking or
+handling diacritic names.
+
+Batch merging can also be done from the command line - e.g
+
+```
+ echo '{"search_limit": 10000, "criteria":{"contact" : {"id" : {">" : 200}}}}'
+   | drush --in=json cvapi Job.process_batch_merge
+
+```
+
+Would find any contacts that match any of 
+
+"the first 10000 contacts found with an id greater than 200" 
+and attempt to automtically merge them using the defaults of 'safe' mode 
+(skip when there are conflicts) and the default rules for individuals.
+
+
+
+![screenshot](../img/CiviCRM_dedupe_batchmerge.png)
 
 !!! warning
     Before you begin to consider using batch dedupe, please take note of 
@@ -207,7 +231,7 @@ may then continue to assess and merge the remaining duplicates manually.
 
     *  This feature is intended for use with large data sets that have strictly managed field structures. If you have a small database with only a few duplicates, we recommend you merge them manually using your own judgement.
     *  Once merged, the links between the duplicate contact and records elsewhere in the system will be transferred to the original contact (e.g. event participant records, groups, tags, contributions, activities, cases and memberships). You will NOT be able to reverse this change.
-    *  Duplicate records, once merged, will be deleted and are not recoverable. We strongly recommend backing up your data before running a batch merge.
+    *  Duplicate records, once merged, will be deleted and are not recoverable, unless you have database logging enabled. We strongly recommend backing up your data before running a batch merge.
 
 ## A multi-stage deduping process
 

@@ -171,7 +171,7 @@ required for deduplication purposes.
 
 Example of spreadsheet .csv format
 
-![spreadsheet with first name, last name, grade, student number, etc.](/img/CiviCRM-student_sample-en.png)
+![spreadsheet with first name, last name, grade, student number, etc.](../img/CiviCRM-student_sample-en.png)
 
 When thinking about setting up your spreadsheet, think about the data
 that you are collecting and plan out your column headings. Keep in mind

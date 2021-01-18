@@ -86,12 +86,12 @@ Click **Manage Groups**. To edit the search criteria of a particular
 smart group, click **Settings** next to that group.
 
 
-![image](/img/Groups&tags_updatecriteria_1.png)
+![image](../img/Groups&tags_updatecriteria_1.png)
 
 On the group settings screen, click **Edit Smart Group Criteria** at
 bottom left.
 
- ![image](/img/Groups&tags_edit_Smart_Group_criteria.png)
+ ![image](../img/Groups&tags_edit_Smart_Group_criteria.png)
 
 This will bring up the a screen similar to the one that you originally
 used to create the smart group with the search results displayed.
@@ -100,7 +100,7 @@ that you used to define the smart group. You can then update the
 criteria and once you're happy with the results, select all records and
 choose **Update Smart Group** from the Actions list.
 
-![image](/img/Groups&tags_actions_Update.png)
+![image](../img/Groups&tags_actions_Update.png)
 
 Your smart group is now based on the new criteria.
 
@@ -112,22 +112,12 @@ Once a contact has been removed from a smart group, there will be an option to *
 
 ## Smart group caching
 
-For performance reasons, smart groups are often cached, i.e. the
-contacts that meet the smart group criteria are saved in memory for a
-certain amount of time.
+For performance reasons, smart groups are often cached, i.e. the contacts that meet the smart group criteria are saved in memory for a certain amount of time.
 
-This speed things up because CiviCRM doesn't need to run the search each
-time you want to use the smart group. If you query is simple and
-involves a small number of contacts, the speed up may not be
-significant. If it is complex and involves a lot of contacts, it may be
-very significant and even necessary.
+This speed things up because CiviCRM doesn't need to run the search each time you want to use the smart group. If you query is simple and involves a small number of contacts, the speed up may not be significant. If it is complex and involves a lot of contacts, it may be very significant and even necessary.
 
-The down side of caching is that you need to wait up to 5 minutes for
-the query to be updated. Depending on how you use smart groups this may
-not be an issue.
+The down side of caching is that you need to wait up to 5 minutes for the query to be updated. Depending on how you use smart groups this may not be an issue.
 
-The default expiry time for a smart group in newer versions of CiviCRM
-is 5 minutes. You can adjust the smart group query cache 'timeout', i.e.
-the amount of time the cache is considered a valid reflection of the
-smart group in **Administer > Customize Data and Screens > Search
-Preferences**.
+The default expiry time for a smart group in newer versions of CiviCRM is 5 minutes. You can adjust the smart group query cache 'timeout', i.e. the amount of time the cache is considered a valid reflection of the smart group in **Administer > Customize Data and Screens > Search Preferences**.
+
+When a group is accessed CiviCRM will check to see if the currently cached group is older than is allowed by the timeout. In the event that the timeout has passed CiviCRM will rebuild the group and reset the timeout to `now + cache timeout setting`. Setting the timeout to *0* turns off the cache altogether.

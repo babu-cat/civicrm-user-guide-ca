@@ -34,7 +34,7 @@ example, based on the results of Advanced Search you can create a Smart
 Group of contacts who have active memberships, or a Smart Group of
 contacts in a given city. As people become members or move to the city
 you've searched on, they will be automatically added to the Smart Group.
-This makes it possible to to send mailings without having to first
+This makes it possible to send mailings without having to first
 update the contacts in a group.
 
 To create a **Smart Group**:
@@ -79,13 +79,20 @@ checked: "Access CiviMail subscribe/unsubscribe pages."
 ### Using the subscribe link
 
 One way to allow users to subscribe to an email list online is by
-directing them to www.*yourdomain.org*/civicrm/mailing/subscribe. You
-and anyone who accesses this link can subscribe to the available mailing
+directing them to:
+
+- Drupal: <i>example.org</i>/civicrm/mailing/subscribe
+- Backdrop: <i>example.org</i>/civicrm/mailing/subscribe
+- WordPress with [clean URLs](https://docs.civicrm.org/sysadmin/en/latest/install/wordpress/#enabling-cleaner-urls-for-wordpress): <i>example.org</i>/civicrm/mailing/subscribe?reset=1
+- WordPress without clean URLs (the default for CiviCRM instances installed before version 5.13): <i>example.org</i>/civicrm?page=CiviCRM&q=civicrm/mailing/subscribe&reset=1
+- Joomla: <i>example.org</i>/administrator/index2.php?option=com_civicrm&task=civicrm/mailing/subscribe&reset=1
+
+You and anyone who accesses this link can subscribe to the available mailing
 list groups.
 
 ### Using a profile
 
-Alternatively, you can use [profiles](/organising-your-data/profiles.md) to collect more information from people who sign up to
+Alternatively, you can use [profiles](../organising-your-data/profiles.md) to collect more information from people who sign up to
 your mailing list.
 
 For example, you could create a new Profile called Newsletter Sign-up.
@@ -185,7 +192,7 @@ In CiviCRM, these are called Automated Messages, and you can edit them
 and add new ones at **Mailings > Headers, Footers, and Automated
 Messages**.
 
-For more information on email list management see [Maintaining healthy email lists](/email/maintaining-healthy-email-lists.md) which explores how CiviCRM handles
+For more information on email list management see [Maintaining healthy email lists](maintaining-healthy-email-lists.md) which explores how CiviCRM handles
 unsubscribes, bounces and email holds.
 
 ## Creating headers and footers
@@ -198,7 +205,7 @@ elements that you want to be displayed before the main content body,
 such as the logo of your organization and the title of the newsletter.
 
 The footer is always the last thing in the email. The footer is an ideal
-place for the compulsory [unsubscribe tokens](/common-workflows/tokens-and-mail-merge.md#opt-out).
+place for the compulsory [unsubscribe tokens](../common-workflows/tokens-and-mail-merge.md#opt-out).
 
 You can manage the content of headers and footers in **Mailings >
 Headers, Footers, and Automated Messages**. You can create different

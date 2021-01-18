@@ -6,6 +6,8 @@ might have several hundred. Their needs range from very simple to fairly
 complex. In this chapter, we will have a look at real world examples of
 how organizations are using CiviCRM.
 
+In addition to the detailed examples below, many [case studies are available on CiviCRM.org](https://civicrm.org/case-studies/), and will help you explore more uses of CiviCRM. The [CiviCRM Statistics](https://stats.civicrm.org/?tab=sites) site can also give you an overview of current usage.
+
 Throughout this chapter you will see references to CiviCRM features such
 as CiviEmail, CiviMember, CiviPledge, CiviCRM Profiles and others. These
 are all components of CiviCRM and we have included references to them so
@@ -18,7 +20,7 @@ point.
 ## Suffering Relieved!
 
 
-![afsc_1](/img/CiviCRM-Icons-afsc_1-en.png "afsc_1")
+![afsc_1](../img/CiviCRM-Icons-afsc_1-en.png "afsc_1")
 
 The American Friends Service Committee (AFSC) is a large, Quaker-based,
 peace and social justice organization with over 400 employees.
@@ -111,7 +113,7 @@ turn, is of great benefit to AFSC.
 
 ## A CRM Education
 
-![Schoolhouse_Supplies_medium72dpi](/img/CiviCRM-Icons-Schoolhouse_Supplies_medium72dpi-en.png)]
+![Schoolhouse_Supplies_medium72dpi](../img/CiviCRM-Icons-Schoolhouse_Supplies_medium72dpi-en.png)]
 
 Schoolhouse Supplies (SHS) is a Portland, Oregon, USA-based non-profit
 organisation which gathers and distributes school supplies to students
@@ -150,7 +152,7 @@ have been impossible or prohibitively expensive.
 
 ## Growing Satisfaction
 
-![nysnla](/img/CiviCRM-Icons-nysnla-en.png "nysnla")
+![nysnla](../img/CiviCRM-Icons-nysnla-en.png "nysnla")
 
 The New York State Nursery Landscape Association (NYSNLA) is a
 member-based association providing resources and advocacy support for
@@ -220,7 +222,7 @@ information.
 
 ## Campaigning for Efficiency
 
-![Newlogo_1](/img/CiviCRM-Icons-Newlogo_1-en.png "Newlogo_1")
+![Newlogo_1](../img/CiviCRM-Icons-Newlogo_1-en.png "Newlogo_1")
 
 The Green Party has been the third largest party in New Zealand politics
 for most of the last decade, with strong roots in the Values Party (the
@@ -286,7 +288,7 @@ may soon be possible.
 
 ## Quest for Success
 
-![quest_bridge_logo](/img/CiviCRM-Icons-quest_bridge_logo-en.png "quest_bridge_logo")
+![quest_bridge_logo](../img/CiviCRM-Icons-quest_bridge_logo-en.png "quest_bridge_logo")
 
 QuestBridge is dedicated to helping bright, motivated low-income high
 school students get accepted to and able to pay for college. QuestBridge
@@ -307,7 +309,7 @@ about the students.
 
 ### The Results
 
-![QuestBridge](/img/CiviCRM-Examples-QuestBridge-en.png "QuestBridge")
+![QuestBridge](../img/CiviCRM-Examples-QuestBridge-en.png "QuestBridge")
 
 In the 2008-9 school year, QuestBridge helped more than 1200 students
 get accepted and pay for college at its 25 partner schools. They
@@ -322,7 +324,7 @@ training on CiviCRM up-front.
 
 ## Changing with the Times
 
-## ![SFS](/img/CiviCRM-Icons-SFS-en.png "SFS")
+## ![SFS](../img/CiviCRM-Icons-SFS-en.png "SFS")
 
 The San Francisco School (SFS), is a Preschool through 8th grade
 coeducational school with a diverse student body of about 270 students.

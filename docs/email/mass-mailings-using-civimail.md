@@ -57,15 +57,14 @@ gent que ha cancel·lat la subscripció és exclosa d'aquests mailings futurs.
 Si esteu enviant el correu electròǹic a un grup, aneu a **Mailings > Mailing
 nou**. Veureu la següent pantalla.
 
-![Bulk email based on existing groups](/img/email-compose-mailing.png)
+![Bulk email based on existing groups](../img/email-compose-mailing.png)
 
 Si esteu basant el mailing en resultats de cerca, realitzeu la cerca
 (per exemple, utilitzant **Cerca > Cerca avançada**) i després escolliu
 **Correu electrònic - Programa/Envia via CiviMail** des de el desplegable d'**Accions**.
 Veureu la següent pantalla.
 
-![Bulk email based on search results](/img/email-compose-search-based-mailing.png)
-
+![Bulk email based on search results](../img/email-compose-search-based-mailing.png)
 
 Aquestes dues pantalles són forces similars, no obtstant això, com s'ha descrit a
 [Selecció dels destinataris: Grups versus resultats de cerques](#Selecció dels destinataris: Grups versus resultats de cerques),
@@ -73,7 +72,7 @@ pels mailings basats en resultats de cerca heu d'escollir un grup de cancel·lac
 el grup de "Resultats de cerca" serà  inclòs (i no podrà ser eliminat d'ell) al llistat de destinataris. (A més, el panell
 HTML s'obre per defecte. S'ha tancat per ajustar els butons inferiors en aquestes imatges.)
 
-Recordeu que poeu desar el mailing en qualsevol estat clican al
+Recordeu que podeu desar el mailing en qualsevol estat clicant al
 botó **Desa l'esborrany**.
 
 **Pas 1: Definició del mailing**
@@ -108,6 +107,17 @@ anant a **Administra > CiviMail > Adreces de correu electrònic de remitent**.
 **Destinataris**: Aquí és on podeu escollir qui rebrà el
 mailing (si és un mailing de grups) o refinar o afegir els destinataris del
 correu electrònic (si és un mailing de resultats de cerca). Podeu escollir grups per
+incloure (mostrats en verd) i excloure (mostrats en vermell i tatxats),
+seleccionant-los del desplegable "Destinataris".
+Només els grups del tipus "Llista de mailing" estaran disponibles en el seleccionable.
+ ![Civimail Recipients include and exclude](../img/civimail-recipients-example.png)
+Podeu també refinar la vostra llista de destinataris incloent i excloent
+destinataris de mailings anteriors. Per exemple, podeu voler reenviar un
+correu electrònic només als contactes que han estat afegits a un grup a partir de l'última
+vegada que hi vau enviar un correu electrònic, per evitar enviar el mateix mail dues vegades a algunes
+persones. Escolliu el mailing original a "Exclou destinataris passats".
+Això farà enviar el missatge només a aquells membres del grup que
+no hagin rebut el missatge original.
 
   El número final estimat de destinataris es mostra a la dreta del
 camp "Destinataris" ressaltat en groc.
@@ -116,28 +126,27 @@ camp "Destinataris" ressaltat en groc.
 "Destinataris" i a l'esquerra del número estimat de destinataris. Cliqueu-hi
 per accedir a les **Opcions d'edició**.
 
-![Civimail Recipients Edit Options](/img/civimail-recipients-edit-options.png)
+![Civimail Recipients Edit Options](../img/civimail-recipients-edit-options.png)
 
   -   **Desduplica per correu electrònic:** El CiviCRM sempre desduplicarà el mailing basant-se en
-     registres de contactes únics. Per exemple, si un contacte es troba en tres dels
-      grups l'estareu incloent el el mailing i només se li enviarà una copia
-      del correu electrònic. Tanmateix, si s'utilitza la mateixa adreça de correu electrònic per múltiples
-      contactes, el nombre de correus electrònics que seran enviats ve determinat per aquesta casella. Si es
-      desmarca llavors s'enviaran múltiples copies d'aquest correu electrònic - un per
-      a cada contacte que estigui utilitzant aquesta adreça. Si està marcat només
-      s'enviarà un correu electrònic per a cada adreça. Podeu definir el valor per defecte d'aquesta casella a
-      **Administra > CiviMail > Configuració del component CiviMail** marcant
-      o desmarcant "CiviMail desdupllica adreces de correu electrònic per defecte" però podeu
-      sobreescriure aquest valor per defecte per qualsevol correu electrònic si ho necessiteu..
+  registres de contactes únics. Per exemple, si un contacte es troba en tres dels
+  grups l'estareu incloent el el mailing i només se li enviarà una copia
+  del correu electrònic. Tanmateix, si s'utilitza la mateixa adreça de correu electrònic per múltiples
+  contactes, el nombre de correus electrònics que seran enviats ve determinat per aquesta casella. Si es
+  desmarca llavors s'enviaran múltiples copies d'aquest correu electrònic - un per
+  a cada contacte que estigui utilitzant aquesta adreça. Si està marcat només
+  s'enviarà un correu electrònic per a cada adreça. Podeu definir el valor per defecte d'aquesta casella a
+  **Administra > CiviMail > Configuració del component CiviMail** marcant
+  o desmarcant "CiviMail desdupllica adreces de correu electrònic per defecte" però podeu
+  sobreescriure aquest valor per defecte per qualsevol correu electrònic si ho necessiteu..
 
   -   **Tipus d'ubicació:** Per defecte els correus electrònic creats mitjançant CiviMail s'envien a
-     les ubicacions d'adreces definides com "Enviaments massius" o, si no hi ha cap tipus d'ubicació
-      amb aquesta configuració, a l'ubicació d'adreça definida com a "Principal". Podeu modificar
-      el tipus d'ubicació i el mètode de
-      selecció en la pantalla d'edició d'opcions.
-     Podeu filtrar pel tipus d'ubicació i només enviar el mailing a les adreces
-     de correu electrònic amb el tipus d'ubicació especificat o excloure les adreces
-     de correu electrònic amb el tipus d'ubicació especificad.
+  les ubicacions d'adreces definides com "Enviaments massius" o, si no hi ha cap tipus d'ubicació
+  amb aquesta configuració, a l'ubicació d'adreça definida com a "Principal". Podeu modificar
+  el tipus d'ubicació i el mètode de selecció en la pantalla d'edició d'opcions.
+  Podeu filtrar pel tipus d'ubicació i només enviar el mailing a les adreces
+  de correu electrònic amb el tipus d'ubicació especificat o excloure les adreces
+  de correu electrònic amb el tipus d'ubicació especificad.
 
 **Grup de cancel·lació de subscripcions** (només pels mailings basats en cerques): S'ha
 d'escollir amb cura. Pot ajudar llegir l'exemple del mailing basat en una
@@ -161,19 +170,20 @@ mostra a qualsevol pestanya que sigui seleccionada. Dins d'aquest panell hi ha l
       util per comprovar coses com la consistència de les fonts, el disseny bàsic i el
       color.
 
-  -  Enviar una prova de correu electrònic a una adreça de correu electrònic simple. Si l'adreça de correu electrònic encara no existeix al CiviCRM es crearà un nou registre de contacte.
+  -  Enviar una prova de correu electrònic a una adreça de correu electrònic simple. Si l'adreça de correu electrònic
+      encara no existeix al CiviCRM es crearà un nou registre de contacte.
 
   -  Enviar una prova de correu electrònic a un grup existent al CiviCRM.
 
       La prova del mailing s'omplirà amb tots els tokens i inclourà qualsevol dels adjunts que esteu planificant d'enviar.
 
-     És una bona idea de provar el correu electrònic enviant-se'l a un mateix i
-  visualitzant-lo en el vostre client de correu electrònic per assegurar que es visualitza com espereu.
-  Si esteu enviant un correu electrònic amb un disseny cocomplex, envieu-lo al vostre
-  grup de prova i verifiqueu-ho des de varis clients de correu electrònic (vegeu *Proves en
-  plantilles* en la secció de configuració per a més consells sobre això). És
-  preferible tenir més d'una personar ebent el vostre correu electrònic de prova i
-  us aporti comentaris.
+      És una bona idea de provar el correu electrònic enviant-se'l a un mateix i
+      visualitzant-lo en el vostre client de correu electrònic per assegurar que es visualitza com espereu.
+      Si esteu enviant un correu electrònic amb un disseny cocomplex, envieu-lo al vostre
+      grup de prova i verifiqueu-ho des de varis clients de correu electrònic (vegeu *Proves en
+      plantilles* en la secció de configuració per a més consells sobre això). És
+      preferible tenir més d'una personar ebent el vostre correu electrònic de prova i
+      us aporti comentaris.
 
 La pestanya **Mailing** pot ser l'única pestanya que necessiteu visitar quan esteu creant
 el mailing. Conté tots els camps obligatoris que es necessiten definir per a
@@ -184,10 +194,10 @@ Aquí és on podreu pujar fitxers per enviar com adjunts amb el correu electròn
 
 ### Pestanya de capçalera i peu
 Cada mailining nou que creeu inclourà
-  l'encapçalament i el peu per defecte tal com estan definits a
-  **Mailings > Capçaleres, peus i missatges automatitzats**. Si no voleu
-  utilitzar aquestes opcions per defecte, en aquesta pestanya podreu seleccionar la capçalera i/o
-  el peu que vulgueu utilitzar per aquest mailing. Podeu definir capçaleres i peus
+l'encapçalament i el peu per defecte tal com estan definits a
+**Mailings > Capçaleres, peus i missatges automatitzats**. Si no voleu
+utilitzar aquestes opcions per defecte, en aquesta pestanya podreu seleccionar la capçalera i/o
+el peu que vulgueu utilitzar per aquest mailing. Podeu definir capçaleres i peus
 addicionals a través de **Mailings > Capçaleres, peus i missatges
 automatitzats** (Vegeu *Configuració* per més detalls).
 
@@ -201,8 +211,8 @@ el contingut sigui visible com una pàgina web per qualsevol que tingui els perm
 o els adminstradors poden visualitzar el contingut d'aquest correu electrònic com una pàgina web;
 els destinataris hauran d'iniciar sessió per tal de visualitzar el missatge.
 
- Per enllaçar a la versió web del correu electrònic, necessitareu tenir inserit
- el token de l'**Enllaç permanent** en el missatge del correu electrònic. Aquest token genera
+Per enllaçar a la versió web del correu electrònic, necessitareu tenir inserit
+el token de l'**Enllaç permanent** en el missatge del correu electrònic. Aquest token genera
 una URL on es podrà visualitzar el missatge; per tal de mostrar-lo
 en els missatges HTML, necessitareu afegir les etiquetes d'enllaç adequades utilitzant
 l'icona d'editor de codi.
@@ -213,12 +223,12 @@ l'icona d'editor de codi.
   remitents de tal manera que podran emmagatzemar-se dins del CiviCRM. Marcant aquesta casella s'obriran les
   dues opcions descrites a continuació.
     -   **Reenviament de respostes:** Aquesta opció és només visible si el "Seguiment de respostes"
-        està marcat. Necessitareu marcar aquesta opció si voleu que les adreces del
-          remitent rebin també les respostes enviades als remitents.
+    està marcat. Necessitareu marcar aquesta opció si voleu que les adreces del
+    remitent rebin també les respostes enviades als remitents.
     -   **Resposta automàtica a les respostes:** Aquesta opció us permet enviar una
-        resposta automàtica especifica a qualsevol que respongui al vostre mailing. Necessiteu
-          configurar una resposta automàtica a **Mailings >>
-          Capçaleres, peus i missatges automatitzats**.
+    resposta automàtica especifica a qualsevol que respongui al vostre mailing. Necessiteu
+    configurar una resposta automàtica a **Mailings >>
+    Capçaleres, peus i missatges automatitzats**.
 
 - **Missatge de baixa:** Aquest missatge s'enviarà al destinatari que es
   doni de baixa de totes les llistes de mailing
@@ -227,7 +237,7 @@ l'icona d'editor de codi.
 - **Missatge de cancel·lació de subscripció:** Aquest missatge s'enviarà al destinatari que
   cancel·li la subscripció d'alguna de les llistes de mailing.
 
-    Podeu editar aquests tres missatges a **Mailings >> Capçaleres, peus i missatges automatitzats**.
+  Podeu editar aquests tres missatges a **Mailings >> Capçaleres, peus i missatges automatitzats**.
 
 ### Pestanya de seguiment
 -  **Seguiment de clics registrats**: Aquesta opció farà el seguiment de quants i
@@ -247,8 +257,12 @@ l'icona d'editor de codi.
     !!! nota "Nota per correus electrònics en text pla"
         Si utilitzeu URL amigables curtes, seran totes sobreescrites
         per enllaços llargs que contindran el nom del vostre lloc i un codi llarg
-        similar a
-        http://yoursite.com/sites/all/modules/civicrm/extern/url.php?u=529&qid=29011.
+        similar a http://yoursite.com/sites/all/modules/civicrm/extern/url.php?u=529&qid=29011.
+
+    !!! note "Tokens personalitzats"
+        Si incloeu una suma de comprovació o qualsevol tipus de token personalitzat en la URL
+        p.ex. `http://example.org/civicrm/mailing/view?reset=1&id={mailing.key}&cid={contact.contact_id}&{contact.checksum}`
+        Aquestes URLs no seran redireccionades i per tant no s'hi podrà fer seguiment / ni comptabilitzar-les.
 
 -   **Seguiment d'obertures:** Aquesta opció us permet fer el seguiment de quanta gent
     ha obert el correu electrònic que heu enviat. Tanmateix, hi ha limitacions en
@@ -257,12 +271,17 @@ l'icona d'editor de codi.
     remot"), el seu correu electrònic no es marcarà com a obert encara que
     l'hagi obert. Bloquejar el contingut remot és una pràctica molt comuna.
 
+!!! note "Canvis introduïts a la versió de CiviCRM 5.27"
+    Abans de la versió 5.27 de CiviCRM les opcions de seguiment s'han activat per defecte quan es crea un nou mailing.
+    A partir del CiviCRM 5.27 en endavant hi ha una nova configuració a **Administra -> CiviMail -> Opcions del component CiviMail**
+    que permet escollir quan els seguiment de clics registrats o el seguiment d'obertures o els ambdós estiguin activats per defecte o no.
+
 Un cop hagueu definit tots els aspectes del vostre mailing cliqueu a **Continua >**
 (a baix a l'esquerra) per avançar al:
 
 **Pas 2: Revisa i programa**
 
-![CiviMail Review and Schedule screen](/img/civimail-review-and-scheduling.png)
+![CiviMail Review and Schedule screen](../img/civimail-review-and-scheduling.png)
 
 ### Panell de revisió
 
@@ -300,7 +319,7 @@ bàsica en totes es accions de seguiment, incloent el número
 d'obertures, els clics registrats d'enllaços o el percentatge de retornats (vegeu la "Gestió de 
 retornats" a sota).
 
-![](/img/CiviCRM_mailing_basicstatistics_1.png)
+![](../img/CiviCRM_mailing_basicstatistics_1.png)
 
 Per ampliar aquesta informació, cliqueu el nom d'una de les estadístiques
 per mostrar un llistat dels contactes als quals s'aplica i altres detalls
@@ -318,7 +337,7 @@ per cercar tots els contactes que hagin obert el correu electrònic, a punt perq
 criteris extres. Per més informació sobre cerques avançades, vegeu
 "Cerques".
 
-![](/img/CiviCRM_mailing_advancedsearch.png)
+![](../img/CiviCRM_mailing_advancedsearch.png)
 
 ## Gestió d'enviaments massius
 
@@ -351,6 +370,10 @@ menú de **Mailings**:
  Els enllaços **Arxiva** i **Elimina** són accessibles des de
  l'enllaç **més**. Per als mailings que han estat programats però encara no enviats,
  hi ha un ellaç **Cancel·la** disponible en comptes del **Arxiva**.
+
+ Els enllaços **Pausa** i **Reprèn** també estan disponibles dins de l'enllaç *més*.
+ La pausa és gradual, no instantània. Pot ser utilitzada quan vulgueu
+ que un altre mailing programat/pendent s'enviï abans del mailing que pauseu.
 
 **Mailings arxivats:** Aquesta àrea llista tots el missatges que han estat
  arxivats des de l'àrea de mailings programats i enviats. Els mailings llistats

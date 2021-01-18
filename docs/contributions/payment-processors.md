@@ -1,27 +1,12 @@
 # Payment processors
 
-CiviCRM connects to a variety of different payment processors.
-Out-of-the-box, it comes with support for approximately 15 payment
-processors. Many other community contributed processors are available to
-download from the CiviCRM.org Extensions Directory:
+CiviCRM connects to a variety of different payment processors. Out-of-the-box, it comes with support for approximately 15 payment processors. Many other community contributed processors are available to download from the CiviCRM [Extensions Directory](https://civicrm.org/extensions).
 
-[http://civicrm.org/extensions](http://civicrm.org/extensions "CiviCRM.org Extensions Directory")
+Additional payment processors may also be available from third-party sites.
 
+Community contributed processors are not supported by CiviCRM but there is no reason why they should not be just as reliable as the out-of-the-box processors. If you do use a community contributed processor, be sure that you have access to adequate technical support for that processor, either in house, from the author of the payment processor, or from a trusted third party.
 
-Additional payment processors may also be available from third party
-sites.
-
-Community contributed processors are not supported by CiviCRM but there
-is no reason why they should not be just as reliable as the
-out-of-the-box processors. If you do use a community contributed
-processor, be sure that you have access to adequate technical support
-for that processor, either in house, from the author of the payment
-processor, or from a trusted third party.
-
-You can browse an up-to-date comparison of many of the available payment
-processors at
-
-[http://wiki.civicrm.org/confluence/display/CRMDOC/Payment+Processors](http://wiki.civicrm.org/confluence/display/CRMDOC/Payment+Processors%20)
+Browse a [comparison of the available payment processors](https://docs.civicrm.org/sysadmin/en/latest/setup/payment-processors/#comparison) in the System Administrator Guide.
 
 ## Selecting a payment processor
 
@@ -86,7 +71,7 @@ Support for recurring contributions and auto-renewing memberships is an
 important feature for many organizations. However not all of the payment
 processors available for CiviCRM support this feature. iATS is the only processor that allows you to manage recurring contributions from within CiviCRM. PayPal and Authorize.net will support recurring donations through their respective sites for an additional monthly fee. A few others like Moneris have "incomplete" support.
 
-If you have configured a payment processor that includes recurring payments as a feature, you can enable recurring contributions your Contribution Page. For more details on page-specific configuration, refer to the [Online Contributions](/contributions/online-contributions.md#setting-up-a-contribution-page-full-details) chapter.
+If you have configured a payment processor that includes recurring payments as a feature, you can enable recurring contributions your Contribution Page. For more details on page-specific configuration, refer to the [Online Contributions](online-contributions.md#setting-up-a-contribution-page-full-details) chapter.
 
 
 ### Managing recurring contributions
@@ -95,9 +80,9 @@ PayPal and Authorize.net allow users to set up a recurring contribution, which i
 
 If you have iATS configured, you will manage the recurring contributions directly in CiviCRM. The payment is triggered from within CiviCRM, which sends a request to iATS, and returns a completed contribution record to CiviCRM if it's successful.
 
-You can manage a recurring contribution by going to the **Contributions** tab on a contact record. At the bottom of the page, there is a separate section for Recurring Contributions.
+You can manage a recurring contribution by going to the **Contributions** tab on a contact record. In a separate tab, there is a separate section for Recurring Contributions.
 
-![screenshot](/img/RecurringContributions.png)
+![screenshot](../img/RecurringContribution.jpg)
 
 You have the option to **View**, **Edit**, or **Cancel** the recurring contribution here. You can edit the Recurring Contribution Amount, Number of Installments, Next Scheduled Contribution Date, Financial Type, Status, Start Date, and whether or not the donor receives an email notification on each payment installation. The donation frequency (e.g. weekly, monthly) cannot be changed from within CiviCRM.
 

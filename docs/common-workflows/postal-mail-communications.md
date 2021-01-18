@@ -23,7 +23,7 @@ Hi ha tres maneres en que podeu utilitzar el CiviCRM per als enviaments postals:
 1.  Generació d'etiquetes: imprimiu etiquets d'adreces estàndards quan no hagueu
     de personalitzar el contingut, per exemple per enviar una fulletó
     imprès.
-2.  Exportació de contactes i combinació de correspondència mitjançant una eina externa (com ara LibreOffice o Microsoft Word). Consulteu el capítol sobre [Exportació](/common-workflows/exporting-your-contacts.md) anterior a aquesta secció per instruccions detallades d'exportació.
+2.  Exportació de contactes i combinació de correspondència mitjançant una eina externa (com ara LibreOffice o Microsoft Word). Consulteu el capítol sobre [Exportació](exporting-your-contacts.md) anterior a aquesta secció per instruccions detallades d'exportació.
 3.  Utilització de la funció [Imprimeix/Combina un document](#print-merge-document) de CiviCRM per fer la combinació directament en
     el CiviCRM (vegeu més a vall per saber més).
 
@@ -40,7 +40,7 @@ ha diverses opcions des de les més informals com "Estimat John", fins a les mé
 Sr. John Doe". També podeu introduir una *salutació personalitzada* ("Molt
 honorable"). Les salutacions postals es poden editar en la secció
 de Preferències de comunicació del formulari d'edició del contacte. Si necessiteu definir o
-reiniciar les salutacions postals massivament, consulteu el capítol [Tasques Programades](/initial-set-up/scheduled-jobs.md)
+reiniciar les salutacions postals massivament, consulteu el capítol [Tasques Programades](../initial-set-up/scheduled-jobs.md)
 en aquesta secció i la documentació a la wiki a:
 
 [http://wiki.civicrm.org/confluence/display/CRMDOC/Update+Greetings+and+Address+Data+for+Contacts](http://wiki.civicrm.org/confluence/display/CRMDOC/Update+Greetings+and+Address+Data+for+Contacts)
@@ -68,13 +68,13 @@ Per crear la carta:
     WYSIWYG. Podeu també inserir fitxers d'imatge com ara el
     logotip de la vostra organització o una signatura. Cliqueu en el cos de la carta allà on vulgueu
     que aparegui la imatge i cliqueu a la icona de la imatge.
-8.  Podeu personalitzar la carta utilitzant [tokens](/common-workflows/tokens-and-mail-merge.md) Els tokens són marcadors que seran reemplaçats pel valor del camp per cada un dels contactes seleccionats. Per exemple,
+8.  Podeu personalitzar la carta utilitzant [tokens](tokens-and-mail-merge.md) Els tokens són marcadors que seran reemplaçats pel valor del camp per cada un dels contactes seleccionats. Per exemple,
     Salutacions postals és un token que s'utilitza sovint per a aquestes situacions. Cliqueu en el
     cos de la carta on vulgueu que s'insereixi el token. Després cliqueu al desplegable
     **Insereix tokens** ubicat sobre de la carta a dalt a la dreta i seleccione
     el token que necessiteu.
 
-    ![PostalGreetingToken](/img/CiviCRM_update-CiviCore-PostalGreetingToken-en.png "PostalGreetingToken")
+    ![PostalGreetingToken](../img/CiviCRM_update-CiviCore-PostalGreetingToken-en.png "PostalGreetingToken")
 
 9.  Decidiu si la carta serà reutilitzada en un futur i si cal desar-la com una plantilla nova. Si la carta ja va ser desada en una plantilla tindreu la opció d'actualitzar la plantilla existent. La possibilitat de desar la carta com a plantilla és una manera poderosa de racionalitzar els fluxos de treball futurs.
 10. Seleccioneu el format de sortida desitjat. Actualment el CiviCRM ofereix suport per les opcions de format: PDF, HTML, MS Word (`.docx`) i Open Document (`.odt`). En funció de com de complex sigui el contingut de la vostra carta, trobareu que alguns formats s'ajusten millor en estructura i disseny que d'altres.

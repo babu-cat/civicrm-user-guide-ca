@@ -1,18 +1,19 @@
 # What is CiviCRM?
 
-CiviCRM is a powerful, web-based contact relationship management (CRM)
-system. It allows an organisation to record and manage information about
-the various people and organizations it interacts with. CiviCRM is more
-than just an address book, it also allows you to track your interactions
-with people and organizations, engage with constituents, and solicit
-donations through your website. The information you gather is all stored
-in one place but you can access it from almost anywhere.
+CiviCRM is a powerful, web-based constituent relationship management (CRM)
+system built by and for nonprofit organizations and NGO's. As of 2019, over 
+[11,000 non-profits use CiviCRM](https://stats.civicrm.org/?tab=sites). CiviCRM currently manages over 303,000,000 
+contacts, 265,000,000 donations, and 42,000,000 event registrations. 
+CiviCRM allows organisations to record and manage all this information about the 
+various people and organizations they interact with. CiviCRM is more
+than just an address book, it is a flexible platform that allows users to manage a range of interactions 
+including donations, events, memberships, activities, cases, campaigns, mailings and more, all located 
+in a single system that integrates tightly with popular open source content management systems (CMS).
 
-CiviCRM focuses on the needs of non-profits. CiviCRM emphasizes
-communicating with individuals, community engagement, activism,
-outreach, managing contributions, and managing memberships.
+CiviCRM focuses on the needs of non-profits, NGO's and civic sector organizations, empowering communications, community engagement, activism,
+outreach, donor management, and much more.
 
-CiviCRM is **Free/Open Source** software, which means there are no
+CiviCRM is [**Free/Open Source** software](https://en.wikipedia.org/wiki/Free_and_open-source_software), which means there are no
 license costs or user fees associated with downloading, installing, or
 using the software. Being Free/Open Source also ensures that you have
 the freedom to view and modify the source code and to distribute copies
@@ -70,7 +71,7 @@ CiviCRM works together with another common piece of software: a content
 management system (CMS). A CMS is a tool for creating and managing
 websites, and most websites these days are based on a CMS.
 
-CiviCRM integrates with **Drupal, Joomla** and **WordPress**. Integration
+CiviCRM integrates with **Backdrop, Drupal, Joomla** and **WordPress**. Integration
 with a CMS opens up a lot of useful possibilities.  Visitors to your
 website can carry out many activities on their own, such as renewing
 their membership, signing up for events, requesting email updates, and

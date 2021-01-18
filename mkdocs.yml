@@ -9,15 +9,26 @@ markdown_extensions:
   - attr_list
   - admonition
   - def_list
-  - codehilite:
-      guess_lang: false
   - toc:
       permalink: true
-  - pymdownx.superfences
-  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      guess_lang: true
+      extend_pygments_lang:
+        - name: php
+          lang: php
+          options:
+            - startinline: true
+  - pymdownx.superfences:
+      css_class: codehilite
+  - pymdownx.inlinehilite:
+      css_class: codehilite
   - pymdownx.tilde
   - pymdownx.betterem
   - pymdownx.mark
+
+plugins:
+  - search:
+      lang: en
 
 nav:
 - Inici: 'index.md'
@@ -36,13 +47,13 @@ nav:
     - 'Mapping': 'initial-set-up/mapping.md'
     - 'Users contacts': 'initial-set-up/users-contacts.md'
     - 'Permissions and access control': 'initial-set-up/permissions-and-access-control.md'
-    - 'Resource urls': 'initial-set-up/resource-urls.md'
     - 'Logging': 'initial-set-up/change-logging.md'
     - 'Error handling': 'initial-set-up/error-handling.md'
     - 'Scheduled Jobs': 'initial-set-up/scheduled-jobs.md'
 - La interfície d'usuari (untranslated):
     - 'Menu, dashboard and dashlets': 'the-user-interface/menu-dashboard-and-dashlets.md'
     - 'Searching': 'the-user-interface/searching.md'
+    - 'Search URL Filtering': 'the-user-interface/searching-url-support.md'
     - 'Undelete': 'the-user-interface/undelete.md'
 - Organitzant les vostres dades (untranslated):
     - 'Overview': 'organising-your-data/overview.md'

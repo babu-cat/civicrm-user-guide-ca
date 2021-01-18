@@ -13,7 +13,7 @@ The standard flow for registering for an event is as follows:
 1.  Confirmation
 1.  Thank you
 
-![schematical representation](/img/CiviCRM-CiviEvent-event_registrationflow_1-en.png "event_registrationflow_1")
+![schematical representation](../img/CiviCRM-CiviEvent-event_registrationflow_1-en.png "event_registrationflow_1")
 
 The **event information** lists the event date, the location, the map link,
 contact information, and description. It also includes a link to the
@@ -34,7 +34,7 @@ To offer online registration, check **Allow Online Registration** in the
 Online Registration step of event creation and use the options on this
 form to configure this feature.
 
-![The fourth tab of the event form contains the online registration settings.](/img/event_online_rego_part_1.png)
+![The fourth tab of the event form contains the online registration settings.](../img/event_online_rego_part_1.png)
 
 Define the text to be used as the **link** from the event information
 page to the registration form, and set the starting and ending dates for
@@ -58,6 +58,10 @@ either case, CiviCRM uses a separate contact record (an existing one if
 the contact is already in the system, otherwise a new one is created)
 for each individual registered.
 
+This setting also allows administrators to register the same contact
+multiple times to the same event. For example, if the person purchased
+a ticket to a concert, then wanted to purchase another ticket later on.
+
 Information on the **Duplicate matching rule** is provided in the
 *Contact matching and duplicate management* sub-section of this chapter
 (below).
@@ -74,11 +78,11 @@ cancellation. This feature is very useful when combined with scheduled
 reminders for automatically managing **Pending from pay later**
 registrations if you have allowed that payment option on your online
 registration page. (See the *Email* section for more details on
-[scheduled reminders](/email/scheduled-reminders.md))
+[scheduled reminders](../email/scheduled-reminders.md))
 
 **Allow self-service cancellation or transfer**: When selected, event participants will receive a "self-service" link in their confirmation email.  By clicking this link, they can opt to transfer and/or cancel their event registration.
 
-![image](/img/event_online_selfservice.png)
+![image](../img/event_online_selfservice.png)
 
 
 **Cancellation or transfer time limit (hours)**: When set, self-service cancellations and transfers will be disabled the selected number of hours prior to the start time of the event.
@@ -86,7 +90,7 @@ registration page. (See the *Email* section for more details on
 The next step is to define the text and the fields for collecting
 information that will be displayed on your online registration page.
 
-![screenshot](/img/event_online_rego_part_2.png)
+![screenshot](../img/event_online_rego_part_2.png)
 
 The introductory text comes at the top of the page and the footer text
 at the bottom. In between will come some, or all, of: profile, fee
@@ -123,10 +127,10 @@ drop profile interface also allows you to create custom fields to
 include in the profile if you have not already done so. Custom fields
 can be created for all events or all participants, or only specific
 Event Types or Participant Roles (see the chapter [Custom data on
-events](/events/custom-data-for-events.md) in this section for more details on where you should store what
+events](custom-data-for-events.md) in this section for more details on where you should store what
 custom data).
 
-![New custom field set form on top of the edit profile form.](/img/Drag_and_drop_profile_for_event.png)
+![New custom field set form on top of the edit profile form.](../img/Drag_and_drop_profile_for_event.png)
 
 Each profile appears on the registration form as a fieldset with a legend
 header.  The legend will be the profile Public Title if that is set, or else the
@@ -140,7 +144,7 @@ Registration" and give it a Public Title "Your Registration Info".  That way,
 you'll be able to easily identify it when setting up new workshop registration
 forms, but the form will have the same header as others.
 
-A number of the [Advanced Settings](/organising-your-data/profiles.md#advanced-settings) for profiles take
+A number of the [Advanced Settings](../organising-your-data/profiles.md#advanced-settings) for profiles take
 effect when a profile is included in event online registration.  You cannot edit
 these from the editing interface within the online registration settings; you
 must go to the main profile settings form to make changes.
@@ -157,7 +161,7 @@ must go to the main profile settings form to make changes.
 Other advanced settings, such as what to do upon duplicate match, are ignored on
 contribution pages.
 
-For more information read [Profiles](/organising-your-data/profiles.md).
+For more information read [Profiles](../organising-your-data/profiles.md).
 
 ## Registration confirmation
 
@@ -171,16 +175,30 @@ payment is processed between the Confirmation and Thank you pages.
 For most events you'll want to enable the Send Confirmation Email
 feature (see following screenshot). For paid events, the confirmation
 email also acts as a receipt. Make sure that the **Confirm From Email**
-address entered is a valid email account on your mail server. Add one or
-more staff emails (separating multiple email addresses with commas) to
-the **CC Confirmation To** field if you want real-time updates on who is
-registering for your event.
+address entered is a valid email account on your mail server.
 
-![screenshot](/img/CiviCRM_update-CiviEvent-OnlineRegEmail-en.png "OnlineRegEmail")
+![screenshot](../img/CiviCRM_update-CiviEvent-OnlineRegEmail-en.png "OnlineRegEmail")
 
 Please note that the contents of the **Text** field will be included in
 both TEXT and HTML versions of receipt emails so we do not recommend
 including HTML tags / formatting here.
+
+#### Email alerts for event registrations
+
+Add one or more staff emails to the **CC Confirmation To** or
+**BCC Confirmation To** fields if you want real-time updates on who
+is registering for your event. Enter one or more email addresses
+separated by comma.
+
+!!! warning
+    Make sure that the email addresses entered into the **CC Receipt To**
+    and **BCC Receipt To** fields are **correct and do not bounce**
+    or return an error email. Any return emails received by CiviCRM will be
+    interpreted as a bounce for the CiviCRM Contact that the receipt
+    was sent too and not as a bounce for the CC/BCC email address.
+    This can have the adverse impact that the CiviCRM Contact's email
+    address is put **On Hold** and **cause future emails to not be sent**.
+    [For more details see this issue report](https://lab.civicrm.org/dev/core/-/issues/1999). 
 
 ## Optional event registration features
 
@@ -222,7 +240,7 @@ statuses**. You can then check the **Offer Waitlist** checkbox on
 the **Info and settings** tab, and set the message you want displayed on
 the event information page when the event is full.
 
-![screenshot](/img/CiviCRM_update-CiviEvent-EventInfo2-en.png "EventInfo2")
+![screenshot](../img/CiviCRM_update-CiviEvent-EventInfo2-en.png "EventInfo2")
 
 Note that in order for the status processing to happen, you need to have
 the **Update Participant Statuses** scheduled job
@@ -306,7 +324,7 @@ you get familiar with that chapter at some point. This section just
 covers contact matching and duplicate management in the context of
 CiviEvent.
 
-![Expanded list of matching rules.](/img/event-duplicate-matching.png)
+![Expanded list of matching rules.](../img/event-duplicate-matching.png)
 
 By default, CiviEvent uses the Unsupervised rule to do matching. When
 you configure an event for online registration, you can override the

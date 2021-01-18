@@ -10,7 +10,7 @@ If you want each email to address the person by first name after "Dear,"
 you would type a space and then click on **Insert Tokens** at the top
 right of the HTML Format field.
 
-![Screenshot of the New Email screen with the token list expanded.](/img/Tokens-4.5.png)
+![Screenshot of the New Email screen with the token list expanded.](../img/Tokens-4.5.png)
 
 The popup that appears enables you to
 find the appropriate token by typing "First name" in the box and choose
@@ -73,13 +73,22 @@ information.
 !!! caution
     For security purposes, checksum links only last for seven days, starting from the time the email is sent. To change this duration, go to **Administer > System Settings > Misc (Undelete, PDFs, Limits, Logging, Captcha, etc.)**.
 
+!!! note
+    Checksum URLs will not be tracked within CiviMail URL tracking as they are personalised to the recipient.
+
 Create a link in the CiviMail message that includes the checksum token `{contact.checksum}`. When people click on the special link, CiviCRM looks them up in the database and prefills any information on the contribution form or profile with any data that exists in their record.
 
 **Checksum for Contribution Pages**: To send people to a contribution page use this path where `IDNUMBER` is the ID of your contribution page:
 
 -   Drupal: `http://example.org/civicrm/contribute/transact?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 -   Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
--   WordPress: `http://wexample.org/?page=CiviCRM&q=civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
+-   WordPress: `http://example.org/?page=CiviCRM&q=civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
+
+**Checksum for Contribution Pages for Membership Renewals**: To send people to a contribution page for membership renewals use this path where `IDNUMBER` is the ID of your contribution page. This is typically used in Scheduled Reminders for membership renewals, where  the `membership.id` will be evaluated to the membership to be renewed:
+
+-   Backdrop/Drupal: `http://example.org/civicrm/contribute/transact?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}&mid={membership.id}`
+-   Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}&mid={membership.id}`
+-   WordPress: `http://example.org/?page=CiviCRM&q=civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}&mid={membership.id}`
 
 **Checksum for standard Profiles** (edit mode): To send people to a profile use this path where `IDNUMBER` is the ID of the Profile you want to send them to:
 
@@ -98,6 +107,12 @@ Create a link in the CiviMail message that includes the checksum token `{contact
 -   Drupal: `http://example.org/civicrm/petition/sign?reset=1&sid=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 -   Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/petition/sign&reset=1&sid=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 -   WordPress: `http://example.org/?page=CiviCRM&q=civicrm/petition/sign&sid=IDNUMBER&reset=1&{contact.checksum}&cid={contact.contact_id}`
+
+**Checksum for mail 'view in browser' links**: In CiviMail you can use a special link to allow contacts to view the email content in their browser, including the content personalised with tokens.
+
+-   Drupal: `http://example.org/civicrm/mailing/view?reset=1&id={mailing.key}&cid={contact.contact_id}&{contact.checksum}`
+-   Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/mailing/view&id={mailing.key}&{contact.checksum}&cid={contact.contact_id}`
+-   WordPress: `http://example.org/?page=CiviCRM&q=civicrm/mailing/view&id={mailing.key}&{contact.checksum}&cid={contact.contact_id}`
 
 ## Custom tokens {:#custom}
 
@@ -157,7 +172,7 @@ This section documents the available action tokens, their purpose and the place(
 * Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
 * Example:
 
-    > To opt-out of all future mailings from us, click `<a href="{action.optOutUrl}" >here</a>`.
+    > You can also `<a href="{action.optOutUrl}" >opt-out of all future mailings from us</a>`.
 
 ### `{action.optOut}`
 * Purpose: Provides an opt-out email address for each recipient.
@@ -178,7 +193,7 @@ This section documents the available action tokens, their purpose and the place(
 * Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
 * Example:
 
-    > To resubscribe to this mailing, click `<a href="{action.resubscribeUrl}" >here</a>`.
+    > You may `<a href="{action.resubscribeUrl}" >resubscribe to this mailing</a>` at any time.
 
 ### `{action.resubscribe}`
 * Purpose: Provides a re-subscribe email address for each recipient.
@@ -199,21 +214,21 @@ This section documents the available action tokens, their purpose and the place(
 * Used in: Mailing Body, Header, Footer
 * Example:
 
-    > To subscribe to our Monthly Newsletter, click `<a href="{action.subscribeUrl.2}" >here</a>`.
+    > You can `<a href="{action.subscribeUrl.2}" >subscribe to our Monthly Newsletter</a>`.
 
 ### `{action.subscribeUrl}`
 * Purpose: Provides a link to view and subscribe to any public mailing lists.
 * Used in: Mailing Body, Header, Footer
 * Example:
 
-    > To see our mailing lists and join the ones you're interested in, click `<a href="{action.subscribeUrl}" >here</a>`.
+    > If you're interested, `<a href="{action.subscribeUrl}" >view all our mailing lists and sign up!</a>`.
 
 ### `{action.unsubscribeUrl}`
 * Purpose: Provides an unsubscribe link for each recipient.
 * Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
 * Example:
 
-    > To unsubscribe from this mailing, click `<a href="{action.unsubscribeUrl}" >here</a>`.
+    > You can `<a href="{action.unsubscribeUrl}" >unsubscribe from this mailing</a>` at any time.
 
 ### `{action.unsubscribe}`
 * Purpose: Provides an unsubscribe email address for each recipient

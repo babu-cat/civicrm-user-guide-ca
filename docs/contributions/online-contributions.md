@@ -7,7 +7,7 @@ make setting up contribution pages seem like a daunting task.  It can be
 quite simple though as shown by the first two procedures.  
 
 ## The simplest contribution page (Receipt sent only from payment processor.)
-1. Make sure you have a [payment processor configured](/contributions/payment-processors.md).
+1. Make sure you have a [payment processor configured](payment-processors.md).
 2. Go to to **Contributions > New Contribution Page**.
 3. Enter the **title** for your website page.
 4. Select the appropriate **financial type**.
@@ -18,7 +18,7 @@ Amounts** checkbox and setting **minimum** and/or **maximum** amounts if you wan
 8. Follow the steps for your CMS to [display this page on your website](#publicizing-your-contribution-page).  
 
 ## A very simple contribution page including receipt from your organisation
-1. Make sure you have a [payment processor configured](/contributions/payment-processors.md).
+1. Make sure you have a [payment processor configured](payment-processors.md).
 2. Go to to **Contributions > New Contribution Page**.
 3. Enter the **title** for your website page.
 4. Select the appropriate **financial type**.
@@ -38,21 +38,21 @@ Navigate to **Contribution > New Contribution Page**.
 (**Contribution > Manage Contribution Pages > Add Contribution Page** takes
   you to the same screen.)  
 
-![New Contribution Page](/img/civicontribute-new-contribution-page.png)
+![New Contribution Page](../img/civicontribute-new-contribution-page.png)
 
 -  The page title and financial type are the only compulsory fields. CiviCRM
 comes with four standard financial types, but you can
-[create more](/contributions/key-concepts-and-configurations.md) to meet your
+[create more](key-concepts-and-configurations.md) to meet your
 organisation's accounting needs.
--  Link this contribution page to a [campaign](/campaign/what-is-civicampaign.md). (optional)
+-  Link this contribution page to a [campaign](../campaign/what-is-civicampaign.md). (optional)
 -  Compose your introductory message. (optional)
 -  Compose your footer message. (optional)
 -  Set a goal amount. (optional)
 -  This contribution page has to be manually enabled or disabled, but you can
    set a **start date** and **end date** that will apply for a Contribution
    Widget and
-   [Personal Campaign Pages](/contributions/personal-campaign-pages.md). (optional)
--  Choose whether or not to accept [Honoree soft crediting.](/contributions/soft-credits.md)
+   [Personal Campaign Pages](personal-campaign-pages.md). (optional)
+-  Choose whether or not to accept [Honoree soft crediting.](soft-credits.md)
 -  Choose to use a confirmation page where users can check all details are
    correct or to process the payment as soon as the contribution form is submitted.
 -  Choose whether or not to display social media links on online pages and in
@@ -67,14 +67,14 @@ feature tabs for contribution pages will now be visible at the top
 of the page.  We will deal with them one by ne
 
 ### Amounts tab
-![Contributions Amounts Page](/img/civicontribute-online-contribution-amounts.png)
+![Contributions Amounts Page](../img/civicontribute-online-contribution-amounts.png)
 
 -  The **Execute real-time monetary transactions** box is checked by default.
 You would uncheck this box if you are using this contribution page for free
 membership signup or to solicit in-kind (non-monetary) donations, or when you
 want **all** users to submit their payments offline.
 -  Select the **Currency**.
--  Select one or more previously configured [Payment Processors](/contributions/payment-processors.md)
+-  Select one or more previously configured [Payment Processors](payment-processors.md)
 for this page. Some organizations find it is a good idea to offer a choice of
 processors. You can do this by setting up multiple processors, and checking the
     corresponding boxes on this form.
@@ -83,10 +83,10 @@ processors. You can do this by setting up multiple processors, and checking the
 -  If you uncheck the **Contribution Amounts Section Enabled** the remaining fields on this page will vanish. You will only be able accept fixed-amount membership fees, or, if you configure a membership price set, fixed-amount memberships fees and other contributions as specified in the price set all charged in a **single** transaction.
 -  Select a pre-defined **Price Set** (for more complex payment
     options), OR enter up to 10 fixed contribution amounts in the table at the bottom of the page.)
--  You can check **Recurring contributions** if you payment processor and its integration with CiviCRM support recurring billing and you want to allow this feature. (There are restrictions on recurring payments when [membership fees](/membership/defining-memberships.md) are being paid.) If you check **Recurring contributions** further settings become visible.
+-  You can check **Recurring contributions** if you payment processor and its integration with CiviCRM support recurring billing and you want to allow this feature. (There are restrictions on recurring payments when [membership fees](../membership/defining-memberships.md) are being paid.) If you check **Recurring contributions** further settings become visible.
   - You can either set one frequency (e.g. a user can donate their chosen amount monthly) or allow for more user flexibility, where they can decide their own interval and/or number of installations (e.g. a user can donate their chosen amount once every three months for 12 installments).
 -  Check the **Pledges** box to give users the opportunity to [pledge
-    future payments](/pledges/what-is-civipledge.md).
+    future payments](../pledges/what-is-civipledge.md).
 -  Decide on the label for the Contribution amount area on your page.
 -  Check **Allow other amounts** to give users the option to pay any
     amount they choose. You can set a minimum and a maximum amount for "Other Amount" contributions if you want to.
@@ -94,13 +94,13 @@ processors. You can do this by setting up multiple processors, and checking the
 
 ### Memberships tab
 
-This is covered in detail in  [Memberships](/membership/online-membership-sign-up.md).
+This is covered in detail in  [Memberships](../membership/online-membership-sign-up.md).
 
 ### Profile tab
 
 If you want to collect information such as age, interests and skills that goes
 beyond the essential fields required to make a contribution, you can include
-existing [CiviCRM Profiles](/organising-your-data/profiles.md) at the beginning or
+existing [CiviCRM Profiles](../organising-your-data/profiles.md) at the beginning or
 end of a contribution page. You can also create new profiles.
 
 Each profile appears on the contribution page as a fieldset with a legend
@@ -126,14 +126,13 @@ To add a profile to a contribution form:
 
 1.  Navigate to Manage Contribution Pages then for the page you wish to
     configure, click on **Configure > Include Profiles**.
-2.  Select a CiviCRM profile from the dropdown menu to be included at
-    the top of the contribution page and/or at the bottom of the page.
+2.  Select a CiviCRM profile from the relevant drop down menu to be included at the top and/or bottom of the contribution page.
     You can then preview your selection(s), edit an existing profile,
     copy an existing profile or create a new profile.
     When you edit or create a new profile you will use the profile drag
     and drop interface pictured here.  You may click the pencil icon to edit the
     profile name, public title, and pre- and post-form help text.
-    ![screenshot](/img/Contribution-page-edit-profile.png)
+    ![screenshot](../img/Contribution-page-edit-profile.png)
 
     !!! warning
         If you modify an existing profile whilst configuring your
@@ -151,29 +150,32 @@ To add a profile to a contribution form:
     If you include a profile with address fields at the top of the page, CiviCRM
     automatically generates a checkbox on the contribution form which allows the
     user to indicate that their Billing Address is the same as the address
-    entered in the profile. (If the profile is included at the bottom of the
-    page, this checkbox will not be generated).
+    entered in the profile. When set up correctly, the checkbox is checked by
+    default and reveals billing name and address fields when unchecked. 
+    For a checkbox to be generated and hide/reveal the billing address fields, the profile:
+    
+    1. Must be included at the top (not the bottom) of the page (there is a drop down menu for each option on the Include Profiles configuration page)
+    2. Must have the same fields (First Name, Last Name, Street Address, City, State, Postal Code and  Country) as the Billing Address profile and these fields *must be marked as required.* When the correct fields are included but not marked required the checkbox will still be visible but the javascript won’t work so the billing name and address always be visible.
+    
+    ![Include profile top of page listbox, and include profile bottom of page listbox.](../img/Profiles-HomeAddress.png)
 
-    ![Include profile top of page listbox, and include profile bottom of page listbox.](/img/Profiles-HomeAddress.png)
-
-A number of the [Advanced
-Settings](/organising-your-data/profiles.md#advanced-settings) for profiles take
-effect when a profile is included in a contribution page.  You cannot edit these
-from the editing interface within the contribution page settings; you must go to
+A number of the [Advanced Settings](../organising-your-data/profiles.md#advanced-settings)
+for profiles take effect when a profile is included in a contribution page.  
+You cannot edit these from the editing interface within the contribution page settings; you must go to
 the main profile settings form to make changes.
 
--   **Adding contacts to a group.**  Note that many donors do not wish to join a
+* **Adding contacts to a group.**  Note that many donors do not wish to join a
     mailing list merely because they have made a donation.
--   **CMS User account registration options.**  A donor can be presented with
+* **CMS User account registration options.**  A donor can be presented with
     the option or requirement to log in or create a user account while making a
     contribution.
--   **Including ReCAPTCHA.**  A CAPTCHA can be added to make it more difficult
+* **Including ReCAPTCHA.**  A CAPTCHA can be added to make it more difficult
     for bots and donors to submit the form.
 
 Other advanced settings, such as what to do upon duplicate match, are ignored on
 contribution pages.
 
-For more information read [Profiles](/organising-your-data/profiles.md).
+For more information read [Profiles](../organising-your-data/profiles.md).
 
 ## Automatic Contribution Recording
 
@@ -188,7 +190,7 @@ than one person shares an email address, it can be possible for
 contributions to be credited to the wrong contact. To mitigate the
 chance of this happening, you can adjust CiviCRM's default duplicate
 matching rules. For instructions on how to do this, read
-[Deduping and Merging](/common-workflows/deduping-and-merging.md).
+[Deduping and Merging](../common-workflows/deduping-and-merging.md).
 
 ### Receipt Tab Thank-you and Receipting
 
@@ -204,6 +206,23 @@ Thank-you and Receipt emails that are sent to contributors.
     receipt as soon as their transaction is complete, so it is
     recommended to enable the automatic Email Receipt.
 4.  Click **Save and Done**.
+
+#### Email alerts for contributions
+
+Add one or more staff emails to the **CC Receipt To** or
+**BCC Receipt To** fields if you want real-time updates on who
+has processed a contribution. Enter one or more email addresses
+separated by comma.
+
+!!! warning
+    Make sure that the email addresses entered into the **CC Receipt To**
+    and **BCC Receipt To** fields are **correct and do not bounce**
+    or return an error email. Any return emails received by CiviCRM will be
+    interpreted as a bounce for the CiviCRM Contact that the receipt
+    was sent too and not as a bounce for the CC/BCC email address.
+    This can have the adverse impact that the CiviCRM Contact's email
+    address is put **On Hold** and **cause future emails to not be sent**.
+    [For more details see this issue report](https://lab.civicrm.org/dev/core/-/issues/1999). 
 
 ## Publicizing your contribution page
 
@@ -277,7 +296,7 @@ CiviMail's tracking capability to see how many people click on that
 link.
 
 One time-tested way to increase contributions is to use
-[checksum tokens](/common-workflows/tokens-and-mail-merge.md#checksum)
+[checksum tokens](../common-workflows/tokens-and-mail-merge.md#checksum)
 to send each constituent a personalized email with a link to the contribution form
 that has all of their contact information already filled in. This saves
 them the hassle of filling it out and raises the chances that they

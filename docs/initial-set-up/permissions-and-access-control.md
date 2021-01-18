@@ -85,7 +85,7 @@ You may create new roles and edit all existing ones. To edit roles,
 while in the **Permissions** tab click the button **Roles** toward the
 top right of the page.
 
-![Drupal roles.](/img/CiviCRM_Drupal_Roles.png)
+![Drupal roles.](../img/CiviCRM_Drupal_Roles.png)
 
 Roles can be assigned to users in the following ways:
 
@@ -130,7 +130,7 @@ WordPress: **Configure Joomla! ACL** (user can configure Joomla! ACLs and
 is assigned all CiviCRM permissions) and **Show CiviCRM
 Component** (user can see CiviCRM in the Components list).
 
-![screenshot](/img/joomla_permissions.png)
+![screenshot](../img/joomla_permissions.png)
 
 Finally, to assign one of these user groups to a user, or change their
 existing user group, ensure you are logged in as an administrator then
@@ -153,9 +153,9 @@ In CiviCRM go to **Administer** > **User and Permissions** >
 Control** link. Here you can adjust the CiviCRM settings for each of the
 predefined User Roles from WordPress.
 
-![image](/img/z_sprint14_wordpressacl_menu.png)
+![image](../img/z_sprint14_wordpressacl_menu.png)
 
-![image](/img/z_sprint14_wordpressACL.png)
+![image](../img/z_sprint14_wordpressACL.png)
 
 Roles can be assigned to users in the following ways:
 
@@ -179,6 +179,9 @@ If you need more control, you can use the following steps to set different permi
 1. Check the box to **Enable Access Control by Financial Type**.
 1. Edit your CMS permissions and see that CiviCRM has added a 'view', 'edit' and 'delete' permission for every financial type. Assign these permissions as needed.
 
+!!! tip
+    You must grant the add and view permission for each financial type to the anonymous user role for visitors to be able to access your contribution pages.
+
 For example, you may wish to use this feature to allow some users to manage event payments without being able to see any of the data about donations.
 
 ### Anonymous and Authenticated roles
@@ -187,20 +190,25 @@ You will encounter both these role types as you work with the access
 controls. Although they may be named differently on different CMSes, the
 basic principle is the same.
 
-The **anonymous** role (**public** in Joomla!) applies to all visitors
-to the website who have *not* logged in. This role will have the lowest
-level of permissions. The default CiviCRM permissions for this role
-are:
+The **anonymous** role (**public** in Joomla!) applies to all visitors to the website who have *not* logged in. This role will have the lowest level of permissions.
 
--   make online contributions/donations
--   view event information
--   register for events through online forms
--   view event participants
--   subscribe and unsubscribe from mailing lists
--   access all custom data (ie see/enter information in custom data
-    fields in forms)
--   access uploaded files (ie view/print content of uploaded files)
--   view, create and edit profiles (or profile listings and forms)
+The default CiviCRM permissions for this role
+are set out below. Please note that the actual permissions set may vary depending on your CMS and how you installed CiviCRM so please check that they are set up as you want them.
+
+Permission | Description
+-- | --
+CiviCRM: access all custom data | View all custom fields - i.e. see/enter information in custom data fields in forms
+CiviCRM: access uploaded files | View / download files including images and photos
+CiviCRM: profile create | Add data in a profile form
+CiviCRM: profile edit | Edit data in a profile form
+CiviCRM: profile view | View data in a profile
+CiviEvent: register for events | Register for events on your website
+CiviEvent: view event info | View event information pages
+CiviEvent: view event participants | View the participants that have signed up to an event
+CiviContribute: make online contributions | Make payments or donations through your website
+CiviMail: access CiviMail subscribe/unsubscribe pages | Subscribe/unsubscribe from mailing lists
+CiviMail: view public CiviMail content | View mailings on your website
+CiviCampaign: sign CiviCRM Petition | Sign petitions (if CiviCampaign is enabled)
 
 The **authenticated** role (**registered** in Joomla, **subscriber** in
 WordPress) is applied to all visitors to the site that have logged in.
@@ -246,7 +254,7 @@ If you have a standalone profile in an online form used to search for
 and edit data in CiviCRM (e.g. not part of an event registration page),
 only authenticated users may edit. The permission **profile edit** can be
 given to the anonymous role, but visitors who are not logged in will
-still be unable to edit the data unless they have a [checksum](/common-workflows/tokens-and-mail-merge.md#checksum) (a unique
+still be unable to edit the data unless they have a [checksum](../common-workflows/tokens-and-mail-merge.md#checksum) (a unique
 URL to one page where they may edit their own data; read "Everyday
 tasks" in the email section for more information). For checksum tokens
 to work, anonymous users must have the **profile edit** permission.
@@ -277,6 +285,12 @@ database), the visitor must have the permission **profile view** to see it.
 
 #### Using the "Profile listings and forms" permission
 
+!!! caution
+
+    The "Profile listings and forms" permission is equivalent to granting
+    `profile_view`, `profile_create`, `profile_edit` and `profile_listing`.
+    This is a lot of permission and should be assigned carefully!
+
 This access right should be assigned with care, and only to trusted
 roles. The permission grants access to:
 
@@ -291,7 +305,7 @@ listings and forms" is not enabled for the "anonymous" and
 "authenticated" roles by default.
 
 Note that if this role were given to anonymous users, in order to edit
-data, the visitor must either be logged in or using a [checksum token](/common-workflows/tokens-and-mail-merge.md#checksum)
+data, the visitor must either be logged in or using a [checksum token](../common-workflows/tokens-and-mail-merge.md#checksum)
 (see "Everyday tasks" in the section on email).
 
 #### Accessing custom data
@@ -396,7 +410,7 @@ with the following options:
 
 
 
-![image](/img/CiviCRM_ACL_civicrm-manage-roles.png)
+![image](../img/CiviCRM_ACL_civicrm-manage-roles.png)
 
 
 
@@ -417,7 +431,7 @@ Roles") and hit "Add Role Assignment". Complete the following:
 -   **Assigned To**: choose a contact group to assign to the role
 -   **Enabled?**: is this assignment active or not?
 
-![image](/img/CiviCRM_ACL_civicrm-assign-users.png)
+![image](../img/CiviCRM_ACL_civicrm-assign-users.png)
 
 ### Manage ACLs
 
@@ -455,4 +469,4 @@ group of contacts, profile, custom data or event for this ACL
 
 - **Enabled?**: is the ACL active?
 
-![image](/img/CiviCRM_ACL_civicrm-create-ACL.png)
+![image](../img/CiviCRM_ACL_civicrm-create-ACL.png)

@@ -13,11 +13,11 @@ Les dues guies tenen algunes aspectes que es solapen quan es tracta d'instal·la
 ## Edició d'aquesta guia
 
 * Aquesta guia està creada amb MkDocs i emmagatzemada en un [repositori GitHub](https://github.com/babu-cat/civicrm-user-guide-ca).
-* Per unes instruccions d'edició sencilles, vegeu la pàgina d'aquesta guia a [Contribuir a aquesta guia](/the-civicrm-community/contributing-to-this-manual.md).
+* Per unes instruccions d'edició sencilles, vegeu la pàgina d'aquesta guia a [Contribuir a aquesta guia](the-civicrm-community/contributing-to-this-manual.md).
 * Per a un tutorial d'edició més profund, vegeu la pàgina en la Guia del desenvolupador a [Redactar la documentació](https://docs.civicrm.org/dev/en/latest/documentation).
 
 ## Crèdits
 
-Aquesta guia està escrita col·laborativament per la comunitat de CiviCRM, amb la facilitació del [Grup de treball de documentació](https://civicrm.org/working-groups/documentation).
+Aquesta guia està escrita col·laborativament per la comunitat de CiviCRM, amb la facilitació del [Grup de treball de documentació](https://lab.civicrm.org/working-groups/documentation).
 
 Vegeu el capítol [Història d'aquest llibre](/appendices/history-of-this-book.md) per més detalls.

@@ -35,17 +35,22 @@ necessary to make a great CRM.
 
 In 2005 the first version of CiviCRM was released with two of the core
 modules in place: CiviMail and CiviContribute (you can read more about
-these later).
+these later). Since those early days CiviCRM has become the leading open 
+source CRM for nonprofits. It has built a large community of users and
+contributors (as of early 2019, there were over 11,000 installed sites), has 
+added more components to the software (there are now 8 core modules and
+additional third party components), and has broadened its integration with 
+other popular CMS's including Backdrop, Joomla! and WordPress.
 
-Since those early days CiviCRM has built a large community of users and
-contributors (there are now over 8000 installed sites), the software has
-gone from strength to strength (there are now 8 core modules and
-additional third party components), and the core team has expanded to 8
-members. There is also a large ecology of free software contributors
+CiviCRM includes a large ecosystem of free software contributors
 around the project and high-profile non-profit organisations such as
 Amnesty International, Creative Commons, Electronic Frontier
 Foundation, Free Software Foundation, Mozilla, and Wikimedia Foundation
 use CiviCRM.
+
+Currently, CiviCRM operates using a [group based structure](https://civicrm.org/core-team) 
+focused on various aspects of the project including development, maintenance, 
+marketing, etc. CiviCRM continues to be coordinated by a [Core Team](https://civicrm.org/core-team).
 
 ## It's good to talk
 
@@ -54,18 +59,16 @@ your ideas. If you have a good idea, there's nothing to stop you
 carrying it out - but the best way to start is to start talking about
 it.
 
-If you're not sure where to start, the best place is probably the
-community forum
-([http://forum.civicrm.org/](http://forum.civicrm.org/)). Ask people
+If you're not sure where to start, the best place is probably CiviCRM's
+[Mattermost](https://chat.civicrm.org), which offers live discussion in chat rooms and direct messages. Ask people
 what they think about your idea. There's a wealth of experience on the
-forum, and someone will, very possibly, have tried something similar
+channels, and someone will, very possibly, have tried something similar
 before. CiviCRM people are a friendly bunch and their guiding philosophy
 is collaboration.
 
 Depending on your idea, you'll be directed to the next best place; maybe
 an article on the blog
-([http://civicrm.org/blog/](http://civicrm.org/blog/)), a page on the
-wiki ([http://wiki.civicrm.org/](http://wiki.civicrm.org/)), a
+([http://civicrm.org/blog/](http://civicrm.org/blog/)), CiviCRM's [GitLab](https://lab.civicrm.org), a
 teleconference or a meeting up with another community member in real
 life, yes that's right, REAL LIFE!
 

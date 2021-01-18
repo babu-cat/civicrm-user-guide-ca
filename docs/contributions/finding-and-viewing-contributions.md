@@ -10,14 +10,14 @@ fins a dia d'avui i acumulatiu des del començament (p.ex. tots els registres de
 Per visualitzar els resums hi ha disponibles diferents disposicions. La següent captura de pantalla
 mostra les contribucions més recents d'una campanya utilitzant la pestanya disposició en taula:
 
-![ContactSummary1a](/img/CiviCRM-CiviContribute-EveryDayTasks-ContactSummary1a-en.png)
+![ContactSummary1a](../img/CiviCRM-CiviContribute-EveryDayTasks-ContactSummary1a-en.png)
 
 També podeu visualitzar gràfics de barres o circulars per comparar les contribucions totals al llarg
 dels mesos d'un any determinat i al llarg dels anys clicant en la pestanya de disposició en gràfic.
 
-![ContactSummary1b](/img/CiviCRM-CiviContribute-EveryDayTasks-ContactSummary1b-en.png "ContactSummary1b")
+![ContactSummary1b](../img/CiviCRM-CiviContribute-EveryDayTasks-ContactSummary1b-en.png "ContactSummary1b")
 
-Finalment, podeu afegir qualsevol número de [Contenidors d'informes](/the-user-interface/menu-dashboard-and-dashlets.md#dashlets) de contribucions al vostre
+Finalment, podeu afegir qualsevol número de [Contenidors d'informes](../the-user-interface/menu-dashboard-and-dashlets.md#dashlets) de contribucions al vostre
 tauler personal de CiviCRM. Això pot incloure un gràfic resum de barres de les
 contribucions de l'any fins avui per tipus financer o mes, un llistat dels 10 primers donants, etc.
 
@@ -37,7 +37,7 @@ La **Cerca contribucions** us permet cercar en base a les dades de les
 contribucions i retornar els registres de contribució. La podeu trobar a **Contribucions > Cerca
 contribucions**.
 
-![Contribution Find Screenshot](/img/contributions-find-search.png)
+![Contribution Find Screenshot](../img/contributions-find-search.png)
 
 Podeu cercar en funció d'una sèrie de criteris, com ara l'interval de dates, l'import
 de la contribució, l'estat de la contribució, etc. Les contribucions han de coincidir amb tots els criteris de cerca especificats
@@ -51,14 +51,14 @@ per ser retornades, així que com més criteris introduïu, més reduïda serà
  d'una cerca de contribucions mostra l'import total, el nombre de
  contribucions, la contribució mitjana i la moda dels resultats de la cerca.
 
- ![Screen shot batch update from search](/img/contributions-find-editcriteria.png)
+ ![Screen shot batch update from search](../img/contributions-find-editcriteria.png)
 
  Podeu seleccionar una acció per realitzar del menú d'**Accions** un cop hagueu seleccionat
  tots o un subconjunt dels resultats. Podeu:
 
  - **Actualitza múltiples contribucions**: Això és útil si voleu actualitzar un
  gran nombre de dates d'agraïment de contribucions d'un sol cop, per exemple. Necessiteu
- [crear el perfil](/organising-your-data/profiles.md) que voleu utilitzar *abans*
+ [crear el perfil](../organising-your-data/profiles.md) que voleu utilitzar *abans*
  de realitzar la cerca i l'actualització per lots.
 
  - **Elimina les contribucions**: Això elimina les contribucions per complet del
