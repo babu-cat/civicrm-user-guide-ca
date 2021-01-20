@@ -23,8 +23,11 @@ contacts that took the action.
 **Intended Recipients** shows the number of people that the mailing was
 intended to be sent to. 
 
-**Tracked Opens** shows the number of people that CiviCRM thinks have
-opened the email *if you have chosen to track opens*.
+**Unique Opens** shows the number of people (or bots) that CiviCRM thinks have
+opened the email if you have chosen to enable *Open tracking*.
+
+**Total Opens** shows the total number of times that CiviCRM thinks people (or bots) have
+opened the email if you have chosen to enable *Open tracking*.
 
 !!! info "How Open Tracking works"
     In the world of email, there is no 100% reliable way of
