@@ -40,7 +40,7 @@ are several options from the friendly "Dear John", to more formal "Dear
 Mr. John Doe". You can also enter a *customized greeting* ("Your royal
 highness"). Postal greetings can be edited in the Communications
 Preferences section of the contact edit form. If you need to set or
-reset postal greetings en mass, refer to the chapter on [Scheduled Jobs../initial-set-up/scheduled-jobs.md) and to the documentation on the wiki at:
+reset postal greetings en mass, refer to the chapter on [Scheduled Jobs](../initial-set-up/scheduled-jobs.md) and to the documentation on the wiki at:
 
 [http://wiki.civicrm.org/confluence/display/CRMDOC/Update+Greetings+and+Address+Data+for+Contacts](http://wiki.civicrm.org/confluence/display/CRMDOC/Update+Greetings+and+Address+Data+for+Contacts)
 
