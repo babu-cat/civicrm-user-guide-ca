@@ -37,8 +37,64 @@ The search screen is reached from the search listing page (Search->Search Kit)
 ![img.png](../img/the-user-interface/search-kit/search-listing.png)
 
 The screen below shows a very basic search for contacts with no entry for
-camera skill level. This is 
+camera skill level. 
 ![img.png](../img/the-user-interface/search-kit/basic-search.png)
+
+The search screen allows you to specify the entity that you wish to start
+from, any entities you wish to include, how you want to filter, group
+and order the results and which field you wish to display. You are also
+able to take actions directly on the results. As of 5.36 most entities
+have only limited actions but the update action is much more powerful
+than the batch update action in advanced search as it does not have a 
+hard limit on the rows which can be updated at once.
+
+When searching the first thing you need to select is the entity you wish 
+to search for. Commonly used entities are
+
+- Contacts
+- Activities
+- Contributions
+- Recurring contributions
+- Participants
+- Grants
+
+However, you will normally with to include more than one entity and this is
+where the 'with' field comes in. Let's say you want to find all donors who
+made a donation of at least $100 but have never made a campaign contribution.
+
+First you would choose to search for contacts
+![img.png](../img/the-user-interface/search-kit/search-contacts.png)
+
+Next you would add that the contacts you are looking for MUST have
+a contribution of $100 or more.
+
+![img.png](../img/the-user-interface/search-kit/with-contributions.png)
+
+Note that in the image 'required' has been selected because we only want
+contacts with contributions that match the criteria specified when we
+add the contributions table. In this case the criteria is total amount 
+of the contribution is greater than or equal to $100.
+
+At this point it's helpful to see the results so far and at the bottom of the
+page you can choose to search and to add fields that help you to sanity
+check your result
+
+![img.png](../img/the-user-interface/search-kit/test-search.png)
+
+To exclude contacts who have made a campaign contribution we need 
+to add this second description of contributions in with another 'with'.
+In sql language these 'with' entities are joins. To add in a second
+set of contributions we choose contributions in the 'with' box
+again but scroll down to pick 'Contributions 2'. In this case it is
+optional (in fact we want to exclude them) and we filter on
+'Campaign ID' is empty. When adding this field be very careful to select
+it from the second contribution table.
+
+To actually exclude them we ALSO need to add 
+a where clause of 'contribution id is empty'. As with the previous 
+action we need to scroll down to contribution 2.
+
+![img.png](../img/the-user-interface/search-kit/contributions2.png)
 
 # Search displays
 
