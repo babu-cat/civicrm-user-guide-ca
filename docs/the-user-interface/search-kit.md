@@ -87,8 +87,11 @@ In sql language these 'with' entities are joins. To add in a second
 set of contributions we choose contributions in the 'with' box
 again but scroll down to pick 'Contributions 2'. In this case it is
 optional (in fact we want to exclude them) and we filter on
-'Campaign ID' is empty. When adding this field be very careful to select
-it from the second contribution table.
+'Campaign ID' is NOT empty. When adding this field be very careful to select
+it from the second contribution table. We also need to select the
+opposite criteria to what we want to know about (ie we want to know about
+those don't have campaign contributions so we we say with 
+contributions with campaigns and then filter them out).
 
 To actually exclude them we ALSO need to add 
 a where clause of 'contribution id is empty'. As with the previous 
