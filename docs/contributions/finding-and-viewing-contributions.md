@@ -83,11 +83,9 @@ in order to be returned, so the more criteria you enter, the narrower the search
  of the contributions selected, with the option to update the receipt or thank
  you date for each.
 
- - **Update pending contribution status**: This allows you to record payments
- details and to update the contribution status for all or selected online
- "pay later" contributions. This action only works for contributions with the
- status of Pending (Pay Later) and the same contribution status will be applied
- to all the contributions selected for updating.
+ - **Record payments for contributions**: This allows you to record payments
+ details for all or selected online "pay later" contributions. This action only
+ works for contributions with the status of Pending (Pay Later).
 
 The **Advanced search** returns contacts by default, but you can choose
 **Contributions** for the **Display Results As** field to show contributions
