@@ -162,6 +162,43 @@ merge. This is done using the smarty template language as described here
 [http://www.smarty.net/docs/en/language.function.if.tpl](http://www.smarty.net/docs/en/language.function.if.tpl).
 
 
+## CiviMail click tracking of links with tokens in link URLs
+
+Up to CiviCRM version 5.34 CiviMail’s link click tracking would ignore links with tokens in, so if you had a call to action that used a token in its URL, it was not possible to see how many recipients clicked that link. From CiviCRM version 5.35, using the FlexMailer extension which is shipped with CiviCRM itself, it is possible to track links that include tokens in the query parameters of a URL.
+
+For example, if a mailing included a personalised link to a Contribution Page, so that all the fields would be pre-filled for the recipient, like `<a href="https://example.org/civicrm/contribute/transact?reset=1&id=1&cid={contact.contact_id}&{contact.checksum}">Donate now</a>`. This uses two tokenised URL query parameters `cid` which is set to `{contact.contact_id}` and there is `{contact.checksum}` which generates code like `cs=aaaaaaaaaaaaa...`. This link will be tracked without tokens; the mailing report will show how many people clicked the *Donate now* link, listing it as `https://example.org/civicrm/contribute/transact?reset=1&id=1` (without the tokens).
+
+Rules for successfully tracking links that have tokens in:
+
+1. Tokens are allowed in the [query part](https://en.wikipedia.org/wiki/Query_string "Wikipedia for Query String") of the URL. Tokens in the path or domain etc. won’t be tracked.
+
+    - ✔ `https://example.org/somepage?magic={some.token}`
+    - ✖ `https://{some.token}.org/` - token in domain name means the link can’t be tracked.
+    - ✖ `https://example.org/{some.token}`  - token in the path means the link can’t be tracked.
+    - ✖ `{some.token}`  - token as the whole URL can’t be tracked.
+
+2. You may mix query parameters with and without tokens.
+
+    - ✔ `https://example.org/somepage?magic={some.token}&x=1&y=two`
+    - ✔ `https://example.org/somepage?x=1&y=two&magic={some.token}`
+    - ✔ `https://example.org/somepage?x=1&magic={some.token}&y=two`
+
+3. You may also use tokens in the fragment part; the fragment part is not included in the tracked part of the URL.
+
+    - ✔ `https://example.org/spa#{some.token}`
+    - ✔ `https://example.org/spa?cid={contact.id}#{some.token}`
+
+4. The expansion of the token must be URL safe! This does not affect the tracking of a link, but is a general point about including token data in URLs (or other HTML attributes).
+
+    - ✔ `https://example.org/somepage?cid={contact.id}` - Contact ID is always a number, which is URL-safe
+    - ✖ `https://example.org/somepage?cid={contact.first_name}` - First name could include anything and may break the link and could also represent a security risk.
+    - ? `https://example.org/somepage?mycustom={mycustom.token}` - If the code that generates a custom token outputs URL-safe data (e.g. within character subset, like a numeric ID, hex hash or such, *or* it generates a value that is [rawurlencoded](https://www.php.net/rawurlencode).)
+
+5. The expansion of the token must be CMS safe. As with (4) this is general advice, but hopefully helpful to point out here.
+
+    - ✖ `https://drupal.example.org/?q={some.token}` - Drupal uses `q` for its own purposes. (This could be valid in special cases where your token is a valid Drupal path.)
+    - ✖ `https://wordpress.example.org/?action={some.token}` - Wordpress has *many* [reserved terms](https://codex.wordpress.org/Reserved_Terms) that are not allowed.
+
 ## Available tokens
 
 This section documents the available action tokens, their purpose and the place(s) they can be used.
