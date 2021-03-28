@@ -159,6 +159,7 @@ Inserts activity for a contact or a case by retrieving inbound emails from a mai
 * Name of scheduled job created by default: Process Inbound Emails
 * Recommended frequency: hourly
 * Parameters: *(none)*
+* _Note:_ for [CiviMail in a multisite](#multisite), you must configure this job to run for each site (CiviCRM domain ID).
 
 ### Job.fetch_bounces {:#job_fetch_bounces}
 
@@ -247,6 +248,7 @@ Generates and sends a copy of the specified report instance to the email address
 * Name of scheduled job created by default: Send Scheduled Mailings
 * Recommended frequency: every time cron job is run
 * Parameters: *(none)*
+* _Note:_ for [CiviMail in a multisite](#multisite), you must configure this job to run for each site (CiviCRM domain ID).
 
 ### Job.process_membership {:#job_process_membership}
 
@@ -344,3 +346,16 @@ Updates the reset_date on an email address to indicate that there was a valid de
 * Parameters: 
     * `minDays` (optional)
     * `maxDays` (optional)
+
+## Considerations for Multisite / Multi domain {:#multisite}
+
+For a [multisite/multi-domain installation](https://docs.civicrm.org/sysadmin/en/latest/setup/multisite/), most jobs only need to be configured to run on one site, which is usually the "master domain site"&mdash;the site with CiviCRM domain ID 1. 
+
+Most jobs are not "domain-aware" and do not utilize the CiviCRM domain ID, so running such jobs only on the master domain site is sufficient. Since the master domain site includes all of the standard jobs by default, it's a sensible place to put any additional jobs if they are not domain-specific. (Whether or not a job is domain-aware depends on the job itself&mdash;but beware the documentation may not explicitly state whether or not it's domain-aware.)
+
+For [**CiviMail in a multisite**](https://docs.civicrm.org/sysadmin/en/latest/setup/civimail/#civimail-in-a-multisite), there are two important jobs that are domain-specific and **must be run for each domain**:
+* [`Job.process_mailing`](#job_process_mailing) ("Send Scheduled Mailings")
+* [`Job.fetch_activities`](#job_fetch_activities) ("Process Inbound Emails")
+
+When creating the above jobs for each site (or any other job with a duplicate API call), you must give the job a unique name&mdash;for example, by appending the name of the site to the standard job name ("Send Scheduled Mailings - Site A"). Otherwise CiviCRM will complain about the duplicate name.
+
