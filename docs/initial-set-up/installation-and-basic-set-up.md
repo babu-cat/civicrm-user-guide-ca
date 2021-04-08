@@ -160,7 +160,7 @@ For example, typing 'Volunteer%' as your Activity Subject will match any record 
 -   **Autocomplete Results** - This specifies the maximum number of contacts to show at a time when typing in an autocomplete field. The default is 10.
 -   **InnoDB Full Text Search** - If you are using MySQL 5.6+ you can enable InnoDB full-text search optimizations.
 
-### Miscellaneous (Undelete, PDFs, Limits, Logging, reCAPTCHA, etc.)
+### Miscellaneous (Undelete, PDFs, Limits, Logging, etc.)
 
 Use the Miscellaneous Settings screen to configure and control the following behaviors:
 
@@ -176,9 +176,6 @@ Use the Miscellaneous Settings screen to configure and control the following beh
 -   **Maximum Attachments** - You can increase or decrease the maximum number of files (documents, images, etc.) that can be attached to emails, activities, and grant records. The default value is 3.
 -   **Maximum File Size (in MB)** - Maximum size of a file (documents, images, etc.) which can attached to emails or activities. Note that your PHP configuration files, *php.ini*, should support at least as big a file size as the value specified here.
 -   **Allow second-degree relationship permissions** - If enabled, contacts with the permission to edit a related contact will inherit that contact's permission to edit other related contacts. This can be used, for example, to let the teacher of a class edited the records for students in that class when they are both linked to the class (set up as an organisation sub-type) via relationships.
--   **reCAPTCHA** - reCAPTCHA is a free service that helps prevent automated abuse of your site by requiring users to read a random pair of words and type them into the form. To use reCAPTCHA on public-facing CiviCRM forms, sign up at [recaptcha.net](http://recaptcha.net/), enter the provided public and private reCAPTCHA keys here, then enable reCAPTCHA under the Advanced Settings section in a Profile where you want it used. In the **Recaptcha Options** you can specify the theme and language and other options on the display of reCAPTCHA.
-
-    If you want to use reCAPTCHA protection for online contribution, membership sign-up or event registration forms, you'll need to configure a Profile with reCAPTCHA enabled, and then include it in those forms.
 
 ### Contact Types
 
