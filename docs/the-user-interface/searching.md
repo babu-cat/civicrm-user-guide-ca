@@ -189,7 +189,13 @@ With fields that allow you to select more than one value from a dropdown list,
 the values are always combined with "OR". For example, you could find contacts
 that live in Alaska or in Arizona.
 
-![Screen shot of combining search criteria](../img/the-user-interface/searching/user-interface-searching-states.png)
+![advanced search address selected](../img/the-user-interface/searching/user-interface-advanced-search-address-selected.png)
+
+If you expand one of the dropdown sections, and make selections, as shown above,  a cross appears at the right end of the header, indicating that this panel is being used in the search. If you no longer wish to use Address Fields as a part of the search, it is not enough just to close the panel. You must click the cross on the header.
+
+#### Limitations of Advanced Search
+
+The Advanced Search is an effective  way to search for many things in CiviCRM. However, there is an issue with searches where Contacts are the client in more than one Case, and they are engaged in the same Activity Type in each of these Cases. The Advanced Search is currently not able to filter these Activities correctly by Case Type. This issue is expected to be resolved in the near future. 
 
 ## Search Builder
 
