@@ -57,6 +57,7 @@ nav:
 - The user interface:
     - 'Menu, dashboard and dashlets': 'the-user-interface/menu-dashboard-and-dashlets.md'
     - 'Searching': 'the-user-interface/searching.md'
+    - 'Search kit': 'the-user-interface/search-kit.md'
     - 'Search URL Filtering': 'the-user-interface/searching-url-support.md'
     - 'Undelete': 'the-user-interface/undelete.md'
 - Organising your data:
