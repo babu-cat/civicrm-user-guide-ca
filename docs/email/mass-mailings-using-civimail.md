@@ -350,10 +350,6 @@ Mass mailings can be found in one of three areas accessible via the
  steps, you can continue working on it by clicking on the
  **Continue** link next to the message listed here.
 
-!!! note
-    Mailings started based on search results will not have the continue link 
-    listed
-
  You can also **Delete** draft messages here.
 
 **Scheduled and Sent Mailings:** When you send or schedule a mailing,
@@ -364,8 +360,7 @@ Mass mailings can be found in one of three areas accessible via the
  link next to the message.
 
  You can also start another mailing based on a previous mailing by
- clicking on the **Re-Use** link. (Note, the Re-Use link is not
- available for mailings based on search results.)
+ clicking on the **Re-Use** link.
 
  The **Archive** and **Delete** links are available under the
  **more** link. For mailings that are scheduled but not yet sent, a
