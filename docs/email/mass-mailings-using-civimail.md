@@ -360,7 +360,7 @@ Mass mailings can be found in one of three areas accessible via the
  link next to the message.
 
  You can also start another mailing based on a previous mailing by
- clicking on the **Re-Use** link.
+ clicking on the **Copy** link.
 
  The **Archive** and **Delete** links are available under the
  **more** link. For mailings that are scheduled but not yet sent, a
@@ -375,5 +375,5 @@ Mass mailings can be found in one of three areas accessible via the
  here are not available to be included or excluded from the recipient
  list.
 
- It provides exactly the same functionality as Scheduled and Sent
- Mailings, including the possibility to view Reports and Re-Use.
+It provides exactly the same functionality as Scheduled and Sent
+ Mailings, including the possibility to view Reports and Copy.
