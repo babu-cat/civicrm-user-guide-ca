@@ -78,42 +78,54 @@ information.
 
 Create a link in the CiviMail message that includes the checksum token `{contact.checksum}`. When people click on the special link, CiviCRM looks them up in the database and prefills any information on the contribution form or profile with any data that exists in their record.
 
-**Checksum for Contribution Pages**: To send people to a contribution page use this path where `IDNUMBER` is the ID of your contribution page:
+#### Checksum for Contribution Pages {:#checksum-contribution-pages}
+
+To send people to a contribution page use this path where `IDNUMBER` is the ID of your contribution page:
 
 * Drupal: `http://example.org/civicrm/contribute/transact?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 * Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 * WordPress (with Clean URLs): `http://example.org/civicrm/contribute/transact?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 * WordPress (without Clean URLs): `http://example.org/?civiwp=CiviCRM&q=civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 
-**Checksum for Contribution Pages for Membership Renewals**: To send people to a contribution page for membership renewals use this path where `IDNUMBER` is the ID of your contribution page. This is typically used in Scheduled Reminders for membership renewals, where  the `membership.id` will be evaluated to the membership to be renewed:
+#### Checksum for Contribution Pages for Membership Renewals {:#checksum-membership-renewal}
+
+To send people to a contribution page for membership renewals use this path where `IDNUMBER` is the ID of your contribution page. This is typically used in Scheduled Reminders for membership renewals, where  the `membership.id` will be evaluated to the membership to be renewed:
 
 * Backdrop/Drupal: `http://example.org/civicrm/contribute/transact?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}&mid={membership.id}`
 * Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}&mid={membership.id}`
 * WordPress (with Clean URLs): `http://example.org/civicrm/contribute/transact?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}&mid={membership.id}`
 * WordPress (without Clean URLs): `http://example.org/?civiwp=CiviCRM&q=civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}&mid={membership.id}`  
 
-**Checksum for standard Profiles** (edit mode): To send people to a profile use this path where `IDNUMBER` is the ID of the Profile you want to send them to:
+#### Checksum for standard Profiles {:#checksum-profiles}
+
+To send people to a profile use this path where `IDNUMBER` is the ID of the Profile you want to send them to:
 
 * Drupal: `http://example.org/civicrm/profile/edit?reset=1&gid=IDNUMBER&{contact.checksum}&id={contact.contact_id}`
 * Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/profile/edit&reset=1&gid=IDNUMBER&{contact.checksum}&id={contact.contact_id}`
 * WordPress (with Clean URLs): `http://example.org/civicrm/profile/edit?reset=1&gid=IDNUMBER&{contact.checksum}&id={contact.contact_id}`
 * WordPress (without Clean URLs): `http://example.org/?civiwp=CiviCRM&q=civicrm/profile/edit&reset=1&gid=IDNUMBER&{contact.checksum}&id={contact.contact_id}`
 
-**Checksum for Event Registration Pages**: To send people to an event registration page use this path where `IDNUMBER` is the ID of your event:
+#### Checksum for Event Registration Pages {:#checksum-event-registration}
+
+To send people to an event registration page use this path where `IDNUMBER` is the ID of your event:
 
 * Drupal: `http://example.org/civicrm/event/register?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 * Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/event/register&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 * WordPress (with Clean URLs): `http://example.org/civicrm/event/register?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 * WordPress (without Clean URLS): `http://example.org/?civiwp=CiviCRM&q=civicrm/event/register&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 
-**Checksum for Petition Signature Pages**: To send people to sign a Petition, use this path where `IDNUMBER` is the ID of your petition:
+#### Checksum for Petition Signature Pages {:#checksum-petition-pages}
+
+To send people to sign a Petition, use this path where `IDNUMBER` is the ID of your petition:
 
 * Drupal: `http://example.org/civicrm/petition/sign?reset=1&sid=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 * Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/petition/sign&reset=1&sid=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 * WordPress (with Clean URLs): `http://example.org/civicrm/petition/sign?sid=IDNUMBER&reset=1&{contact.checksum}&cid={contact.contact_id}`
 * WordPress (without Clean URLS): `http://example.org/?civiwp=CiviCRM&q=civicrm/petition/sign&sid=IDNUMBER&reset=1&{contact.checksum}&cid={contact.contact_id}`
 
-**Checksum for mail 'view in browser' links**: In CiviMail you can use a special link to allow contacts to view the email content in their browser, including the content personalised with tokens.
+#### Checksum for mail 'view in browser' links {:#checksum-mailing}
+
+In CiviMail you can use a special link to allow contacts to view the email content in their browser, including the content personalised with tokens.
 
 * Drupal: `http://example.org/civicrm/mailing/view?reset=1&id={mailing.key}&cid={contact.contact_id}&{contact.checksum}`
 * Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/mailing/view&id={mailing.key}&{contact.checksum}&cid={contact.contact_id}`
