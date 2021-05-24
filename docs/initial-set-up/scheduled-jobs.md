@@ -241,7 +241,7 @@ Generates and sends a copy of the specified report instance to the email address
     * `gid` group id
     * `mode` (optional) helps decide how to behave when there are conflicts.
         * `safe` (default) skips the merge if there are any un-resolved conflicts
-        * `aggresive` does a force merge 
+        * `aggressive` does a force merge 
     * `auto_flip` (optional)
         `1` let the api decide which contact to retain and which to delete?
 
