@@ -8,7 +8,8 @@ it you do so on the latest version of CiviCRM. The functionality
 that is in this section is based on CiviCRM 5.36 and may not
 be present in earlier versions. It may also change visually.
 
-!!! note Search kit ships as an extension as part of our strategy of
+!!! note 
+Search kit ships as an extension as part of our strategy of
 putting significant functionality leaps into extensions rather than 
 overhauling existing code. This allows us to demarcate rapidly evolving
 code and to keep long-standing code more stable. People can opt into 
