@@ -1,4 +1,3 @@
-
 # Asking for help in chat.civicrm.org
 
 You might have been linked here because you've asked a question on CiviCRM chat. 
@@ -17,3 +16,5 @@ You might have been linked here because you've asked a question on CiviCRM chat.
 * Avoid posting the same question in multiple channels.
 * Be patient. We try to be a helpful and supportive community, and we all lead busy lives. If no-one answers, check back later, or try posting on https://civicrm.stackexchange.com
 * Ask one question at a time!
+* Please "thread" your issue using MatterMost's reply feature to keep your issue in a single thread this makes it easier to assist you and allows others to jump in and catch up. You can use Shift+Up Arrow as a shortcut to reply!
+* Avoid sending direct messages without checking with the person first! Having support discussions in public benefits the community, having them in private does not.
