@@ -472,3 +472,10 @@ case-sensitive. For example, if you search for 'brooklyn', the search
 will return strings with capitalised letters if the string exists, e.g.
 'Brooklyn' or 'BROOKLYN'. Entering "mi%el" in lowercase will also find
 contacts with an upper case 'M' in their name.
+
+## Default number of rows to be returned.
+
+In CiviCRM Advanced Searches and in CiviCRM reports the number of rows displayed on the screen has by default been 50 previously.
+As of CiviCRM version 5.39 System Administrators can under **Administer** > **Customize Data and Screens** > **Search Preferences** 
+change the number of rows to be outputted on the screen. You should not set a too high a number as higher the number the slower the screen will be 
+to load.
