@@ -44,9 +44,7 @@ need to add the proper link tags using the Source icon in the editor.
 
 ### Required opt-out tokens for mass emails {:#opt-out}
 
-You are required to include a token for either [opt-out token, {action.optOutUrl}](common-workflows/tokens-and-mail-merge/#actionoptouturl) or
-[unsubscribe token, {action.unsubscribeUrl}](common-workflows/tokens-and-mail-merge/#actionunsubscribeurl),
-as well as the [organizational address token, {domain.address}](common-workflows/tokens-and-mail-merge/#domainaddress) in
+You are required to include a token for either [opt-out token, {action.optOutUrl}](common-workflows/tokens-and-mail-merge/#actionoptouturl) or [unsubscribe token, {action.unsubscribeUrl}](common-workflows/tokens-and-mail-merge/#actionunsubscribeurl), as well as the [organizational address token, {domain.address}](common-workflows/tokens-and-mail-merge/#domainaddress) in
 every CiviMail mailing. These can be placed directly in the body of your
 mailing body, or you can put them in the mailing header or footer. If
 your organization has developed a standard mailing footer, just include
