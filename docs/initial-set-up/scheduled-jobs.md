@@ -160,6 +160,9 @@ Inserts activity for a contact or a case by retrieving inbound emails from a mai
 * Recommended frequency: hourly
 * Parameters: *(none)*
 
+!!! note "Multisite installs"
+    For [CiviMail in a multisite](#multisite), you must configure this job to run for each site (CiviCRM domain ID).
+
 ### Job.fetch_bounces {:#job_fetch_bounces}
 
 Fetches bounces from mailings and writes them to mailing statistics
@@ -203,10 +206,10 @@ This job purges aged [smart group](../organising-your-data/smart-groups.md) cach
 
 ### Job.group_rebuild {:#job_group_rebuild}
 
-Rebuilds the [smart group](../organising-your-data/smart-groups.md) cache. This builds the cache for any smart groups for whom it is empty. If you do not run this it will build groups on demand. Building on demand is more efficient except for 2 operations; viewing the count on manage groups page for all groups and being able to expand the smart groups tab on an individual contact record. If these are important to you then enable this job but expect it to have performance impacts unless you have only a few small smart groups. Note that  you can disable the ability to expand the smart group tab on the contact record and this is recommended for medium sized site (e.g 50k contacts) and larger.
+Rebuilds the [smart group](../organising-your-data/smart-groups.md) cache. This builds the cache for any smart groups for whom it is empty. If you do not run this it will build groups on demand. Building on demand is more efficient except for 2 operations; viewing the count on manage groups page for all groups and being able to expand the smart groups tab on an individual contact record. If these are important to you then enable this job but expect it to have performance impacts unless you have only a few small smart groups.
 
 !!! note 
-    You can [disable the ability to expand the smart group tab on the contact record](customizing-the-user-interface/#changing-display-preferences) and this is recommended for medium sized site (e.g 50k contacts) and larger.
+    You can [disable the ability to expand the smart group tab on the contact record](../customizing-the-user-interface/#changing-display-preferences) and this is recommended for medium sized site (e.g 50k contacts) and larger.
 
 * Name of scheduled job created by default: Rebuild Smart Group Cache
 * Recommended frequency: never
@@ -238,7 +241,7 @@ Generates and sends a copy of the specified report instance to the email address
     * `gid` group id
     * `mode` (optional) helps decide how to behave when there are conflicts.
         * `safe` (default) skips the merge if there are any un-resolved conflicts
-        * `aggresive` does a force merge 
+        * `aggressive` does a force merge 
     * `auto_flip` (optional)
         `1` let the api decide which contact to retain and which to delete?
 
@@ -247,6 +250,9 @@ Generates and sends a copy of the specified report instance to the email address
 * Name of scheduled job created by default: Send Scheduled Mailings
 * Recommended frequency: every time cron job is run
 * Parameters: *(none)*
+
+!!! note "Multisite installs"
+    For [CiviMail in a multisite](#multisite), you must configure this job to run for each site (CiviCRM domain ID).
 
 ### Job.process_membership {:#job_process_membership}
 
@@ -344,3 +350,17 @@ Updates the reset_date on an email address to indicate that there was a valid de
 * Parameters: 
     * `minDays` (optional)
     * `maxDays` (optional)
+
+## Considerations for Multisite / Multi domain {:#multisite}
+
+For a [multisite/multi-domain installation](https://docs.civicrm.org/sysadmin/en/latest/setup/multisite/), most jobs only need to be configured to run on one site, which is usually the primary domain site, which is to say, the site with CiviCRM domain ID 1. 
+
+Most jobs are not "domain-aware" and do not utilize the CiviCRM domain ID, so running such jobs only on the primary domain site is sufficient. Since the primary domain site includes all the standard jobs by default, it's a sensible place to put any additional jobs which are not domain specific. (Whether or not a job is domain-aware depends on the job itself but be aware the documentation may not explicitly state whether the job is domain-aware.)
+
+For [**CiviMail in a multisite**](https://docs.civicrm.org/sysadmin/en/latest/setup/civimail/#civimail-in-a-multisite), there are two important jobs that are domain-specific and **must be run for each domain**:
+
+* [`Job.process_mailing`](#job_process_mailing) ("Send Scheduled Mailings")
+* [`Job.fetch_activities`](#job_fetch_activities) ("Process Inbound Emails")
+
+When creating the above jobs for each site (or any other job with a duplicate API call), you must give the job a unique name, for example by appending the name of the site to the standard job name ("Send Scheduled Mailings - Site A"). Otherwise CiviCRM will complain about the duplicate name.
+

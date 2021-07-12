@@ -189,7 +189,13 @@ With fields that allow you to select more than one value from a dropdown list,
 the values are always combined with "OR". For example, you could find contacts
 that live in Alaska or in Arizona.
 
-![Screen shot of combining search criteria](../img/the-user-interface/searching/user-interface-searching-states.png)
+![advanced search address selected](../img/the-user-interface/searching/user-interface-advanced-search-address-selected.png)
+
+If you expand one of the dropdown sections, and make selections, as shown above,  a cross appears at the right end of the header, indicating that this panel is being used in the search. If you no longer wish to use Address Fields as a part of the search, it is not enough just to close the panel. You must click the cross on the header.
+
+#### Limitations of Advanced Search
+
+The Advanced Search is an effective  way to search for many things in CiviCRM. However, there is an issue with searches where Contacts are the client in more than one Case, and they are engaged in the same Activity Type in each of these Cases. The Advanced Search is currently not able to filter these Activities correctly by Case Type. This issue is expected to be resolved in the near future. 
 
 ## Search Builder
 
@@ -466,3 +472,10 @@ case-sensitive. For example, if you search for 'brooklyn', the search
 will return strings with capitalised letters if the string exists, e.g.
 'Brooklyn' or 'BROOKLYN'. Entering "mi%el" in lowercase will also find
 contacts with an upper case 'M' in their name.
+
+## Default number of rows to be returned.
+
+In CiviCRM Advanced Searches and in CiviCRM reports the number of rows displayed on the screen has by default been 50 previously.
+As of CiviCRM version 5.39 System Administrators can under **Administer** > **Customize Data and Screens** > **Search Preferences** 
+change the number of rows to be outputted on the screen. You should not set a too high a number as higher the number the slower the screen will be 
+to load.

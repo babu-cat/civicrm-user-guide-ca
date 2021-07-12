@@ -69,26 +69,26 @@ merchant accounts.
 
 Support for recurring contributions and auto-renewing memberships is an
 important feature for many organizations. However not all of the payment
-processors available for CiviCRM support this feature. iATS is the only processor that allows you to manage recurring contributions from within CiviCRM. PayPal and Authorize.net will support recurring donations through their respective sites for an additional monthly fee. A few others like Moneris have "incomplete" support.
+processors available for CiviCRM support this feature. Many processors that allow you to manage recurring contributions from within CiviCRM but PayPal and Authorize.net require you to log into their own portals to manage recurring contributions. Some, like Moneris, have "incomplete" support.
 
-If you have configured a payment processor that includes recurring payments as a feature, you can enable recurring contributions your Contribution Page. For more details on page-specific configuration, refer to the [Online Contributions](online-contributions.md#setting-up-a-contribution-page-full-details) chapter.
+If you have configured a payment processor that includes recurring payments as a feature, you can enable recurring contributions in your Contribution Page settings. For more details on page-specific configuration, refer to the [Online Contributions](online-contributions.md#setting-up-a-contribution-page-full-details) chapter.
 
 
 ### Managing recurring contributions
 
 PayPal and Authorize.net allow users to set up a recurring contribution, which is then managed through the payment processor site. Each time a payment is made, the processor creates a contribution record in CiviCRM. You must log onto the processor's site to make changes to the payment amount, frequency, etc.
 
-If you have iATS configured, you will manage the recurring contributions directly in CiviCRM. The payment is triggered from within CiviCRM, which sends a request to iATS, and returns a completed contribution record to CiviCRM if it's successful.
+Other processors (e.g IATS, eway, Payment Express, SagePay, Paypal Commerce/Checkout), expect you to manage the recurring contributions directly in CiviCRM. The payment is triggered from within CiviCRM, which sends a request to the processor, and returns a completed contribution record to CiviCRM if it's successful.
 
-You can manage a recurring contribution by going to the **Contributions** tab on a contact record. In a separate tab, there is a separate section for Recurring Contributions.
+You can manage a recurring contribution by going to the **Contributions** tab on a contact record. In a separate tab, there is a separate section for Recurring Contributions. In order to be able to recharge a card processors often store a payment token. This can be used to recharge a credit card, but only to put money into your account, not anyone elses. The rules around how these may be used vary and most processors only use them for regular recurring payments.
 
 ![screenshot](../img/RecurringContribution.jpg)
 
 You have the option to **View**, **Edit**, or **Cancel** the recurring contribution here. You can edit the Recurring Contribution Amount, Number of Installments, Next Scheduled Contribution Date, Financial Type, Status, Start Date, and whether or not the donor receives an email notification on each payment installation. The donation frequency (e.g. weekly, monthly) cannot be changed from within CiviCRM.
 
-If you **View** the recurring contribution, you will also be able to **View**, **Edit**, or **Process** the card on file. Viewing or editing will bring up the customer and card information from the iATS website.
+If you **View** the recurring contribution, you will also be able to **View**, **Edit**, or **Process** the card on file. Viewing or editing will bring up the customer and card information.
 
-Finally, there is an administrative page where you can view recent iATS transactions. On the menu, navigate to **Contributions > iATS Payments Administration** to see the report.
+For IATS users, there is an administrative page where you can view recent iATS transactions. On the menu, navigate to **Contributions > iATS Payments Administration** to see the report.
 
 
 ### Cost

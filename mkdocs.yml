@@ -5,6 +5,9 @@ site_description: 'Una guia per als usuaris del CiviCRM.'
 site_author: 'La comunitat de CiviCRM'
 theme: 
   name: material
+  icon:
+      repo: fontawesome/brands/gitlab
+
 markdown_extensions:
   - attr_list
   - admonition
@@ -53,6 +56,7 @@ nav:
 - La interfície d'usuari (untranslated):
     - 'Menu, dashboard and dashlets': 'the-user-interface/menu-dashboard-and-dashlets.md'
     - 'Searching': 'the-user-interface/searching.md'
+    - 'Search kit': 'the-user-interface/search-kit.md'
     - 'Search URL Filtering': 'the-user-interface/searching-url-support.md'
     - 'Undelete': 'the-user-interface/undelete.md'
 - Organitzant les vostres dades (untranslated):

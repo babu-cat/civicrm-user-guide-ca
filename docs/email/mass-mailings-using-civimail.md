@@ -350,10 +350,6 @@ menú de **Mailings**:
  passos, podeu continuar treballant en ell clicant en
  l'enllaç **Continua** al costat del missatge llistat que apareix aquí.
 
-!!! nota
-    Els mailings basats en resultats de cerca no tindran llistat l'enllaç
-    continua
-
  També podeu **Eliminar** missatges esborranys aquí.
 
 **Mailings programats i enviats:** Quan envieu o programeu un mailing,
@@ -364,8 +360,7 @@ menú de **Mailings**:
  al costat del missatge.
 
  Podeu començar també un altre mailing basat en un mailing anterior
- fent clic a l'enllaç **Reutilitza**. (Noteu, que l'enllaç reutilitza no està
- disponible per mailings basats en resultats de cerca.)
+ fent clic a l'enllaç **Còpia**.
 
  Els enllaços **Arxiva** i **Elimina** són accessibles des de
  l'enllaç **més**. Per als mailings que han estat programats però encara no enviats,
@@ -381,4 +376,4 @@ menú de **Mailings**:
  destinataris.
 
  Proporciona exactament la mateixa funcionalitat que Programa i envia
- mailings, inclosa la possibilitat de veure informes i reutilitzar-los.
+ mailings, inclosa la possibilitat de veure informes i copiar-los.

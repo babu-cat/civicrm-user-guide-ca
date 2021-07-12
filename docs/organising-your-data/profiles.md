@@ -269,8 +269,8 @@ automated web-crawling spiders (robots) from completing the form. It is
 highly recommended that you include it.
 
 You must set up a free reCAPTCHA account and enter some configuration
-information in CiviCRM to use this feature. Go to **Administer > System
-Settings > Undelete, Logging and ReCAPTCHA** to configure your account;
+information in CiviCRM to use this feature. Go to **Administer > Customize
+Data and Screens > reCAPTCHA Settings** to configure your account;
 instructions for signing up are included on that page.
 
 #### Drupal user account registration option
