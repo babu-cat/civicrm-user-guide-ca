@@ -113,7 +113,8 @@ comparats s'identifiquen com a possibles duplicats.
 
 ## Utilització de regles i combinació manual de contactes duplicats
 
-!!! consell  una interfície d'usuari diferent està disponible a [the deduper extension](https://github.com/eileenmcnaughton/deduper/blob/master/Readme.md)
+!!! tip "Consell"
+una interfície d'usuari diferent està disponible a [the deduper extension](https://github.com/eileenmcnaughton/deduper/blob/master/Readme.md)
 
 1.  Anar a **Contactes > Cerca i combina contactes duplicats**.
 2.  Clicar a l'enllaç **Utilitza la regla** per escanejar contactes duplicats utilitzant
@@ -145,6 +146,7 @@ comparats s'identifiquen com a possibles duplicats.
 5.  Si voleu moure la informació en la direcció oposada,
     podeu intercanviar els contactes duplicat i original escollint **Intercanvia
     la posició dels contactes original i duplicat** a dalt de la pàgina.
+
     ![Pantalla de combinació de duplicats](../img/duplicate-merge-screen.png)  
 
 6.  Les files en la pantalla de combinació estan codificades per colors.
@@ -219,13 +221,13 @@ Cercarà tots els contactes que coincideixin amb qualsevol de
 
 "els primers 10.000 contactes trobats amb un id més gran de 200"
 i intentarà combinar-los automàticament utilitzant els modes segurs predeterminats
-(saltant quan hi hagi conflictes) i les regles predeterminades per a persnes.
+(saltant quan hi hagi conflictes) i les regles predeterminades per a persones.
 
 
 
 ![captura de pantalla](../img/CiviCRM_dedupe_batchmerge.png)
 
-!!! Atenció
+!!! warning "Atenció""
     Abans que considereu d'utilitzar la desduplicació en lot, tingueu cura de prendre en consideració
     els punts de continuació.
 
