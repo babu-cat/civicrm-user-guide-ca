@@ -239,6 +239,7 @@ i intentarà combinar-los automàticament utilitzant els modes segurs predetermi
 
 Sovint utilitzant un a única regla de deduplicació comporta que quedin alguns duplicats en el sistema.
 A sota es proporciona una manera de processar sistemàticament múltiples aplicacions. Si la vostra regla no supervisada per persones no és prou estricta llavors podeu estalviar-vos la desduplicació en lots duran la primera etapa i desduplicar manualment en la segona etapa.
+
 1.  Comenceu cercant duplicats utilitzant la regla "No supervisada" per persones:
     cliqueu l'enllaç **utilitza la regla** (tipus de contacte "Persona" i ús
     "no supervisat").
