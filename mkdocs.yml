@@ -3,7 +3,7 @@ site_url: https://docs.civicrm.org/user/ca/latest/
 repo_url: https://github.com/babu-cat/civicrm-user-guide-ca
 site_description: 'Una guia per als usuaris del CiviCRM.'
 site_author: 'La comunitat de CiviCRM'
-theme: 
+theme:
   name: material
   icon:
       repo: fontawesome/brands/gitlab
@@ -72,7 +72,7 @@ nav:
 - Fluxos de treball comuns (partially translated):
     - 'Importació de dades en el CiviCRM (partially translated)': 'common-workflows/importing-data-into-civicrm.md'
     - 'Exportació dels vostres contactes (untranslated)': 'common-workflows/exporting-your-contacts.md'
-    - 'Cerca i combinació de duplicats (untranslated)': 'common-workflows/deduping-and-merging.md'
+    - 'Desduplicació i combinació': 'common-workflows/deduping-and-merging.md'
     - 'Tokens i combinació de correspondència (untranslated)': 'common-workflows/tokens-and-mail-merge.md'
     - 'Comunicacions per correu postal': 'common-workflows/postal-mail-communications.md'
     - 'Automatitzant tasques (untranslated)': 'common-workflows/automating-tasks.md'
