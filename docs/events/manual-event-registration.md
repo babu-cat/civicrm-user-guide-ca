@@ -1,246 +1,246 @@
-#Inscripcions manuals d'esdeveniments (untranslated)
+# Inscripció manual a esdeveniments
 
-This chapter covers how office staff can register people for events
-through the admin interface. It will show how to register an individual
-participant manually, how to register multiple participants and how to
-import registrations from an external source.
+Aquest capítol tracta com l'equip de l'organització pot inscriure a la gent als esdeveniments
+a través de la interfície d'administració. Veureu com inscriure a una persona
+participant manualment, com inscriure a múltiples participants i com
+importar inscripcions des d'un origen extern.
 
-## Registering a Participant Manually
+## Inscripció manual d'un participant
 
-Although CiviCRM can be configured to allow your constituents to register
-and pay for events directly through your website, it
-also provides the ability to register contacts manually. Useful, for
-example, if people want to register by phone or mail, or if you want to
-register people on their behalf.
+Encara que el CiviCRM es pot configurar per permetre als teus constituent inscriure's
+i pagar als esdeveniments directament a través del lloc web,
+també proporciona l'opció d'inscriure els contactes manualment. Útil, per
+exemple, si es vol inscriure a la gent per telèfon o correu electrònic, o si voleu
+inscriure a la gent en el seu nom.
 
-For example, when a person calls the office to register for an event,
-the staff person who takes the call can:
+Per exemple, quan una persona truca a l'oficina per inscriure's en un esdeveniment,
+la persona de l'equip que respon la trucada pot:
 
-1.  Enter the person's name in the Quick search box.
-2.  Select the contact from the results.
-3.  Click the Events tab on the caller's contact record.
-4.  Add the person to the event.
+1.  Introduir el nom de la persona en el quadre de cerca ràpida.
+2.  Seleccionar el contacte dels resultats.
+3.  Clicar la pestanya d'esdeveniments a la fitxa del contacte que fa la trucada.
+4.  Afegir a la persona a l'esdeveniment.
 
-The Events tab on a contact record, shown in the following screenshot,
-displays a summary list of the contact's current and past event bookings and
-provides links for registering the contact for a new event.
+La pestanya d'esdeveniments de la fitxa del contacte de la captura de pantalla de sota,
+mostra una llista del resum de reserves actuals i passades del contacte i
+proporciona enllaços per inscriure el contacte a un nou esdeveniment.
 
-![screenshot](../img/EventsTab.png)
+![captura de pantalla](../img/EventsTab.png)
 
-There are two options for registering the contact:
+Hi ha dues opcions per a inscriure un contacte:
 
--   **Add Event Registration**: for people who pay later, such as by
-    sending a check or paying when they arrive at the event.
--   **Submit Credit Card Event Registration**: for people paying
-    immediately with a credit card. This option is available only if
-    a payment processor is configured that allows direct payments
-    through your web site. If you are taking a registration over the
-    phone you can ask them for their credit card information and enter
-    it manually.
+-   **Afegeix una inscripció a un esdeveniment**: per gent que vol pagar en un altre moment, com ara
+    enviant un xec o pagant al mateix dia de l'esdeveniment.
+-   **Registrant una inscripció a un esdeveniment amb targeta de crèdit**: per gent que paga
+    immediatament amb una targeta de crèdit. Aquesta opció està disponible només si
+    s'ha configurat un processador de pagaments que permet el pagament directe
+    a través del lloc web. Si esteu atenent una inscripció al
+    telèfon podeu preguntar per la informació de la seva targeta de crèdit i introduir-la
+    manualment.
 
-The interface for both options is very similar, with the exception of
-those fields that record payment details.
+La interfície per a les dues opcions és molt similar, amb l'excepció
+d'aquells camps que registren els detalls del pagament.
 
-![screenshot](../img/EventRegistration1.png)
+![captura de pantalla](../img/EventRegistration1.png)
 
-![screenshot](../img/EventRegistration2.png)
+![captura de pantalla](../img/EventRegistration2.png)
 
-As you work through this form, certain sections of the page change to
-reflect choices you have made. For example, when the event and
-participant role are selected, the
-form will automatically load predefined custom data fields that pertain
-to those selections.
+Mentre feu servir aquest formulari algunes seccions de la pàgina canvien per
+reflectir les eleccions que feu. Per exemple, quan es selecciona l'esdeveniment i
+el rol del participant, el
+formulari carregarà automàticament els camps personalitzats predefinits que pertanyen
+a aquestes seleccions.
 
-If the event selected is a paid event, you will see an event fees
-section which has been defined in the event configuration details, and
-an option to record the financial transaction details (Record Payment)
-will be visible. This leads us to an important concept central to
-CiviEvent (as well as other modules): event registration records in
-CiviCRM are independent of, but can be related to, a financial
-transaction. While this may seem confusing to organizations accustomed
-to viewing event registrations as essentially a financial transaction,
-it offers an important and valuable distinction.
+Si l'esdeveniment seleccionat és un esdeveniment de pagament, podreu veure una secció de tarifes d'esdeveniment
+que s'haurà definit en els detalls de configuració de l'esdeveniment, i
+una opció per registrar els detalls de la transacció financera (Registra un pagament)
+serà visible. Això ens condueix a un concepte important i central del
+CiviEvent (això com d'altre mòdul): els registres d'inscripcions en el
+CiviCRM són independent de, però poden relacionar-se amb, una transacció
+financera. Mentre això pot semblar confús per organitzacions acostumades
+a veure les inscripcions a esdeveniments com essencialment una transacció financera,
+ofereix una distinció important i valuosa.
 
-An event registration communicates the contact's participation in the
-organization's event. A corresponding financial transaction indicates
-the monetary value associated with that participation. While related,
-the two are distinct.
+Una inscripció a un esdeveniment comunica la participació del contacte a un
+esdeveniment de l'organització. La corresponent transacció financera indica
+el valor monetari associat amb aquesta participació. Tot i que relacionats,
+ambdós són diferents.
 
-The distinction is best understood by considering the common scenario of
-an organization waiving fees for a V.I.P., a speaker, or someone who
-participating in the event in a limited way. In such cases, you want to
-register the individuals but may not want to create an associated
-financial transaction. CiviCRM respects this distinction by recording
-the event registration record under the Events tab, recording the
-financial record under the Contributions tab, and then creating a link
-between the two records.
+La distinció s'entén millor si es considera el comú escenari
+d'una organització renunciant a les quotes per als vips, un conferenciant, o algú que
+participa en un esdeveniment d'una manera limitada. En aquests casos, voldreu
+inscriure les persones però voldreu no crear una transacció
+financera associada. El CiviCRM respecta aquesta distinció registrant
+la inscripció de l'esdeveniment sota la pestanya Esdeveniments, registrant el
+registre financer sota la pestanya Contribucions, i seguidament enllaçant
+els dos registres.
 
-If the event is a paid event, click the **Record Payment** checkbox and
-enter information in the Payment Information section. This
-process essentially links together the event registration and the
-contribution record for this contact. After recording the registration,
-you will be able to view the event registration record and see the
-related contribution record at the bottom (see screenshot). If you do
-not select the Record Payment check box, only a registration record will
-be created.
+Si l'esdeveniment és un esdeveniment amb pagament, cliqueu la casella **Registra el pagament** i
+introduïu informació en la secció d'Informació del pagament. Aquest
+procés essencialment enllaça mútuament la inscripció a l'esdeveniment i el
+registre de contribució per aquest contacte. Un cop registrada la inscripció,
+tindreu la possibilitat de visualitzar la inscripció a l'esdeveniment i veure la
+el registre de la contribució relacionada al final (veieu la captura de pantalla). Si
+no seleccioneu la casella de Registra un pagament, només es crearà un registre
+de la inscripció.
 
-![screenshot](../img/EventContributionTab.png)
+![captura de pantalla](../img/EventContributionTab.png)
 
-### Registering a participant paying only a deposit (partial payment)
+### Inscripció d'un participant que paga només un dipòsit (pagament parcial)
 
-If you are registering a participant manually, you can enter a payment
-amount less than the event fees, then make one or more additional
-payments later on until the fee is paid in full.
+Si esteu inscrivint un participant manualment, podeu introduir un pagament
+d'import inferior al de la tarifa de l'esdeveniment, per més endavant fer un o més pagaments
+addicionals fins que la tarifa sigui pagada al complet.
 
-During the manual registration you enter the the amount actually being
-paid at this time in the **Amount** field in the Payment Information
-section and set the **Participant Status** field to Partially paid.
+Durant la inscripció manual haureu d'introduir l'import
+pagat en aquest moment en el camp **Import** en la secció Informació
+del pagament i definir el camp **Estat del participant** a parcialment pagat.
 
-![screenshot](../img/EventIntialPartialPayment.png)
+![captura de pantalla](../img/EventIntialPartialPayment.png)
 
-The expectation is that additional payment(s) will be made until the
-full event fee has been paid, so a **Partially paid** registration is
-included in the participant total in the same way as a **Pending from
-pay later** registration.
+L'esperat és que es facin pagaments addicionals fins
+que la tarifa de l'esdeveniment no es pagui per complet, per això la inscripció **Parcialment pagada**
+s'inclou en el total de participants de la mateixa manera que una inscripció **Pendent de
+pagament diferit**.
 
-To make an additional payment on this registration:
+Per realitzar un pagament addicional en aquesta inscripció:
 
-1.  Go to the registrant's contact record.
-2.  Click on the **Events** tab on that record.
-3.  Click on **more** on the far right of the partially paid event
-    record.
-4.  Select **Record Payment** or **Submit Credit Card
-    payment**
+1.  Aneu a la fitxa del contacte inscrit.
+2.  Cliqueu a la pestanya d'**Esdeveniments** en aquest contacte.
+3.  Cliqueu a **més** a la dreta de tot del registre de l'esdeveniment parcialment
+    pagat.
+4.  Seleccioneu **Registra un pagament** o **Registrant un pagament amb targeta
+    de crèdit**
 
-![screenshot](../img/EventPartialPayment.png)
+![captura de pantalla](../img/EventPartialPayment.png)
 
-![screenshot](../img/EventPartialPaymentCC.png)
+![captura de pantalla](../img/EventPartialPaymentCC.png)
 
-You can make more than one additional payment. When the event fee has
-been paid in full the **Participant status** will automatically change to
-**Registered** (although you can override this by choosing a different
-status option when you make the last payment) and the status of the
-linked contribution will automatically change to **Completed**.
+Podeu fer més d'un pagament addicional. Quan la tarifa de l'esdeveniment sigui
+pagada en la seva totalitat l'**Estat del participant** canviarà automàticament a
+**Inscrit** (tot i que podeu sobreescriure'l escollint una opció d'estat
+diferent quan realitzeu el darrer pagament) i l'estat de la
+contribució enllaçada canviarà automàticament a **Completada**.
 
-Looking at this from an accounting perspective, when the registration is
-created, the event fee is added to accounts receivable. Each partial
-payment is then added as a separate line item until the fee is paid in
-full.
+Veient això des d'una perspectiva comptable, quan la inscripció es
+crea, la tarifa de l'esdeveniment s'afegeix a els comptes a cobrar. Cada pagament
+parcial s'anirà afegint com una partida individual separada fins que la tarifa sigui pagada en
+la seva totalitat.
 
-Note that on the event registration and the linked contribution the
-displayed amount will always be the full event fee. You can see how much
-is owing by choosing to **View** the event registration. Selecting **›› view payments** (under the **Total Paid** amount) will display a
-summary of each payment.
+Fixeu-vos que en la inscripció a l'esdeveniment i en la contribució enllaçada
+l'import mostrat serà sempre la tarifa sencera de l'esdeveniment. Podreu veure com quant
+queda a deure escollint a **Visualitza** de la inscripció de l'esdeveniment. Seleccionant **›› visualitza els pagament** (sota de l'import **Total Pagat**) es mostrarà un
+resum de cada pagament.
 
-![screenshot](../img/EventPaymentView.png)
+![captura de pantalla](../img/EventPaymentView.png)
 
-Alternatively, the payments can be seen by clicking the arrow next to the Contribution record at the bottom.
+Una altra opció és veure els pagaments clicant la fletxa al costat del registre de contribució al final.
 
-![screenshot](../img/EventPaymentView2.png)
+![captura de pantalla](../img/EventPaymentView2.png)
 
-## Mass Registrations
+## Inscripcions en bloc
 
-CiviEvent offers the time-saving feature of registering multiple
-contacts for an event at one time. Returning to the
-youth leadership workshop scenario, Arts in Action anticipate a high
-rate of attendance from participants at the previous workshop. The staff
-perform a search to find previous participants and mass register them,
-setting each individual's participant status to **Pending**. The list of
-pending contacts is then used to call or email people to see if they are
-coming. If the person says they will attend, the event organizer can
-change the person's status from **Pending** to **Registered**.
+El CiviEvent ofereix una funcionalitat que permet estalviar temps registrant múltiples
+contactes per un esdeveniment a la vegada. Tornant a
+l'escenari del taller de lideratge juvenil, Arts en Acció preveu una alta
+taxa d'assistència de participants del taller anterior. L'equip
+fa una cerca per cercar els participants anteriors i els inscriu en bloc,
+definint cada estat de participant a **Pendent**. La llista de
+contactes pendent després s'utilitza per trucar-los o enviar-ls-hi un correu electrònic per veure si finalment
+vindran. Si la persona diu que assistirà, l'organitzador de l'esdeveniment pot
+canviar l'estat de la persona de **Pendent** a **Inscrit**.
 
-### Steps for Mass registration:
+### Passos per a la inscripció en bloc:
 
-1.  Search for the set of contacts you are interested in (Arts in Action
-    would navigate to **Search > Find Participants** to search for all
-    participants at the previous workshop).
-2.  On the search results page, either choose **All x records** or put a
-    check mark next to each contact you are interested in. A sample
-    search results page appears in the following screen-shot.
+1.  Cerqueu el conjunt de contactes que us interessin (per Arts en Acció
+    caldria navegar a **Cerca > Cerca participants** per cercar tots els
+    participants del taller anterior).
+2.  A la pàgina dels resultats de la cerca, o bé escolliu **Tots els x registres** o marqueu
+    la casella contigua a cada contacte que us interessi. Un exemple
+    de pàgina de resultats de cerca apareix en la següent captura de pantalla.
 
-![screenshot](../img/EventBatchRegistration.png)
+![captura de pantalla](../img/EventBatchRegistration.png)
 
-3.  From the actions list just above the search results, choose **Register participants for event** then click **Go.**
-4.  Choose the event you would like to register participants for. Note
-    that you cannot currently register participants en masse for past
-    events.
-5.  Complete the registration form, choosing the appropriate action
-    choices for this set of people, such as setting the **Participant
-    Status** to **Pending**. Choices made here will be applied to all contacts
-    in this set.
-6.  Click **Save**.
+3.  Del llistat d'accions just a sobre dels resultats de la cerca, escolliu **Inscriu participants a un esdeveniment** i  cliqueu **Vés.**
+4.  Escolliu l'esdeveniment on voleu inscriure els participants. Fixeu-vos
+    que actualment no podeu inscriure participants en bloc a esdeveniments
+    passats.
+5.  Completeu el formulari d'inscripció, escollint les opcions adequades
+    per aquest conjunt de persones, com configurar a **Pendent** l'**Estat
+    del participant**. Les eleccions triades aquí s'aplicaran a tots els contactes contactes
+    en aquest conjunt.
+6.  Clique **Desa**.
 
-### Limitations of mass registrations
+### Limitacions de les inscripcions en bloc
 
-The action choices you make (in Step 3) are applied uniformly to the
-entire set of selected contacts. To work around this limitation, do a
-mass registration several times, each time choosing the desired action
-choices for that set of contacts. For example, you might mark one set of
-contacts you plan to call and invite with a **Participant Status** of
-**Pending**, then add another set of contacts to the event, such as event
-leaders you know will attend, with a **Participant Status** of
-**Registered**.
+Les opcions que escolliu (en el pas 3) s'apliquen uniformement al
+conjunt sencer dels contactes seleccionats. Per evitar aquesta limitació, feu una
+inscripció en bloc diverses vegades, cada cop escollint les opcions desitjades
+per a cada conjunt de contactes. Per exemple, podríeu seleccionar un conjunt dels
+contactes als qual teniu previst trucar i invitar-los amb un **Estat de participant**
+**Pendent**, seguidament afegir un altre conjunt dels contactes a l'esdeveniment, com ara organitzadors
+de l'esdeveniment que sabeu que hi assistiran, amb un **Estat de participant**
+**Inscrit**.
 
-You cannot do mass registration of participants for events in the past.
+No podeu fer una inscripció en bloc de participants en esdeveniments passats.
 
-You cannot apply contribution information, such as a pay later
-contribution or a credit card transaction, in a batch action. Therefore,
-mass registration is best for free events or for contacts who are not
-required to pay a fee at this point. You can always add payment details
-for individual contacts later on.
+Tampoc podeu aplicar informació de contribucions, com ara un pagament en diferit
+o una transacció de targeta de crèdit, en una acció en bloc. És per això que
+les inscripcions en bloc són millors en esdeveniments gratuïts o per a contactes que no
+necessiten pagar una tarifa en aquest punt. Sempre podreu afegir detalls de pagaments
+per contactes persona més tard.
 
-## Importing Registrations
+## Importació d'inscripcions
 
-Importing registration information is a quick way to add multiple
-registrations to the event. The data to be imported must be available in
-a comma-separated values (CSV) file. If the majority of the contacts are
-already in CiviCRM, it may be faster to do a mass registration action as
-mentioned earlier in this chapter.
+Importar la informació d'inscripcions és una manera ràpida d'afegir múltiples
+inscripcions a l'esdeveniment. La informació a ser importada ha d'estar disposada en
+un fitxer de valors separats per comes (CSV). Si la majoria dels contactes ja es
+troben en el CiviCRM, serà més ràpid de fer una acció d'inscripció en bloc com
+hem explicat anteriorment en aquest capítol.
 
-The import tool for participants is similar to that of contacts, but
-there are some pre-requisites which must be met before running the
-import. Firstly, participants cannot be imported unless the Individuals
-already exist in the database as contacts. If you need to
-import participants for contacts that are not yet available, run a
-contact import first, preferably including a unique external identifier
-(most often an ID assigned by the database or application you are
-importing records from). There are two ways to match a participant to a
-contact:
+L'eina d'importació per participants és similar a la de contactes, però
+hi ha alguns prerequisits que cal complir abans d'executar la
+importació. En primer lloc, els participants no es poden importar si no existeixen ja
+les Persones en la base de dades com a contactes. Si necessiteu
+importar participants per contactes que encara no estan disponibles, executeu
+primer una importació de contactes, preferiblement incloent un identificador extern únic
+(sovint un identificador assignat per la base de dades o l'aplicació de la qual
+esteu important els registres). Hi ha dues maneres de relacionar un participant amb un
+contacte:
 
--   Use the external ID of the contact by including the ID in a column
-    of the CSV file (if this ID was not imported with contacts, but you
-    have them on record, a second contact import could be run to update
-    this field, after which you may import participants).
--   Alternatively, you can match participants to contacts based on your
-    contact de-dupe rules, e.g. through including the first name, last
-    name and email address of the individual against each contact in the
-    file. If a contact matches these three fields, the event
-    participation will be assigned to it.
+-   Utilitzeu l'identificador extern de contacte per incloure l'identificador en una columna
+    en el fitxer (si aquest identificador no es va importar amb els contactes, però el
+    conserveu en els registres, una segona importació de contactes pot ser executada per actualitzar
+    aquest camp, abans que importeu els participants).
+-   També podeu relacionar els participants amb els contactes basant-vos amb les
+    regles de desduplicació de contactes, p.ex. mitjançant la inclusió del nom, cognoms
+    i adreça de correu electrònic de les persones en cada contacte del
+    fitxer. Si un contacte coincideix amb aquests tres camps, la participació de
+    l'esdeveniment se li assignarà.
 
-### Preparing your data
+### Perparant les dades
 
-When preparing your data import it is helpful to know what fields are
-required for Import. You'll want to be sure that these fields are
-included in your CSV import file. Below is a list of the required
-fields. Please note that you only need one of the fields marked **(Match to
-Contact)**, you do not need all of them.
+Quan prepareu les dades per a la importació és útil saber quins camps són
+requerits per a la importació. Haureu d'assegurar-vos que aquests camps
+s'inclouen en el fitxer CSV d'importació. A continuació hi ha una llista dels camps
+requerits. Tingueu en compte que només necessitareu un dels camps marcats **(coincident amb el
+contacte)**, no els necessitareu tots.
 
--   **Contact ID (Match to Contact)**
--   **Email (Match to Contact)**
--   **Event ID**
--   **External Identifier (Match to Contact)**
--   **Participant Status**
+-   **Identificador del contacte (coincident amb el contacte)**
+-   **Correu electrònic (coincident amb el contacte)**
+-   **Identificador de l'esdeveniment**
+-   **Identificador extern del contacte (coincident amb el contacte)**
+-   **Estat del participant**
 
-### Steps for importing registrations
+### Passos per importar inscripcions
 
-1.  From the navigation menu, go to **Events > Import Participants**.
-2.  Browse to the data file on your local computer.
-3.  Select the appropriate contact type, date format and other options,
-    and click **Continue**.
-4.  Match the fields of your CSV file to the CiviCRM fields.
-5.  If this is something you may repeat in the future, check the
-    **Save** this field mapping box.
-6.  **Preview** and **Save**.
+1.  Des del menú de navegació aneu a **Esdeveniments > Importació de participants**.
+2.  Navegueu al fitxer de dades en el vostre ordinador local.
+3.  Seleccioneu el tipus de contacte apropiat, format de data i altres opcions,
+    i cliqueu **Continua**.
+4.  Relacioneu els camps del vostre fitxer CSV amb els camps del CiviCRM.
+5.  Si això és quelcom que repetireu en un futur, marqueu
+    **Desa** en la casella d'aquest mapeig de camps.
+6.  **Previsualitzeu** i **Deseu**.
 
-![screenshot](../img/EventImportParticipants.png)
+![captura de pantalla](../img/EventImportParticipants.png)
