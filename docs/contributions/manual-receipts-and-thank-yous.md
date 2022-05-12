@@ -1,127 +1,119 @@
-# Sending receipts and thank you letters
+# Enviament de rebuts i cartes d'agraïment
 
-## Receipts
+## Rebuts
 
-Donors making contributions through an online form will automatically
-receive an email receipt for their payment, provided the option to send
-them was selected during the configuration of the contribution page. If
-you wish to manually send or re-send a receipt at a later date, you can
-do so by editing the contribution record against a contact and
-ticking the option **Send Receipt?**. The off-line contribution receipt will be
-sent when you click **Save**.
+Els donants que fan contribucions mitjançant un formulari en línia reben
+automàticament, per correu electrònic, un rebut pel seu pagament en cas 
+que hagin escollit aquesta opció durant la configuració de la pàgina de
+contribució. Si voleu enviar o reenviar posteriorment un rebut,
+ho podeu fer editant la contribució i marcant l'opció **Enviar rebut?**. 
+El rebut s'enviarà després de clicar **Desar**.
 
-You can send off-line contribution receipts to multiple contacts at the same
-time through the [Find Contributions](finding-and-viewing-contributions.md)
-search. After selecting the contacts you wish to send a receipt to, choose
-**Receipts - print or email** from the actions drop-down menu.
+Podeu enviar rebuts fora de línia a múltiples contactes a la vegada 
+a través de la cerca[Cerca contribucions](finding-and-viewing-contributions.md).
+Un cop seleccionats els contactes, seleccioneu **Rebuts - imprimir o enviar per correu**
+en el selector d'accions.
 
 ![ContributionReceiptsManual](../img/civicontribute-receipts-manual.png)
 
-You will be given the option to email the receipts or make PDF receipts
-to post out to contributors.
+Podeu triar l'opció d'enviar els rebuts per correu electrònic o crear rebuts 
+en PDF per enviar-los per correu als donants.
 
 ![Contributions search result with the action menu expanded.](../img/Print_contribution_receipt_options.png)
 
-By default emailing or creating PDF receipts will update the receipt
-date for each contribution, but you can keep the existing receipt dates
-if you need to. You can also choose to disregard the **Do not email/Do
-not mail** settings so that all selected contributors are sent a receipt.
+Per defecte, l'enviament per correu electrònic o la creació de rebuts
+en PDF actualitzaran la data del rebut per a totes les contribucions
+seleccionades, però podeu mantenir la data d'enviament existent en
+cas necessari. També podeu ignorar l'opció **No enviar correu electrònic**
+per a què s'enviï un rebut a tots els contribuents.
 
-The standard off-line contribution receipt displays limited information. It can
-be customized but that requires a knowledge of Smarty. You may find it easier
-to set up "send later" receipts using the thank-you letters workflow.
+El rebut de contribució estàndard conté informació limitada. El podeu personalitzar,
+però això requereix coneixements d'Smarty. També es poden enviar rebuts
+fora de línia mitjançant el sistema de cartes d'agraïment.
 
-## Thank-you letters
+## Cartas d'agraïment
 
-Some organisations may wish to send thank-you letters to people who
-donated to a particular campaign, advising them of the total amount
-raised. Other organisations like to send one receipt to each contact at
-the end of the fiscal year covering all tax-deductible donations made
-during that year. Both of these scenarios and more can be accomplished
-using the "Thank-you letters for Contributions" functionality. This
-action is available from a search results screen displaying
-contributions (rather than contacts). The steps involved are:
+És possible enviar cartes d'agraïment als donants de campanyes específiques
+informant-los de l'import total recaptat. També podeu enviar un rebut
+a cada contacte al final de l'any fiscal, informant de les deduccions
+fiscals de les contribucions realitzades al llarg de l'any. Aquestes dues opcions,
+entre d'altres, estan disponibles mitjançant la funcionalitat de "Cartes
+d'agraïment per Contribucions". Aquesta acció està disponible des de
+la pàgina de resultats de cerca de contribucions (no de contactes).
+Els passos per fer-ho són:
 
-1.  Use **Find Contributions** or use **Advanced Search** with **Display
-    Results As** set to **Contributions** for your search.
-2.  Select the contributions for which you want thank-you letters or
-    combined receipts.
-3.  Choose the action **Thank-you letters - print or email**. The
-    following will be displayed:
+1.  Utilitzant **Cerca contribucions** o la **Cerca avançada** amb l'opció
+    **Contribucions** seleccionada al desplegable **Mostra resultats com a**
+    per a la cerca. 
+2.  Seleccionar les contribucions per a l'enviament de cartes d'agraïment
+    o rebuts combinats. 
+3.  Escollir l'acció **Cartes d'agraïment - imprimir o enviar correu electrònic**.
+    Es mostrarà el següent missatge:
     ![ContributionThankyouLettersNogrouping](../img/civicontribute-thank-you-letters-no-grouping.png)
-4.  Choose to **Update thank-you dates for these contributions** or
-    **Update receipt dates for these contributions** as required. The
-    current date will be entered into the appropriate field.
-    
-5.  There are three self-explanatory **Print and Email Options**:
-    -   Generate PDFs for printing (only)
-    -   Send emails where possible. Generate printable PDFs for contacts
-        who cannot receive emails
-    -   Send emails where possible. Generate printable PDFs for all
-        contacts.
+4.  Escollir **Actualitzar les dates d'agraïment per aquestes contribucions** o
+    **Actualitzar les dates de rebut per aquestes contribucions**. The
+    current date will be entered into the appropriate field.   
+5.  Hi ha tres **Opcions d'impressió i correu electrònic** autoexplicatives:
+    -   Generar PDFs per imprimir (només)
+    -   Enviar correus electrònics quan sigui possible. Generar PDFs per a contactes
+        que no poden rebre correus electrònics.
+    -   Enviar correus electrònics quan sigui possible. Generar PDFs per a tots els contactes.
+6.  Algunes persones poden haver fet més d'una contribució. Per enviar una carta
+    per cada contribució, cal seleccionar l'opció **"no agrupar-"** al selector
+    **Agrupar contribucions per**. Alternativament, podeu escollir mostrar les dades de 
+    múltiples contribucions del mateix contacte al cos de la carta. Hi ha cinc
+    opcions d'"agrupar per".
+7.  **Separador (contribucions agrupades)** només és aplicable si s'ha seleccionat
+    alguna opció diferent de **- no agrupar -** per a les contribucions. Aquestes opcions
+    s'expliquen amb més detall més endavant a *Cartes d'agraïment de contribucions agrupades*.
+8.  Comprobar  la configuració de **Format de pàgina**.
+9.  Podeu fer servir una plantilla existent, crear una carta d'un sol ús o crear una nova carta
+    i desar-la com a nova plantilla.
+    [Tokens i combinació de correspondència](../common-workflows/tokens-and-mail-merge.md) i
+    [Comunicaciones per correu postal](../common-workflows/postal-mail-communications.md)
+    ofereixen més informació sobre la creació de plantillas de cartes.
+10. Clicant sobre **Fer cartes d'agraïment**, es generaran les cartes i es crearà una
+    acció per cada carta amb l'**Assumpte** especificat.
 
-6.  Some people may have made more than one contribution. If you want
-    to send one letter for each contribution then set **Group
-    contributions by** to **"-no grouping-"**. Alternatively, you can
-    choose to show contribution data for multiple contributions from the
-    same contact in one location in the body of your letter. There are
-    five "group by" " options.
-7.  **Separator (grouped contributions)** only applies if you have
-    chosen something other than **- no grouping -** for the
-    contributions. These options will be discussed below in *Grouped contribution thank-you letters*.
-8.  Make sure to check the **Page Format** settings.
-9.  You can use an existing template, create a new letter for one-off
-    use, or create a new letter and save it as a new template.
-    [Tokens and mail merge](../common-workflows/tokens-and-mail-merge.md) and
-    [Postal mail communications](../common-workflows/postal-mail-communications.md)
-    provide more information on creating letter templates.
-10. When you click on **Make Thank-you Letters** the letters will be
-    generated and a "Print/Merge Document" activity will be created for each
-    letter with the **Activity Subject** you have specified.
+### Cartes d'agraïment de contribucions agrupades
 
-### Grouped contribution thank-you letters
+Podeu enviar rebuts de declaracions tributàries als vostres contactes si trieu 
+una opció diferent de **-no agrupar-** en el camp **Agrupar contribucions per**.
 
-You can send end-of-fiscal-year giving statements/tax receipts to your contacts
- if you choose an option other than **-no grouping-** for the field
- **Group contributions by**.
+En una instalació estàndard de CIVICRM, las cartas que es poden generar agrupant 
+les contribucions són força rudimentàries.
 
-In a standard CiviCRM installation, the letters that can be produced
-when you group contributions are fairly rudimentary.
+Si trieu la **Coma** com a **Separador**, els imports de les contribucions i/o
+dates aniran una rere l'altra separades per comes. Per exemple, "Gràcies per la
+seva generosa aportació de {contribution.total_amount} rebuda el {contribution.receive_date}
+respectivament." es mostrà com "Gràcies per les seves generoses aportacions 
+de 100,00€, 150,00€, 325,00€ rebudes el 3 de gener de 2015, el 5 de març de
+2015, el 16 de maig de 2015 respectivament."
 
-If you choose **Comma** as the **Separator** then the contribution
-amounts and/or dates will follow one after the other separated by
-commas. For example "Thank you for your generous donations of
-{contribution.total_amount} received on {contribution.receive_date}
-respectively." will become "Thank you for your generous donations of
-$100.00, $150.00, $325.00 received on 1 January 2015, 5 March 2015,
-16 May 2015 respectively."
-
-If you choose **Table Cell** as the **Separator** then each contribution
-instance will be placed in its own table column. For example:
+Si trieu **Cel·la de taula** com a **Separador**, cada contribució es mostrarà
+en una columna. Per exemple:
 
 ![Thank you letter with tokens.](../img/thank_you_letters_as_table_template.png)
 
-will result in:
+es mostrarà com:
 
 ![Thank you letter with expanded tokens.](../img/thank_you_letters_as_table_1.png)
 
-This format works well if only a few contributions have been received
-during the year, but the table will be wider than the page for monthly,
-fortnightly or weekly donations.
+Aquest format és adequat si només s'han rebut unes poques contribucions al 
+llarg de l'any, però la taula pot arribar a ser més ampla que la pàgina en
+cas de contribucions mensuals, quinzenals o setmanals.
 
-In neither case can the total yearly contribution amount be included in
-the letter.
+En cap cas es pot mostrar a la carta l'import anual de contribucions.
 
-To include the total yearly contribution amount in the letter and to
-produce a letter more suited to several contributions from the one
-person, you (or your implementer/developer) will need to enable Smarty
-functionality for you emails
+Per incloure a la carta l'import anual de les contribucions i per generar una 
+carta més adient per mostrar diverses contribucions d'una mateixa persona, es
+pot habilitar la funcionalitat Smarty per als correus electrònics
 ([http://wiki.civicrm.org/confluence/display/CRMDOC/Smarty+in+mail+templates](http://wiki.civicrm.org/confluence/display/CRMDOC/Smarty+in+mail+templates)).
 
-Once that has been done the total yearly contribution amount can be
-included in the letter using the token `{$contribution_aggregate}`.
+Un cop fet això, podeu incloure l'import anual de les contribucions
+fent servir el token `{$contribution_aggregate}`.
 
-For example, if the HTML source for your letter is:
+Per exemple, si el codi HTML de la teva carta és:
 
 ```html
 <p>Dear {contact.first_name}</p>
@@ -151,6 +143,6 @@ For example, if the HTML source for your letter is:
  --></tbody>
   </table>
 ```
-then your letters will look like:
+les cartes es mostraran de la següent manera:
 
 ![Thank you letter with expanded tokens.](../img/thank_you_letters_as_with_smarty_enabled_2.png)
