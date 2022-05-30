@@ -31,7 +31,7 @@ El rebut de contribució estàndard conté informació limitada. El podeu person
 però això requereix coneixements d'Smarty. També es poden enviar rebuts
 fora de línia mitjançant el sistema de cartes d'agraïment.
 
-## Cartas d'agraïment
+## Cartes d'agraïment
 
 És possible enviar cartes d'agraïment als donants de campanyes específiques
 informant-los de l'import total recaptat. També podeu enviar un rebut
@@ -80,7 +80,7 @@ Els passos per fer-ho són:
 Podeu enviar rebuts de declaracions tributàries als vostres contactes si trieu 
 una opció diferent de **-no agrupar-** en el camp **Agrupar contribucions per**.
 
-En una instalació estàndard de CIVICRM, las cartas que es poden generar agrupant 
+En una instalació estàndard de CIVICRM, les cartes que es poden generar agrupant 
 les contribucions són força rudimentàries.
 
 Si trieu la **Coma** com a **Separador**, els imports de les contribucions i/o
