@@ -53,7 +53,7 @@ nav:
     - 'Logging': 'initial-set-up/change-logging.md'
     - 'Error handling': 'initial-set-up/error-handling.md'
     - 'Scheduled Jobs': 'initial-set-up/scheduled-jobs.md'
-- La interfície d'usuari (untranslated):
+- La interfície d'usuari (partially translated):
     - 'Menu, dashboard and dashlets': 'the-user-interface/menu-dashboard-and-dashlets.md'
     - 'Searching (partially translated)': 'the-user-interface/searching.md'
     - 'Search kit': 'the-user-interface/search-kit.md'
