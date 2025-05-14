@@ -448,22 +448,22 @@ profile (**Administer** > **Customize Data and Screens** >
 
 ![Screen shot of Contact Summary pop-up](../img/the-user-interface/searching/user-interface-searching-summary-overlay.png)
 
-## The wildcard (%)
+## El comodí (%)
 
-Understanding wildcards greatly expands your search options. A wildcard
-represents any character (letter, numeral or punctuation mark). In
-CiviCRM, the wildcard is represented by the % symbol (you may be
-familiar with other symbols such as * from other applications). It is
-most easily understood through examples.
+Entendre els comodins amplia enormement les teves opcions de cerca. Un comodí
+representa qualsevol caràcter (lletra, número o signe de puntuació). A
+CiviCRM, el comodí es representa amb el símbol % (potser esteu
+familiaritzats amb altres símbols com * d'altres aplicacions). S'entén
+més fàcilment a través d'exemples.
 
-Suppose that somebody asked you to find a contact with a first name
-similar to "Michael", but possible something different such as
-"Michelle" or "Michał". If you search for "Mich%" you will find all
-these variations, including a contact who is supposed to be named
-"Michael" but whose name was misspelled as "Micheal". Wildcards can be
-used before, after, or even within words. For example, searching on
-'Mich%el' will exclude "Michał" and "Micheal" but still find "Michelle"
-and "Michael".  
+Suposem que algú us demana que trobeu un contacte amb un nom
+similar a "Michael", però possiblement alguna cosa diferent com
+"Michelle" o "Michał". Si cerqueu "Mich%" trobareu totes
+aquestes variacions, inclòs un contacte que se suposa que es diu
+"Michael" però el nom del qual s'ha escrit malament com a "Micheal". Els comodins es poden
+utilitzar abans, després o fins i tot dins de les paraules. Per exemple, cercar amb
+'Mich%el' exclourà "Michał" i "Micheal", però encara trobarà "Michelle"
+i "Michael".
 
 ## Case sensitivity
 
